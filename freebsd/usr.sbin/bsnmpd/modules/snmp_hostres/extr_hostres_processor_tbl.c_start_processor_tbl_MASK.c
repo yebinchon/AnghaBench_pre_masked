@@ -1,0 +1,33 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct lmodule {int dummy; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (int,int,int ,int *,struct lmodule*) ;
+
+void
+FUNC_1(struct lmodule *VAR_3)
+{
+
+
+
+
+
+
+
+ VAR_1 = FUNC_0(100, 100 * 60 / VAR_0,
+     VAR_2, ((void*)0), VAR_3);
+}

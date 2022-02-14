@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct TYPE_5__ {TYPE_1__* curr_proc; } ;
+struct TYPE_4__ {int is_procedure; } ;
+typedef TYPE_2__ PLyExecutionContext ;
+
+
+ TYPE_2__* FUNC_0 () ;
+ int FUNC_1 (char*) ;
+
+__attribute__((used)) static void
+FUNC_2(void *VAR_0)
+{
+ PLyExecutionContext *VAR_1 = FUNC_0();
+
+ if (VAR_1->curr_proc &&
+  !VAR_1->curr_proc->is_procedure)
+  FUNC_1("while creating return value");
+}

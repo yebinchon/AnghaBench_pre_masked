@@ -1,0 +1,33 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u64 ;
+typedef int u32 ;
+struct mlx5_srq_attr {int log_page_size; int log_size; int wqe_shift; int page_offset; } ;
+
+
+
+__attribute__((used)) static int FUNC_0(struct mlx5_srq_attr *VAR_0)
+{
+ u32 VAR_1 = VAR_0->log_page_size + 12;
+ u32 VAR_2 = VAR_0->log_size;
+ u32 VAR_3 = VAR_0->wqe_shift;
+ u32 VAR_4 = VAR_0->page_offset;
+ u32 VAR_5 = 1 << (VAR_1 - 6);
+ u32 VAR_6 = 1 << (VAR_2 + 4 + VAR_3);
+ u32 VAR_7 = 1 << VAR_1;
+ u32 VAR_8 = VAR_6 + (VAR_4 * VAR_5);
+ u32 VAR_9 = (VAR_8 + VAR_7 - 1) / VAR_7;
+
+ return VAR_9 * sizeof(u64);
+
+}

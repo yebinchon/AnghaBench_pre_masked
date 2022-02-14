@@ -1,0 +1,12 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+inline void FUNC_0( int VAR_0 ) {
+
+
+
+    __asm__("mtsdr1 3");
+}

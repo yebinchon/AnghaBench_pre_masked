@@ -1,0 +1,77 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int u8 ;
+struct jsm_channel {int ch_mistat; int ch_mostat; int ch_portnum; TYPE_1__* ch_bd; int uart_port; } ;
+struct TYPE_2__ {int pci_dev; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int VAR_8 ;
+ int VAR_9 ;
+ int FUNC_0 (int ,int ,int *,char*,int ,int,...) ;
+ int FUNC_1 (int *,int) ;
+ int FUNC_2 (int *,int) ;
+
+__attribute__((used)) static void FUNC_3(struct jsm_channel *VAR_10, u8 VAR_11)
+{
+ u8 VAR_12 = VAR_11;
+
+ FUNC_0(VAR_1, VAR_0, &VAR_10->ch_bd->pci_dev,
+   "neo_parse_modem: port: %d msignals: %x\n", VAR_10->ch_portnum, VAR_12);
+
+
+
+ VAR_12 &= 0xf8;
+
+ if (VAR_12 & VAR_6)
+  FUNC_2(&VAR_10->uart_port, VAR_12 & VAR_5);
+ if (VAR_12 & VAR_7)
+  FUNC_1(&VAR_10->uart_port, VAR_12 & VAR_4);
+ if (VAR_12 & VAR_5)
+  VAR_10->ch_mistat |= VAR_5;
+ else
+  VAR_10->ch_mistat &= ~VAR_5;
+
+ if (VAR_12 & VAR_8)
+  VAR_10->ch_mistat |= VAR_8;
+ else
+  VAR_10->ch_mistat &= ~VAR_8;
+
+ if (VAR_12 & VAR_9)
+  VAR_10->ch_mistat |= VAR_9;
+ else
+  VAR_10->ch_mistat &= ~VAR_9;
+
+ if (VAR_12 & VAR_4)
+  VAR_10->ch_mistat |= VAR_4;
+ else
+  VAR_10->ch_mistat &= ~VAR_4;
+
+ FUNC_0(VAR_1, VAR_0, &VAR_10->ch_bd->pci_dev,
+   "Port: %d DTR: %d RTS: %d CTS: %d DSR: %d " "RI: %d CD: %d\n",
+  VAR_10->ch_portnum,
+  !!((VAR_10->ch_mistat | VAR_10->ch_mostat) & VAR_2),
+  !!((VAR_10->ch_mistat | VAR_10->ch_mostat) & VAR_3),
+  !!((VAR_10->ch_mistat | VAR_10->ch_mostat) & VAR_4),
+  !!((VAR_10->ch_mistat | VAR_10->ch_mostat) & VAR_8),
+  !!((VAR_10->ch_mistat | VAR_10->ch_mostat) & VAR_9),
+  !!((VAR_10->ch_mistat | VAR_10->ch_mostat) & VAR_5));
+}

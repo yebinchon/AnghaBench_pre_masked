@@ -1,0 +1,21 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+ int FUNC_0 (char const*,int ,char*,char*,char*,int *) ;
+
+void FUNC_1(void)
+{
+ const char *VAR_0 =
+  "object a8d447f68076d1520f69649bb52629941be7031f\n"
+  "type tag\n"
+  "tag tagname\n"
+  "tagger Taggy Mr. Taggart <taggy@taggart.com>\n";
+ FUNC_0(VAR_0, 0,
+  "a8d447f68076d1520f69649bb52629941be7031f",
+  "tagname",
+  "Taggy Mr. Taggart <taggy@taggart.com>",
+  ((void*)0));
+}

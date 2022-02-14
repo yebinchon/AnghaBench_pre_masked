@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct socket {struct sock* sk; } ;
+struct sock {scalar_t__ sk_state; int sk_max_ack_backlog; } ;
+struct TYPE_2__ {int user_addr; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ scalar_t__ VAR_2 ;
+ int FUNC_0 (struct sock*) ;
+ int FUNC_1 (int *,int ,int ) ;
+ TYPE_1__* FUNC_2 (struct sock*) ;
+ int FUNC_3 (struct sock*) ;
+
+__attribute__((used)) static int FUNC_4(struct socket *VAR_3, int VAR_4)
+{
+ struct sock *VAR_5 = VAR_3->sk;
+
+ FUNC_0(VAR_5);
+ if (VAR_5->sk_state != VAR_2) {
+  FUNC_1(&FUNC_2(VAR_5)->user_addr, 0, VAR_0);
+  VAR_5->sk_max_ack_backlog = VAR_4;
+  VAR_5->sk_state = VAR_2;
+  FUNC_3(VAR_5);
+  return 0;
+ }
+ FUNC_3(VAR_5);
+
+ return -VAR_1;
+}

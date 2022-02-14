@@ -1,0 +1,137 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+__attribute__((used)) static const char* FUNC_0(int VAR_0)
+{
+    switch (VAR_0)
+    {
+
+        case 237: return "A";
+        case 235: return "B";
+        case 232: return "C";
+        case 229: return "D";
+        case 226: return "E";
+        case 221: return "F";
+        case 195: return "G";
+        case 193: return "H";
+        case 191: return "I";
+        case 189: return "J";
+        case 188: return "K";
+        case 170: return "L";
+        case 163: return "M";
+        case 160: return "N";
+        case 158: return "O";
+        case 157: return "P";
+        case 151: return "Q";
+        case 150: return "R";
+        case 143: return "S";
+        case 138: return "T";
+        case 136: return "U";
+        case 134: return "V";
+        case 133: return "W";
+        case 130: return "X";
+        case 129: return "Y";
+        case 128: return "Z";
+        case 246: return "1";
+        case 245: return "2";
+        case 244: return "3";
+        case 243: return "4";
+        case 242: return "5";
+        case 241: return "6";
+        case 240: return "7";
+        case 239: return "8";
+        case 238: return "9";
+        case 247: return "0";
+        case 139: return "SPACE";
+        case 161: return "MINUS";
+        case 223: return "EQUAL";
+        case 167: return "LEFT BRACKET";
+        case 147: return "RIGHT BRACKET";
+        case 234: return "BACKSLASH";
+        case 141: return "SEMICOLON";
+        case 236: return "APOSTROPHE";
+        case 194: return "GRAVE ACCENT";
+        case 230: return "COMMA";
+        case 153: return "PERIOD";
+        case 140: return "SLASH";
+        case 132: return "WORLD 1";
+        case 131: return "WORLD 2";
+
+
+        case 222: return "ESCAPE";
+        case 220: return "F1";
+        case 209: return "F2";
+        case 202: return "F3";
+        case 201: return "F4";
+        case 200: return "F5";
+        case 199: return "F6";
+        case 198: return "F7";
+        case 197: return "F8";
+        case 196: return "F9";
+        case 219: return "F10";
+        case 218: return "F11";
+        case 217: return "F12";
+        case 216: return "F13";
+        case 215: return "F14";
+        case 214: return "F15";
+        case 213: return "F16";
+        case 212: return "F17";
+        case 211: return "F18";
+        case 210: return "F19";
+        case 208: return "F20";
+        case 207: return "F21";
+        case 206: return "F22";
+        case 205: return "F23";
+        case 204: return "F24";
+        case 203: return "F25";
+        case 135: return "UP";
+        case 227: return "DOWN";
+        case 169: return "LEFT";
+        case 149: return "RIGHT";
+        case 165: return "LEFT SHIFT";
+        case 145: return "RIGHT SHIFT";
+        case 166: return "LEFT CONTROL";
+        case 146: return "RIGHT CONTROL";
+        case 168: return "LEFT ALT";
+        case 148: return "RIGHT ALT";
+        case 137: return "TAB";
+        case 224: return "ENTER";
+        case 233: return "BACKSPACE";
+        case 190: return "INSERT";
+        case 228: return "DELETE";
+        case 155: return "PAGE UP";
+        case 156: return "PAGE DOWN";
+        case 192: return "HOME";
+        case 225: return "END";
+        case 187: return "KEYPAD 0";
+        case 186: return "KEYPAD 1";
+        case 185: return "KEYPAD 2";
+        case 184: return "KEYPAD 3";
+        case 183: return "KEYPAD 4";
+        case 182: return "KEYPAD 5";
+        case 181: return "KEYPAD 6";
+        case 180: return "KEYPAD 7";
+        case 179: return "KEYPAD 8";
+        case 178: return "KEYPAD 9";
+        case 175: return "KEYPAD DIVIDE";
+        case 172: return "KEYPAD MULTIPLY";
+        case 171: return "KEYPAD SUBTRACT";
+        case 177: return "KEYPAD ADD";
+        case 176: return "KEYPAD DECIMAL";
+        case 173: return "KEYPAD EQUAL";
+        case 174: return "KEYPAD ENTER";
+        case 152: return "PRINT SCREEN";
+        case 159: return "NUM LOCK";
+        case 231: return "CAPS LOCK";
+        case 142: return "SCROLL LOCK";
+        case 154: return "PAUSE";
+        case 164: return "LEFT SUPER";
+        case 144: return "RIGHT SUPER";
+        case 162: return "MENU";
+
+        default: return "UNKNOWN";
+    }
+}

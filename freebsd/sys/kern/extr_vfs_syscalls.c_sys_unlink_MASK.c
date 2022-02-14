@@ -1,0 +1,28 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct unlink_args {int path; } ;
+struct thread {int dummy; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (struct thread*,int ,int ,int ,int ,int ,int ) ;
+
+int
+FUNC_1(struct thread *VAR_3, struct unlink_args *VAR_4)
+{
+
+ return (FUNC_0(VAR_3, VAR_0, VAR_4->path, VAR_1, VAR_2,
+     0, 0));
+}

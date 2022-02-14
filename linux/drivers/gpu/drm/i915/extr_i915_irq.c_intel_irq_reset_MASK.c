@@ -1,0 +1,51 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct drm_i915_private {int dummy; } ;
+
+
+ scalar_t__ FUNC_0 (struct drm_i915_private*) ;
+ int FUNC_1 (struct drm_i915_private*) ;
+ scalar_t__ FUNC_2 (struct drm_i915_private*) ;
+ scalar_t__ FUNC_3 (struct drm_i915_private*,int) ;
+ scalar_t__ FUNC_4 (struct drm_i915_private*) ;
+ int FUNC_5 (struct drm_i915_private*) ;
+ int FUNC_6 (struct drm_i915_private*) ;
+ int FUNC_7 (struct drm_i915_private*) ;
+ int FUNC_8 (struct drm_i915_private*) ;
+ int FUNC_9 (struct drm_i915_private*) ;
+ int FUNC_10 (struct drm_i915_private*) ;
+ int FUNC_11 (struct drm_i915_private*) ;
+ int FUNC_12 (struct drm_i915_private*) ;
+
+__attribute__((used)) static void FUNC_13(struct drm_i915_private *VAR_0)
+{
+ if (FUNC_0(VAR_0)) {
+  if (FUNC_2(VAR_0))
+   FUNC_5(VAR_0);
+  else if (FUNC_4(VAR_0))
+   FUNC_12(VAR_0);
+  else if (FUNC_3(VAR_0, 4))
+   FUNC_10(VAR_0);
+  else if (FUNC_3(VAR_0, 3))
+   FUNC_9(VAR_0);
+  else
+   FUNC_8(VAR_0);
+ } else {
+  if (FUNC_1(VAR_0) >= 11)
+   FUNC_6(VAR_0);
+  else if (FUNC_1(VAR_0) >= 8)
+   FUNC_7(VAR_0);
+  else
+   FUNC_11(VAR_0);
+ }
+}

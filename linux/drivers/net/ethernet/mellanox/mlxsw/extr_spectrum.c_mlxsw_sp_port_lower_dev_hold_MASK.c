@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct net_device {int dummy; } ;
+struct mlxsw_sp_port {int dev; } ;
+
+
+ int FUNC_0 (int ) ;
+ struct mlxsw_sp_port* FUNC_1 (struct net_device*) ;
+ int FUNC_2 () ;
+ int FUNC_3 () ;
+
+struct mlxsw_sp_port *FUNC_4(struct net_device *VAR_0)
+{
+ struct mlxsw_sp_port *VAR_1;
+
+ FUNC_2();
+ VAR_1 = FUNC_1(VAR_0);
+ if (VAR_1)
+  FUNC_0(VAR_1->dev);
+ FUNC_3();
+ return VAR_1;
+}

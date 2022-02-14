@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct perf_hpp {char* buf; int size; } ;
+struct TYPE_3__ {scalar_t__ wdiff; scalar_t__ computed; } ;
+struct hist_entry {TYPE_1__ diff; } ;
+typedef scalar_t__ s64 ;
+typedef int buf ;
+struct TYPE_4__ {scalar_t__ field_sep; } ;
+
+
+ scalar_t__ FUNC_0 (struct hist_entry*) ;
+ int FUNC_1 (char*,int,char const*,char*) ;
+ TYPE_2__ VAR_0 ;
+
+__attribute__((used)) static int FUNC_2(struct perf_hpp *VAR_1, struct hist_entry *VAR_2)
+{
+ const char *VAR_3 = VAR_0.field_sep ? "%s" : "%14s";
+ char VAR_4[32] = " ";
+ s64 VAR_5;
+
+ if (VAR_2->diff.computed)
+  VAR_5 = VAR_2->diff.wdiff;
+ else
+  VAR_5 = FUNC_0(VAR_2);
+
+ if (VAR_5 != 0)
+  FUNC_1(VAR_4, sizeof(VAR_4), "%14ld", VAR_5);
+
+ return FUNC_1(VAR_1->buf, VAR_1->size, VAR_3, VAR_4);
+}

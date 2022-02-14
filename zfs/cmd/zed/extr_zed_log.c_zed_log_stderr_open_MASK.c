@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int do_stderr; int priority; } ;
+
+
+ TYPE_1__ VAR_0 ;
+
+void
+FUNC_0(int VAR_1)
+{
+ VAR_0.do_stderr = 1;
+ VAR_0.priority = VAR_1;
+}

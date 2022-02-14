@@ -1,0 +1,58 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+typedef int u32 ;
+struct skb_frame_desc {int skb_dma; } ;
+struct queue_entry_priv_mmio {int desc; } ;
+struct queue_entry {TYPE_2__* skb; TYPE_1__* queue; struct queue_entry_priv_mmio* priv_data; } ;
+struct TYPE_4__ {int len; } ;
+struct TYPE_3__ {scalar_t__ qid; } ;
+
+
+ scalar_t__ VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ struct skb_frame_desc* FUNC_0 (TYPE_2__*) ;
+ int FUNC_1 (int ,int) ;
+ int FUNC_2 (int ,int,int ) ;
+ int FUNC_3 (int *,int ,int) ;
+
+__attribute__((used)) static void FUNC_4(struct queue_entry *VAR_6)
+{
+ struct queue_entry_priv_mmio *VAR_7 = VAR_6->priv_data;
+ struct skb_frame_desc *VAR_8 = FUNC_0(VAR_6->skb);
+ u32 VAR_9;
+
+ if (VAR_6->queue->qid == VAR_0) {
+  VAR_9 = FUNC_1(VAR_7->desc, 2);
+  FUNC_3(&VAR_9, VAR_3, VAR_6->skb->len);
+  FUNC_2(VAR_7->desc, 2, VAR_9);
+
+  VAR_9 = FUNC_1(VAR_7->desc, 1);
+  FUNC_3(&VAR_9, VAR_2, VAR_8->skb_dma);
+  FUNC_2(VAR_7->desc, 1, VAR_9);
+
+  VAR_9 = FUNC_1(VAR_7->desc, 0);
+  FUNC_3(&VAR_9, VAR_1, 1);
+  FUNC_2(VAR_7->desc, 0, VAR_9);
+ } else {
+  VAR_9 = FUNC_1(VAR_7->desc, 0);
+  FUNC_3(&VAR_9, VAR_5, 0);
+  FUNC_3(&VAR_9, VAR_4, 0);
+  FUNC_2(VAR_7->desc, 0, VAR_9);
+ }
+}

@@ -1,0 +1,34 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_4__ {int tcu; } ;
+struct kone_device {TYPE_2__ settings; } ;
+struct device_attribute {int dummy; } ;
+struct device {TYPE_1__* parent; } ;
+typedef int ssize_t ;
+struct TYPE_3__ {int parent; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ) ;
+ struct kone_device* FUNC_1 (int ) ;
+ int FUNC_2 (char*,int ,char*,int) ;
+
+__attribute__((used)) static ssize_t FUNC_3(struct device *VAR_1,
+  struct device_attribute *VAR_2, char *VAR_3)
+{
+ struct kone_device *VAR_4 =
+   FUNC_1(FUNC_0(VAR_1->parent->parent));
+ return FUNC_2(VAR_3, VAR_0, "%d\n", VAR_4->settings.tcu);
+}

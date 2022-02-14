@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef union acpi_operand_object {int dummy; } acpi_operand_object ;
+
+
+ scalar_t__ VAR_0 ;
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int ,union acpi_operand_object*) ;
+ scalar_t__ FUNC_2 (union acpi_operand_object*) ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_3 (int ,union acpi_operand_object*) ;
+ int FUNC_4 (union acpi_operand_object*) ;
+ int VAR_3 ;
+ int VAR_4 ;
+
+void FUNC_5(union acpi_operand_object *VAR_5)
+{
+ FUNC_1(VAR_4, VAR_5);
+
+
+
+ if (FUNC_2(VAR_5) != VAR_0) {
+  FUNC_0((VAR_1,
+       "%p is not an ACPI Operand object [%s]", VAR_5,
+       FUNC_4(VAR_5)));
+  VAR_3;
+ }
+
+ (void)FUNC_3(VAR_2, VAR_5);
+ VAR_3;
+}

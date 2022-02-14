@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_3__ {int * pe_dd; } ;
+typedef int PE_DataDir ;
+typedef TYPE_1__ PE ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+
+PE_DataDir *
+FUNC_0(PE *VAR_2)
+{
+
+ if (VAR_2->pe_dd == ((void*)0)) {
+  VAR_1 = VAR_0;
+  return (((void*)0));
+ }
+
+ return (VAR_2->pe_dd);
+}

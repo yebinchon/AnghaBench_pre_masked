@@ -1,0 +1,245 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_7__ TYPE_4__ ;
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+typedef int uint16_t ;
+struct TYPE_5__ {int pressed; } ;
+struct TYPE_6__ {TYPE_1__ event; } ;
+typedef TYPE_2__ keyrecord_t ;
+struct TYPE_7__ {int nkro; int raw; } ;
+ int VAR_0 ;
+
+
+ int FUNC_0 (int ) ;
+
+
+
+ int FUNC_1 (char*) ;
+
+
+
+
+
+
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int VAR_8 ;
+ int FUNC_2 () ;
+ int FUNC_3 () ;
+ int FUNC_4 () ;
+ int FUNC_5 () ;
+ int FUNC_6 (int ) ;
+ TYPE_4__ VAR_9 ;
+ int FUNC_7 (int ) ;
+ int FUNC_8 (int ) ;
+ int VAR_10 ;
+ int VAR_11 ;
+ int FUNC_9 (char*) ;
+ int FUNC_10 (int ) ;
+ int FUNC_11 (int ) ;
+ int FUNC_12 () ;
+ int FUNC_13 (int ) ;
+ int FUNC_14 (int ,int ,int ) ;
+
+bool FUNC_15(uint16_t VAR_12, keyrecord_t *VAR_13) {
+  switch (VAR_12) {
+    case 135:
+      if (VAR_13->event.pressed) {
+        FUNC_9("mode just switched to qwerty and this is a huge string\n");
+        FUNC_11(VAR_7);
+      }
+      return 0;
+      break;
+    case 150:
+      if (VAR_13->event.pressed) {
+        FUNC_11(VAR_2);
+      }
+      return 0;
+      break;
+    case 147:
+      if (VAR_13->event.pressed) {
+        FUNC_11(VAR_3);
+      }
+      return 0;
+      break;
+    case 137:
+      if (VAR_13->event.pressed) {
+        FUNC_8(VAR_5);
+        FUNC_14(VAR_5, VAR_8, VAR_1);
+      } else {
+        FUNC_7(VAR_5);
+        FUNC_14(VAR_5, VAR_8, VAR_1);
+      }
+      return 0;
+      break;
+    case 134:
+      if (VAR_13->event.pressed) {
+        FUNC_8(VAR_8);
+        FUNC_14(VAR_5, VAR_8, VAR_1);
+      } else {
+        FUNC_7(VAR_8);
+        FUNC_14(VAR_5, VAR_8, VAR_1);
+      }
+      return 0;
+      break;
+    case 151:
+      if (VAR_13->event.pressed) {
+        FUNC_10(VAR_0);
+
+
+
+      } else {
+        FUNC_13(VAR_0);
+      }
+      return 0;
+      break;
+    case 136:
+      if (VAR_13->event.pressed) {
+
+
+
+
+        FUNC_7(VAR_8);
+        FUNC_7(VAR_5);
+        FUNC_7(VAR_1);
+        FUNC_7(VAR_4);
+        FUNC_8(VAR_6);
+        if (!FUNC_4()) {
+            FUNC_3();
+        }
+        VAR_9.raw = FUNC_5();
+        VAR_9.nkro = 1;
+        FUNC_6(VAR_9.raw);
+      }
+      return 0;
+      break;
+    case 146:
+      if (VAR_13->event.pressed) {
+
+
+
+        FUNC_7(VAR_6);
+      }
+      return 0;
+      break;
+    case 145:
+      if (VAR_13->event.pressed) {
+        FUNC_1("&fliptable;");
+      }
+      return 0;
+      break;
+    case 149:
+      if (VAR_13->event.pressed) {
+        FUNC_1(":-\\");
+      }
+      return 0;
+      break;
+    case 133:
+      if (VAR_13->event.pressed) {
+        FUNC_1("&shit; ");
+      }
+      return 0;
+      break;
+    case 148:
+      if (VAR_13->event.pressed) {
+        FUNC_1(":'-( ");
+      }
+      return 0;
+      break;
+    case 138:
+      if (VAR_13->event.pressed) {
+        FUNC_1("&llap; ");
+      }
+      return 0;
+      break;
+    case 141:
+      if (VAR_13->event.pressed) {
+        FUNC_1(":-D ");
+      }
+      return 0;
+      break;
+    case 129:
+      if (VAR_13->event.pressed) {
+        FUNC_1(":-P ");
+      }
+      return 0;
+      break;
+    case 139:
+      if (VAR_13->event.pressed) {
+        FUNC_1(":-) ");
+      }
+      return 0;
+      break;
+    case 142:
+      if (VAR_13->event.pressed) {
+        FUNC_1(":-( ");
+      }
+      return 0;
+      break;
+    case 140:
+      if (VAR_13->event.pressed) {
+        FUNC_1("<3 ");
+      }
+      return 0;
+      break;
+    case 132:
+      if (VAR_13->event.pressed) {
+        FUNC_1("&shrug; ");
+      }
+      return 0;
+      break;
+    case 130:
+      if (VAR_13->event.pressed) {
+        FUNC_1("&thumbup; ");
+      }
+      return 0;
+      break;
+    case 131:
+      if (VAR_13->event.pressed) {
+        FUNC_1("&thumbdown; ");
+      }
+      return 0;
+      break;
+    case 144:
+      if (VAR_13->event.pressed) {
+        FUNC_1("&fingerleft; ");
+      }
+      return 0;
+      break;
+    case 143:
+      if (VAR_13->event.pressed) {
+        FUNC_1("&fingerright; ");
+      }
+      return 0;
+      break;
+    case 128:
+      if (VAR_13->event.pressed) {
+        FUNC_1(";-) ");
+      }
+      return 0;
+      break;
+    case 152:
+      if (VAR_13->event.pressed) {
+        FUNC_1("&above; ");
+      }
+      return 0;
+      break;
+  }
+  return 1;
+}

@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct crypto_aes_ctx {int key_length; } ;
+
+
+
+__attribute__((used)) static int FUNC_0(struct crypto_aes_ctx *VAR_0)
+{
+
+
+
+
+
+
+
+ return 6 + VAR_0->key_length / 4;
+}

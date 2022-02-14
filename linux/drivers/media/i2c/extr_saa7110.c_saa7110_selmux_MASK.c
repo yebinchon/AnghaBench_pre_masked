@@ -1,0 +1,67 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct v4l2_subdev {int dummy; } ;
+struct saa7110 {int input; } ;
+
+
+
+
+ int FUNC_0 (struct v4l2_subdev*,int,unsigned char const) ;
+ struct saa7110* FUNC_1 (struct v4l2_subdev*) ;
+
+__attribute__((used)) static int FUNC_2(struct v4l2_subdev *VAR_0, int VAR_1)
+{
+ static const unsigned char VAR_2[9][8] = {
+
+  {129, 0xD9, 0x17, 0x40, 0x03,
+         0x44, 0x75, 0x16},
+
+  {129, 0xD8, 0x17, 0x40, 0x03,
+         0x44, 0x75, 0x16},
+
+  {129, 0xBA, 0x07, 0x91, 0x03,
+         0x60, 0xB5, 0x05},
+
+  {129, 0xB8, 0x07, 0x91, 0x03,
+         0x60, 0xB5, 0x05},
+
+  {129, 0x7C, 0x07, 0xD2, 0x83,
+         0x60, 0xB5, 0x03},
+
+  {129, 0x78, 0x07, 0xD2, 0x83,
+         0x60, 0xB5, 0x03},
+
+  {128, 0x59, 0x17, 0x42, 0xA3,
+         0x44, 0x75, 0x12},
+
+  {128, 0x9A, 0x17, 0xB1, 0x13,
+         0x60, 0xB5, 0x14},
+
+  {128, 0x3C, 0x27, 0xC1, 0x23,
+         0x44, 0x75, 0x21}
+ };
+ struct saa7110 *VAR_3 = FUNC_1(VAR_0);
+ const unsigned char *VAR_4 = VAR_2[VAR_1];
+
+ FUNC_0(VAR_0, 0x06, VAR_4[0]);
+ FUNC_0(VAR_0, 0x20, VAR_4[1]);
+ FUNC_0(VAR_0, 0x21, VAR_4[2]);
+ FUNC_0(VAR_0, 0x22, VAR_4[3]);
+ FUNC_0(VAR_0, 0x2C, VAR_4[4]);
+ FUNC_0(VAR_0, 0x30, VAR_4[5]);
+ FUNC_0(VAR_0, 0x31, VAR_4[6]);
+ FUNC_0(VAR_0, 0x21, VAR_4[7]);
+ VAR_3->input = VAR_1;
+
+ return 0;
+}

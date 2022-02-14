@@ -1,0 +1,68 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef scalar_t__ PFNGLVERTEXATTRIBL1UI64VARBPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL1UI64ARBPROC ;
+typedef scalar_t__ PFNGLUNIFORMHANDLEUI64VARBPROC ;
+typedef scalar_t__ PFNGLUNIFORMHANDLEUI64ARBPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORMHANDLEUI64VARBPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORMHANDLEUI64ARBPROC ;
+typedef scalar_t__ PFNGLMAKETEXTUREHANDLERESIDENTARBPROC ;
+typedef scalar_t__ PFNGLMAKETEXTUREHANDLENONRESIDENTARBPROC ;
+typedef scalar_t__ PFNGLMAKEIMAGEHANDLERESIDENTARBPROC ;
+typedef scalar_t__ PFNGLMAKEIMAGEHANDLENONRESIDENTARBPROC ;
+typedef scalar_t__ PFNGLISTEXTUREHANDLERESIDENTARBPROC ;
+typedef scalar_t__ PFNGLISIMAGEHANDLERESIDENTARBPROC ;
+typedef scalar_t__ PFNGLGETVERTEXATTRIBLUI64VARBPROC ;
+typedef scalar_t__ PFNGLGETTEXTURESAMPLERHANDLEARBPROC ;
+typedef scalar_t__ PFNGLGETTEXTUREHANDLEARBPROC ;
+typedef scalar_t__ PFNGLGETIMAGEHANDLEARBPROC ;
+typedef scalar_t__ (* GLADloadproc ) (char*) ;
+
+
+ int VAR_0 ;
+ scalar_t__ VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ VAR_3 ;
+ scalar_t__ VAR_4 ;
+ scalar_t__ VAR_5 ;
+ scalar_t__ VAR_6 ;
+ scalar_t__ VAR_7 ;
+ scalar_t__ VAR_8 ;
+ scalar_t__ VAR_9 ;
+ scalar_t__ VAR_10 ;
+ scalar_t__ VAR_11 ;
+ scalar_t__ VAR_12 ;
+ scalar_t__ VAR_13 ;
+ scalar_t__ VAR_14 ;
+ scalar_t__ VAR_15 ;
+ scalar_t__ VAR_16 ;
+
+__attribute__((used)) static void FUNC_0(GLADloadproc VAR_17) {
+ if(!VAR_0) return;
+ VAR_2 = (PFNGLGETTEXTUREHANDLEARBPROC)VAR_17("glGetTextureHandleARB");
+ VAR_3 = (PFNGLGETTEXTURESAMPLERHANDLEARBPROC)VAR_17("glGetTextureSamplerHandleARB");
+ VAR_10 = (PFNGLMAKETEXTUREHANDLERESIDENTARBPROC)VAR_17("glMakeTextureHandleResidentARB");
+ VAR_9 = (PFNGLMAKETEXTUREHANDLENONRESIDENTARBPROC)VAR_17("glMakeTextureHandleNonResidentARB");
+ VAR_1 = (PFNGLGETIMAGEHANDLEARBPROC)VAR_17("glGetImageHandleARB");
+ VAR_8 = (PFNGLMAKEIMAGEHANDLERESIDENTARBPROC)VAR_17("glMakeImageHandleResidentARB");
+ VAR_7 = (PFNGLMAKEIMAGEHANDLENONRESIDENTARBPROC)VAR_17("glMakeImageHandleNonResidentARB");
+ VAR_13 = (PFNGLUNIFORMHANDLEUI64ARBPROC)VAR_17("glUniformHandleui64ARB");
+ VAR_14 = (PFNGLUNIFORMHANDLEUI64VARBPROC)VAR_17("glUniformHandleui64vARB");
+ VAR_11 = (PFNGLPROGRAMUNIFORMHANDLEUI64ARBPROC)VAR_17("glProgramUniformHandleui64ARB");
+ VAR_12 = (PFNGLPROGRAMUNIFORMHANDLEUI64VARBPROC)VAR_17("glProgramUniformHandleui64vARB");
+ VAR_6 = (PFNGLISTEXTUREHANDLERESIDENTARBPROC)VAR_17("glIsTextureHandleResidentARB");
+ VAR_5 = (PFNGLISIMAGEHANDLERESIDENTARBPROC)VAR_17("glIsImageHandleResidentARB");
+ VAR_15 = (PFNGLVERTEXATTRIBL1UI64ARBPROC)VAR_17("glVertexAttribL1ui64ARB");
+ VAR_16 = (PFNGLVERTEXATTRIBL1UI64VARBPROC)VAR_17("glVertexAttribL1ui64vARB");
+ VAR_4 = (PFNGLGETVERTEXATTRIBLUI64VARBPROC)VAR_17("glGetVertexAttribLui64vARB");
+}

@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct dvb_frontend {struct dib8000_state* demodulator_priv; } ;
+struct dib8000_state {int revision; } ;
+
+
+ int FUNC_0 (struct dib8000_state*,int) ;
+
+__attribute__((used)) static int FUNC_1(struct dvb_frontend *VAR_0, u32 * VAR_1)
+{
+ struct dib8000_state *VAR_2 = VAR_0->demodulator_priv;
+
+
+ if (VAR_2->revision == 0x8090)
+  *VAR_1 = FUNC_0(VAR_2, 567);
+ else
+  *VAR_1 = FUNC_0(VAR_2, 565);
+ return 0;
+}

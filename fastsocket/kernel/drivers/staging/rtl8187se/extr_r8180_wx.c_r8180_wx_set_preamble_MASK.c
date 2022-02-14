@@ -1,0 +1,47 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef union iwreq_data {int dummy; } iwreq_data ;
+struct r8180_priv {short plcp_preamble_mode; int wx_sem; TYPE_1__* ieee80211; } ;
+struct net_device {int dummy; } ;
+struct iw_request_info {int dummy; } ;
+struct TYPE_2__ {scalar_t__ bHwRadioOff; } ;
+
+
+ int FUNC_0 (int *) ;
+ struct r8180_priv* FUNC_1 (struct net_device*) ;
+ int FUNC_2 (int *) ;
+
+__attribute__((used)) static int FUNC_3(struct net_device *VAR_0,
+        struct iw_request_info *VAR_1,
+        union iwreq_data *VAR_2, char *VAR_3)
+{
+ struct r8180_priv *VAR_4 = FUNC_1(VAR_0);
+ int VAR_5 = 0;
+
+
+ if(VAR_4->ieee80211->bHwRadioOff)
+  return 0;
+
+ FUNC_0(&VAR_4->wx_sem);
+ if (*VAR_3<0||*VAR_3>2)
+  VAR_5 = -1;
+ else
+  VAR_4->plcp_preamble_mode = *((short *)VAR_3) ;
+
+
+
+ FUNC_2(&VAR_4->wx_sem);
+
+ return VAR_5;
+}

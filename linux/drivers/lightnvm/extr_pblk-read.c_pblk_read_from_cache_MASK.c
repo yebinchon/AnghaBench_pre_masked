@@ -1,0 +1,34 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ppa_addr {int dummy; } ;
+struct pblk {int rwb; } ;
+struct bio {int dummy; } ;
+typedef int sector_t ;
+
+
+ int FUNC_0 (int) ;
+ int FUNC_1 (struct ppa_addr) ;
+ int FUNC_2 (struct ppa_addr) ;
+ int FUNC_3 (int *,struct bio*,int ,struct ppa_addr) ;
+
+__attribute__((used)) static int FUNC_4(struct pblk *VAR_0, struct bio *VAR_1,
+    sector_t VAR_2, struct ppa_addr VAR_3)
+{
+
+
+
+
+
+
+ return FUNC_3(&VAR_0->rwb, VAR_1, VAR_2, VAR_3);
+}

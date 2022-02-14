@@ -1,0 +1,92 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+ scalar_t__ FUNC_0 (scalar_t__,char*) ;
+ scalar_t__ FUNC_1 (char*) ;
+ scalar_t__ VAR_0 ;
+ int FUNC_2 (int,char*) ;
+ void* VAR_1 ;
+ void* VAR_2 ;
+ void* VAR_3 ;
+ void* VAR_4 ;
+ void* VAR_5 ;
+ void* VAR_6 ;
+ void* VAR_7 ;
+ void* VAR_8 ;
+ void* VAR_9 ;
+ void* VAR_10 ;
+ void* VAR_11 ;
+ void* VAR_12 ;
+ void* VAR_13 ;
+ void* VAR_14 ;
+ void* VAR_15 ;
+ void* VAR_16 ;
+ void* VAR_17 ;
+ void* VAR_18 ;
+ void* VAR_19 ;
+ void* VAR_20 ;
+ void* VAR_21 ;
+ void* VAR_22 ;
+ void* VAR_23 ;
+ void* VAR_24 ;
+ void* VAR_25 ;
+ void* VAR_26 ;
+ void* VAR_27 ;
+ void* VAR_28 ;
+ void* VAR_29 ;
+ void* VAR_30 ;
+ void* VAR_31 ;
+ void* VAR_32 ;
+ void* VAR_33 ;
+ void* VAR_34 ;
+ void* VAR_35 ;
+ void* VAR_36 ;
+ void* VAR_37 ;
+
+__attribute__((used)) static void FUNC_3(void)
+{
+    VAR_0 = FUNC_1("ntdll.dll");
+    FUNC_2(VAR_0 != 0, "LoadLibrary failed\n");
+    if (VAR_0) {
+ VAR_1 = (void *)FUNC_0(VAR_0, "RtlAnsiStringToUnicodeString");
+ VAR_2 = (void *)FUNC_0(VAR_0, "RtlAppendAsciizToString");
+ VAR_3 = (void *)FUNC_0(VAR_0, "RtlAppendStringToString");
+ VAR_4 = (void *)FUNC_0(VAR_0, "RtlAppendUnicodeStringToString");
+ VAR_5 = (void *)FUNC_0(VAR_0, "RtlAppendUnicodeToString");
+ VAR_6 = (void *)FUNC_0(VAR_0, "RtlCharToInteger");
+ VAR_7 = (void *)FUNC_0(VAR_0, "RtlCompareUnicodeString");
+ VAR_8 = (void *)FUNC_0(VAR_0, "RtlCompareUnicodeStrings");
+ VAR_9 = (void *)FUNC_0(VAR_0, "RtlCopyString");
+ VAR_10 = (void *)FUNC_0(VAR_0, "RtlCreateUnicodeString");
+ VAR_11 = (void *)FUNC_0(VAR_0, "RtlCreateUnicodeStringFromAsciiz");
+ VAR_12 = (void *)FUNC_0(VAR_0, "RtlDowncaseUnicodeString");
+ VAR_13 = (void *)FUNC_0(VAR_0, "RtlDuplicateUnicodeString");
+ VAR_14 = (void *)FUNC_0(VAR_0, "RtlEqualUnicodeString");
+ VAR_15 = (void *)FUNC_0(VAR_0, "RtlFindCharInUnicodeString");
+ VAR_16 = (void *)FUNC_0(VAR_0, "RtlFreeAnsiString");
+ VAR_17 = (void *)FUNC_0(VAR_0, "RtlFreeUnicodeString");
+ VAR_20 = (void *)FUNC_0(VAR_0, "RtlInitAnsiString");
+ VAR_21 = (void *)FUNC_0(VAR_0, "RtlInitString");
+ VAR_22 = (void *)FUNC_0(VAR_0, "RtlInitUnicodeString");
+ VAR_23 = (void *)FUNC_0(VAR_0, "RtlInitUnicodeStringEx");
+ VAR_24 = (void *)FUNC_0(VAR_0, "RtlIntegerToChar");
+ VAR_25 = (void *)FUNC_0(VAR_0, "RtlIntegerToUnicodeString");
+ VAR_27 = (void *)FUNC_0(VAR_0, "RtlMultiAppendUnicodeStringBuffer");
+ VAR_30 = (void *)FUNC_0(VAR_0, "RtlUnicodeStringToAnsiString");
+ VAR_31 = (void *)FUNC_0(VAR_0, "RtlUnicodeStringToInteger");
+ VAR_33 = (void *)FUNC_0(VAR_0, "RtlUpcaseUnicodeChar");
+ VAR_34 = (void *)FUNC_0(VAR_0, "RtlUpcaseUnicodeString");
+ VAR_35 = (void *)FUNC_0(VAR_0, "RtlUpperChar");
+ VAR_36 = (void *)FUNC_0(VAR_0, "RtlUpperString");
+ VAR_37 = (void *)FUNC_0(VAR_0, "RtlValidateUnicodeString");
+ VAR_18 = (void *)FUNC_0(VAR_0, "RtlGUIDFromString");
+ VAR_28 = (void *)FUNC_0(VAR_0, "RtlStringFromGUID");
+ VAR_26 = (void *)FUNC_0(VAR_0, "RtlIsTextUnicode");
+        VAR_19 = (void*)FUNC_0(VAR_0, "RtlHashUnicodeString");
+        VAR_32 = (void*)FUNC_0(VAR_0, "RtlUnicodeToUTF8N");
+        VAR_29 = (void*)FUNC_0(VAR_0, "RtlUTF8ToUnicodeN");
+    }
+}

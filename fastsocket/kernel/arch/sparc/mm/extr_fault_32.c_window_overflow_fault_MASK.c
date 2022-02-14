@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {unsigned long* rwbuf_stkptrs; } ;
+
+
+ unsigned long VAR_0 ;
+ TYPE_1__* FUNC_0 () ;
+ int FUNC_1 (unsigned long,int) ;
+
+void FUNC_2(void)
+{
+ unsigned long VAR_1;
+
+ VAR_1 = FUNC_0()->rwbuf_stkptrs[0];
+ if(((VAR_1 + 0x38) & VAR_0) != (VAR_1 & VAR_0))
+  FUNC_1(VAR_1 + 0x38, 1);
+ FUNC_1(VAR_1, 1);
+}

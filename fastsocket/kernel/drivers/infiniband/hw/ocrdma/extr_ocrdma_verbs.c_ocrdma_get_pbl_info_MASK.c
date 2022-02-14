@@ -1,0 +1,51 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_3__ ;
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+typedef int u64 ;
+typedef int u32 ;
+struct TYPE_6__ {int num_pbes; int num_pbls; int pbl_size; TYPE_2__* dev; } ;
+struct ocrdma_mr {TYPE_3__ hwmr; } ;
+struct TYPE_4__ {int max_num_mr_pbl; } ;
+struct TYPE_5__ {TYPE_1__ attr; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (int,int) ;
+
+__attribute__((used)) static int FUNC_1(struct ocrdma_mr *VAR_3, u32 VAR_4)
+{
+ u32 VAR_5 = 0;
+ u32 VAR_6 = 0;
+ int VAR_7 = 0;
+ u32 VAR_8;
+
+ do {
+  VAR_8 = VAR_2 * (1 << VAR_6);
+  if (VAR_8 > VAR_1) {
+   VAR_7 = -VAR_0;
+   break;
+  }
+  VAR_5 = FUNC_0(VAR_4, (VAR_8 / sizeof(u64)));
+  VAR_5 = VAR_5 / (VAR_8 / sizeof(u64));
+  VAR_6++;
+ } while (VAR_5 >= VAR_3->hwmr.dev->attr.max_num_mr_pbl);
+
+ VAR_3->hwmr.num_pbes = VAR_4;
+ VAR_3->hwmr.num_pbls = VAR_5;
+ VAR_3->hwmr.pbl_size = VAR_8;
+ return VAR_7;
+}

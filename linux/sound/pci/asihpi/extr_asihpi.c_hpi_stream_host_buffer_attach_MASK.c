@@ -1,0 +1,62 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_8__ TYPE_4__ ;
+typedef struct TYPE_7__ TYPE_3__ ;
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+typedef void* u32 ;
+typedef int u16 ;
+struct hpi_response {int error; } ;
+struct TYPE_5__ {int command; void* pci_address; void* buffer_size; } ;
+struct TYPE_6__ {TYPE_1__ buffer; } ;
+struct TYPE_7__ {TYPE_2__ u; } ;
+struct TYPE_8__ {TYPE_3__ d; } ;
+struct hpi_message {TYPE_4__ u; int obj_index; int adapter_index; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ unsigned int VAR_3 ;
+ int VAR_4 ;
+ unsigned int FUNC_0 (void*) ;
+ int FUNC_1 (void*,int *,int *) ;
+ int FUNC_2 (struct hpi_message*,struct hpi_response*,unsigned int,int ) ;
+ int FUNC_3 (struct hpi_message*,struct hpi_response*) ;
+
+__attribute__((used)) static u16 FUNC_4(
+ u32 VAR_5,
+ u32 VAR_6,
+ u32 VAR_7
+)
+{
+ struct hpi_message VAR_8;
+ struct hpi_response VAR_9;
+ unsigned int VAR_10 = FUNC_0(VAR_5);
+
+ if (!VAR_5)
+  return VAR_1;
+ FUNC_2(&VAR_8, &VAR_9, VAR_10,
+   VAR_10 == VAR_3 ?
+    VAR_4 :
+    VAR_2);
+
+ FUNC_1(VAR_5, &VAR_8.adapter_index,
+    &VAR_8.obj_index);
+
+ VAR_8.u.d.u.buffer.buffer_size = VAR_6;
+ VAR_8.u.d.u.buffer.pci_address = VAR_7;
+ VAR_8.u.d.u.buffer.command = VAR_0;
+ FUNC_3(&VAR_8, &VAR_9);
+ return VAR_9.error;
+}

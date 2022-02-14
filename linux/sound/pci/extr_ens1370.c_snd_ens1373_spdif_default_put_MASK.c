@@ -1,0 +1,49 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+typedef int u32 ;
+struct snd_kcontrol {int dummy; } ;
+struct TYPE_3__ {scalar_t__* status; } ;
+struct TYPE_4__ {TYPE_1__ iec958; } ;
+struct snd_ctl_elem_value {TYPE_2__ value; } ;
+struct ensoniq {unsigned int spdif_default; int reg_lock; int * playback2_substream; int * playback1_substream; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct ensoniq*,int ) ;
+ int FUNC_1 (unsigned int,int ) ;
+ struct ensoniq* FUNC_2 (struct snd_kcontrol*) ;
+ int FUNC_3 (int *) ;
+ int FUNC_4 (int *) ;
+
+__attribute__((used)) static int FUNC_5(struct snd_kcontrol *VAR_1,
+                                         struct snd_ctl_elem_value *VAR_2)
+{
+ struct ensoniq *VAR_3 = FUNC_2(VAR_1);
+ unsigned int VAR_4;
+ int VAR_5;
+
+ VAR_4 = ((u32)VAR_2->value.iec958.status[0] << 0) |
+       ((u32)VAR_2->value.iec958.status[1] << 8) |
+       ((u32)VAR_2->value.iec958.status[2] << 16) |
+       ((u32)VAR_2->value.iec958.status[3] << 24);
+ FUNC_3(&VAR_3->reg_lock);
+ VAR_5 = VAR_3->spdif_default != VAR_4;
+ VAR_3->spdif_default = VAR_4;
+ if (VAR_5 && VAR_3->playback1_substream == ((void*)0) &&
+     VAR_3->playback2_substream == ((void*)0))
+  FUNC_1(VAR_4, FUNC_0(VAR_3, VAR_0));
+ FUNC_4(&VAR_3->reg_lock);
+ return VAR_5;
+}

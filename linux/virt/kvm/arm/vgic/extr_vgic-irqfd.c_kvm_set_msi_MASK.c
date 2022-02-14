@@ -1,0 +1,37 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct kvm_msi {int dummy; } ;
+struct kvm_kernel_irq_routing_entry {int dummy; } ;
+struct kvm {int dummy; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct kvm_kernel_irq_routing_entry*,struct kvm_msi*) ;
+ int FUNC_1 (struct kvm*) ;
+ int FUNC_2 (struct kvm*,struct kvm_msi*) ;
+
+int FUNC_3(struct kvm_kernel_irq_routing_entry *VAR_1,
+  struct kvm *VAR_2, int VAR_3,
+  int VAR_4, bool VAR_5)
+{
+ struct kvm_msi VAR_6;
+
+ if (!FUNC_1(VAR_2))
+  return -VAR_0;
+
+ if (!VAR_4)
+  return -1;
+
+ FUNC_0(VAR_1, &VAR_6);
+ return FUNC_2(VAR_2, &VAR_6);
+}

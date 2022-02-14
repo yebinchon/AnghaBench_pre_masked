@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct zoltrix {int curvol; int lock; int io; } ;
+
+
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int) ;
+ int FUNC_2 (int *) ;
+ int FUNC_3 (int *) ;
+ int FUNC_4 (int,int ) ;
+
+__attribute__((used)) static int FUNC_5(struct zoltrix *VAR_0)
+{
+ int VAR_1, VAR_2;
+
+ FUNC_2(&VAR_0->lock);
+ FUNC_4(0x00, VAR_0->io);
+ FUNC_4(VAR_0->curvol, VAR_0->io);
+ FUNC_1(20);
+
+ VAR_1 = FUNC_0(VAR_0->io);
+ FUNC_1(10);
+ VAR_2 = FUNC_0(VAR_0->io);
+
+ FUNC_3(&VAR_0->lock);
+
+ if (VAR_1 != VAR_2)
+  return 0;
+
+
+ return VAR_1 == 0xcf || VAR_1 == 0xdf || VAR_1 == 0xef;
+}

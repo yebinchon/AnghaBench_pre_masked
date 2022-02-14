@@ -1,0 +1,81 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef scalar_t__ u8 ;
+struct tlsv1_client {int state; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ scalar_t__ VAR_5 ;
+ scalar_t__ VAR_6 ;
+ size_t FUNC_0 (scalar_t__ const*) ;
+ int FUNC_1 (struct tlsv1_client*,int ,int ) ;
+ int FUNC_2 (int ,char*,...) ;
+
+__attribute__((used)) static int FUNC_3(struct tlsv1_client *VAR_7, u8 VAR_8,
+      const u8 *VAR_9, size_t *VAR_10)
+{
+ const u8 *VAR_11, *VAR_12;
+ size_t VAR_13, VAR_14;
+ u8 VAR_15;
+
+ if (VAR_8 != VAR_5) {
+  FUNC_2(VAR_1, "TLSv1: Expected Handshake; "
+      "received content type 0x%x", VAR_8);
+  FUNC_1(VAR_7, VAR_3,
+     VAR_4);
+  return -1;
+ }
+
+ VAR_11 = VAR_9;
+ VAR_13 = *VAR_10;
+
+ if (VAR_13 < 4) {
+  FUNC_2(VAR_1, "TLSv1: Too short ServerHelloDone "
+      "(left=%lu)", (unsigned long) VAR_13);
+  FUNC_1(VAR_7, VAR_3, VAR_2);
+  return -1;
+ }
+
+ VAR_15 = *VAR_11++;
+ VAR_14 = FUNC_0(VAR_11);
+ VAR_11 += 3;
+ VAR_13 -= 4;
+
+ if (VAR_14 > VAR_13) {
+  FUNC_2(VAR_1, "TLSv1: Mismatch in ServerHelloDone "
+      "length (len=%lu != left=%lu)",
+      (unsigned long) VAR_14, (unsigned long) VAR_13);
+  FUNC_1(VAR_7, VAR_3, VAR_2);
+  return -1;
+ }
+ VAR_12 = VAR_11 + VAR_14;
+
+ if (VAR_15 != VAR_6) {
+  FUNC_2(VAR_1, "TLSv1: Received unexpected handshake "
+      "message %d (expected ServerHelloDone)", VAR_15);
+  FUNC_1(VAR_7, VAR_3,
+     VAR_4);
+  return -1;
+ }
+
+ FUNC_2(VAR_1, "TLSv1: Received ServerHelloDone");
+
+ *VAR_10 = VAR_12 - VAR_9;
+ VAR_7->state = VAR_0;
+
+ return 0;
+}

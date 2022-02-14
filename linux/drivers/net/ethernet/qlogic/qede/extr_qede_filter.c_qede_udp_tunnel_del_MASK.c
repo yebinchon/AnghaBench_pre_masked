@@ -1,0 +1,81 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int u16 ;
+typedef int tunn_params ;
+struct udp_tunnel_info {int type; int port; } ;
+struct qede_dev {int geneve_dst_port; int cdev; TYPE_1__* ops; int vxlan_dst_port; } ;
+struct qed_tunn_params {int update_vxlan_port; int update_geneve_port; int geneve_port; int vxlan_port; } ;
+struct net_device {int dummy; } ;
+struct TYPE_2__ {int (* tunn_config ) (int ,struct qed_tunn_params*) ;} ;
+
+
+ int FUNC_0 (struct qede_dev*,int ,char*,int ) ;
+ int VAR_0 ;
+
+
+ int FUNC_1 (struct qede_dev*) ;
+ int FUNC_2 (struct qede_dev*) ;
+ int FUNC_3 (struct qed_tunn_params*,int ,int) ;
+ struct qede_dev* FUNC_4 (struct net_device*) ;
+ int FUNC_5 (int ) ;
+ int FUNC_6 (int ,struct qed_tunn_params*) ;
+ int FUNC_7 (int ,struct qed_tunn_params*) ;
+
+void FUNC_8(struct net_device *VAR_1,
+    struct udp_tunnel_info *VAR_2)
+{
+ struct qede_dev *VAR_3 = FUNC_4(VAR_1);
+ struct qed_tunn_params VAR_4;
+ u16 VAR_5 = FUNC_5(VAR_2->port);
+
+ FUNC_3(&VAR_4, 0, sizeof(VAR_4));
+
+ switch (VAR_2->type) {
+ case 128:
+  if (VAR_5 != VAR_3->vxlan_dst_port)
+   return;
+
+  VAR_4.update_vxlan_port = 1;
+  VAR_4.vxlan_port = 0;
+
+  FUNC_1(VAR_3);
+  VAR_3->ops->tunn_config(VAR_3->cdev, &VAR_4);
+  FUNC_2(VAR_3);
+
+  VAR_3->vxlan_dst_port = 0;
+
+  FUNC_0(VAR_3, VAR_0, "Deleted vxlan port=%d\n",
+      VAR_5);
+
+  break;
+ case 129:
+  if (VAR_5 != VAR_3->geneve_dst_port)
+   return;
+
+  VAR_4.update_geneve_port = 1;
+  VAR_4.geneve_port = 0;
+
+  FUNC_1(VAR_3);
+  VAR_3->ops->tunn_config(VAR_3->cdev, &VAR_4);
+  FUNC_2(VAR_3);
+
+  VAR_3->geneve_dst_port = 0;
+
+  FUNC_0(VAR_3, VAR_0, "Deleted geneve port=%d\n",
+      VAR_5);
+  break;
+ default:
+  return;
+ }
+}

@@ -1,0 +1,35 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct stat {scalar_t__ st_mode; scalar_t__ st_uid; scalar_t__ st_gid; scalar_t__ st_size; scalar_t__ st_mtime; } ;
+
+
+
+__attribute__((used)) static int FUNC_0 (struct stat *VAR_0, struct stat *VAR_1) {
+  int VAR_2 = 0;
+  if (VAR_0->st_mode != VAR_1->st_mode) {
+    VAR_2 |= 1;
+  }
+  if (VAR_0->st_uid != VAR_1->st_uid) {
+    VAR_2 |= 2;
+  }
+  if (VAR_0->st_gid != VAR_1->st_gid) {
+    VAR_2 |= 4;
+  }
+  if (VAR_0->st_size != VAR_1->st_size) {
+    VAR_2 |= 8;
+  }
+  if (VAR_0->st_mtime != VAR_1->st_mtime) {
+    VAR_2 |= 16;
+  }
+  return VAR_2;
+}

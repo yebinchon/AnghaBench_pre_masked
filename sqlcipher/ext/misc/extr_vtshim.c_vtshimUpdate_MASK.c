@@ -1,0 +1,46 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_3__ ;
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct TYPE_5__ {int pChild; TYPE_3__* pAux; } ;
+typedef TYPE_2__ vtshim_vtab ;
+struct TYPE_6__ {TYPE_1__* pMod; scalar_t__ bDisposed; } ;
+typedef TYPE_3__ vtshim_aux ;
+typedef int sqlite3_vtab ;
+typedef int sqlite3_value ;
+typedef int sqlite3_int64 ;
+struct TYPE_4__ {int (* xUpdate ) (int ,int,int **,int *) ;} ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 () ;
+ int FUNC_1 (int ,int,int **,int *) ;
+
+__attribute__((used)) static int FUNC_2(
+  sqlite3_vtab *VAR_2,
+  int VAR_3,
+  sqlite3_value **VAR_4,
+  sqlite3_int64 *VAR_5
+){
+  vtshim_vtab *VAR_6 = (vtshim_vtab*)VAR_2;
+  vtshim_aux *VAR_7 = VAR_6->pAux;
+  int VAR_8;
+  if( VAR_7->bDisposed ) return VAR_0;
+  VAR_8 = VAR_7->pMod->xUpdate(VAR_6->pChild, VAR_3, VAR_4, VAR_5);
+  if( VAR_8!=VAR_1 ){
+    FUNC_0();
+  }
+  return VAR_8;
+}

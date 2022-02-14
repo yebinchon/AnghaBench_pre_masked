@@ -1,0 +1,28 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct strbuf {scalar_t__ len; scalar_t__ buf; } ;
+
+
+ int FUNC_0 (scalar_t__,void const*,size_t) ;
+ int FUNC_1 (struct strbuf*,size_t) ;
+ int FUNC_2 (struct strbuf*,scalar_t__) ;
+
+int FUNC_3(struct strbuf *VAR_0, const void *VAR_1, size_t VAR_2)
+{
+ int VAR_3 = FUNC_1(VAR_0, VAR_2);
+ if (VAR_3)
+  return VAR_3;
+
+ FUNC_0(VAR_0->buf + VAR_0->len, VAR_1, VAR_2);
+ return FUNC_2(VAR_0, VAR_0->len + VAR_2);
+}

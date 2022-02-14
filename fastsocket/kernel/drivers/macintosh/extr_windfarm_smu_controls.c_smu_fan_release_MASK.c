@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct wf_control {int dummy; } ;
+struct smu_fan_control {int dummy; } ;
+
+
+ int FUNC_0 (struct smu_fan_control*) ;
+ struct smu_fan_control* FUNC_1 (struct wf_control*) ;
+
+__attribute__((used)) static void FUNC_2(struct wf_control *VAR_0)
+{
+ struct smu_fan_control *VAR_1 = FUNC_1(VAR_0);
+
+ FUNC_0(VAR_1);
+}

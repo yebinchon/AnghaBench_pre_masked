@@ -1,0 +1,28 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int u32 ;
+struct TYPE_2__ {int * page_addr; } ;
+struct intel_ring_buffer {TYPE_1__ status_page; } ;
+
+
+ int FUNC_0 () ;
+
+__attribute__((used)) static inline u32
+FUNC_1(struct intel_ring_buffer *VAR_0,
+         int VAR_1)
+{
+
+ FUNC_0();
+ return VAR_0->status_page.page_addr[VAR_1];
+}

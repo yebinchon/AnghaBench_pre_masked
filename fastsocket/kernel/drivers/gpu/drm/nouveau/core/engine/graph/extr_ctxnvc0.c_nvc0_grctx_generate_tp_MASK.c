@@ -1,0 +1,113 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct nvc0_graph_priv {int dummy; } ;
+struct TYPE_2__ {int chipset; } ;
+
+
+ TYPE_1__* FUNC_0 (struct nvc0_graph_priv*) ;
+ int FUNC_1 (struct nvc0_graph_priv*,int,int) ;
+
+__attribute__((used)) static void
+FUNC_2(struct nvc0_graph_priv *VAR_0)
+{
+ int VAR_1 = FUNC_0(VAR_0)->chipset;
+
+
+ FUNC_1(VAR_0, 0x419818, 0x00000000);
+ FUNC_1(VAR_0, 0x41983c, 0x00038bc7);
+ FUNC_1(VAR_0, 0x419848, 0x00000000);
+ if (VAR_1 == 0xc1 || VAR_1 == 0xd9)
+  FUNC_1(VAR_0, 0x419864, 0x00000129);
+ else
+  FUNC_1(VAR_0, 0x419864, 0x0000012a);
+ FUNC_1(VAR_0, 0x419888, 0x00000000);
+ FUNC_1(VAR_0, 0x419a00, 0x000001f0);
+ FUNC_1(VAR_0, 0x419a04, 0x00000001);
+ FUNC_1(VAR_0, 0x419a08, 0x00000023);
+ FUNC_1(VAR_0, 0x419a0c, 0x00020000);
+ FUNC_1(VAR_0, 0x419a10, 0x00000000);
+ FUNC_1(VAR_0, 0x419a14, 0x00000200);
+ FUNC_1(VAR_0, 0x419a1c, 0x00000000);
+ FUNC_1(VAR_0, 0x419a20, 0x00000800);
+ if (VAR_1 == 0xd9)
+  FUNC_1(VAR_0, 0x00419ac4, 0x0017f440);
+ else if (VAR_1 != 0xc0 && VAR_1 != 0xc8)
+  FUNC_1(VAR_0, 0x00419ac4, 0x0007f440);
+ FUNC_1(VAR_0, 0x419b00, 0x0a418820);
+ FUNC_1(VAR_0, 0x419b04, 0x062080e6);
+ FUNC_1(VAR_0, 0x419b08, 0x020398a4);
+ FUNC_1(VAR_0, 0x419b0c, 0x0e629062);
+ FUNC_1(VAR_0, 0x419b10, 0x0a418820);
+ FUNC_1(VAR_0, 0x419b14, 0x000000e6);
+ FUNC_1(VAR_0, 0x419bd0, 0x00900103);
+ if (VAR_1 == 0xc1 || VAR_1 == 0xd9)
+  FUNC_1(VAR_0, 0x419be0, 0x00400001);
+ else
+  FUNC_1(VAR_0, 0x419be0, 0x00000001);
+ FUNC_1(VAR_0, 0x419be4, 0x00000000);
+ FUNC_1(VAR_0, 0x419c00, VAR_1 != 0xd9 ? 0x00000002 : 0x0000000a);
+ FUNC_1(VAR_0, 0x419c04, 0x00000006);
+ FUNC_1(VAR_0, 0x419c08, 0x00000002);
+ FUNC_1(VAR_0, 0x419c20, 0x00000000);
+ if (FUNC_0(VAR_0)->chipset == 0xd9) {
+  FUNC_1(VAR_0, 0x419c24, 0x00084210);
+  FUNC_1(VAR_0, 0x419c28, 0x3cf3cf3c);
+  FUNC_1(VAR_0, 0x419cb0, 0x00020048);
+ } else
+ if (VAR_1 == 0xce || VAR_1 == 0xcf) {
+  FUNC_1(VAR_0, 0x419cb0, 0x00020048);
+ } else {
+  FUNC_1(VAR_0, 0x419cb0, 0x00060048);
+ }
+ FUNC_1(VAR_0, 0x419ce8, 0x00000000);
+ FUNC_1(VAR_0, 0x419cf4, 0x00000183);
+ if (VAR_1 == 0xc1 || VAR_1 == 0xd9)
+  FUNC_1(VAR_0, 0x419d20, 0x12180000);
+ else
+  FUNC_1(VAR_0, 0x419d20, 0x02180000);
+ FUNC_1(VAR_0, 0x419d24, 0x00001fff);
+ if (VAR_1 == 0xc1 || VAR_1 == 0xd9)
+  FUNC_1(VAR_0, 0x419d44, 0x02180218);
+ FUNC_1(VAR_0, 0x419e04, 0x00000000);
+ FUNC_1(VAR_0, 0x419e08, 0x00000000);
+ FUNC_1(VAR_0, 0x419e0c, 0x00000000);
+ FUNC_1(VAR_0, 0x419e10, 0x00000002);
+ FUNC_1(VAR_0, 0x419e44, 0x001beff2);
+ FUNC_1(VAR_0, 0x419e48, 0x00000000);
+ FUNC_1(VAR_0, 0x419e4c, 0x0000000f);
+ FUNC_1(VAR_0, 0x419e50, 0x00000000);
+ FUNC_1(VAR_0, 0x419e54, 0x00000000);
+ FUNC_1(VAR_0, 0x419e58, 0x00000000);
+ FUNC_1(VAR_0, 0x419e5c, 0x00000000);
+ FUNC_1(VAR_0, 0x419e60, 0x00000000);
+ FUNC_1(VAR_0, 0x419e64, 0x00000000);
+ FUNC_1(VAR_0, 0x419e68, 0x00000000);
+ FUNC_1(VAR_0, 0x419e6c, 0x00000000);
+ FUNC_1(VAR_0, 0x419e70, 0x00000000);
+ FUNC_1(VAR_0, 0x419e74, 0x00000000);
+ FUNC_1(VAR_0, 0x419e78, 0x00000000);
+ FUNC_1(VAR_0, 0x419e7c, 0x00000000);
+ FUNC_1(VAR_0, 0x419e80, 0x00000000);
+ FUNC_1(VAR_0, 0x419e84, 0x00000000);
+ FUNC_1(VAR_0, 0x419e88, 0x00000000);
+ FUNC_1(VAR_0, 0x419e8c, 0x00000000);
+ FUNC_1(VAR_0, 0x419e90, 0x00000000);
+ FUNC_1(VAR_0, 0x419e98, 0x00000000);
+ if (VAR_1 != 0xc0 && VAR_1 != 0xc8)
+  FUNC_1(VAR_0, 0x419ee0, 0x00011110);
+ FUNC_1(VAR_0, 0x419f50, 0x00000000);
+ FUNC_1(VAR_0, 0x419f54, 0x00000000);
+ if (VAR_1 != 0xc0 && VAR_1 != 0xc8)
+  FUNC_1(VAR_0, 0x419f58, 0x00000000);
+}

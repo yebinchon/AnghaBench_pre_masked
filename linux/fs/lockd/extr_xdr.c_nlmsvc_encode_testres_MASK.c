@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct svc_rqst {struct nlm_res* rq_resp; } ;
+struct nlm_res {int dummy; } ;
+typedef int __be32 ;
+
+
+ int * FUNC_0 (int *,struct nlm_res*) ;
+ int FUNC_1 (struct svc_rqst*,int *) ;
+
+int
+FUNC_2(struct svc_rqst *VAR_0, __be32 *VAR_1)
+{
+ struct nlm_res *VAR_2 = VAR_0->rq_resp;
+
+ if (!(VAR_1 = FUNC_0(VAR_1, VAR_2)))
+  return 0;
+ return FUNC_1(VAR_0, VAR_1);
+}

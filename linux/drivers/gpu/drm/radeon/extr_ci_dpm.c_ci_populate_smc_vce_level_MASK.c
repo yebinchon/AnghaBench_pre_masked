@@ -1,0 +1,73 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_15__ TYPE_7__ ;
+typedef struct TYPE_14__ TYPE_6__ ;
+typedef struct TYPE_13__ TYPE_5__ ;
+typedef struct TYPE_12__ TYPE_4__ ;
+typedef struct TYPE_11__ TYPE_3__ ;
+typedef struct TYPE_10__ TYPE_2__ ;
+typedef struct TYPE_9__ TYPE_1__ ;
+
+
+typedef scalar_t__ u8 ;
+typedef size_t u32 ;
+typedef int u16 ;
+struct TYPE_10__ {size_t count; TYPE_1__* entries; } ;
+struct TYPE_11__ {TYPE_2__ vce_clock_voltage_dependency_table; } ;
+struct TYPE_12__ {TYPE_3__ dyn_state; } ;
+struct TYPE_13__ {TYPE_4__ dpm; } ;
+struct radeon_device {TYPE_5__ pm; } ;
+struct atom_clock_dividers {scalar_t__ post_divider; } ;
+struct TYPE_15__ {size_t VceLevelCount; TYPE_6__* VceLevel; } ;
+struct TYPE_14__ {int MinVoltage; int MinPhases; int Frequency; scalar_t__ Divider; } ;
+struct TYPE_9__ {scalar_t__ v; int evclk; } ;
+typedef TYPE_7__ SMU7_Discrete_DpmTable ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (int) ;
+ int FUNC_1 (int ) ;
+ int FUNC_2 (struct radeon_device*,int ,int ,int,struct atom_clock_dividers*) ;
+
+__attribute__((used)) static int FUNC_3(struct radeon_device *VAR_3,
+         SMU7_Discrete_DpmTable *VAR_4)
+{
+ u32 VAR_5;
+ struct atom_clock_dividers VAR_6;
+ int VAR_7 = -VAR_1;
+
+ VAR_4->VceLevelCount =
+  VAR_3->pm.dpm.dyn_state.vce_clock_voltage_dependency_table.count;
+
+ for (VAR_5 = 0; VAR_5 < VAR_4->VceLevelCount; VAR_5++) {
+  VAR_4->VceLevel[VAR_5].Frequency =
+   VAR_3->pm.dpm.dyn_state.vce_clock_voltage_dependency_table.entries[VAR_5].evclk;
+  VAR_4->VceLevel[VAR_5].MinVoltage =
+   (u16)VAR_3->pm.dpm.dyn_state.vce_clock_voltage_dependency_table.entries[VAR_5].v * VAR_2;
+  VAR_4->VceLevel[VAR_5].MinPhases = 1;
+
+  VAR_7 = FUNC_2(VAR_3,
+           VAR_0,
+           VAR_4->VceLevel[VAR_5].Frequency, 0, &VAR_6);
+  if (VAR_7)
+   return VAR_7;
+
+  VAR_4->VceLevel[VAR_5].Divider = (u8)VAR_6.post_divider;
+
+  VAR_4->VceLevel[VAR_5].Frequency = FUNC_1(VAR_4->VceLevel[VAR_5].Frequency);
+  VAR_4->VceLevel[VAR_5].MinVoltage = FUNC_0(VAR_4->VceLevel[VAR_5].MinVoltage);
+ }
+
+ return VAR_7;
+
+}

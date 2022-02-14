@@ -1,0 +1,52 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct jme_adapter {int dummy; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int FUNC_0 (struct jme_adapter*,int ,int const) ;
+ int FUNC_1 () ;
+
+__attribute__((used)) static void
+FUNC_2(struct jme_adapter *VAR_7,
+         const u32 *VAR_8, u32 VAR_9, int VAR_10)
+{
+ int VAR_11;
+
+
+
+
+ FUNC_0(VAR_7, VAR_1, VAR_3 | (VAR_10 & VAR_4));
+ FUNC_1();
+ FUNC_0(VAR_7, VAR_0, VAR_9);
+ FUNC_1();
+
+
+
+
+ for (VAR_11 = 0 ; VAR_11 < VAR_2 ; ++VAR_11) {
+  FUNC_0(VAR_7, VAR_1,
+    ((VAR_11 << VAR_6) & VAR_5) |
+    (VAR_10 & VAR_4));
+  FUNC_1();
+  FUNC_0(VAR_7, VAR_0, VAR_8[VAR_11]);
+  FUNC_1();
+ }
+}

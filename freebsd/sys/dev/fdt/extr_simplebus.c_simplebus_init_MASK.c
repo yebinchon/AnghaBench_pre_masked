@@ -1,0 +1,40 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct simplebus_softc {int acells; int scells; scalar_t__ node; int dev; } ;
+typedef scalar_t__ phandle_t ;
+typedef int device_t ;
+
+
+ int FUNC_0 (scalar_t__,char*,int*,int) ;
+ struct simplebus_softc* FUNC_1 (int ) ;
+ scalar_t__ FUNC_2 (int ) ;
+
+void
+FUNC_3(device_t VAR_0, phandle_t VAR_1)
+{
+ struct simplebus_softc *VAR_2;
+
+ VAR_2 = FUNC_1(VAR_0);
+ if (VAR_1 == 0)
+  VAR_1 = FUNC_2(VAR_0);
+ VAR_2->dev = VAR_0;
+ VAR_2->node = VAR_1;
+
+
+
+
+ VAR_2->acells = 2;
+ FUNC_0(VAR_1, "#address-cells", &VAR_2->acells, sizeof(VAR_2->acells));
+ VAR_2->scells = 1;
+ FUNC_0(VAR_1, "#size-cells", &VAR_2->scells, sizeof(VAR_2->scells));
+}

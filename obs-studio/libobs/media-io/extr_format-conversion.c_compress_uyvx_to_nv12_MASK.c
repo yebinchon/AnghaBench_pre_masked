@@ -1,0 +1,58 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int uint8_t ;
+typedef int uint32_t ;
+typedef int __m128i ;
+
+
+ int FUNC_0 (int const*) ;
+ int FUNC_1 (int) ;
+ int FUNC_2 (int) ;
+ int FUNC_3 (int,int const) ;
+ int FUNC_4 (int *,int,int ,int ,int ) ;
+ int FUNC_5 (int *,int,int,int ,int ,int ,int) ;
+
+void FUNC_6(const uint8_t *VAR_0, uint32_t VAR_1,
+      uint32_t VAR_2, uint32_t VAR_3, uint8_t *VAR_4[],
+      const uint32_t VAR_5[])
+{
+ uint8_t *VAR_6 = VAR_4[0];
+ uint8_t *VAR_7 = VAR_4[1];
+ uint32_t VAR_8 = FUNC_3(VAR_1, VAR_5[0]);
+ uint32_t VAR_9;
+
+ __m128i VAR_10 = FUNC_2(0x0000FF00);
+ __m128i VAR_11 = FUNC_1(0x00FF);
+
+ for (VAR_9 = VAR_2; VAR_9 < VAR_3; VAR_9 += 2) {
+  uint32_t VAR_12 = VAR_9 * VAR_1;
+  uint32_t VAR_13 = (VAR_9 >> 1) * VAR_5[1];
+  uint32_t VAR_14 = VAR_9 * VAR_5[0];
+  uint32_t VAR_15;
+
+  for (VAR_15 = 0; VAR_15 < VAR_8; VAR_15 += 4) {
+   const uint8_t *VAR_16 = VAR_0 + VAR_12 + VAR_15 * 4;
+   uint32_t VAR_17 = VAR_14 + VAR_15;
+   uint32_t VAR_18 = VAR_17 + VAR_5[0];
+
+   __m128i VAR_19 = FUNC_0((const __m128i *)VAR_16);
+   __m128i VAR_20 = FUNC_0(
+    (const __m128i *)(VAR_16 + VAR_1));
+
+   FUNC_5(VAR_6, VAR_17, VAR_18, VAR_19, VAR_20,
+       VAR_10, 1);
+   FUNC_4(VAR_7, VAR_13 + VAR_15, VAR_19,
+           VAR_20, VAR_11);
+  }
+ }
+}

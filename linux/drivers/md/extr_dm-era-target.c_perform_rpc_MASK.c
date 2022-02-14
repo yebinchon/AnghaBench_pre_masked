@@ -1,0 +1,37 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct rpc {int result; int complete; int list; } ;
+struct era {int rpc_lock; int rpc_calls; } ;
+
+
+ int FUNC_0 (int *) ;
+ int FUNC_1 (int *,int *) ;
+ int FUNC_2 (int *) ;
+ int FUNC_3 (int *) ;
+ int FUNC_4 (int *) ;
+ int FUNC_5 (struct era*) ;
+
+__attribute__((used)) static int FUNC_6(struct era *VAR_0, struct rpc *VAR_1)
+{
+ VAR_1->result = 0;
+ FUNC_0(&VAR_1->complete);
+
+ FUNC_2(&VAR_0->rpc_lock);
+ FUNC_1(&VAR_1->list, &VAR_0->rpc_calls);
+ FUNC_3(&VAR_0->rpc_lock);
+
+ FUNC_5(VAR_0);
+ FUNC_4(&VAR_1->complete);
+
+ return VAR_1->result;
+}

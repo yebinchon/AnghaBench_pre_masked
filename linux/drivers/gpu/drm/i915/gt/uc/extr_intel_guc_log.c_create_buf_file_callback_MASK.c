@@ -1,0 +1,47 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int umode_t ;
+struct rchan_buf {int dummy; } ;
+struct dentry {int dummy; } ;
+
+
+ scalar_t__ FUNC_0 (struct dentry*) ;
+ struct dentry* FUNC_1 (char const*,int ,struct dentry*,struct rchan_buf*,int *) ;
+ int VAR_0 ;
+
+__attribute__((used)) static struct dentry *FUNC_2(const char *VAR_1,
+            struct dentry *VAR_2,
+            umode_t VAR_3,
+            struct rchan_buf *VAR_4,
+            int *VAR_5)
+{
+ struct dentry *VAR_6;
+
+
+
+
+
+
+
+ *VAR_5 = 1;
+
+ if (!VAR_2)
+  return ((void*)0);
+
+ VAR_6 = FUNC_1(VAR_1, VAR_3,
+           VAR_2, VAR_4, &VAR_0);
+ if (FUNC_0(VAR_6))
+  return ((void*)0);
+
+ return VAR_6;
+}

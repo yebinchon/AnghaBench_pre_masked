@@ -1,0 +1,38 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct mem_ctl_info {struct amd64_pvt* pvt_info; } ;
+struct amd64_pvt {int fam; int model; } ;
+
+
+ int FUNC_0 (struct amd64_pvt*,int,int) ;
+ int FUNC_1 (struct amd64_pvt*,int ) ;
+
+__attribute__((used)) static int FUNC_2(struct mem_ctl_info *VAR_0, u32 VAR_1)
+{
+ struct amd64_pvt *VAR_2 = VAR_0->pvt_info;
+ u32 VAR_3 = 0x5;
+
+ if (VAR_2->fam == 0xf)
+  VAR_3 = 0x0;
+
+ if (VAR_2->fam == 0x15) {
+
+  if (VAR_2->model < 0x10)
+   FUNC_1(VAR_2, 0);
+
+  if (VAR_2->model == 0x60)
+   VAR_3 = 0x6;
+ }
+ return FUNC_0(VAR_2, VAR_1, VAR_3);
+}

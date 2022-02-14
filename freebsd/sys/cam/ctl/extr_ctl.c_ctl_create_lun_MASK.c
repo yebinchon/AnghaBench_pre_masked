@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ctl_be_lun {int dummy; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ,int *,struct ctl_be_lun*) ;
+
+__attribute__((used)) static void
+FUNC_1(struct ctl_be_lun *VAR_1)
+{
+
+
+
+
+ FUNC_0(VAR_0, ((void*)0), VAR_1);
+}

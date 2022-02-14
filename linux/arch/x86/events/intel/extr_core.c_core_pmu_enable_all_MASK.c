@@ -1,0 +1,44 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_3__ ;
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct hw_perf_event {int dummy; } ;
+struct cpu_hw_events {TYPE_1__** events; int active_mask; } ;
+struct TYPE_6__ {int num_counters; } ;
+struct TYPE_5__ {scalar_t__ exclude_host; } ;
+struct TYPE_4__ {TYPE_2__ attr; struct hw_perf_event hw; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct hw_perf_event*,int ) ;
+ int VAR_1 ;
+ int FUNC_1 (int,int ) ;
+ struct cpu_hw_events* FUNC_2 (int *) ;
+ TYPE_3__ VAR_2 ;
+
+__attribute__((used)) static void FUNC_3(int VAR_3)
+{
+ struct cpu_hw_events *VAR_4 = FUNC_2(&VAR_1);
+ int VAR_5;
+
+ for (VAR_5 = 0; VAR_5 < VAR_2.num_counters; VAR_5++) {
+  struct hw_perf_event *VAR_6 = &VAR_4->events[VAR_5]->hw;
+
+  if (!FUNC_1(VAR_5, VAR_4->active_mask) ||
+    VAR_4->events[VAR_5]->attr.exclude_host)
+   continue;
+
+  FUNC_0(VAR_6, VAR_0);
+ }
+}

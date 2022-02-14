@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u64 ;
+struct kvm_pmu {int * counter_bitmask; } ;
+struct kvm_pmc {size_t type; } ;
+
+
+ struct kvm_pmu* FUNC_0 (struct kvm_pmc*) ;
+
+__attribute__((used)) static inline u64 FUNC_1(struct kvm_pmc *VAR_0)
+{
+ struct kvm_pmu *VAR_1 = FUNC_0(VAR_0);
+
+ return VAR_1->counter_bitmask[VAR_0->type];
+}

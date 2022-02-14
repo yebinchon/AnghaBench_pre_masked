@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int uint8_t ;
+
+
+ int VAR_0 ;
+
+__attribute__((used)) static inline uint8_t FUNC_0(uint8_t VAR_1)
+{
+ if (VAR_1 >= 3 && VAR_1 <= 6) return VAR_1 - 2;
+ if (VAR_1 >= 9 && VAR_1 <= 10) return VAR_1 - 4;
+ if (VAR_1 >= 20 && VAR_1 <= 23) return VAR_1 - 13;
+ return VAR_0;
+}

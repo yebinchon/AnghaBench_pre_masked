@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct rmlock {int dummy; } ;
+struct rm_priotracker {int dummy; } ;
+
+
+ int FUNC_0 (struct rmlock*,struct rm_priotracker*,int) ;
+
+int
+FUNC_1(struct rmlock *VAR_0, struct rm_priotracker *VAR_1,
+    int VAR_2, const char *VAR_3, int VAR_4)
+{
+
+ return FUNC_0(VAR_0, VAR_1, VAR_2);
+}

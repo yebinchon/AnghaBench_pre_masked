@@ -1,0 +1,22 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct octeon_i2c {int dummy; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct octeon_i2c*) ;
+
+__attribute__((used)) static bool FUNC_1(struct octeon_i2c *VAR_1)
+{
+ return (FUNC_0(VAR_1) & VAR_0);
+}

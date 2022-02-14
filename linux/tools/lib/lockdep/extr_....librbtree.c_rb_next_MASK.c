@@ -1,0 +1,40 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef struct rb_node {struct rb_node const* rb_right; struct rb_node const* rb_left; } const rb_node ;
+
+
+ scalar_t__ FUNC_0 (struct rb_node const*) ;
+ struct rb_node const* FUNC_1 (struct rb_node const*) ;
+
+struct rb_node *FUNC_2(const struct rb_node *VAR_0)
+{
+ struct rb_node *VAR_1;
+
+ if (FUNC_0(VAR_0))
+  return ((void*)0);
+
+
+
+
+
+ if (VAR_0->rb_right) {
+  VAR_0 = VAR_0->rb_right;
+  while (VAR_0->rb_left)
+   VAR_0=VAR_0->rb_left;
+  return (struct rb_node *)VAR_0;
+ }
+ while ((VAR_1 = FUNC_1(VAR_0)) && VAR_0 == VAR_1->rb_right)
+  VAR_0 = VAR_1;
+
+ return VAR_1;
+}

@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct iio_dev {int masklength; } ;
+struct iio_buffer {int scan_mask; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int,int ) ;
+
+__attribute__((used)) static int FUNC_1(struct iio_dev *VAR_1,
+          struct iio_buffer *VAR_2, int VAR_3)
+{
+ if (VAR_3 > VAR_1->masklength)
+  return -VAR_0;
+
+ if (!VAR_2->scan_mask)
+  return 0;
+
+
+ return !!FUNC_0(VAR_3, VAR_2->scan_mask);
+}

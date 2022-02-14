@@ -1,0 +1,65 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+ int VAR_0 ;
+ scalar_t__ VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (int ,char*) ;
+ int VAR_3 ;
+ scalar_t__ FUNC_1 (char const*,char) ;
+ int FUNC_2 (char const*,char*) ;
+ int FUNC_3 (char*,char*) ;
+ scalar_t__ FUNC_4 (char*) ;
+
+void FUNC_5( char *VAR_4, const char *VAR_5 ) {
+ char *VAR_6;
+ char VAR_7[VAR_0];
+ char VAR_8[VAR_2];
+ char *VAR_9;
+
+ if ( FUNC_4( VAR_4 ) >= VAR_1 ) {
+  FUNC_0( VAR_3, "Info_RemoveKey_Big: oversize infostring" );
+ }
+
+ if (FUNC_1 (VAR_5, '\\')) {
+  return;
+ }
+
+ while (1)
+ {
+  VAR_6 = VAR_4;
+  if (*VAR_4 == '\\')
+   VAR_4++;
+  VAR_9 = VAR_7;
+  while (*VAR_4 != '\\')
+  {
+   if (!*VAR_4)
+    return;
+   *VAR_9++ = *VAR_4++;
+  }
+  *VAR_9 = 0;
+  VAR_4++;
+
+  VAR_9 = VAR_8;
+  while (*VAR_4 != '\\' && *VAR_4)
+  {
+   if (!*VAR_4)
+    return;
+   *VAR_9++ = *VAR_4++;
+  }
+  *VAR_9 = 0;
+
+  if (!FUNC_2 (VAR_5, VAR_7) )
+  {
+   FUNC_3 (VAR_6, VAR_4);
+   return;
+  }
+
+  if (!*VAR_4)
+   return;
+ }
+
+}

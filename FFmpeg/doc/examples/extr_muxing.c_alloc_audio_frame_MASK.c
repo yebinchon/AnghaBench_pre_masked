@@ -1,0 +1,52 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+typedef int uint64_t ;
+typedef enum AVSampleFormat { ____Placeholder_AVSampleFormat } AVSampleFormat ;
+struct TYPE_5__ {int format; int sample_rate; int nb_samples; int channel_layout; } ;
+typedef TYPE_1__ AVFrame ;
+
+
+ TYPE_1__* FUNC_0 () ;
+ int FUNC_1 (TYPE_1__*,int ) ;
+ int FUNC_2 (int) ;
+ int FUNC_3 (int ,char*) ;
+ int VAR_0 ;
+
+__attribute__((used)) static AVFrame *FUNC_4(enum AVSampleFormat VAR_1,
+                                  uint64_t VAR_2,
+                                  int VAR_3, int VAR_4)
+{
+    AVFrame *VAR_5 = FUNC_0();
+    int VAR_6;
+
+    if (!VAR_5) {
+        FUNC_3(VAR_0, "Error allocating an audio frame\n");
+        FUNC_2(1);
+    }
+
+    VAR_5->format = VAR_1;
+    VAR_5->channel_layout = VAR_2;
+    VAR_5->sample_rate = VAR_3;
+    VAR_5->nb_samples = VAR_4;
+
+    if (VAR_4) {
+        VAR_6 = FUNC_1(VAR_5, 0);
+        if (VAR_6 < 0) {
+            FUNC_3(VAR_0, "Error allocating an audio buffer\n");
+            FUNC_2(1);
+        }
+    }
+
+    return VAR_5;
+}

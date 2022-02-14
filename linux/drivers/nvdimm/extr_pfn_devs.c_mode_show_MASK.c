@@ -1,0 +1,37 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct nd_pfn {int mode; } ;
+struct device_attribute {int dummy; } ;
+struct device {int dummy; } ;
+typedef int ssize_t ;
+
+
+
+
+ int FUNC_0 (char*,char*) ;
+ struct nd_pfn* FUNC_1 (struct device*) ;
+
+__attribute__((used)) static ssize_t FUNC_2(struct device *VAR_0,
+  struct device_attribute *VAR_1, char *VAR_2)
+{
+ struct nd_pfn *VAR_3 = FUNC_1(VAR_0);
+
+ switch (VAR_3->mode) {
+ case 128:
+  return FUNC_0(VAR_2, "ram\n");
+ case 129:
+  return FUNC_0(VAR_2, "pmem\n");
+ default:
+  return FUNC_0(VAR_2, "none\n");
+ }
+}

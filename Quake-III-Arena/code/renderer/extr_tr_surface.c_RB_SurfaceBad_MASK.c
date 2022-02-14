@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int surfaceType_t ;
+struct TYPE_2__ {int (* Printf ) (int ,char*) ;} ;
+
+
+ int VAR_0 ;
+ TYPE_1__ VAR_1 ;
+ int FUNC_0 (int ,char*) ;
+
+void FUNC_1( surfaceType_t *VAR_2 ) {
+ VAR_1.Printf( VAR_0, "Bad surface tesselated.\n" );
+}

@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct tsb {int dummy; } ;
+
+
+ int FUNC_0 (unsigned long,unsigned long) ;
+ unsigned long FUNC_1 (unsigned long,unsigned long,unsigned long) ;
+
+__attribute__((used)) static void FUNC_2(unsigned long VAR_0, unsigned long VAR_1,
+      unsigned long VAR_2,
+      unsigned long VAR_3)
+{
+ unsigned long VAR_4, VAR_5, VAR_6;
+
+ VAR_1 &= ~0x1UL;
+ VAR_6 = FUNC_1(VAR_1, VAR_2, VAR_3);
+ VAR_5 = VAR_0 + (VAR_6 * sizeof(struct tsb));
+ VAR_4 = (VAR_1 >> 22UL);
+
+ FUNC_0(VAR_5, VAR_4);
+}

@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct shash_desc {int dummy; } ;
+struct sha256_state {int dummy; } ;
+
+
+ int FUNC_0 (void*,struct sha256_state*,int) ;
+ struct sha256_state* FUNC_1 (struct shash_desc*) ;
+
+__attribute__((used)) static int FUNC_2(struct shash_desc *VAR_0, void *VAR_1)
+{
+ struct sha256_state *VAR_2 = FUNC_1(VAR_0);
+
+ FUNC_0(VAR_1, VAR_2, sizeof(*VAR_2));
+
+ return 0;
+}

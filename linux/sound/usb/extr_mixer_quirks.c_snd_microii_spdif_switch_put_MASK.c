@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_3__ ;
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+typedef int u8 ;
+struct usb_mixer_elem_list {TYPE_3__* kctl; } ;
+struct snd_kcontrol {int private_value; } ;
+struct TYPE_4__ {scalar_t__* value; } ;
+struct TYPE_5__ {TYPE_1__ integer; } ;
+struct snd_ctl_elem_value {TYPE_2__ value; } ;
+struct TYPE_6__ {int private_value; } ;
+
+
+ struct usb_mixer_elem_list* FUNC_0 (struct snd_kcontrol*) ;
+ int FUNC_1 (struct usb_mixer_elem_list*) ;
+
+__attribute__((used)) static int FUNC_2(struct snd_kcontrol *VAR_0,
+ struct snd_ctl_elem_value *VAR_1)
+{
+ struct usb_mixer_elem_list *VAR_2 = FUNC_0(VAR_0);
+ u8 VAR_3;
+ int VAR_4;
+
+ VAR_3 = VAR_1->value.integer.value[0] ? 0x28 : 0x2a;
+ if (VAR_3 != VAR_2->kctl->private_value)
+  return 0;
+
+ VAR_0->private_value = VAR_3;
+ VAR_4 = FUNC_1(VAR_2);
+ return VAR_4 < 0 ? VAR_4 : 1;
+}

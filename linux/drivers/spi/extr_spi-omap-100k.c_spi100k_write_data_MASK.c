@@ -1,0 +1,55 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct spi_master {int dummy; } ;
+struct omap1_spi100k {scalar_t__ base; } ;
+
+
+ scalar_t__ VAR_0 ;
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int) ;
+ int VAR_1 ;
+ scalar_t__ VAR_2 ;
+ int VAR_3 ;
+ scalar_t__ VAR_4 ;
+ int FUNC_2 (scalar_t__) ;
+ int FUNC_3 (struct spi_master*) ;
+ int FUNC_4 (struct spi_master*) ;
+ struct omap1_spi100k* FUNC_5 (struct spi_master*) ;
+ int FUNC_6 (int) ;
+ int FUNC_7 (int,scalar_t__) ;
+
+__attribute__((used)) static void FUNC_8(struct spi_master *VAR_5, int VAR_6, int VAR_7)
+{
+ struct omap1_spi100k *VAR_8 = FUNC_5(VAR_5);
+
+
+ if (VAR_6 <= 8) {
+  VAR_7 <<= 8;
+  VAR_6 = 16;
+ }
+
+ FUNC_4(VAR_5);
+ FUNC_7(VAR_7 , VAR_8->base + VAR_4);
+
+ FUNC_7(FUNC_0(0) |
+        FUNC_1(VAR_6) |
+        VAR_1,
+        VAR_8->base + VAR_0);
+
+
+ while ((FUNC_2(VAR_8->base + VAR_2) & VAR_3) != VAR_3)
+  ;
+ FUNC_6(1000);
+
+ FUNC_3(VAR_5);
+}

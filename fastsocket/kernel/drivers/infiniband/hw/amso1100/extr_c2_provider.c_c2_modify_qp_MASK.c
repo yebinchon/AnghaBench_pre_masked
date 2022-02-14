@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ib_udata {int dummy; } ;
+struct ib_qp_attr {int dummy; } ;
+struct ib_qp {int device; } ;
+
+
+ int FUNC_0 (int ,int ,struct ib_qp_attr*,int) ;
+ int FUNC_1 (int ) ;
+ int FUNC_2 (struct ib_qp*) ;
+
+__attribute__((used)) static int FUNC_3(struct ib_qp *VAR_0, struct ib_qp_attr *VAR_1,
+   int VAR_2, struct ib_udata *VAR_3)
+{
+ int VAR_4;
+
+ VAR_4 =
+     FUNC_0(FUNC_1(VAR_0->device), FUNC_2(VAR_0), VAR_1,
+    VAR_2);
+
+ return VAR_4;
+}

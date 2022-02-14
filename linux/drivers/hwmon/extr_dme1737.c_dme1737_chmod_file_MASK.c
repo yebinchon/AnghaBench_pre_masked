@@ -1,0 +1,28 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int umode_t ;
+struct device {int kobj; } ;
+struct attribute {int name; } ;
+
+
+ int FUNC_0 (struct device*,char*,int ) ;
+ scalar_t__ FUNC_1 (int *,struct attribute*,int ) ;
+
+__attribute__((used)) static void FUNC_2(struct device *VAR_0,
+          struct attribute *VAR_1, umode_t VAR_2)
+{
+ if (FUNC_1(&VAR_0->kobj, VAR_1, VAR_2)) {
+  FUNC_0(VAR_0, "Failed to change permissions of %s.\n",
+    VAR_1->name);
+ }
+}

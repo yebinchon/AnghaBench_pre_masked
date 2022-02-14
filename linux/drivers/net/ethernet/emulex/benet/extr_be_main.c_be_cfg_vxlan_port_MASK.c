@@ -1,0 +1,48 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct udp_tunnel_info {scalar_t__ type; int port; } ;
+struct net_device {int dummy; } ;
+struct TYPE_2__ {int vxlan_port; } ;
+struct be_cmd_work {int work; TYPE_1__ info; } ;
+struct be_adapter {int dummy; } ;
+
+
+ scalar_t__ FUNC_0 (struct be_adapter*) ;
+ scalar_t__ VAR_0 ;
+ struct be_cmd_work* FUNC_1 (struct be_adapter*,void (*) (struct work_struct*)) ;
+ scalar_t__ FUNC_2 (struct be_adapter*) ;
+ int VAR_1 ;
+ scalar_t__ FUNC_3 (struct be_adapter*) ;
+ struct be_adapter* FUNC_4 (struct net_device*) ;
+ int FUNC_5 (int ,int *) ;
+
+__attribute__((used)) static void FUNC_6(struct net_device *VAR_2,
+         struct udp_tunnel_info *VAR_3,
+         void (*VAR_4)(struct work_struct *))
+{
+ struct be_adapter *VAR_5 = FUNC_4(VAR_2);
+ struct be_cmd_work *VAR_6;
+
+ if (VAR_3->type != VAR_0)
+  return;
+
+ if (FUNC_3(VAR_5) || FUNC_0(VAR_5) || FUNC_2(VAR_5))
+  return;
+
+ VAR_6 = FUNC_1(VAR_5, VAR_4);
+ if (VAR_6) {
+  VAR_6->info.vxlan_port = VAR_3->port;
+  FUNC_5(VAR_1, &VAR_6->work);
+ }
+}

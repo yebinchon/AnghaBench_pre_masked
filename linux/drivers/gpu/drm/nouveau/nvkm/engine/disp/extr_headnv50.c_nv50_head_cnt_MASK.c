@@ -1,0 +1,22 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct nvkm_disp {int dummy; } ;
+
+
+
+int
+FUNC_0(struct nvkm_disp *VAR_0, unsigned long *VAR_1)
+{
+ *VAR_1 = 3;
+ return 2;
+}

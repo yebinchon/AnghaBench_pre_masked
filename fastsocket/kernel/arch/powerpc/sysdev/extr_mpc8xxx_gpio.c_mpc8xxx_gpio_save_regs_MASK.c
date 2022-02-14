@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct of_mm_gpio_chip {scalar_t__ regs; } ;
+struct mpc8xxx_gpio_chip {int data; } ;
+
+
+ scalar_t__ VAR_0 ;
+ int FUNC_0 (scalar_t__) ;
+ struct mpc8xxx_gpio_chip* FUNC_1 (struct of_mm_gpio_chip*) ;
+
+__attribute__((used)) static void FUNC_2(struct of_mm_gpio_chip *VAR_1)
+{
+ struct mpc8xxx_gpio_chip *VAR_2 = FUNC_1(VAR_1);
+
+ VAR_2->data = FUNC_0(VAR_1->regs + VAR_0);
+}

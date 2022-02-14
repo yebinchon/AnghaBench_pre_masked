@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct vfsmount {int dummy; } ;
+struct file_system_type {int dummy; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct file_system_type*,char*,int *,int ,struct vfsmount*) ;
+ int VAR_1 ;
+
+__attribute__((used)) static int FUNC_1(struct file_system_type *VAR_2,
+    int VAR_3, const char *VAR_4, void *VAR_5,
+    struct vfsmount *VAR_6)
+{
+ return FUNC_0(VAR_2, "socket:", &VAR_1, VAR_0,
+        VAR_6);
+}

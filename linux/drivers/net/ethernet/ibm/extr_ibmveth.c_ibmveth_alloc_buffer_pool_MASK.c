@@ -1,0 +1,59 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u16 ;
+struct ibmveth_buff_pool {int* free_map; int size; int* dma_addr; scalar_t__ consumer_index; scalar_t__ producer_index; int available; void* skbuff; } ;
+typedef int dma_addr_t ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int *,int ) ;
+ void* FUNC_1 (int,int,int ) ;
+ int FUNC_2 (int*) ;
+ int* FUNC_3 (int,int,int ) ;
+
+__attribute__((used)) static int FUNC_4(struct ibmveth_buff_pool *VAR_1)
+{
+ int VAR_2;
+
+ VAR_1->free_map = FUNC_3(VAR_1->size, sizeof(u16), VAR_0);
+
+ if (!VAR_1->free_map)
+  return -1;
+
+ VAR_1->dma_addr = FUNC_1(VAR_1->size, sizeof(dma_addr_t), VAR_0);
+ if (!VAR_1->dma_addr) {
+  FUNC_2(VAR_1->free_map);
+  VAR_1->free_map = ((void*)0);
+  return -1;
+ }
+
+ VAR_1->skbuff = FUNC_1(VAR_1->size, sizeof(void *), VAR_0);
+
+ if (!VAR_1->skbuff) {
+  FUNC_2(VAR_1->dma_addr);
+  VAR_1->dma_addr = ((void*)0);
+
+  FUNC_2(VAR_1->free_map);
+  VAR_1->free_map = ((void*)0);
+  return -1;
+ }
+
+ for (VAR_2 = 0; VAR_2 < VAR_1->size; ++VAR_2)
+  VAR_1->free_map[VAR_2] = VAR_2;
+
+ FUNC_0(&VAR_1->available, 0);
+ VAR_1->producer_index = 0;
+ VAR_1->consumer_index = 0;
+
+ return 0;
+}

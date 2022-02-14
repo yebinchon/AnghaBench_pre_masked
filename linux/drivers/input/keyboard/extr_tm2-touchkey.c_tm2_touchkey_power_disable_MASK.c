@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct tm2_touchkey_data {int regulators; } ;
+
+
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int ,int ) ;
+
+__attribute__((used)) static void FUNC_2(void *VAR_0)
+{
+ struct tm2_touchkey_data *VAR_1 = VAR_0;
+
+ FUNC_1(FUNC_0(VAR_1->regulators),
+          VAR_1->regulators);
+}

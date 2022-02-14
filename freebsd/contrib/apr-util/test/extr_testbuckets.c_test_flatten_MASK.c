@@ -1,0 +1,36 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int apr_bucket_brigade ;
+typedef int apr_bucket_alloc_t ;
+typedef int abts_case ;
+
+
+ int FUNC_0 (int *) ;
+ int * FUNC_1 (int ) ;
+ int FUNC_2 (int *) ;
+ int FUNC_3 (int *,char*,int *,char*) ;
+ int * FUNC_4 (int *,char*,char*) ;
+ int VAR_0 ;
+
+__attribute__((used)) static void FUNC_5(abts_case *VAR_1, void *VAR_2)
+{
+    apr_bucket_alloc_t *VAR_3 = FUNC_1(VAR_0);
+    apr_bucket_brigade *VAR_4;
+
+    VAR_4 = FUNC_4(VAR_3, "hello, ", "world");
+
+    FUNC_3(VAR_1, "flatten brigade", VAR_4, "hello, world");
+
+    FUNC_0(VAR_4);
+    FUNC_2(VAR_3);
+}

@@ -1,0 +1,28 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct device {int dummy; } ;
+
+
+
+__attribute__((used)) static bool FUNC_0(struct device *VAR_0, unsigned int VAR_1)
+{
+
+ if (VAR_1 <= 0xf)
+  return 0;
+
+
+ if (VAR_1 == 0x14 || VAR_1 == 0x1c || VAR_1 == 0x1d)
+  return 0;
+
+ return 1;
+}

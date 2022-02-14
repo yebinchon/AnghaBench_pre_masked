@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct TYPE_4__ {int riceX; int * decoded; int gb; int riceY; } ;
+typedef TYPE_1__ APEContext ;
+
+
+ int FUNC_0 (TYPE_1__*,int *,int ,int *,int) ;
+
+__attribute__((used)) static void FUNC_1(APEContext *VAR_0, int VAR_1)
+{
+    FUNC_0(VAR_0, &VAR_0->gb, VAR_0->decoded[0], &VAR_0->riceY,
+                      VAR_1);
+    FUNC_0(VAR_0, &VAR_0->gb, VAR_0->decoded[1], &VAR_0->riceX,
+                      VAR_1);
+}

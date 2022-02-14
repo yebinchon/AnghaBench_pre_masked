@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef enum msg_hash_action { ____Placeholder_msg_hash_action } msg_hash_action ;
+
+
+
+
+ unsigned int VAR_0 ;
+
+unsigned *FUNC_0(enum msg_hash_action VAR_1)
+{
+   switch (VAR_1)
+   {
+      case 128:
+         return &VAR_0;
+      case 129:
+         break;
+   }
+
+   return ((void*)0);
+}

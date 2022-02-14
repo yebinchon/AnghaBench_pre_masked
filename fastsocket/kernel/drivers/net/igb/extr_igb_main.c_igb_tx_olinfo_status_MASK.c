@@ -1,0 +1,48 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct igb_ring {int reg_idx; int flags; } ;
+typedef int __le32 ;
+
+
+ unsigned int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int FUNC_0 (int,int ,int) ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int FUNC_1 (int) ;
+ scalar_t__ FUNC_2 (int ,int *) ;
+
+__attribute__((used)) static __le32 FUNC_3(u32 VAR_6, unsigned int VAR_7,
+       struct igb_ring *VAR_8)
+{
+ u32 VAR_9 = VAR_7 << VAR_0;
+
+
+ if (FUNC_2(VAR_3, &VAR_8->flags))
+  VAR_9 |= VAR_8->reg_idx << 4;
+
+
+ VAR_9 |= FUNC_0(VAR_6,
+          VAR_4,
+          (VAR_2 << 8));
+
+
+ VAR_9 |= FUNC_0(VAR_6,
+          VAR_5,
+          (VAR_1 << 8));
+
+ return FUNC_1(VAR_9);
+}

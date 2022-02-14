@@ -1,0 +1,48 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct pcmcia_socket {int state; int skt_mutex; struct pcmcia_callback* callback; } ;
+struct pcmcia_callback {int (* add ) (struct pcmcia_socket*) ;} ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (int *) ;
+ int FUNC_1 (int *) ;
+ int FUNC_2 (struct pcmcia_socket*) ;
+
+int FUNC_3(struct pcmcia_socket *VAR_3, struct pcmcia_callback *VAR_4)
+{
+ int VAR_5 = 0;
+
+
+ FUNC_0(&VAR_3->skt_mutex);
+
+ if (VAR_4) {
+
+  if (VAR_3->callback) {
+   VAR_5 = -VAR_0;
+   goto err;
+  }
+
+  VAR_3->callback = VAR_4;
+
+  if ((VAR_3->state & (VAR_2|VAR_1)) == VAR_2)
+   VAR_3->callback->add(VAR_3);
+ } else
+  VAR_3->callback = ((void*)0);
+ err:
+ FUNC_1(&VAR_3->skt_mutex);
+
+ return VAR_5;
+}

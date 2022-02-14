@@ -1,0 +1,37 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef size_t u32 ;
+struct ieee80211_hw {int dummy; } ;
+
+
+ size_t VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (struct ieee80211_hw*,size_t,int ,size_t) ;
+
+__attribute__((used)) static void FUNC_1(struct ieee80211_hw *VAR_2,
+         u32 *VAR_3, bool VAR_4, bool VAR_5)
+{
+ u32 VAR_6;
+ u32 VAR_7;
+
+ VAR_6 = VAR_4 ? 0x04db25a4 : 0x0b1b25a4;
+ if (0 == VAR_5) {
+  VAR_6 = 0x0bdb25a0;
+  FUNC_0(VAR_2, VAR_3[0], VAR_1, 0x0b1b25a0);
+ } else {
+  FUNC_0(VAR_2, VAR_3[0], VAR_1, VAR_6);
+ }
+
+ for (VAR_7 = 1; VAR_7 < VAR_0; VAR_7++)
+  FUNC_0(VAR_2, VAR_3[VAR_7], VAR_1, VAR_6);
+}

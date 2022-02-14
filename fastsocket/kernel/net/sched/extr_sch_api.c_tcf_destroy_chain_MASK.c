@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct tcf_proto {struct tcf_proto* next; } ;
+
+
+ int FUNC_0 (struct tcf_proto*) ;
+
+void FUNC_1(struct tcf_proto **VAR_0)
+{
+ struct tcf_proto *VAR_1;
+
+ while ((VAR_1 = *VAR_0) != ((void*)0)) {
+  *VAR_0 = VAR_1->next;
+  FUNC_0(VAR_1);
+ }
+}

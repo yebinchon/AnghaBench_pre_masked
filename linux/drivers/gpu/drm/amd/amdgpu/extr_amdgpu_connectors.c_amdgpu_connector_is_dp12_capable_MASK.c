@@ -1,0 +1,33 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct drm_device {struct amdgpu_device* dev_private; } ;
+struct drm_connector {struct drm_device* dev; } ;
+struct TYPE_2__ {int default_dispclk; } ;
+struct amdgpu_device {TYPE_1__ clock; } ;
+
+
+ scalar_t__ FUNC_0 (struct drm_connector*) ;
+
+bool FUNC_1(struct drm_connector *VAR_0)
+{
+ struct drm_device *VAR_1 = VAR_0->dev;
+ struct amdgpu_device *VAR_2 = VAR_1->dev_private;
+
+ if ((VAR_2->clock.default_dispclk >= 53900) &&
+     FUNC_0(VAR_0)) {
+  return 1;
+ }
+
+ return 0;
+}

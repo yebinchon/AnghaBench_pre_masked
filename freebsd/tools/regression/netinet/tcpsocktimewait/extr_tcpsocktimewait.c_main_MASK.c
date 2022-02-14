@@ -1,0 +1,158 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int u_short ;
+struct TYPE_2__ {void* s_addr; } ;
+struct sockaddr_in {int sin_len; int sin_port; void* sin_family; TYPE_1__ sin_addr; } ;
+struct sockaddr {int dummy; } ;
+typedef int socklen_t ;
+typedef int sin ;
+typedef scalar_t__ pid_t ;
+
+
+ void* VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ scalar_t__ VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ scalar_t__ FUNC_0 (int,struct sockaddr*,int) ;
+ int FUNC_1 (struct sockaddr_in*,int) ;
+ int FUNC_2 (int) ;
+ int FUNC_3 (int,char*) ;
+ int FUNC_4 (int ) ;
+ scalar_t__ FUNC_5 () ;
+ scalar_t__ FUNC_6 () ;
+ scalar_t__ FUNC_7 (int,struct sockaddr*,int*) ;
+ void* FUNC_8 (int ) ;
+ int FUNC_9 (scalar_t__,int ) ;
+ scalar_t__ FUNC_10 (int,int) ;
+ int FUNC_11 (int ) ;
+ int FUNC_12 (char*,int) ;
+ scalar_t__ FUNC_13 (int ,int ) ;
+ int FUNC_14 (int) ;
+ int FUNC_15 (int ,int ,int ) ;
+ int FUNC_16 (scalar_t__,int ,int) ;
+ int FUNC_17 (scalar_t__,int) ;
+
+int
+FUNC_18(int VAR_8, char *VAR_9[])
+{
+ struct sockaddr_in VAR_10;
+ pid_t VAR_11, VAR_12;
+ int VAR_13;
+ socklen_t VAR_14;
+ u_short VAR_15;
+
+ if (FUNC_13(VAR_3, VAR_6) == VAR_5)
+  FUNC_3(-1, "signal");
+
+
+
+
+
+
+
+ VAR_13 = FUNC_15(VAR_2, VAR_7, 0);
+ if (VAR_13 < 0)
+  FUNC_3(-1, "socket");
+
+
+
+
+
+ FUNC_1(&VAR_10, sizeof(VAR_10));
+ VAR_10.sin_family = VAR_0;
+ VAR_10.sin_len = sizeof(VAR_10);
+ VAR_10.sin_addr.s_addr = FUNC_8(VAR_1);
+
+ if (FUNC_0(VAR_13, (struct sockaddr *)&VAR_10, sizeof(VAR_10)) < 0)
+  FUNC_3(-1, "bind");
+
+ if (FUNC_10(VAR_13, -1) < 0)
+  FUNC_3(-1, "listen");
+
+
+
+
+ FUNC_1(&VAR_10, sizeof(VAR_10));
+ VAR_10.sin_family = VAR_0;
+ VAR_10.sin_len = sizeof(VAR_10);
+ VAR_14 = sizeof(VAR_10);
+ if (FUNC_7(VAR_13, (struct sockaddr *)&VAR_10, &VAR_14) < 0)
+  FUNC_3(-1, "getsockname");
+ VAR_15 = VAR_10.sin_port;
+ FUNC_12("Using port %d\n", FUNC_11(VAR_15));
+
+ VAR_12 = FUNC_6();
+ VAR_11 = FUNC_5();
+ if (VAR_11 < 0)
+  FUNC_3(-1, "fork");
+ if (VAR_11 == 0) {
+  VAR_11 = FUNC_6();
+  FUNC_17(VAR_11, VAR_13);
+  FUNC_4(0);
+ } else
+  FUNC_16(VAR_12, VAR_15, 1);
+ (void)FUNC_9(VAR_11, VAR_4);
+ FUNC_2(VAR_13);
+ FUNC_14(5);
+
+
+
+
+ VAR_13 = FUNC_15(VAR_2, VAR_7, 0);
+ if (VAR_13 < 0)
+  FUNC_3(-1, "socket");
+
+
+
+
+
+ FUNC_1(&VAR_10, sizeof(VAR_10));
+ VAR_10.sin_family = VAR_0;
+ VAR_10.sin_len = sizeof(VAR_10);
+ VAR_10.sin_addr.s_addr = FUNC_8(VAR_1);
+
+ if (FUNC_0(VAR_13, (struct sockaddr *)&VAR_10, sizeof(VAR_10)) < 0)
+  FUNC_3(-1, "bind");
+
+ if (FUNC_10(VAR_13, -1) < 0)
+  FUNC_3(-1, "listen");
+
+
+
+
+ FUNC_1(&VAR_10, sizeof(VAR_10));
+ VAR_10.sin_family = VAR_0;
+ VAR_10.sin_len = sizeof(VAR_10);
+ VAR_14 = sizeof(VAR_10);
+ if (FUNC_7(VAR_13, (struct sockaddr *)&VAR_10, &VAR_14) < 0)
+  FUNC_3(-1, "getsockname");
+ VAR_15 = VAR_10.sin_port;
+ FUNC_12("Using port %d\n", FUNC_11(VAR_15));
+
+ VAR_12 = FUNC_6();
+ VAR_11 = FUNC_5();
+ if (VAR_11 < 0)
+  FUNC_3(-1, "fork");
+ if (VAR_11 == 0) {
+  VAR_11 = FUNC_6();
+  FUNC_17(VAR_12, VAR_13);
+ } else
+  FUNC_16(VAR_11, VAR_15, 800);
+
+ return (0);
+}

@@ -1,0 +1,35 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef enum mipi_dsi_pixel_format { ____Placeholder_mipi_dsi_pixel_format } mipi_dsi_pixel_format ;
+typedef enum dsi_cmd_dst_format { ____Placeholder_dsi_cmd_dst_format } dsi_cmd_dst_format ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+
+
+
+
+
+__attribute__((used)) static inline enum dsi_cmd_dst_format FUNC_0(
+    const enum mipi_dsi_pixel_format VAR_3)
+{
+ switch (VAR_3) {
+ case 128: return VAR_2;
+ case 129:
+ case 130: return VAR_1;
+ case 131: return VAR_0;
+ default: return VAR_2;
+ }
+}

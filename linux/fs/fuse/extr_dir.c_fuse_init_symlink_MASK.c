@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int * a_ops; } ;
+struct inode {TYPE_1__ i_data; int * i_op; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (struct inode*) ;
+
+void FUNC_1(struct inode *VAR_2)
+{
+ VAR_2->i_op = &VAR_1;
+ VAR_2->i_data.a_ops = &VAR_0;
+ FUNC_0(VAR_2);
+}

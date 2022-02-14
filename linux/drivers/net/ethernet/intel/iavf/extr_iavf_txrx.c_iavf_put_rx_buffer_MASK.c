@@ -1,0 +1,48 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct iavf_rx_buffer {int * page; int pagecnt_bias; int dma; } ;
+struct TYPE_2__ {int page_reuse_count; } ;
+struct iavf_ring {int dev; TYPE_1__ rx_stats; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (int *,int ) ;
+ int FUNC_1 (int ,int ,int ,int ,int ) ;
+ scalar_t__ FUNC_2 (struct iavf_rx_buffer*) ;
+ int FUNC_3 (struct iavf_ring*,struct iavf_rx_buffer*) ;
+ int FUNC_4 (struct iavf_ring*) ;
+
+__attribute__((used)) static void FUNC_5(struct iavf_ring *VAR_2,
+          struct iavf_rx_buffer *VAR_3)
+{
+ if (!VAR_3)
+  return;
+
+ if (FUNC_2(VAR_3)) {
+
+  FUNC_3(VAR_2, VAR_3);
+  VAR_2->rx_stats.page_reuse_count++;
+ } else {
+
+  FUNC_1(VAR_2->dev, VAR_3->dma,
+         FUNC_4(VAR_2),
+         VAR_0, VAR_1);
+  FUNC_0(VAR_3->page,
+     VAR_3->pagecnt_bias);
+ }
+
+
+ VAR_3->page = ((void*)0);
+}

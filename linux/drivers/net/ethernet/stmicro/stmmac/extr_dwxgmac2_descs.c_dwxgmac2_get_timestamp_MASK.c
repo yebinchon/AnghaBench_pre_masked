@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef unsigned long long u64 ;
+typedef int u32 ;
+struct dma_desc {int des0; int des1; } ;
+
+
+ unsigned long long FUNC_0 (int ) ;
+
+__attribute__((used)) static inline void FUNC_1(void *VAR_0, u32 VAR_1, u64 *VAR_2)
+{
+ struct dma_desc *VAR_3 = (struct dma_desc *)VAR_0;
+ u64 VAR_4 = 0;
+
+ VAR_4 += FUNC_0(VAR_3->des1) * 1000000000ULL;
+ VAR_4 += FUNC_0(VAR_3->des0);
+
+ *VAR_2 = VAR_4;
+}

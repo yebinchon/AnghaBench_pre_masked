@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_3__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+typedef int jobject ;
+typedef int jlong ;
+typedef int jint ;
+typedef int jbyteArray ;
+struct TYPE_6__ {int method_readAt; } ;
+struct TYPE_5__ {int (* CallIntMethod ) (TYPE_1__**,int ,int ,int ,int ,int ,int ) ;} ;
+typedef TYPE_1__* JNIEnv ;
+
+
+ TYPE_3__ VAR_0 ;
+ int FUNC_0 (TYPE_1__**,int ,int ,int ,int ,int ,int ) ;
+
+jint FUNC_1(JNIEnv *VAR_1, jobject VAR_2, jlong VAR_3, jbyteArray VAR_4, jint VAR_5, jint VAR_6)
+{
+    return (*VAR_1)->CallIntMethod(VAR_1, VAR_2, VAR_0.method_readAt, VAR_3, VAR_4, VAR_5, VAR_6);
+}

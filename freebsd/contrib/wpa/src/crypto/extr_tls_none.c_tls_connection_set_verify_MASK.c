@@ -1,0 +1,23 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+struct tls_connection {int dummy; } ;
+
+
+
+int FUNC_0(void *VAR_0, struct tls_connection *VAR_1,
+         int VAR_2, unsigned int VAR_3,
+         const u8 *VAR_4, size_t VAR_5)
+{
+ return -1;
+}

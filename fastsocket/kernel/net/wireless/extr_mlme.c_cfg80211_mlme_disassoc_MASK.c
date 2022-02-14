@@ -1,0 +1,38 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+typedef int u16 ;
+struct wireless_dev {int dummy; } ;
+struct net_device {struct wireless_dev* ieee80211_ptr; } ;
+struct cfg80211_registered_device {int dummy; } ;
+
+
+ int FUNC_0 (struct cfg80211_registered_device*,struct net_device*,int const*,int const*,int,int ,int) ;
+ int FUNC_1 (struct wireless_dev*) ;
+ int FUNC_2 (struct wireless_dev*) ;
+
+int FUNC_3(struct cfg80211_registered_device *VAR_0,
+      struct net_device *VAR_1, const u8 *VAR_2,
+      const u8 *VAR_3, int VAR_4, u16 VAR_5,
+      bool VAR_6)
+{
+ struct wireless_dev *VAR_7 = VAR_1->ieee80211_ptr;
+ int VAR_8;
+
+ FUNC_1(VAR_7);
+ VAR_8 = FUNC_0(VAR_0, VAR_1, VAR_2, VAR_3, VAR_4, VAR_5,
+           VAR_6);
+ FUNC_2(VAR_7);
+
+ return VAR_8;
+}

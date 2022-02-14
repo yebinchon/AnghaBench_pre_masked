@@ -1,0 +1,21 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct tipc_nlist {int dummy; } ;
+struct tipc_group {struct tipc_nlist dests; } ;
+
+
+
+struct tipc_nlist *FUNC_0(struct tipc_group *VAR_0)
+{
+ return &VAR_0->dests;
+}

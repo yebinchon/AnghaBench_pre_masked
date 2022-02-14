@@ -1,0 +1,186 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+struct solo_dev {scalar_t__ video_type; int nr_chans; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int VAR_8 ;
+ scalar_t__ VAR_9 ;
+ int FUNC_0 (int) ;
+ int FUNC_1 (struct solo_dev*,int ,int,int,int) ;
+
+__attribute__((used)) static int FUNC_2(struct solo_dev *VAR_10, u8 VAR_11)
+{
+ u8 VAR_12[] = {
+  0x00, 0xc8, 0x20, 0xd0, 0x06, 0xf0, 0x08, 0x80,
+  0x80, 0x80, 0x80, 0x02, 0x06, 0x00, 0x11,
+ };
+
+ u8 VAR_13[] = {
+  0x00, 0x88, 0x20, 0xd0, 0x05, 0x20, 0x28, 0x80,
+  0x80, 0x80, 0x80, 0x82, 0x06, 0x00, 0x11,
+ };
+
+ u8 VAR_14[] = {
+  0x00, 0x00, 0x00, 0xc0, 0x45, 0xa0, 0xd0, 0x2f,
+  0x64, 0x80, 0x80, 0x82, 0x82, 0x00, 0x00, 0x00,
+  0x00, 0x0f, 0x05, 0x00, 0x00, 0x80, 0x06, 0x00,
+  0x00, 0x00, 0x00, 0xff, 0x8f, 0x00, 0x00, 0x00,
+  0x88, 0x88, 0xc0, 0x00, 0x20, 0x64, 0xa8, 0xec,
+  0x31, 0x75, 0xb9, 0xfd, 0x00, 0x00, 0x88, 0x88,
+  0x88, 0x11, 0x00, 0x88, 0x88, 0x00,
+ };
+ u8 *VAR_15;
+ int VAR_16;
+ int VAR_17;
+
+ VAR_12[0x06] = 0;
+
+
+ VAR_12[0x02] = VAR_2 & 0xff;
+ VAR_12[0x06] |= 0x03 & (VAR_2 >> 8);
+
+
+ VAR_12[0x03] = VAR_0 & 0xff;
+ VAR_12[0x06] |=
+  ((0x03 & (VAR_0 >> 8)) << 2);
+
+
+ VAR_12[0x04] = VAR_6 & 0xff;
+ VAR_12[0x06] |=
+  ((0x01 & (VAR_6 >> 8)) << 4);
+
+
+ VAR_12[0x05] = VAR_4 & 0xff;
+ VAR_12[0x06] |=
+  ((0x01 & (VAR_4 >> 8)) << 5);
+
+ VAR_13[0x06] = 0;
+
+
+ VAR_13[0x02] = VAR_3 & 0xff;
+ VAR_13[0x06] |= 0x03 & (VAR_3 >> 8);
+
+
+ VAR_13[0x03] = VAR_1 & 0xff;
+ VAR_13[0x06] |=
+  ((0x03 & (VAR_1 >> 8)) << 2);
+
+
+ VAR_13[0x04] = VAR_7 & 0xff;
+ VAR_13[0x06] |=
+  ((0x01 & (VAR_7 >> 8)) << 4);
+
+
+ VAR_13[0x05] = VAR_5 & 0xff;
+ VAR_13[0x06] |=
+  ((0x01 & (VAR_5 >> 8)) << 5);
+
+ VAR_15 =
+     (VAR_10->video_type == VAR_9) ?
+      VAR_12 : VAR_13;
+
+
+ VAR_15[0x0d] |= 0x04;
+
+
+ VAR_14[0x62 - 0x40] &= ~(3 << 6);
+
+ if (VAR_10->nr_chans == 4) {
+  VAR_14[0x63 - 0x40] |= 1;
+  VAR_14[0x62 - 0x40] |= 3 << 6;
+ } else if (VAR_10->nr_chans == 8) {
+  VAR_14[0x63 - 0x40] |= 2;
+  if (VAR_11 == FUNC_0(0))
+   VAR_14[0x62 - 0x40] |= 1 << 6;
+  else if (VAR_11 == FUNC_0(1))
+   VAR_14[0x62 - 0x40] |= 2 << 6;
+ } else if (VAR_10->nr_chans == 16) {
+  VAR_14[0x63 - 0x40] |= 3;
+  if (VAR_11 == FUNC_0(0))
+   VAR_14[0x62 - 0x40] |= 1 << 6;
+  else if (VAR_11 == FUNC_0(1))
+   VAR_14[0x62 - 0x40] |= 0 << 6;
+  else if (VAR_11 == FUNC_0(2))
+   VAR_14[0x62 - 0x40] |= 0 << 6;
+  else if (VAR_11 == FUNC_0(3))
+   VAR_14[0x62 - 0x40] |= 2 << 6;
+ }
+
+
+
+
+
+ VAR_14[0x62 - 0x40] |= 0 << 2;
+ VAR_14[0x6c - 0x40] |= 0 << 2;
+
+
+ VAR_14[0x6c - 0x40] |= 1 << 5;
+
+
+ VAR_14[0x5c - 0x40] |= 1 << 5;
+
+
+ VAR_14[0x70 - 0x40] |= 0xff;
+
+ VAR_14[0x71 - 0x40] |= 0x10;
+ VAR_14[0x6d - 0x40] |= 0x0f;
+
+
+
+ for (VAR_17 = 0; VAR_17 < 4; VAR_17++) {
+  VAR_15[0x0d] &= ~3;
+  switch (VAR_17) {
+  case 0:
+   VAR_15[0x0d] |= 0x21;
+   break;
+  case 1:
+   VAR_15[0x0d] |= 0x20;
+   break;
+  case 2:
+   VAR_15[0x0d] |= 0x23;
+   break;
+  case 3:
+   VAR_15[0x0d] |= 0x22;
+   break;
+  }
+
+  for (VAR_16 = 0; VAR_16 < 0x0f; VAR_16++) {
+   if (VAR_16 == 0x00)
+    continue;
+   FUNC_1(VAR_10, VAR_8,
+        VAR_11, (VAR_17 * 0x10) + VAR_16,
+        VAR_15[VAR_16]);
+  }
+ }
+
+ for (VAR_16 = 0x40; VAR_16 < 0x76; VAR_16++) {
+
+  if (VAR_16 == 0x40 || VAR_16 == 0x59 || VAR_16 == 0x5a ||
+      VAR_16 == 0x5d || VAR_16 == 0x5e || VAR_16 == 0x5f)
+   continue;
+
+  FUNC_1(VAR_10, VAR_8, VAR_11, VAR_16,
+           VAR_14[VAR_16 - 0x40]);
+ }
+
+ return 0;
+}

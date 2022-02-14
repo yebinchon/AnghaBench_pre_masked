@@ -1,0 +1,22 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct tty_struct {int dummy; } ;
+typedef int ch ;
+
+
+ int FUNC_0 (struct tty_struct*,unsigned char*,int) ;
+
+int FUNC_1(struct tty_struct *VAR_0, unsigned char VAR_1)
+{
+ return FUNC_0(VAR_0, &VAR_1, sizeof(VAR_1));
+}

@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct stat {int st_size; } ;
+struct split_file {int curfd; } ;
+struct open_file {scalar_t__ f_fsdata; } ;
+
+
+ int FUNC_0 (int ,struct stat*) ;
+
+__attribute__((used)) static int
+FUNC_1(struct open_file *VAR_0, struct stat *VAR_1)
+{
+    int VAR_2;
+    struct split_file *VAR_3 = (struct split_file *)VAR_0->f_fsdata;
+
+
+    if ((VAR_2 = FUNC_0(VAR_3->curfd, VAR_1)) == 0)
+ VAR_1->st_size = -1;
+    return (VAR_2);
+}

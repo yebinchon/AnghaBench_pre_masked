@@ -1,0 +1,54 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+typedef int u32 ;
+struct echoaudio {TYPE_2__* card; TYPE_1__* comm_page; } ;
+typedef scalar_t__ __le32 ;
+struct TYPE_4__ {int dev; } ;
+struct TYPE_3__ {scalar_t__ control_register; scalar_t__ e3g_frq_register; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (struct echoaudio*) ;
+ scalar_t__ FUNC_1 (int ) ;
+ int FUNC_2 (int ,char*,...) ;
+ int FUNC_3 (struct echoaudio*,int ) ;
+ scalar_t__ FUNC_4 (struct echoaudio*) ;
+
+__attribute__((used)) static int FUNC_5(struct echoaudio *VAR_2, u32 VAR_3, u32 VAR_4,
+        char VAR_5)
+{
+ __le32 VAR_6, VAR_7;
+
+ if (FUNC_4(VAR_2))
+  return -VAR_1;
+
+ FUNC_2(VAR_2->card->dev,
+  "WriteControlReg: Setting 0x%x, 0x%x\n", VAR_3, VAR_4);
+
+ VAR_6 = FUNC_1(VAR_3);
+ VAR_7 = FUNC_1(VAR_4);
+
+ if (VAR_6 != VAR_2->comm_page->control_register ||
+     VAR_7 != VAR_2->comm_page->e3g_frq_register || VAR_5) {
+  VAR_2->comm_page->e3g_frq_register = VAR_7;
+  VAR_2->comm_page->control_register = VAR_6;
+  FUNC_0(VAR_2);
+  return FUNC_3(VAR_2, VAR_0);
+ }
+
+ FUNC_2(VAR_2->card->dev, "WriteControlReg: not written, no change\n");
+ return 0;
+}

@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct xhci_ring {int cycle_state; } ;
+struct seq_file {scalar_t__ private; } ;
+
+
+ int FUNC_0 (struct seq_file*,char*,int ) ;
+
+__attribute__((used)) static int FUNC_1(struct seq_file *VAR_0, void *VAR_1)
+{
+ struct xhci_ring *VAR_2 = *(struct xhci_ring **)VAR_0->private;
+
+ FUNC_0(VAR_0, "%d\n", VAR_2->cycle_state);
+
+ return 0;
+}

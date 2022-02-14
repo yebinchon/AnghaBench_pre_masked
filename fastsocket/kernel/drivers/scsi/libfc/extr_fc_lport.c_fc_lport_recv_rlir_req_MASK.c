@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int (* seq_els_rsp_send ) (struct fc_frame*,int ,int *) ;} ;
+struct fc_lport {TYPE_1__ tt; } ;
+struct fc_frame {int dummy; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct fc_lport*,char*,int ) ;
+ int FUNC_1 (struct fc_frame*) ;
+ int FUNC_2 (struct fc_lport*) ;
+ int FUNC_3 (struct fc_frame*,int ,int *) ;
+
+__attribute__((used)) static void FUNC_4(struct fc_lport *VAR_1, struct fc_frame *VAR_2)
+{
+ FUNC_0(VAR_1, "Received RLIR request while in state %s\n",
+       FUNC_2(VAR_1));
+
+ VAR_1->tt.seq_els_rsp_send(VAR_2, VAR_0, ((void*)0));
+ FUNC_1(VAR_2);
+}

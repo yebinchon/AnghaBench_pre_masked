@@ -1,0 +1,49 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_5__ TYPE_3__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+typedef int bfd_boolean ;
+typedef int bfd ;
+struct TYPE_5__ {int core_pid; int core_signal; } ;
+struct TYPE_4__ {int descsz; scalar_t__ descpos; scalar_t__ descdata; } ;
+typedef TYPE_1__ Elf_Internal_Note ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int *,char*,size_t,scalar_t__) ;
+ int FUNC_1 (int *,scalar_t__) ;
+ int FUNC_2 (int *,scalar_t__) ;
+ TYPE_3__* FUNC_3 (int *) ;
+
+__attribute__((used)) static bfd_boolean
+FUNC_4 (bfd *VAR_1, Elf_Internal_Note *VAR_2)
+{
+  size_t VAR_3, VAR_4;
+
+  if (VAR_2->descsz != 504)
+    return VAR_0;
+
+
+  FUNC_3 (VAR_1)->core_signal = FUNC_1 (VAR_1, VAR_2->descdata + 12);
+
+
+  FUNC_3 (VAR_1)->core_pid = FUNC_2 (VAR_1, VAR_2->descdata + 32);
+
+
+  VAR_3 = 112;
+  VAR_4 = 384;
+
+
+  return FUNC_0 (VAR_1, ".reg",
+       VAR_4, VAR_2->descpos + VAR_3);
+}

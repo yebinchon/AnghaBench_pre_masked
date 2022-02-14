@@ -1,0 +1,55 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct superio_devinfo {uintptr_t ldn; uintptr_t type; uintptr_t iobase; uintptr_t iobase2; uintptr_t irq; uintptr_t dma; } ;
+typedef int device_t ;
+
+
+ int VAR_0 ;
+
+
+
+
+
+
+ struct superio_devinfo* FUNC_0 (int ) ;
+
+__attribute__((used)) static int
+FUNC_1(device_t VAR_1, device_t VAR_2, int VAR_3, uintptr_t *VAR_4)
+{
+ struct superio_devinfo *VAR_5;
+
+ VAR_5 = FUNC_0(VAR_2);
+ switch (VAR_3) {
+ case 129:
+  *VAR_4 = VAR_5->ldn;
+  break;
+ case 128:
+  *VAR_4 = VAR_5->type;
+  break;
+ case 132:
+  *VAR_4 = VAR_5->iobase;
+  break;
+ case 131:
+  *VAR_4 = VAR_5->iobase2;
+  break;
+ case 130:
+  *VAR_4 = VAR_5->irq;
+  break;
+ case 133:
+  *VAR_4 = VAR_5->dma;
+  break;
+ default:
+  return (VAR_0);
+ }
+ return (0);
+}

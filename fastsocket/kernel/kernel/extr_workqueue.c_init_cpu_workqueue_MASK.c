@@ -1,0 +1,33 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct workqueue_struct {int cpu_wq; } ;
+struct cpu_workqueue_struct {int more_work; int worklist; int lock; struct workqueue_struct* wq; } ;
+
+
+ int FUNC_0 (int *) ;
+ int FUNC_1 (int *) ;
+ struct cpu_workqueue_struct* FUNC_2 (int ,int) ;
+ int FUNC_3 (int *) ;
+
+__attribute__((used)) static struct cpu_workqueue_struct *
+FUNC_4(struct workqueue_struct *VAR_0, int VAR_1)
+{
+ struct cpu_workqueue_struct *VAR_2 = FUNC_2(VAR_0->cpu_wq, VAR_1);
+
+ VAR_2->wq = VAR_0;
+ FUNC_3(&VAR_2->lock);
+ FUNC_0(&VAR_2->worklist);
+ FUNC_1(&VAR_2->more_work);
+
+ return VAR_2;
+}

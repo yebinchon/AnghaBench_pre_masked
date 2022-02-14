@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef scalar_t__ sqlite_int64 ;
+typedef int sqlite3_vtab_cursor ;
+typedef scalar_t__ sqlite3_int64 ;
+struct TYPE_2__ {scalar_t__ iRowid; } ;
+typedef TYPE_1__ Fts3tokCursor ;
+
+
+ int VAR_0 ;
+
+__attribute__((used)) static int FUNC_0(
+  sqlite3_vtab_cursor *VAR_1,
+  sqlite_int64 *VAR_2
+){
+  Fts3tokCursor *VAR_3 = (Fts3tokCursor *)VAR_1;
+  *VAR_2 = (sqlite3_int64)VAR_3->iRowid;
+  return VAR_0;
+}

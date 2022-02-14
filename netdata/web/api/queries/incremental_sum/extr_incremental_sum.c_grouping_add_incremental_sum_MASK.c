@@ -1,0 +1,38 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct grouping_incremental_sum {int count; void* last; void* first; } ;
+typedef void* calculated_number ;
+struct TYPE_4__ {scalar_t__ grouping_data; } ;
+struct TYPE_5__ {TYPE_1__ internal; } ;
+typedef TYPE_2__ RRDR ;
+
+
+ int FUNC_0 (void*) ;
+ scalar_t__ FUNC_1 (int) ;
+
+void FUNC_2(RRDR *VAR_0, calculated_number VAR_1) {
+    if(!FUNC_0(VAR_1)) {
+        struct grouping_incremental_sum *VAR_2 = (struct grouping_incremental_sum *)VAR_0->internal.grouping_data;
+
+        if(FUNC_1(!VAR_2->count)) {
+            VAR_2->first = VAR_1;
+            VAR_2->count++;
+        }
+        else {
+            VAR_2->last = VAR_1;
+            VAR_2->count++;
+        }
+    }
+}

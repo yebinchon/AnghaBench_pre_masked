@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct mddev {int dummy; } ;
+struct TYPE_2__ {int (* leave ) (struct mddev*) ;} ;
+
+
+ int VAR_0 ;
+ TYPE_1__* VAR_1 ;
+ int FUNC_0 (int ) ;
+ int FUNC_1 (struct mddev*) ;
+
+void FUNC_2(struct mddev *VAR_2)
+{
+ if (!VAR_1)
+  return;
+ VAR_1->leave(VAR_2);
+ FUNC_0(VAR_0);
+}

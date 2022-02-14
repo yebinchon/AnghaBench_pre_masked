@@ -1,0 +1,82 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+typedef scalar_t__ u16 ;
+struct TYPE_3__ {int (* release ) (struct e1000_hw*) ;int (* acquire ) (struct e1000_hw*) ;} ;
+struct TYPE_4__ {TYPE_1__ ops; } ;
+struct e1000_hw {TYPE_2__ nvm; } ;
+typedef int s32 ;
+
+
+ int VAR_0 ;
+ scalar_t__ VAR_1 ;
+ scalar_t__ VAR_2 ;
+ int FUNC_0 (char*) ;
+ int FUNC_1 (struct e1000_hw*,scalar_t__,int,scalar_t__*) ;
+ int FUNC_2 (struct e1000_hw*) ;
+ int FUNC_3 (struct e1000_hw*,scalar_t__,int,scalar_t__*) ;
+ int FUNC_4 (struct e1000_hw*) ;
+ int FUNC_5 (struct e1000_hw*) ;
+ int FUNC_6 (struct e1000_hw*) ;
+ int FUNC_7 (struct e1000_hw*) ;
+
+__attribute__((used)) static s32 FUNC_8(struct e1000_hw *VAR_3)
+{
+ s32 VAR_4 = 0;
+ u16 VAR_5 = 0;
+ u16 VAR_6, VAR_7;
+
+
+
+
+
+ VAR_4 = FUNC_1(VAR_3, 0, 1, &VAR_7);
+ if (VAR_4) {
+  FUNC_0("EEPROM read failed\n");
+  goto out;
+ }
+
+ if (!(VAR_3->nvm.ops.acquire(VAR_3))) {
+
+
+
+
+
+  for (VAR_6 = 0; VAR_6 < VAR_1; VAR_6++) {
+   VAR_4 = FUNC_1(VAR_3, VAR_6, 1, &VAR_7);
+   if (VAR_4) {
+    VAR_3->nvm.ops.release(VAR_3);
+    FUNC_0("NVM Read Error while updating checksum.\n");
+    goto out;
+   }
+   VAR_5 += VAR_7;
+  }
+  VAR_5 = (u16) VAR_2 - VAR_5;
+  VAR_4 = FUNC_3(VAR_3, VAR_1, 1,
+      &VAR_5);
+  if (VAR_4) {
+   VAR_3->nvm.ops.release(VAR_3);
+   FUNC_0("NVM Write Error while updating checksum.\n");
+   goto out;
+  }
+
+  VAR_3->nvm.ops.release(VAR_3);
+
+  VAR_4 = FUNC_2(VAR_3);
+ } else {
+  VAR_4 = -VAR_0;
+ }
+out:
+ return VAR_4;
+}

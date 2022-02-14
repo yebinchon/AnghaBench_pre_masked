@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct xdr_stream {int dummy; } ;
+struct nfs_setattrargs {int label; int iap; int stateid; } ;
+struct nfs_server {int attr_bitmask; } ;
+struct compound_hdr {int dummy; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (struct xdr_stream*,int ,int ,int *,struct nfs_server const*,int ) ;
+ int FUNC_1 (struct xdr_stream*,int *) ;
+ int FUNC_2 (struct xdr_stream*,int ,int ,struct compound_hdr*) ;
+
+__attribute__((used)) static void FUNC_3(struct xdr_stream *VAR_2, const struct nfs_setattrargs *VAR_3, const struct nfs_server *VAR_4, struct compound_hdr *VAR_5)
+{
+ FUNC_2(VAR_2, VAR_0, VAR_1, VAR_5);
+ FUNC_1(VAR_2, &VAR_3->stateid);
+ FUNC_0(VAR_2, VAR_3->iap, VAR_3->label, ((void*)0), VAR_4,
+   VAR_4->attr_bitmask);
+}

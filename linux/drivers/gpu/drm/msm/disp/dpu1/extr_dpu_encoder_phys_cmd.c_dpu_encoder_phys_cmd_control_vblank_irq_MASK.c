@@ -1,0 +1,75 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct dpu_encoder_phys {TYPE_1__* hw_pp; int parent; int vblank_refcount; } ;
+struct TYPE_2__ {scalar_t__ idx; } ;
+
+
+ int FUNC_0 (char*) ;
+ int FUNC_1 (int ) ;
+ int FUNC_2 (char*,int ,scalar_t__,char*,int) ;
+ int FUNC_3 (char*,int ,scalar_t__,int,char*,int) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ FUNC_4 (int *) ;
+ int FUNC_5 (int *) ;
+ int FUNC_6 (int *) ;
+ int FUNC_7 (struct dpu_encoder_phys*,int ) ;
+ int FUNC_8 (struct dpu_encoder_phys*,int ) ;
+ int FUNC_9 (struct dpu_encoder_phys*) ;
+
+__attribute__((used)) static int FUNC_10(
+  struct dpu_encoder_phys *VAR_3,
+  bool VAR_4)
+{
+ int VAR_5 = 0;
+ int VAR_6;
+
+ if (!VAR_3 || !VAR_3->hw_pp) {
+  FUNC_0("invalid encoder\n");
+  return -VAR_0;
+ }
+
+ VAR_6 = FUNC_6(&VAR_3->vblank_refcount);
+
+
+ if (!FUNC_9(VAR_3))
+  goto end;
+
+
+ if (!VAR_4 && VAR_6 == 0) {
+  VAR_5 = -VAR_0;
+  goto end;
+ }
+
+ FUNC_2("id:%u pp:%d enable=%s/%d\n", FUNC_1(VAR_3->parent),
+        VAR_3->hw_pp->idx - VAR_2,
+        VAR_4 ? "true" : "false", VAR_6);
+
+ if (VAR_4 && FUNC_5(&VAR_3->vblank_refcount) == 1)
+  VAR_5 = FUNC_7(VAR_3, VAR_1);
+ else if (!VAR_4 && FUNC_4(&VAR_3->vblank_refcount) == 0)
+  VAR_5 = FUNC_8(VAR_3,
+    VAR_1);
+
+end:
+ if (VAR_5) {
+  FUNC_3("vblank irq err id:%u pp:%d ret:%d, enable %s/%d\n",
+     FUNC_1(VAR_3->parent),
+     VAR_3->hw_pp->idx - VAR_2, VAR_5,
+     VAR_4 ? "true" : "false", VAR_6);
+ }
+
+ return VAR_5;
+}

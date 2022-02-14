@@ -1,0 +1,89 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef char const* uintmax_t ;
+typedef scalar_t__ uint8_t ;
+struct ipfw_nat64lsn_stats {scalar_t__ sdeleted; scalar_t__ screated; scalar_t__ icmpchunks; scalar_t__ udpchunks; scalar_t__ tcpchunks; scalar_t__ jportfails; scalar_t__ spgdeleted; scalar_t__ spgcreated; scalar_t__ jportreq; scalar_t__ jhostfails; scalar_t__ jhostsreq; scalar_t__ hostcount; scalar_t__ jnomem; scalar_t__ jmaxlen; scalar_t__ jrequests; scalar_t__ jcalls; scalar_t__ jreinjected; scalar_t__ nomatch4; scalar_t__ dropped; scalar_t__ nomem; scalar_t__ noproto; scalar_t__ noroute6; scalar_t__ noroute4; scalar_t__ oerrors; scalar_t__ ifrags; scalar_t__ ofrags; scalar_t__ opcnt46; scalar_t__ opcnt64; } ;
+struct TYPE_2__ {scalar_t__ use_set; } ;
+
+
+ int VAR_0 ;
+ TYPE_1__ VAR_1 ;
+ int FUNC_0 (int ,char*) ;
+ scalar_t__ FUNC_1 (char const*,scalar_t__,struct ipfw_nat64lsn_stats*) ;
+ int FUNC_2 (char*,char const*) ;
+
+__attribute__((used)) static void
+FUNC_3(const char *VAR_2, uint8_t VAR_3)
+{
+ struct ipfw_nat64lsn_stats VAR_4;
+
+ if (FUNC_1(VAR_2, VAR_3, &VAR_4) != 0)
+  FUNC_0(VAR_0, "Error retrieving stats");
+
+ if (VAR_1.use_set != 0 || VAR_3 != 0)
+  FUNC_2("set %u ", VAR_3);
+ FUNC_2("nat64lsn %s\n", VAR_2);
+ FUNC_2("\t%ju packets translated from IPv6 to IPv4\n",
+     (uintmax_t)VAR_4.opcnt64);
+ FUNC_2("\t%ju packets translated from IPv4 to IPv6\n",
+     (uintmax_t)VAR_4.opcnt46);
+ FUNC_2("\t%ju IPv6 fragments created\n",
+     (uintmax_t)VAR_4.ofrags);
+ FUNC_2("\t%ju IPv4 fragments received\n",
+     (uintmax_t)VAR_4.ifrags);
+ FUNC_2("\t%ju output packets dropped due to no bufs, etc.\n",
+     (uintmax_t)VAR_4.oerrors);
+ FUNC_2("\t%ju output packets discarded due to no IPv4 route\n",
+     (uintmax_t)VAR_4.noroute4);
+ FUNC_2("\t%ju output packets discarded due to no IPv6 route\n",
+     (uintmax_t)VAR_4.noroute6);
+ FUNC_2("\t%ju packets discarded due to unsupported protocol\n",
+     (uintmax_t)VAR_4.noproto);
+ FUNC_2("\t%ju packets discarded due to memory allocation problems\n",
+     (uintmax_t)VAR_4.nomem);
+ FUNC_2("\t%ju packets discarded due to some errors\n",
+     (uintmax_t)VAR_4.dropped);
+ FUNC_2("\t%ju packets not matched with IPv4 prefix\n",
+     (uintmax_t)VAR_4.nomatch4);
+
+ FUNC_2("\t%ju mbufs queued for post processing\n",
+     (uintmax_t)VAR_4.jreinjected);
+ FUNC_2("\t%ju times the job queue was processed\n",
+     (uintmax_t)VAR_4.jcalls);
+ FUNC_2("\t%ju job requests queued\n",
+     (uintmax_t)VAR_4.jrequests);
+ FUNC_2("\t%ju job requests queue limit reached\n",
+     (uintmax_t)VAR_4.jmaxlen);
+ FUNC_2("\t%ju job requests failed due to memory allocation problems\n",
+     (uintmax_t)VAR_4.jnomem);
+
+ FUNC_2("\t%ju hosts allocated\n", (uintmax_t)VAR_4.hostcount);
+ FUNC_2("\t%ju hosts requested\n", (uintmax_t)VAR_4.jhostsreq);
+ FUNC_2("\t%ju host requests failed\n", (uintmax_t)VAR_4.jhostfails);
+
+ FUNC_2("\t%ju portgroups requested\n", (uintmax_t)VAR_4.jportreq);
+ FUNC_2("\t%ju portgroups allocated\n", (uintmax_t)VAR_4.spgcreated);
+ FUNC_2("\t%ju portgroups deleted\n", (uintmax_t)VAR_4.spgdeleted);
+ FUNC_2("\t%ju portgroup requests failed\n",
+     (uintmax_t)VAR_4.jportfails);
+ FUNC_2("\t%ju portgroups allocated for TCP\n",
+     (uintmax_t)VAR_4.tcpchunks);
+ FUNC_2("\t%ju portgroups allocated for UDP\n",
+     (uintmax_t)VAR_4.udpchunks);
+ FUNC_2("\t%ju portgroups allocated for ICMP\n",
+     (uintmax_t)VAR_4.icmpchunks);
+
+ FUNC_2("\t%ju states created\n", (uintmax_t)VAR_4.screated);
+ FUNC_2("\t%ju states deleted\n", (uintmax_t)VAR_4.sdeleted);
+}

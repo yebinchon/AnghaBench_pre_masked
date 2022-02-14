@@ -1,0 +1,41 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ucred {struct label* cr_label; } ;
+struct shmfd {int dummy; } ;
+struct mac_biba {int dummy; } ;
+struct label {int dummy; } ;
+
+
+ int VAR_0 ;
+ struct mac_biba* FUNC_0 (struct label*) ;
+ int FUNC_1 (struct mac_biba*,struct mac_biba*) ;
+ int VAR_1 ;
+ int VAR_2 ;
+
+__attribute__((used)) static int
+FUNC_2(struct ucred *VAR_3, struct ucred *VAR_4,
+    struct shmfd *VAR_5, struct label *VAR_6)
+{
+ struct mac_biba *VAR_7, *VAR_8;
+
+ if (!VAR_1 || !VAR_2)
+  return (0);
+
+ VAR_7 = FUNC_0(VAR_3->cr_label);
+ VAR_8 = FUNC_0(VAR_6);
+
+ if (!FUNC_1(VAR_8, VAR_7))
+  return (VAR_0);
+
+ return (0);
+}

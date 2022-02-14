@@ -1,0 +1,21 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+ int VAR_0 ;
+ int FUNC_0 (int ,char*,int ,int ,int ,int ,int ,int ) ;
+ int FUNC_1 () ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+
+void FUNC_2 (void) {
+  FUNC_0 (VAR_3,
+    "read: %d bytes (reported binlog position %d), %d records\n"
+    "written: %d bytes, %d records (%d out of them converted)\n",
+    VAR_1, FUNC_1(), VAR_2, VAR_4, VAR_5, VAR_0);
+}

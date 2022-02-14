@@ -1,0 +1,53 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef scalar_t__ uint16_t ;
+struct TYPE_2__ {int use_br_vlan; int br_untagged_bitmap; int br_vid_bitmap; } ;
+typedef TYPE_1__ Network ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (void*) ;
+ int FUNC_1 (char const*,int ,char const*,unsigned int,int,char*,char const*) ;
+ int FUNC_2 (char const*,scalar_t__*,scalar_t__*) ;
+ int FUNC_3 (scalar_t__,int ) ;
+
+int FUNC_4(const char *VAR_1, const char *VAR_2,
+                                 unsigned VAR_3, const char *VAR_4,
+                                 unsigned VAR_5, const char *VAR_6,
+                                 int VAR_7, const char *VAR_8, void *VAR_9,
+                                 void *VAR_10) {
+        Network *VAR_11 = VAR_10;
+        int VAR_12;
+        uint16_t VAR_13, VAR_14;
+
+        FUNC_0(VAR_2);
+        FUNC_0(VAR_4);
+        FUNC_0(VAR_6);
+        FUNC_0(VAR_8);
+        FUNC_0(VAR_9);
+
+        VAR_12 = FUNC_2(VAR_8, &VAR_13, &VAR_14);
+        if (VAR_12 < 0) {
+                FUNC_1(VAR_1, VAR_0, VAR_2, VAR_3, VAR_12, "Could not parse VLAN: %s", VAR_8);
+                return 0;
+        }
+
+        for (; VAR_13 <= VAR_14; VAR_13++) {
+                FUNC_3(VAR_13, VAR_11->br_vid_bitmap);
+                FUNC_3(VAR_13, VAR_11->br_untagged_bitmap);
+        }
+
+        VAR_11->use_br_vlan = 1;
+        return 0;
+}

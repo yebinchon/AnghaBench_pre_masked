@@ -1,0 +1,84 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_13__ TYPE_6__ ;
+typedef struct TYPE_12__ TYPE_5__ ;
+typedef struct TYPE_11__ TYPE_4__ ;
+typedef struct TYPE_10__ TYPE_3__ ;
+typedef struct TYPE_9__ TYPE_2__ ;
+typedef struct TYPE_8__ TYPE_1__ ;
+
+
+struct TYPE_8__ {scalar_t__ link; } ;
+struct TYPE_9__ {TYPE_1__ i; } ;
+struct TYPE_10__ {scalar_t__ type; TYPE_2__ u; } ;
+typedef struct elf_link_hash_entry {TYPE_3__ root; } const elf_link_hash_entry ;
+typedef enum elf_ppc_reloc_type { ____Placeholder_elf_ppc_reloc_type } elf_ppc_reloc_type ;
+typedef int bfd_boolean ;
+typedef int bfd ;
+struct TYPE_11__ {unsigned int sh_info; } ;
+struct TYPE_13__ {TYPE_4__ symtab_hdr; } ;
+struct TYPE_12__ {int r_info; } ;
+typedef TYPE_4__ Elf_Internal_Shdr ;
+typedef TYPE_5__ Elf_Internal_Rela ;
+
+
+ unsigned int FUNC_0 (int ) ;
+ int FUNC_1 (int ) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int VAR_8 ;
+ int VAR_9 ;
+ int VAR_10 ;
+ int VAR_11 ;
+ scalar_t__ VAR_12 ;
+ scalar_t__ VAR_13 ;
+ struct elf_link_hash_entry const** FUNC_2 (int const*) ;
+ TYPE_6__* FUNC_3 (int const*) ;
+
+__attribute__((used)) static bfd_boolean
+FUNC_4 (const bfd *VAR_14,
+    const Elf_Internal_Rela *VAR_15,
+    const struct elf_link_hash_entry *VAR_16)
+{
+  Elf_Internal_Shdr *VAR_17 = &FUNC_3 (VAR_14)->symtab_hdr;
+  enum elf_ppc_reloc_type VAR_18 = FUNC_1 (VAR_15->r_info);
+  unsigned int VAR_19 = FUNC_0 (VAR_15->r_info);
+
+  if (VAR_19 >= VAR_17->sh_info
+      && (VAR_18 == VAR_6
+   || VAR_18 == VAR_5
+   || VAR_18 == VAR_7
+   || VAR_18 == VAR_9
+   || VAR_18 == VAR_8
+   || VAR_18 == VAR_10
+   || VAR_18 == VAR_4
+   || VAR_18 == VAR_1
+   || VAR_18 == VAR_3
+   || VAR_18 == VAR_2))
+    {
+      struct elf_link_hash_entry **VAR_20 = FUNC_2 (VAR_14);
+      struct elf_link_hash_entry *VAR_21;
+
+      VAR_21 = VAR_20[VAR_19 - VAR_17->sh_info];
+      while (VAR_21->root.type == VAR_12
+      || VAR_21->root.type == VAR_13)
+ VAR_21 = (struct elf_link_hash_entry *) VAR_21->root.u.i.link;
+      if (VAR_21 == VAR_16)
+ return VAR_11;
+    }
+  return VAR_0;
+}

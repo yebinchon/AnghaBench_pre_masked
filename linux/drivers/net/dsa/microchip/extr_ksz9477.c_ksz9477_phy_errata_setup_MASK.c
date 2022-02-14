@@ -1,0 +1,62 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ksz_device {int features; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct ksz_device*,int,int,int,int) ;
+
+__attribute__((used)) static void FUNC_1(struct ksz_device *VAR_1, int VAR_2)
+{
+
+
+
+
+
+
+ FUNC_0(VAR_1, VAR_2, 0x01, 0x6f, 0xdd0b);
+ FUNC_0(VAR_1, VAR_2, 0x01, 0x8f, 0x6032);
+ FUNC_0(VAR_1, VAR_2, 0x01, 0x9d, 0x248c);
+ FUNC_0(VAR_1, VAR_2, 0x01, 0x75, 0x0060);
+ FUNC_0(VAR_1, VAR_2, 0x01, 0xd3, 0x7777);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x06, 0x3008);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x08, 0x2001);
+
+
+
+
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x04, 0x00d0);
+
+
+
+
+ if (VAR_1->features & VAR_0)
+  FUNC_0(VAR_1, VAR_2, 0x07, 0x3c, 0x0000);
+
+
+
+
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x13, 0x6eff);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x14, 0xe6ff);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x15, 0x6eff);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x16, 0xe6ff);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x17, 0x00ff);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x18, 0x43ff);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x19, 0xc3ff);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x1a, 0x6fff);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x1b, 0x07ff);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x1c, 0x0fff);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x1d, 0xe7ff);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x1e, 0xefff);
+ FUNC_0(VAR_1, VAR_2, 0x1c, 0x20, 0xeeee);
+}

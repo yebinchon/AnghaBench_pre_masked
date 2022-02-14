@@ -1,0 +1,93 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_8__ TYPE_4__ ;
+typedef struct TYPE_7__ TYPE_3__ ;
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+typedef int u8 ;
+typedef int u64 ;
+struct sk_buff {scalar_t__ len; scalar_t__ data; } ;
+struct TYPE_6__ {scalar_t__ hw_key; } ;
+struct ieee80211_tx_info {TYPE_2__ control; } ;
+struct ieee80211_tx_data {int skbs; struct ieee80211_key* key; } ;
+struct ieee80211_mmie {int length; int mic; int sequence_number; int key_id; int element_id; } ;
+struct TYPE_7__ {int tfm; } ;
+struct TYPE_8__ {TYPE_3__ aes_cmac; } ;
+struct TYPE_5__ {int flags; int tx_pn; int keyidx; } ;
+struct ieee80211_key {TYPE_4__ u; TYPE_1__ conf; } ;
+typedef int ieee80211_tx_result ;
+
+
+ int VAR_0 ;
+ struct ieee80211_tx_info* FUNC_0 (struct sk_buff*) ;
+ int VAR_1 ;
+ int VAR_2 ;
+ scalar_t__ FUNC_1 (int) ;
+ int VAR_3 ;
+ int FUNC_2 (int *) ;
+ int FUNC_3 (struct sk_buff*,int *) ;
+ int FUNC_4 (int ,int ) ;
+ int FUNC_5 (int ) ;
+ int FUNC_6 (int ,int *,scalar_t__,scalar_t__,int ) ;
+ struct sk_buff* FUNC_7 (int *) ;
+ struct ieee80211_mmie* FUNC_8 (struct sk_buff*,int) ;
+ int FUNC_9 (int *) ;
+ int FUNC_10 (struct sk_buff*) ;
+
+ieee80211_tx_result
+FUNC_11(struct ieee80211_tx_data *VAR_4)
+{
+ struct sk_buff *VAR_5;
+ struct ieee80211_tx_info *VAR_6;
+ struct ieee80211_key *VAR_7 = VAR_4->key;
+ struct ieee80211_mmie *VAR_8;
+ u8 VAR_9[20];
+ u64 VAR_10;
+
+ if (FUNC_1(FUNC_9(&VAR_4->skbs) != 1))
+  return VAR_2;
+
+ VAR_5 = FUNC_7(&VAR_4->skbs);
+
+ VAR_6 = FUNC_0(VAR_5);
+
+ if (VAR_6->control.hw_key &&
+     !(VAR_7->conf.flags & VAR_0))
+  return VAR_1;
+
+ if (FUNC_1(FUNC_10(VAR_5) < sizeof(*VAR_8)))
+  return VAR_2;
+
+ VAR_8 = FUNC_8(VAR_5, sizeof(*VAR_8));
+ VAR_8->element_id = VAR_3;
+ VAR_8->length = sizeof(*VAR_8) - 2;
+ VAR_8->key_id = FUNC_5(VAR_7->conf.keyidx);
+
+
+ VAR_10 = FUNC_2(&VAR_7->conf.tx_pn);
+
+ FUNC_4(VAR_8->sequence_number, VAR_10);
+
+ if (VAR_6->control.hw_key)
+  return VAR_1;
+
+ FUNC_3(VAR_5, VAR_9);
+
+
+
+
+ FUNC_6(VAR_7->u.aes_cmac.tfm, VAR_9,
+      VAR_5->data + 24, VAR_5->len - 24, VAR_8->mic);
+
+ return VAR_1;
+}

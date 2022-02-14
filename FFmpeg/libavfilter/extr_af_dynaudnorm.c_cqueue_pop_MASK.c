@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct TYPE_4__ {int first; int size; int nb_elements; } ;
+typedef TYPE_1__ cqueue ;
+
+
+ int FUNC_0 (int) ;
+ int FUNC_1 (TYPE_1__*) ;
+
+__attribute__((used)) static int FUNC_2(cqueue *VAR_0)
+{
+    FUNC_0(!FUNC_1(VAR_0));
+
+    VAR_0->first = (VAR_0->first + 1) % VAR_0->size;
+    VAR_0->nb_elements--;
+
+    return 0;
+}

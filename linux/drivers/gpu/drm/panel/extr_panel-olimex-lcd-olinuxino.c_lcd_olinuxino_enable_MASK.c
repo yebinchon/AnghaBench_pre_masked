@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct lcd_olinuxino {int enabled; int backlight; } ;
+struct drm_panel {int dummy; } ;
+
+
+ int FUNC_0 (int ) ;
+ struct lcd_olinuxino* FUNC_1 (struct drm_panel*) ;
+
+__attribute__((used)) static int FUNC_2(struct drm_panel *VAR_0)
+{
+ struct lcd_olinuxino *VAR_1 = FUNC_1(VAR_0);
+
+ if (VAR_1->enabled)
+  return 0;
+
+ FUNC_0(VAR_1->backlight);
+
+ VAR_1->enabled = 1;
+
+ return 0;
+}

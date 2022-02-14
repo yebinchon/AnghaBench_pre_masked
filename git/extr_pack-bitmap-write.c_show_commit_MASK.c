@@ -1,0 +1,22 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct object {int dummy; } ;
+struct commit {int dummy; } ;
+
+
+ int FUNC_0 (struct object*) ;
+
+__attribute__((used)) static void FUNC_1(struct commit *VAR_0, void *VAR_1)
+{
+ FUNC_0((struct object *)VAR_0);
+}

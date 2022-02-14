@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int platform_t ;
+
+
+ int FUNC_0 () ;
+
+void
+FUNC_1(platform_t VAR_0)
+{
+
+ *(unsigned long *)0x80 = 0x100;
+ FUNC_0();
+}

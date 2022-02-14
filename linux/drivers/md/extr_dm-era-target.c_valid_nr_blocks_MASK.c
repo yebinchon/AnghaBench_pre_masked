@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef unsigned long long dm_block_t ;
+
+
+
+__attribute__((used)) static bool FUNC_0(dm_block_t VAR_0)
+{
+
+
+
+
+ return VAR_0 < (1ull << 31);
+}

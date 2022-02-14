@@ -1,0 +1,62 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_3__ ;
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+typedef int u8 ;
+typedef int td1316_init ;
+struct i2c_msg {int addr; int* buf; int len; int flags; } ;
+struct TYPE_5__ {int (* i2c_gate_ctrl ) (struct dvb_frontend*,int) ;} ;
+struct dvb_frontend {TYPE_2__ ops; TYPE_1__* dvb; } ;
+struct TYPE_6__ {int i2c_adap; } ;
+struct budget_ci {int tuner_pll_address; TYPE_3__ budget; } ;
+typedef int disable_mc44BC374c ;
+struct TYPE_4__ {scalar_t__ priv; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int *,struct i2c_msg*,int) ;
+ int FUNC_1 (int) ;
+ int FUNC_2 (struct dvb_frontend*,int) ;
+ int FUNC_3 (struct dvb_frontend*,int) ;
+ int FUNC_4 (struct dvb_frontend*,int) ;
+
+__attribute__((used)) static int FUNC_5(struct dvb_frontend *VAR_1)
+{
+ struct budget_ci *VAR_2 = (struct budget_ci *) VAR_1->dvb->priv;
+ static u8 VAR_3[] = { 0x0b, 0xf5, 0x85, 0xab };
+ static u8 VAR_4[] = { 0x1d, 0x74, 0xa0, 0x68 };
+ struct i2c_msg VAR_5 = {.addr = VAR_2->tuner_pll_address,.flags = 0,.buf = VAR_3,.len =
+   sizeof(VAR_3) };
+
+
+ if (VAR_1->ops.i2c_gate_ctrl)
+  VAR_1->ops.i2c_gate_ctrl(VAR_1, 1);
+ if (FUNC_0(&VAR_2->budget.i2c_adap, &VAR_5, 1) != 1)
+  return -VAR_0;
+ FUNC_1(1);
+
+
+ VAR_5.addr = 0x65;
+ VAR_5.buf = VAR_4;
+ VAR_5.len = sizeof(VAR_4);
+ if (VAR_1->ops.i2c_gate_ctrl)
+  VAR_1->ops.i2c_gate_ctrl(VAR_1, 1);
+ if (FUNC_0(&VAR_2->budget.i2c_adap, &VAR_5, 1) != 1) {
+  if (VAR_1->ops.i2c_gate_ctrl)
+   VAR_1->ops.i2c_gate_ctrl(VAR_1, 1);
+  FUNC_0(&VAR_2->budget.i2c_adap, &VAR_5, 1);
+ }
+
+ return 0;
+}

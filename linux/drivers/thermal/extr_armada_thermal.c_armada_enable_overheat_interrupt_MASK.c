@@ -1,0 +1,44 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct armada_thermal_priv {int syscon; struct armada_thermal_data* data; } ;
+struct armada_thermal_data {int syscon_control1_off; int dfx_server_irq_mask_off; int dfx_server_irq_en; int dfx_irq_mask_off; int dfx_overheat_irq; int dfx_irq_cause_off; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ,int ,int *) ;
+ int FUNC_1 (int ,int ,int ) ;
+
+__attribute__((used)) static void FUNC_2(struct armada_thermal_priv *VAR_1)
+{
+ struct armada_thermal_data *VAR_2 = VAR_1->data;
+ u32 VAR_3;
+
+
+ FUNC_0(VAR_1->syscon, VAR_2->dfx_irq_cause_off, &VAR_3);
+
+
+ FUNC_0(VAR_1->syscon, VAR_2->dfx_irq_mask_off, &VAR_3);
+ VAR_3 |= VAR_2->dfx_overheat_irq;
+ FUNC_1(VAR_1->syscon, VAR_2->dfx_irq_mask_off, VAR_3);
+
+
+ FUNC_0(VAR_1->syscon, VAR_2->dfx_server_irq_mask_off, &VAR_3);
+ VAR_3 |= VAR_2->dfx_server_irq_en;
+ FUNC_1(VAR_1->syscon, VAR_2->dfx_server_irq_mask_off, VAR_3);
+
+
+ FUNC_0(VAR_1->syscon, VAR_2->syscon_control1_off, &VAR_3);
+ VAR_3 |= VAR_0;
+ FUNC_1(VAR_1->syscon, VAR_2->syscon_control1_off, VAR_3);
+}

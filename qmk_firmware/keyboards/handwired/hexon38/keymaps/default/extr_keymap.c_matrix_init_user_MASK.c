@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int ifirst; int ilast; int * head; scalar_t__ count; } ;
+
+
+ TYPE_1__ VAR_0 ;
+
+void FUNC_0(void) {
+    VAR_0.ifirst = -1;
+    VAR_0.ilast = -1;
+    VAR_0.count = 0;
+    VAR_0.head = ((void*)0);
+}

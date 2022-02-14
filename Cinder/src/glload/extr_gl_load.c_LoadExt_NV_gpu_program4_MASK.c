@@ -1,0 +1,85 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETERSI4UIVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETERSI4IVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETERI4UIVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETERI4UINVPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETERI4IVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETERI4INVPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETERSI4UIVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETERSI4IVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETERI4UIVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETERI4UINVPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETERI4IVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETERI4INVPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMLOCALPARAMETERIUIVNVPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMLOCALPARAMETERIIVNVPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMENVPARAMETERIUIVNVPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMENVPARAMETERIIVNVPROC ;
+
+
+ scalar_t__ FUNC_0 (char*) ;
+ scalar_t__ VAR_0 ;
+ scalar_t__ VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ VAR_3 ;
+ scalar_t__ VAR_4 ;
+ scalar_t__ VAR_5 ;
+ scalar_t__ VAR_6 ;
+ scalar_t__ VAR_7 ;
+ scalar_t__ VAR_8 ;
+ scalar_t__ VAR_9 ;
+ scalar_t__ VAR_10 ;
+ scalar_t__ VAR_11 ;
+ scalar_t__ VAR_12 ;
+ scalar_t__ VAR_13 ;
+ scalar_t__ VAR_14 ;
+ scalar_t__ VAR_15 ;
+
+__attribute__((used)) static int FUNC_1()
+{
+ int VAR_16 = 0;
+ VAR_0 = (PFNGLGETPROGRAMENVPARAMETERIIVNVPROC)FUNC_0("glGetProgramEnvParameterIivNV");
+ if(!VAR_0) ++VAR_16;
+ VAR_1 = (PFNGLGETPROGRAMENVPARAMETERIUIVNVPROC)FUNC_0("glGetProgramEnvParameterIuivNV");
+ if(!VAR_1) ++VAR_16;
+ VAR_2 = (PFNGLGETPROGRAMLOCALPARAMETERIIVNVPROC)FUNC_0("glGetProgramLocalParameterIivNV");
+ if(!VAR_2) ++VAR_16;
+ VAR_3 = (PFNGLGETPROGRAMLOCALPARAMETERIUIVNVPROC)FUNC_0("glGetProgramLocalParameterIuivNV");
+ if(!VAR_3) ++VAR_16;
+ VAR_4 = (PFNGLPROGRAMENVPARAMETERI4INVPROC)FUNC_0("glProgramEnvParameterI4iNV");
+ if(!VAR_4) ++VAR_16;
+ VAR_5 = (PFNGLPROGRAMENVPARAMETERI4IVNVPROC)FUNC_0("glProgramEnvParameterI4ivNV");
+ if(!VAR_5) ++VAR_16;
+ VAR_6 = (PFNGLPROGRAMENVPARAMETERI4UINVPROC)FUNC_0("glProgramEnvParameterI4uiNV");
+ if(!VAR_6) ++VAR_16;
+ VAR_7 = (PFNGLPROGRAMENVPARAMETERI4UIVNVPROC)FUNC_0("glProgramEnvParameterI4uivNV");
+ if(!VAR_7) ++VAR_16;
+ VAR_8 = (PFNGLPROGRAMENVPARAMETERSI4IVNVPROC)FUNC_0("glProgramEnvParametersI4ivNV");
+ if(!VAR_8) ++VAR_16;
+ VAR_9 = (PFNGLPROGRAMENVPARAMETERSI4UIVNVPROC)FUNC_0("glProgramEnvParametersI4uivNV");
+ if(!VAR_9) ++VAR_16;
+ VAR_10 = (PFNGLPROGRAMLOCALPARAMETERI4INVPROC)FUNC_0("glProgramLocalParameterI4iNV");
+ if(!VAR_10) ++VAR_16;
+ VAR_11 = (PFNGLPROGRAMLOCALPARAMETERI4IVNVPROC)FUNC_0("glProgramLocalParameterI4ivNV");
+ if(!VAR_11) ++VAR_16;
+ VAR_12 = (PFNGLPROGRAMLOCALPARAMETERI4UINVPROC)FUNC_0("glProgramLocalParameterI4uiNV");
+ if(!VAR_12) ++VAR_16;
+ VAR_13 = (PFNGLPROGRAMLOCALPARAMETERI4UIVNVPROC)FUNC_0("glProgramLocalParameterI4uivNV");
+ if(!VAR_13) ++VAR_16;
+ VAR_14 = (PFNGLPROGRAMLOCALPARAMETERSI4IVNVPROC)FUNC_0("glProgramLocalParametersI4ivNV");
+ if(!VAR_14) ++VAR_16;
+ VAR_15 = (PFNGLPROGRAMLOCALPARAMETERSI4UIVNVPROC)FUNC_0("glProgramLocalParametersI4uivNV");
+ if(!VAR_15) ++VAR_16;
+ return VAR_16;
+}

@@ -1,0 +1,57 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct clk {TYPE_1__* parent; scalar_t__ rate; scalar_t__ (* recalc ) (struct clk*) ;int childnode; int node; int name; } ;
+struct TYPE_2__ {scalar_t__ rate; int children; int name; } ;
+
+
+ int VAR_0 ;
+ scalar_t__ FUNC_0 (struct clk*) ;
+ scalar_t__ FUNC_1 (int ,char*,int ,int ) ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_2 (int *,int *) ;
+ int FUNC_3 (int *) ;
+ int FUNC_4 (int *) ;
+ scalar_t__ FUNC_5 (struct clk*) ;
+
+int FUNC_6(struct clk *VAR_3)
+{
+ if (VAR_3 == ((void*)0) || FUNC_0(VAR_3))
+  return -VAR_0;
+
+ if (FUNC_1(VAR_3->parent && !VAR_3->parent->rate,
+   "CLK: %s parent %s has no rate!\n",
+   VAR_3->name, VAR_3->parent->name))
+  return -VAR_0;
+
+ FUNC_3(&VAR_2);
+ FUNC_2(&VAR_3->node, &VAR_1);
+ if (VAR_3->parent)
+  FUNC_2(&VAR_3->childnode, &VAR_3->parent->children);
+ FUNC_4(&VAR_2);
+
+
+ if (VAR_3->rate)
+  return 0;
+
+
+ if (VAR_3->recalc)
+  VAR_3->rate = VAR_3->recalc(VAR_3);
+
+
+ else if (VAR_3->parent)
+  VAR_3->rate = VAR_3->parent->rate;
+
+ return 0;
+}

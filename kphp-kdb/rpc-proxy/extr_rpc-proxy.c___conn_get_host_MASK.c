@@ -1,0 +1,21 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct rpc_cluster_bucket {TYPE_1__* T; } ;
+struct TYPE_2__ {int custom_field; } ;
+
+
+
+unsigned FUNC_0 (struct rpc_cluster_bucket *VAR_0) {
+  return VAR_0->T->custom_field;
+}

@@ -1,0 +1,65 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_11__ TYPE_4__ ;
+typedef struct TYPE_10__ TYPE_3__ ;
+typedef struct TYPE_9__ TYPE_2__ ;
+typedef struct TYPE_8__ TYPE_1__ ;
+
+
+struct scsi_cmnd {void (* scsi_done ) (struct scsi_cmnd*) ;TYPE_2__* device; } ;
+struct TYPE_10__ {int list; int state; } ;
+typedef TYPE_3__ scb_t ;
+struct TYPE_11__ {int lock; int quiescent; int pending_list; } ;
+typedef TYPE_4__ adapter_t ;
+struct TYPE_9__ {TYPE_1__* host; } ;
+struct TYPE_8__ {scalar_t__ hostdata; } ;
+
+
+ int VAR_0 ;
+ scalar_t__ FUNC_0 (int *) ;
+ int FUNC_1 (int *,int *) ;
+ TYPE_3__* FUNC_2 (TYPE_4__*,struct scsi_cmnd*,int*) ;
+ int FUNC_3 (TYPE_4__*) ;
+ int FUNC_4 (int *,unsigned long) ;
+ int FUNC_5 (int *,unsigned long) ;
+
+__attribute__((used)) static int
+FUNC_6(struct scsi_cmnd *VAR_1, void (*VAR_2)(struct scsi_cmnd *))
+{
+ adapter_t *VAR_3;
+ scb_t *VAR_4;
+ int VAR_5=0;
+ unsigned long VAR_6;
+
+ VAR_3 = (adapter_t *)VAR_1->device->host->hostdata;
+
+ VAR_1->scsi_done = VAR_2;
+ FUNC_4(&VAR_3->lock, VAR_6);
+ VAR_4 = FUNC_2(VAR_3, VAR_1, &VAR_5);
+ if (!VAR_4)
+  goto out;
+
+ VAR_4->state |= VAR_0;
+ FUNC_1(&VAR_4->list, &VAR_3->pending_list);
+
+
+
+
+
+
+ if (FUNC_0(&VAR_3->quiescent) == 0)
+  FUNC_3(VAR_3);
+
+ VAR_5 = 0;
+ out:
+ FUNC_5(&VAR_3->lock, VAR_6);
+ return VAR_5;
+}

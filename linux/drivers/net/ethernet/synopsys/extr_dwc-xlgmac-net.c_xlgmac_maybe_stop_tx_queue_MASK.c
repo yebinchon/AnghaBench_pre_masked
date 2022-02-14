@@ -1,0 +1,52 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_4__ {int queue_stopped; scalar_t__ xmit_more; } ;
+struct xlgmac_ring {TYPE_2__ tx; } ;
+struct TYPE_3__ {int (* tx_start_xmit ) (struct xlgmac_channel*,struct xlgmac_ring*) ;} ;
+struct xlgmac_pdata {TYPE_1__ hw_ops; int netdev; } ;
+struct xlgmac_channel {int queue_index; struct xlgmac_pdata* pdata; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (struct xlgmac_pdata*,int ,int ,char*) ;
+ int FUNC_1 (int ,int ) ;
+ int FUNC_2 (struct xlgmac_channel*,struct xlgmac_ring*) ;
+ unsigned int FUNC_3 (struct xlgmac_ring*) ;
+
+__attribute__((used)) static int FUNC_4(
+   struct xlgmac_channel *VAR_2,
+   struct xlgmac_ring *VAR_3,
+   unsigned int VAR_4)
+{
+ struct xlgmac_pdata *VAR_5 = VAR_2->pdata;
+
+ if (VAR_4 > FUNC_3(VAR_3)) {
+  FUNC_0(VAR_5, VAR_1, VAR_5->netdev,
+      "Tx queue stopped, not enough descriptors available\n");
+  FUNC_1(VAR_5->netdev, VAR_2->queue_index);
+  VAR_3->tx.queue_stopped = 1;
+
+
+
+
+  if (VAR_3->tx.xmit_more)
+   VAR_5->hw_ops.tx_start_xmit(VAR_2, VAR_3);
+
+  return VAR_0;
+ }
+
+ return 0;
+}

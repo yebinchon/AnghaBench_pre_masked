@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct wlr_xwayland_surface {struct wlr_xwayland_surface* parent; } ;
+struct sway_view {struct wlr_xwayland_surface* wlr_xwayland_surface; } ;
+
+
+ int * FUNC_0 (struct sway_view*) ;
+
+__attribute__((used)) static bool FUNC_1(struct sway_view *VAR_0,
+  struct sway_view *VAR_1) {
+ if (FUNC_0(VAR_0) == ((void*)0)) {
+  return 0;
+ }
+ struct wlr_xwayland_surface *VAR_2 = VAR_0->wlr_xwayland_surface;
+ while (VAR_2) {
+  if (VAR_2->parent == VAR_1->wlr_xwayland_surface) {
+   return 1;
+  }
+  VAR_2 = VAR_2->parent;
+ }
+ return 0;
+}

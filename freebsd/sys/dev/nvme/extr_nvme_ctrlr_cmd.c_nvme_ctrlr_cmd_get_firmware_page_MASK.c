@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct nvme_firmware_page {int dummy; } ;
+struct nvme_controller {int dummy; } ;
+typedef int nvme_cb_fn_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (struct nvme_controller*,int ,int ,struct nvme_firmware_page*,int,int ,void*) ;
+
+void
+FUNC_1(struct nvme_controller *VAR_2,
+    struct nvme_firmware_page *VAR_3, nvme_cb_fn_t VAR_4, void *VAR_5)
+{
+
+ FUNC_0(VAR_2, VAR_1,
+     VAR_0, VAR_3, sizeof(*VAR_3), VAR_4,
+     VAR_5);
+}

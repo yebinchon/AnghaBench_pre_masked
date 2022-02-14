@@ -1,0 +1,39 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct rlimit {int rlim_cur; } ;
+typedef int rlim_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ scalar_t__ FUNC_0 (int ,struct rlimit*) ;
+ int FUNC_1 (char*) ;
+
+__attribute__((used)) static rlim_t FUNC_2(void)
+{
+ struct rlimit VAR_2;
+ rlim_t VAR_3 = 0;
+
+
+ if (FUNC_0(VAR_0, &VAR_2) == 0) {
+  if (VAR_2.rlim_cur == VAR_1)
+   VAR_3 = VAR_2.rlim_cur;
+  else
+   VAR_3 = VAR_2.rlim_cur / 2;
+ } else {
+  FUNC_1("failed to get fd limit\n");
+  VAR_3 = 1;
+ }
+
+ return VAR_3;
+}

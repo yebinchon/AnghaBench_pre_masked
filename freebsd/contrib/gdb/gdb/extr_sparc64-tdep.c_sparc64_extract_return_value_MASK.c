@@ -1,0 +1,66 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct type {int dummy; } ;
+struct regcache {int dummy; } ;
+
+
+ scalar_t__ VAR_0 ;
+ scalar_t__ VAR_1 ;
+ scalar_t__ FUNC_0 (struct type*) ;
+ scalar_t__ VAR_2 ;
+ int FUNC_1 (struct type*) ;
+ int FUNC_2 (int) ;
+ int FUNC_3 (void*,char*,int) ;
+ int FUNC_4 (struct regcache*,scalar_t__,char*) ;
+ int FUNC_5 (struct regcache*,struct type*,char*,int ) ;
+ scalar_t__ FUNC_6 (struct type*) ;
+ int FUNC_7 (struct type*) ;
+ scalar_t__ FUNC_8 (struct type*) ;
+
+__attribute__((used)) static void
+FUNC_9 (struct type *VAR_3, struct regcache *VAR_4,
+         void *VAR_5)
+{
+  int VAR_6 = FUNC_1 (VAR_3);
+  char VAR_7[32];
+  int VAR_8;
+
+  if (FUNC_8 (VAR_3))
+    {
+
+      FUNC_2 (VAR_6 <= 32);
+
+      for (VAR_8 = 0; VAR_8 < ((VAR_6 + 7) / 8); VAR_8++)
+ FUNC_4 (VAR_4, VAR_1 + VAR_8, VAR_7 + VAR_8 * 8);
+      if (FUNC_0 (VAR_3) != VAR_2)
+ FUNC_5 (VAR_4, VAR_3, VAR_7, 0);
+      FUNC_3 (VAR_5, VAR_7, VAR_6);
+    }
+  else if (FUNC_6 (VAR_3))
+    {
+
+      for (VAR_8 = 0; VAR_8 < VAR_6 / 4; VAR_8++)
+ FUNC_4 (VAR_4, VAR_0 + VAR_8, VAR_7 + VAR_8 * 4);
+      FUNC_3 (VAR_5, VAR_7, VAR_6);
+    }
+  else
+    {
+
+      FUNC_2 (FUNC_7 (VAR_3));
+
+
+
+      FUNC_4 (VAR_4, VAR_1, VAR_7);
+      FUNC_3 (VAR_5, VAR_7 + 8 - VAR_6, VAR_6);
+    }
+}

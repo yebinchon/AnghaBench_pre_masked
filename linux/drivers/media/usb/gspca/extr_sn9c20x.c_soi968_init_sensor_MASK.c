@@ -1,0 +1,36 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct sd {int hstart; int vstart; } ;
+struct gspca_dev {scalar_t__ usb_err; } ;
+
+
+ int FUNC_0 (int ) ;
+ int FUNC_1 (struct gspca_dev*,int,int) ;
+ int FUNC_2 (struct gspca_dev*,int ,int ) ;
+ int FUNC_3 (int) ;
+ int FUNC_4 (char*) ;
+ int VAR_0 ;
+
+__attribute__((used)) static void FUNC_5(struct gspca_dev *VAR_1)
+{
+ struct sd *VAR_2 = (struct sd *) VAR_1;
+
+ FUNC_1(VAR_1, 0x12, 0x80);
+ FUNC_3(200);
+ FUNC_2(VAR_1, VAR_0, FUNC_0(VAR_0));
+ if (VAR_1->usb_err < 0)
+  FUNC_4("SOI968 sensor initialization failed\n");
+
+ VAR_2->hstart = 60;
+ VAR_2->vstart = 11;
+}

@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_8__ TYPE_2__ ;
+typedef struct TYPE_7__ TYPE_1__ ;
+
+
+struct TYPE_7__ {int * handlers; } ;
+typedef TYPE_1__ zend_object ;
+typedef int zend_class_entry ;
+typedef int mpz_ptr ;
+struct TYPE_8__ {TYPE_1__ std; int num; } ;
+typedef TYPE_2__ gmp_object ;
+
+
+ TYPE_2__* FUNC_0 (scalar_t__) ;
+ int VAR_0 ;
+ int FUNC_1 (int ) ;
+ int FUNC_2 (TYPE_1__*,int *) ;
+ scalar_t__ FUNC_3 (int *) ;
+ int FUNC_4 (TYPE_1__*,int *) ;
+
+__attribute__((used)) static inline zend_object *FUNC_5(zend_class_entry *VAR_1, mpz_ptr *VAR_2)
+{
+ gmp_object *VAR_3 = FUNC_0(sizeof(gmp_object) + FUNC_3(VAR_1));
+
+ FUNC_4(&VAR_3->std, VAR_1);
+ FUNC_2(&VAR_3->std, VAR_1);
+
+ FUNC_1(VAR_3->num);
+ *VAR_2 = VAR_3->num;
+ VAR_3->std.handlers = &VAR_0;
+
+ return &VAR_3->std;
+}

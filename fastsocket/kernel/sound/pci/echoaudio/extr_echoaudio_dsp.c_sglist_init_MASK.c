@@ -1,0 +1,34 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_3__ ;
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct echoaudio {TYPE_2__* comm_page; } ;
+struct TYPE_6__ {int addr; int area; } ;
+struct audiopipe {size_t index; TYPE_3__ sgpage; scalar_t__ sglist_head; } ;
+struct TYPE_5__ {TYPE_1__* sglist_addr; } ;
+struct TYPE_4__ {int addr; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int ,int ,int ) ;
+
+__attribute__((used)) static int FUNC_2(struct echoaudio *VAR_1, struct audiopipe *VAR_2)
+{
+ VAR_2->sglist_head = 0;
+ FUNC_1(VAR_2->sgpage.area, 0, VAR_0);
+ VAR_1->comm_page->sglist_addr[VAR_2->index].addr =
+  FUNC_0(VAR_2->sgpage.addr);
+ return 0;
+}

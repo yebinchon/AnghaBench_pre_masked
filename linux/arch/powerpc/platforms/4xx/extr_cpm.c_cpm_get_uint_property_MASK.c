@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct device_node {int dummy; } ;
+
+
+ unsigned int* FUNC_0 (struct device_node*,char const*,int*) ;
+
+__attribute__((used)) static int FUNC_1(struct device_node *VAR_0,
+     const char *VAR_1)
+{
+ int VAR_2;
+ const unsigned int *VAR_3 = FUNC_0(VAR_0, VAR_1, &VAR_2);
+
+ if (VAR_3 == ((void*)0) || VAR_2 < sizeof(u32))
+  return 0;
+
+ return *VAR_3;
+}

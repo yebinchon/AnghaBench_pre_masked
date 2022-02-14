@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct thermal_zone_device {struct soc_sensor_entry* devdata; } ;
+struct soc_sensor_entry {int mode; } ;
+typedef enum thermal_device_mode { ____Placeholder_thermal_device_mode } thermal_device_mode ;
+
+
+
+__attribute__((used)) static int FUNC_0(struct thermal_zone_device *VAR_0,
+    enum thermal_device_mode *VAR_1)
+{
+ struct soc_sensor_entry *VAR_2 = VAR_0->devdata;
+ *VAR_1 = VAR_2->mode;
+ return 0;
+}

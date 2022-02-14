@@ -1,0 +1,23 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct evhttp {int timeout_write; int timeout_read; } ;
+
+
+ int FUNC_0 (int *,int,int) ;
+
+void
+FUNC_1(struct evhttp* VAR_0, int VAR_1)
+{
+ FUNC_0(&VAR_0->timeout_read, VAR_1, -1);
+ FUNC_0(&VAR_0->timeout_write, VAR_1, -1);
+}

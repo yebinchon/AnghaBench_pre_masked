@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct uart_sunsu_port {int type_probed; } ;
+struct uart_port {int type; } ;
+
+
+ int VAR_0 ;
+
+__attribute__((used)) static void FUNC_0(struct uart_port *VAR_1, int VAR_2)
+{
+ struct uart_sunsu_port *VAR_3 = (struct uart_sunsu_port *) VAR_1;
+
+ if (VAR_2 & VAR_0) {
+
+
+
+
+
+  VAR_1->type = VAR_3->type_probed;
+ }
+}

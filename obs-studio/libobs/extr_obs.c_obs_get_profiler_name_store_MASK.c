@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int profiler_name_store_t ;
+struct TYPE_2__ {int * name_store; } ;
+
+
+ TYPE_1__* VAR_0 ;
+
+profiler_name_store_t *FUNC_0(void)
+{
+ if (!VAR_0)
+  return ((void*)0);
+
+ return VAR_0->name_store;
+}

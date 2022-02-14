@@ -1,0 +1,89 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef scalar_t__ PFNGLVERTEXATTRIBIPOINTEREXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI4USVEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI4UIVEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI4UIEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI4UBVEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI4SVEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI4IVEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI4IEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI4BVEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI3UIVEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI3UIEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI3IVEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI3IEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI2UIVEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI2UIEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI2IVEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI2IEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI1UIVEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI1UIEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI1IVEXTPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBI1IEXTPROC ;
+typedef scalar_t__ PFNGLGETVERTEXATTRIBIUIVEXTPROC ;
+typedef scalar_t__ PFNGLGETVERTEXATTRIBIIVEXTPROC ;
+typedef scalar_t__ (* GLADloadproc ) (char*) ;
+
+
+ int VAR_0 ;
+ scalar_t__ VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ VAR_3 ;
+ scalar_t__ VAR_4 ;
+ scalar_t__ VAR_5 ;
+ scalar_t__ VAR_6 ;
+ scalar_t__ VAR_7 ;
+ scalar_t__ VAR_8 ;
+ scalar_t__ VAR_9 ;
+ scalar_t__ VAR_10 ;
+ scalar_t__ VAR_11 ;
+ scalar_t__ VAR_12 ;
+ scalar_t__ VAR_13 ;
+ scalar_t__ VAR_14 ;
+ scalar_t__ VAR_15 ;
+ scalar_t__ VAR_16 ;
+ scalar_t__ VAR_17 ;
+ scalar_t__ VAR_18 ;
+ scalar_t__ VAR_19 ;
+ scalar_t__ VAR_20 ;
+ scalar_t__ VAR_21 ;
+ scalar_t__ VAR_22 ;
+ scalar_t__ VAR_23 ;
+
+__attribute__((used)) static void FUNC_0(GLADloadproc VAR_24) {
+ if(!VAR_0) return;
+ VAR_3 = (PFNGLVERTEXATTRIBI1IEXTPROC)VAR_24("glVertexAttribI1iEXT");
+ VAR_7 = (PFNGLVERTEXATTRIBI2IEXTPROC)VAR_24("glVertexAttribI2iEXT");
+ VAR_11 = (PFNGLVERTEXATTRIBI3IEXTPROC)VAR_24("glVertexAttribI3iEXT");
+ VAR_16 = (PFNGLVERTEXATTRIBI4IEXTPROC)VAR_24("glVertexAttribI4iEXT");
+ VAR_5 = (PFNGLVERTEXATTRIBI1UIEXTPROC)VAR_24("glVertexAttribI1uiEXT");
+ VAR_9 = (PFNGLVERTEXATTRIBI2UIEXTPROC)VAR_24("glVertexAttribI2uiEXT");
+ VAR_13 = (PFNGLVERTEXATTRIBI3UIEXTPROC)VAR_24("glVertexAttribI3uiEXT");
+ VAR_20 = (PFNGLVERTEXATTRIBI4UIEXTPROC)VAR_24("glVertexAttribI4uiEXT");
+ VAR_4 = (PFNGLVERTEXATTRIBI1IVEXTPROC)VAR_24("glVertexAttribI1ivEXT");
+ VAR_8 = (PFNGLVERTEXATTRIBI2IVEXTPROC)VAR_24("glVertexAttribI2ivEXT");
+ VAR_12 = (PFNGLVERTEXATTRIBI3IVEXTPROC)VAR_24("glVertexAttribI3ivEXT");
+ VAR_17 = (PFNGLVERTEXATTRIBI4IVEXTPROC)VAR_24("glVertexAttribI4ivEXT");
+ VAR_6 = (PFNGLVERTEXATTRIBI1UIVEXTPROC)VAR_24("glVertexAttribI1uivEXT");
+ VAR_10 = (PFNGLVERTEXATTRIBI2UIVEXTPROC)VAR_24("glVertexAttribI2uivEXT");
+ VAR_14 = (PFNGLVERTEXATTRIBI3UIVEXTPROC)VAR_24("glVertexAttribI3uivEXT");
+ VAR_21 = (PFNGLVERTEXATTRIBI4UIVEXTPROC)VAR_24("glVertexAttribI4uivEXT");
+ VAR_15 = (PFNGLVERTEXATTRIBI4BVEXTPROC)VAR_24("glVertexAttribI4bvEXT");
+ VAR_18 = (PFNGLVERTEXATTRIBI4SVEXTPROC)VAR_24("glVertexAttribI4svEXT");
+ VAR_19 = (PFNGLVERTEXATTRIBI4UBVEXTPROC)VAR_24("glVertexAttribI4ubvEXT");
+ VAR_22 = (PFNGLVERTEXATTRIBI4USVEXTPROC)VAR_24("glVertexAttribI4usvEXT");
+ VAR_23 = (PFNGLVERTEXATTRIBIPOINTEREXTPROC)VAR_24("glVertexAttribIPointerEXT");
+ VAR_1 = (PFNGLGETVERTEXATTRIBIIVEXTPROC)VAR_24("glGetVertexAttribIivEXT");
+ VAR_2 = (PFNGLGETVERTEXATTRIBIUIVEXTPROC)VAR_24("glGetVertexAttribIuivEXT");
+}

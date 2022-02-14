@@ -1,0 +1,45 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct scsi_qla_host {int dummy; } ;
+struct TYPE_3__ {int * sp; int fc4_type; } ;
+struct TYPE_4__ {TYPE_1__ gpnft; } ;
+struct qla_work_evt {TYPE_2__ u; } ;
+typedef int srb_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ struct qla_work_evt* FUNC_0 (struct scsi_qla_host*,int) ;
+ int FUNC_1 (struct scsi_qla_host*,struct qla_work_evt*) ;
+
+__attribute__((used)) static int FUNC_2(struct scsi_qla_host *VAR_4,
+    srb_t *VAR_5, int VAR_6)
+{
+ struct qla_work_evt *VAR_7;
+
+ if (VAR_6 != VAR_1)
+  return VAR_3;
+
+ VAR_7 = FUNC_0(VAR_4, VAR_6);
+ if (!VAR_7)
+  return VAR_2;
+
+ VAR_7->u.gpnft.fc4_type = VAR_0;
+ VAR_7->u.gpnft.sp = VAR_5;
+
+ return FUNC_1(VAR_4, VAR_7);
+}

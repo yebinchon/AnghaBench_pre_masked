@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct input_polled_dev {int work; int poll_interval; } ;
+
+
+ unsigned long VAR_0 ;
+ unsigned long FUNC_0 (int ) ;
+ int FUNC_1 (int ,int *,unsigned long) ;
+ unsigned long FUNC_2 (unsigned long) ;
+ int VAR_1 ;
+
+__attribute__((used)) static void FUNC_3(struct input_polled_dev *VAR_2)
+{
+ unsigned long VAR_3;
+
+ VAR_3 = FUNC_0(VAR_2->poll_interval);
+ if (VAR_3 >= VAR_0)
+  VAR_3 = FUNC_2(VAR_3);
+
+ FUNC_1(VAR_1, &VAR_2->work, VAR_3);
+}

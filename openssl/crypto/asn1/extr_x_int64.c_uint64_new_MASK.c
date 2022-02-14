@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int uint64_t ;
+typedef int ASN1_VALUE ;
+typedef int ASN1_ITEM ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ,int ) ;
+ int VAR_1 ;
+ scalar_t__ FUNC_1 (int) ;
+
+__attribute__((used)) static int FUNC_2(ASN1_VALUE **VAR_2, const ASN1_ITEM *VAR_3)
+{
+    if ((*VAR_2 = (ASN1_VALUE *)FUNC_1(sizeof(uint64_t))) == ((void*)0)) {
+        FUNC_0(VAR_0, VAR_1);
+        return 0;
+    }
+    return 1;
+}

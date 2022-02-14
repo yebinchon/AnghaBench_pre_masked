@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int xfs_da_state_t ;
+
+
+ int VAR_0 ;
+ int * FUNC_0 (int ,int ) ;
+ int VAR_1 ;
+
+xfs_da_state_t *
+FUNC_1(void)
+{
+ return FUNC_0(VAR_1, VAR_0);
+}

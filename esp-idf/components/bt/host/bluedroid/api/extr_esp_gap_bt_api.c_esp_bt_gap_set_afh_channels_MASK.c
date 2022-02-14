@@ -1,0 +1,54 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_8__ TYPE_3__ ;
+typedef struct TYPE_7__ TYPE_2__ ;
+typedef struct TYPE_6__ TYPE_1__ ;
+
+
+typedef int esp_err_t ;
+typedef int esp_bt_gap_afh_channels ;
+struct TYPE_7__ {int act; int pid; int sig; } ;
+typedef TYPE_2__ btc_msg_t ;
+struct TYPE_6__ {int* channels; } ;
+struct TYPE_8__ {TYPE_1__ set_afh_channels; } ;
+typedef TYPE_3__ btc_gap_bt_args_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ scalar_t__ VAR_3 ;
+ scalar_t__ VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int VAR_8 ;
+ scalar_t__ FUNC_0 (TYPE_2__*,TYPE_3__*,int,int *) ;
+ scalar_t__ FUNC_1 () ;
+ int FUNC_2 (int**,int ,int) ;
+
+esp_err_t FUNC_3(esp_bt_gap_afh_channels VAR_9)
+{
+    btc_msg_t VAR_10;
+    btc_gap_bt_args_t VAR_11;
+
+    if (FUNC_1() != VAR_4) {
+        return VAR_6;
+    }
+
+    VAR_10.sig = VAR_2;
+    VAR_10.pid = VAR_1;
+    VAR_10.act = VAR_0;
+
+    FUNC_2(&VAR_11.set_afh_channels.channels, VAR_9, VAR_5);
+    VAR_11.set_afh_channels.channels[VAR_5 -1] &= 0x7F;
+    return (FUNC_0(&VAR_10, &VAR_11, sizeof(btc_gap_bt_args_t), ((void*)0)) == VAR_3 ? VAR_8 : VAR_7);
+}

@@ -1,0 +1,41 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct emu_voice {int vbuf; int * slave; scalar_t__ busy; } ;
+struct emu_sc_info {int lock; int mem; struct emu_voice* voice; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int *,int ) ;
+ int FUNC_1 (int *) ;
+ int FUNC_2 (int *) ;
+
+void
+FUNC_3(struct emu_sc_info *VAR_1, struct emu_voice *VAR_2)
+{
+ int VAR_3, VAR_4;
+
+ FUNC_1(&VAR_1->lock);
+ for (VAR_3 = 0; VAR_3 < VAR_0; VAR_3++) {
+  if (VAR_2 == &VAR_1->voice[VAR_3] && VAR_1->voice[VAR_3].busy) {
+   VAR_2->busy = 0;
+
+
+
+
+
+   if (VAR_2->slave != ((void*)0))
+    VAR_4 = FUNC_0(&VAR_1->mem, VAR_2->vbuf);
+  }
+ }
+ FUNC_2(&VAR_1->lock);
+}

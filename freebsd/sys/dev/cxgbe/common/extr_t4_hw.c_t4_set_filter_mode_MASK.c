@@ -1,0 +1,41 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+struct adapter {int dummy; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int FUNC_0 (struct adapter*,int) ;
+ int FUNC_1 (struct adapter*,unsigned int*,int,int ,int) ;
+
+int FUNC_2(struct adapter *VAR_5, unsigned int VAR_6,
+         bool VAR_7)
+{
+ static u8 VAR_8[] = { 1, 3, 17, 17, 8, 8, 16, 9, 3, 1 };
+
+ int VAR_9, VAR_10 = 0;
+
+ for (VAR_9 = VAR_3; VAR_9 <= VAR_4; VAR_9++)
+  if (VAR_6 & (1 << VAR_9))
+   VAR_10 += VAR_8[VAR_9];
+ if (VAR_10 > VAR_2)
+  return -VAR_1;
+ FUNC_1(VAR_5, &VAR_6, 1, VAR_0, VAR_7);
+ FUNC_0(VAR_5, VAR_7);
+
+ return 0;
+}

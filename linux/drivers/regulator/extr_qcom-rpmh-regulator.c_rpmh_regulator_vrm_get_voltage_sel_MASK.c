@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct rpmh_vreg {int voltage_selector; } ;
+struct regulator_dev {int dummy; } ;
+
+
+ struct rpmh_vreg* FUNC_0 (struct regulator_dev*) ;
+
+__attribute__((used)) static int FUNC_1(struct regulator_dev *VAR_0)
+{
+ struct rpmh_vreg *VAR_1 = FUNC_0(VAR_0);
+
+ return VAR_1->voltage_selector;
+}

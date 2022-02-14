@@ -1,0 +1,22 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct xdp_umem {int * fq_reuse; } ;
+
+
+ int FUNC_0 (int *) ;
+
+void FUNC_1(struct xdp_umem *VAR_0)
+{
+ FUNC_0(VAR_0->fq_reuse);
+ VAR_0->fq_reuse = ((void*)0);
+}

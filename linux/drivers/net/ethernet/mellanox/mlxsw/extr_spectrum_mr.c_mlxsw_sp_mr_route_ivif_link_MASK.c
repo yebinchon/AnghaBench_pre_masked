@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct mlxsw_sp_mr_vif {int route_ivif_list; } ;
+struct TYPE_2__ {int vif_node; struct mlxsw_sp_mr_vif* mr_vif; struct mlxsw_sp_mr_route* mr_route; } ;
+struct mlxsw_sp_mr_route {TYPE_1__ ivif; } ;
+
+
+ int FUNC_0 (int *,int *) ;
+
+__attribute__((used)) static void FUNC_1(struct mlxsw_sp_mr_route *VAR_0,
+     struct mlxsw_sp_mr_vif *VAR_1)
+{
+ VAR_0->ivif.mr_route = VAR_0;
+ VAR_0->ivif.mr_vif = VAR_1;
+ FUNC_0(&VAR_0->ivif.vif_node, &VAR_1->route_ivif_list);
+}

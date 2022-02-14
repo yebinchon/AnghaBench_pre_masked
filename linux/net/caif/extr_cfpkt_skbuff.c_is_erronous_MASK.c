@@ -1,0 +1,23 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct cfpkt {int dummy; } ;
+struct TYPE_2__ {int erronous; } ;
+
+
+ TYPE_1__* FUNC_0 (struct cfpkt*) ;
+
+__attribute__((used)) static inline bool FUNC_1(struct cfpkt *VAR_0)
+{
+ return FUNC_0(VAR_0)->erronous;
+}

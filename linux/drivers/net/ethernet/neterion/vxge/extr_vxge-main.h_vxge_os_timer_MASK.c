@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct timer_list {int dummy; } ;
+
+
+ scalar_t__ VAR_0 ;
+ int FUNC_0 (struct timer_list*,scalar_t__) ;
+ int FUNC_1 (struct timer_list*,void (*) (struct timer_list*),int ) ;
+
+__attribute__((used)) static inline
+void FUNC_2(struct timer_list *VAR_1, void (*VAR_2)(struct timer_list *),
+     unsigned long VAR_3)
+{
+ FUNC_1(VAR_1, VAR_2, 0);
+ FUNC_0(VAR_1, VAR_0 + VAR_3);
+}

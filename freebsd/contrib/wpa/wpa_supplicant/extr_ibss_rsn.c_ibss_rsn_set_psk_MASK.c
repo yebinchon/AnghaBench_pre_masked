@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+struct ibss_rsn {int psk; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ,int const*,int ) ;
+
+void FUNC_1(struct ibss_rsn *VAR_1, const u8 *VAR_2)
+{
+ if (VAR_1 == ((void*)0))
+  return;
+ FUNC_0(VAR_1->psk, VAR_2, VAR_0);
+}

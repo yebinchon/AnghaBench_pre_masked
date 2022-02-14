@@ -1,0 +1,36 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct gate_descriptor {uintptr_t gd_looffset; int gd_ist; int gd_type; int gd_dpl; int gd_p; uintptr_t gd_hioffset; scalar_t__ gd_xx; int gd_selector; } ;
+typedef int inthand_t ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ,int ) ;
+ int VAR_1 ;
+ struct gate_descriptor* VAR_2 ;
+
+void
+FUNC_1(int VAR_3, inthand_t *VAR_4, int VAR_5, int VAR_6, int VAR_7)
+{
+ struct gate_descriptor *VAR_8;
+
+ VAR_8 = VAR_2 + VAR_3;
+ VAR_8->gd_looffset = (uintptr_t)VAR_4;
+ VAR_8->gd_selector = FUNC_0(VAR_0, VAR_1);
+ VAR_8->gd_ist = VAR_7;
+ VAR_8->gd_xx = 0;
+ VAR_8->gd_type = VAR_5;
+ VAR_8->gd_dpl = VAR_6;
+ VAR_8->gd_p = 1;
+ VAR_8->gd_hioffset = ((uintptr_t)VAR_4)>>16 ;
+}

@@ -1,0 +1,220 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct mavenregs {scalar_t__ mode; } ;
+struct i2c_client {int dummy; } ;
+
+
+ int FUNC_0 (int) ;
+ int FUNC_1 (int) ;
+ scalar_t__ VAR_0 ;
+ int FUNC_2 (struct i2c_client*,int) ;
+ int FUNC_3 (struct i2c_client*,int,int) ;
+ int FUNC_4 (struct i2c_client*,int,int) ;
+
+__attribute__((used)) static void FUNC_5(struct i2c_client* VAR_1, const struct mavenregs* VAR_2) {
+ int VAR_3;
+
+
+ FUNC_3(VAR_1, 0x3E, 0x01);
+ FUNC_2(VAR_1, 0x82);
+ FUNC_3(VAR_1, 0x8C, 0x00);
+ FUNC_2(VAR_1, 0x94);
+ FUNC_3(VAR_1, 0x94, 0xA2);
+
+
+ FUNC_4(VAR_1, 0x8E, 0x1EFF);
+ FUNC_3(VAR_1, 0xC6, 0x01);
+
+
+
+ FUNC_2(VAR_1, 0x06);
+ FUNC_3(VAR_1, 0x06, 0xF9);
+
+
+
+
+
+ FUNC_0(0x00); FUNC_0(0x01); FUNC_0(0x02); FUNC_0(0x03);
+
+ FUNC_0(0x04);
+
+ FUNC_0(0x2C);
+ FUNC_0(0x08);
+ FUNC_0(0x0A);
+ FUNC_0(0x09);
+ FUNC_0(0x29);
+ FUNC_1(0x31);
+ FUNC_1(0x17);
+ FUNC_0(0x0B);
+ FUNC_0(0x0C);
+ if (VAR_2->mode == VAR_0) {
+  FUNC_3(VAR_1, 0x35, 0x10);
+ } else {
+  FUNC_3(VAR_1, 0x35, 0x0F);
+ }
+
+ FUNC_1(0x10);
+
+ FUNC_1(0x0E);
+ FUNC_1(0x1E);
+
+ FUNC_0(0x20);
+ FUNC_0(0x22);
+ FUNC_0(0x25);
+ FUNC_0(0x34);
+ FUNC_0(0x33);
+ FUNC_0(0x19);
+ FUNC_0(0x12);
+ FUNC_0(0x3B);
+ FUNC_0(0x13);
+ FUNC_0(0x39);
+ FUNC_0(0x1D);
+ FUNC_0(0x3A);
+ FUNC_0(0x24);
+ FUNC_0(0x14);
+ FUNC_0(0x15);
+ FUNC_0(0x16);
+ FUNC_1(0x2D);
+ FUNC_1(0x2F);
+ FUNC_0(0x1A);
+ FUNC_0(0x1B);
+ FUNC_0(0x1C);
+ FUNC_0(0x23);
+ FUNC_0(0x26);
+ FUNC_0(0x28);
+ FUNC_0(0x27);
+ FUNC_0(0x21);
+ FUNC_1(0x2A);
+ if (VAR_2->mode == VAR_0)
+  FUNC_3(VAR_1, 0x35, 0x1D);
+ else
+  FUNC_3(VAR_1, 0x35, 0x1C);
+
+ FUNC_1(0x3C);
+ FUNC_0(0x37);
+ FUNC_0(0x38);
+ FUNC_3(VAR_1, 0xB3, 0x01);
+
+ FUNC_2(VAR_1, 0xB0);
+ FUNC_3(VAR_1, 0xB0, 0x08);
+ FUNC_2(VAR_1, 0xB9);
+ FUNC_3(VAR_1, 0xB9, 0x78);
+ FUNC_2(VAR_1, 0xBF);
+ FUNC_3(VAR_1, 0xBF, 0x02);
+ FUNC_2(VAR_1, 0x94);
+ FUNC_3(VAR_1, 0x94, 0xB3);
+
+ FUNC_0(0x80);
+ FUNC_0(0x81);
+ FUNC_0(0x82);
+
+ FUNC_3(VAR_1, 0x8C, 0x20);
+ FUNC_2(VAR_1, 0x8D);
+ FUNC_3(VAR_1, 0x8D, 0x10);
+
+ FUNC_0(0x90);
+ FUNC_0(0x91);
+ FUNC_0(0x92);
+
+ FUNC_1(0x9A);
+ FUNC_1(0x9C);
+ FUNC_1(0x9E);
+ FUNC_1(0xA0);
+ FUNC_1(0xA2);
+ FUNC_1(0xA4);
+ FUNC_1(0xA6);
+ FUNC_1(0xA8);
+ FUNC_1(0x98);
+ FUNC_1(0xAE);
+ FUNC_1(0x96);
+ FUNC_1(0xAA);
+ FUNC_1(0xAC);
+
+ FUNC_0(0xBE);
+ FUNC_0(0xC2);
+
+ FUNC_2(VAR_1, 0x8D);
+ FUNC_3(VAR_1, 0x8D, 0x04);
+
+ FUNC_0(0x20);
+ FUNC_0(0x22);
+ FUNC_0(0x93);
+ FUNC_0(0x20);
+ FUNC_0(0x22);
+ FUNC_0(0x25);
+ FUNC_1(0x0E);
+ FUNC_1(0x1E);
+ FUNC_1(0x0E);
+ FUNC_1(0x1E);
+
+
+ FUNC_0(0x83);
+ FUNC_0(0x84);
+ FUNC_0(0x85);
+ FUNC_0(0x86);
+ FUNC_0(0x87);
+ FUNC_0(0x88);
+ FUNC_0(0x89);
+ FUNC_0(0x8A);
+ FUNC_0(0x8B);
+
+ VAR_3 = FUNC_2(VAR_1, 0x8D);
+ VAR_3 &= 0x14;
+ FUNC_3(VAR_1, 0x8D, VAR_3);
+
+ FUNC_0(0x33);
+ FUNC_0(0x19);
+ FUNC_0(0x12);
+ FUNC_0(0x3B);
+ FUNC_0(0x13);
+ FUNC_0(0x39);
+ FUNC_0(0x1D);
+ FUNC_0(0x3A);
+ FUNC_0(0x24);
+ FUNC_0(0x14);
+ FUNC_0(0x15);
+ FUNC_0(0x16);
+ FUNC_1(0x2D);
+ FUNC_1(0x2F);
+ FUNC_0(0x1A);
+ FUNC_0(0x1B);
+ FUNC_0(0x1C);
+ FUNC_0(0x23);
+ FUNC_0(0x26);
+ FUNC_0(0x28);
+ FUNC_0(0x27);
+ FUNC_0(0x21);
+ FUNC_1(0x2A);
+ if (VAR_2->mode == VAR_0)
+  FUNC_3(VAR_1, 0x35, 0x1D);
+ else
+  FUNC_3(VAR_1, 0x35, 0x1C);
+ FUNC_1(0x3C);
+ FUNC_0(0x37);
+ FUNC_0(0x38);
+
+ FUNC_2(VAR_1, 0xB0);
+ FUNC_0(0xB0);
+ FUNC_0(0x90);
+ FUNC_0(0xBE);
+ FUNC_0(0xC2);
+
+ FUNC_1(0x9A);
+ FUNC_1(0xA2);
+ FUNC_1(0x9E);
+ FUNC_1(0xA6);
+ FUNC_1(0xAA);
+ FUNC_1(0xAC);
+ FUNC_3(VAR_1, 0x3E, 0x00);
+ FUNC_3(VAR_1, 0x95, 0x20);
+}

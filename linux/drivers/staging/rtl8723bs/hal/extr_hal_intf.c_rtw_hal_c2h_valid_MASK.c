@@ -1,0 +1,23 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+struct c2h_evt_hdr_88xx {int dummy; } ;
+struct adapter {int dummy; } ;
+
+
+ int FUNC_0 (struct c2h_evt_hdr_88xx*) ;
+
+bool FUNC_1(struct adapter *VAR_0, u8 *VAR_1)
+{
+ return FUNC_0((struct c2h_evt_hdr_88xx *)VAR_1);
+}

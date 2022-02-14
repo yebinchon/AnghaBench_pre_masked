@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef enum mlx4_resource { ____Placeholder_mlx4_resource } mlx4_resource ;
+__attribute__((used)) static const char *FUNC_0(enum mlx4_resource VAR_0)
+{
+ switch (VAR_0) {
+ case 131:
+  return "QP";
+ case 137:
+  return "CQ";
+ case 130:
+  return "SRQ";
+ case 128:
+  return "XRCD";
+ case 133:
+  return "MPT";
+ case 132:
+  return "MTT";
+ case 134:
+  return "MAC";
+ case 129:
+  return "VLAN";
+ case 138:
+  return "COUNTER";
+ case 135:
+  return "FS_RULE";
+ case 136:
+  return "EQ";
+ default:
+  return "INVALID RESOURCE";
+ }
+}

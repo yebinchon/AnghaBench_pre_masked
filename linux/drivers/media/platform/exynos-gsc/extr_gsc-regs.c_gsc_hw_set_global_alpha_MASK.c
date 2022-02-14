@@ -1,0 +1,49 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_3__ ;
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+typedef int u32 ;
+struct gsc_frame {TYPE_3__* fmt; } ;
+struct gsc_dev {scalar_t__ regs; } ;
+struct TYPE_5__ {TYPE_1__* global_alpha; } ;
+struct gsc_ctx {TYPE_2__ gsc_ctrls; struct gsc_frame d_frame; struct gsc_dev* gsc_dev; } ;
+struct TYPE_6__ {int color; } ;
+struct TYPE_4__ {int val; } ;
+
+
+ scalar_t__ VAR_0 ;
+ int FUNC_0 (int ) ;
+ int VAR_1 ;
+ int FUNC_1 (int ) ;
+ int FUNC_2 (char*) ;
+ int FUNC_3 (scalar_t__) ;
+ int FUNC_4 (int ,scalar_t__) ;
+
+void FUNC_5(struct gsc_ctx *VAR_2)
+{
+ struct gsc_dev *VAR_3 = VAR_2->gsc_dev;
+ struct gsc_frame *VAR_4 = &VAR_2->d_frame;
+ u32 VAR_5;
+
+ if (!FUNC_1(VAR_4->fmt->color)) {
+  FUNC_2("Not a RGB format");
+  return;
+ }
+
+ VAR_5 = FUNC_3(VAR_3->regs + VAR_0);
+ VAR_5 &= ~VAR_1;
+
+ VAR_5 |= FUNC_0(VAR_2->gsc_ctrls.global_alpha->val);
+ FUNC_4(VAR_5, VAR_3->regs + VAR_0);
+}

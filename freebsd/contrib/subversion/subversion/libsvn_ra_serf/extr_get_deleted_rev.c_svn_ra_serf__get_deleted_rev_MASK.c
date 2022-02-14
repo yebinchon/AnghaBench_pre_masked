@@ -1,0 +1,93 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_13__ TYPE_4__ ;
+typedef struct TYPE_12__ TYPE_3__ ;
+typedef struct TYPE_11__ TYPE_2__ ;
+typedef struct TYPE_10__ TYPE_1__ ;
+
+
+typedef void* svn_revnum_t ;
+struct TYPE_11__ {int * priv; } ;
+typedef TYPE_2__ svn_ra_session_t ;
+typedef int svn_ra_serf__xml_context_t ;
+typedef int svn_ra_serf__session_t ;
+struct TYPE_10__ {int code; } ;
+struct TYPE_12__ {char* method; char const* path; char* body_type; TYPE_1__ sline; TYPE_4__* body_delegate_baton; int body_delegate; } ;
+typedef TYPE_3__ svn_ra_serf__handler_t ;
+typedef int svn_error_t ;
+struct TYPE_13__ {char const* path; void** revision_deleted; void* end_revision; void* peg_revision; } ;
+typedef TYPE_4__ drev_context_t ;
+typedef int apr_pool_t ;
+
+
+ int FUNC_0 (int *) ;
+ int VAR_0 ;
+ int * VAR_1 ;
+ int FUNC_1 (char*) ;
+ TYPE_4__* FUNC_2 (int *,int) ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int * FUNC_3 (int ,int *,int ,char*) ;
+ int * FUNC_4 (TYPE_3__*,int *) ;
+ TYPE_3__* FUNC_5 (int *,int *,int *,int *) ;
+ int * FUNC_6 (char const**,int *,int *,int *,void*,int *,int *) ;
+ int * FUNC_7 (int ,int *,int ,int *,TYPE_4__*,int *) ;
+
+svn_error_t *
+FUNC_8(svn_ra_session_t *VAR_5,
+                             const char *VAR_6,
+                             svn_revnum_t VAR_7,
+                             svn_revnum_t VAR_8,
+                             svn_revnum_t *VAR_9,
+                             apr_pool_t *VAR_10)
+{
+  drev_context_t *VAR_11;
+  svn_ra_serf__session_t *VAR_12 = VAR_5->priv;
+  svn_ra_serf__handler_t *VAR_13;
+  svn_ra_serf__xml_context_t *VAR_14;
+  const char *VAR_15;
+  svn_error_t *VAR_16;
+
+  VAR_11 = FUNC_2(VAR_10, sizeof(*VAR_11));
+  VAR_11->path = VAR_6;
+  VAR_11->peg_revision = VAR_7;
+  VAR_11->end_revision = VAR_8;
+  VAR_11->revision_deleted = VAR_9;
+
+  FUNC_0(FUNC_6(&VAR_15, ((void*)0) ,
+                                      VAR_12, ((void*)0) , VAR_7,
+                                      VAR_10, VAR_10));
+
+  VAR_14 = FUNC_7(VAR_4,
+                                           ((void*)0), VAR_3, ((void*)0),
+                                           VAR_11,
+                                           VAR_10);
+  VAR_13 = FUNC_5(VAR_12, VAR_14, ((void*)0), VAR_10);
+
+  VAR_13->method = "REPORT";
+  VAR_13->path = VAR_15;
+  VAR_13->body_type = "text/xml";
+  VAR_13->body_delegate = VAR_2;
+  VAR_13->body_delegate_baton = VAR_11;
+
+  VAR_16 = FUNC_4(VAR_13, VAR_10);
+
+
+
+  if (VAR_13->sline.code == 501)
+    return FUNC_3(VAR_0, VAR_16,
+                             FUNC_1("'%s' REPORT not implemented"),
+                             "get-deleted-rev");
+  FUNC_0(VAR_16);
+
+  return VAR_1;
+}

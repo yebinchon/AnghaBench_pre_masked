@@ -1,0 +1,54 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct snd_pcm_hw_rule {unsigned int* private; } ;
+struct snd_pcm_hw_params {int dummy; } ;
+struct snd_interval {int integer; int max; int min; } ;
+
+
+ unsigned int FUNC_0 (int *) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int * VAR_3 ;
+ unsigned int FUNC_1 (unsigned int) ;
+ struct snd_interval* FUNC_2 (struct snd_pcm_hw_params*,int ) ;
+ struct snd_interval* FUNC_3 (struct snd_pcm_hw_params*,int ) ;
+ int FUNC_4 (int ,unsigned int) ;
+ int FUNC_5 (int ,unsigned int) ;
+ int FUNC_6 (struct snd_interval*,struct snd_interval*) ;
+ int FUNC_7 (struct snd_interval const*,int ) ;
+
+__attribute__((used)) static int
+FUNC_8(struct snd_pcm_hw_params *VAR_4, struct snd_pcm_hw_rule *VAR_5)
+{
+ unsigned int *VAR_6 = VAR_5->private;
+ struct snd_interval *VAR_7 =
+  FUNC_2(VAR_4, VAR_0);
+ const struct snd_interval *VAR_8 =
+  FUNC_3(VAR_4, VAR_1);
+ struct snd_interval VAR_9 = {
+  .min = VAR_2, .max = 0, .integer = 1
+ };
+ unsigned int VAR_10, VAR_11;
+
+ for (VAR_10 = 0; VAR_10 < FUNC_0(VAR_3); VAR_10++) {
+  VAR_11 = FUNC_1(VAR_10);
+  if (!FUNC_7(VAR_8, VAR_3[VAR_10]))
+   continue;
+
+  VAR_9.min = FUNC_5(VAR_9.min, VAR_6[VAR_11]);
+  VAR_9.max = FUNC_4(VAR_9.max, VAR_6[VAR_11]);
+ }
+
+ return FUNC_6(VAR_7, &VAR_9);
+}

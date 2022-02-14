@@ -1,0 +1,35 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef void* u32 ;
+struct TYPE_2__ {int size; int pkt_type; } ;
+struct hfi_sys_set_property_pkt {int num_properties; int * data; TYPE_1__ hdr; } ;
+struct hfi_debug_config {void* mode; void* config; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+
+void FUNC_0(struct hfi_sys_set_property_pkt *VAR_2, u32 VAR_3,
+     u32 VAR_4)
+{
+ struct hfi_debug_config *VAR_5;
+
+ VAR_2->hdr.size = sizeof(*VAR_2) + sizeof(*VAR_5) + sizeof(u32);
+ VAR_2->hdr.pkt_type = VAR_0;
+ VAR_2->num_properties = 1;
+ VAR_2->data[0] = VAR_1;
+ VAR_5 = (struct hfi_debug_config *)&VAR_2->data[1];
+ VAR_5->config = VAR_4;
+ VAR_5->mode = VAR_3;
+}

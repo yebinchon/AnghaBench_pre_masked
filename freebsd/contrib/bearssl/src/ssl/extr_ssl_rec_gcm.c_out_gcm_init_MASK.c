@@ -1,0 +1,34 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+struct TYPE_5__ {int * out; } ;
+struct TYPE_6__ {TYPE_1__ vtable; } ;
+typedef TYPE_2__ br_sslrec_gcm_context ;
+typedef int br_ghash ;
+typedef int br_block_ctr_class ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (TYPE_2__*,int const*,void const*,size_t,int ,void const*) ;
+
+__attribute__((used)) static void
+FUNC_1(br_sslrec_gcm_context *VAR_1,
+ const br_block_ctr_class *VAR_2,
+ const void *VAR_3, size_t VAR_4,
+ br_ghash VAR_5,
+ const void *VAR_6)
+{
+ VAR_1->vtable.out = &VAR_0;
+ FUNC_0(VAR_1, VAR_2, VAR_3, VAR_4, VAR_5, VAR_6);
+}

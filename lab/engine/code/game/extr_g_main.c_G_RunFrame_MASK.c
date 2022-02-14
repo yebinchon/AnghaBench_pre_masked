@@ -1,0 +1,183 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_25__ TYPE_9__ ;
+typedef struct TYPE_24__ TYPE_8__ ;
+typedef struct TYPE_23__ TYPE_6__ ;
+typedef struct TYPE_22__ TYPE_5__ ;
+typedef struct TYPE_21__ TYPE_4__ ;
+typedef struct TYPE_20__ TYPE_3__ ;
+typedef struct TYPE_19__ TYPE_2__ ;
+typedef struct TYPE_18__ TYPE_1__ ;
+
+
+struct TYPE_22__ {scalar_t__ eType; int eFlags; int number; scalar_t__ event; } ;
+struct TYPE_21__ {int linked; int currentOrigin; } ;
+struct TYPE_23__ {scalar_t__ eventTime; int classname; scalar_t__ inuse; TYPE_5__ s; scalar_t__ physicsObject; scalar_t__ neverFree; TYPE_4__ r; scalar_t__ freeAfterEvent; TYPE_3__* item; int id; scalar_t__ unlinkAfterEvent; TYPE_2__* client; } ;
+typedef TYPE_6__ gentity_t ;
+struct TYPE_25__ {scalar_t__ integer; } ;
+struct TYPE_24__ {int previousTime; int time; int num_entities; int maxclients; int framenum; scalar_t__ restarted; } ;
+struct TYPE_20__ {int classname; int giType; } ;
+struct TYPE_18__ {scalar_t__ externalEvent; } ;
+struct TYPE_19__ {TYPE_1__ ps; } ;
+
+
+ int FUNC_0 () ;
+ int FUNC_1 () ;
+ int FUNC_2 () ;
+ int FUNC_3 () ;
+ int FUNC_4 (int ) ;
+ int FUNC_5 () ;
+ int FUNC_6 () ;
+ int FUNC_7 (TYPE_6__*) ;
+ scalar_t__ VAR_0 ;
+ scalar_t__ VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ VAR_3 ;
+ int FUNC_8 (TYPE_6__*) ;
+ int FUNC_9 (char*,int,int ) ;
+ int FUNC_10 (TYPE_6__*) ;
+ int FUNC_11 (TYPE_6__*) ;
+ int FUNC_12 (TYPE_6__*) ;
+ int FUNC_13 (TYPE_6__*) ;
+ int FUNC_14 (TYPE_6__*) ;
+ int FUNC_15 () ;
+ int FUNC_16 () ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int FUNC_17 (int ,int ,int ,int ,int ,int ) ;
+ int FUNC_18 () ;
+ TYPE_6__* VAR_8 ;
+ TYPE_9__ VAR_9 ;
+ TYPE_8__ VAR_10 ;
+ scalar_t__ VAR_11 ;
+ int FUNC_19 (char*,char*) ;
+ int FUNC_20 (TYPE_6__*) ;
+
+void FUNC_21( int VAR_12 ) {
+ int VAR_13;
+ gentity_t *VAR_14;
+
+
+ if ( VAR_10.restarted ) {
+  return;
+ }
+ FUNC_15();
+ VAR_10.framenum++;
+ VAR_10.previousTime = VAR_10.time;
+ VAR_10.time = VAR_12;
+
+
+ FUNC_16();
+
+ FUNC_0();
+ FUNC_18();
+
+
+
+ VAR_14 = &VAR_8[0];
+ for (VAR_13=0 ; VAR_13<VAR_10.num_entities ; VAR_13++, VAR_14++) {
+  if ( !VAR_14->inuse ) {
+   continue;
+  }
+
+
+  if ( VAR_10.time - VAR_14->eventTime > VAR_3 ) {
+   if ( VAR_14->s.event ) {
+    VAR_14->s.event = 0;
+    if ( VAR_14->client ) {
+     VAR_14->client->ps.externalEvent = 0;
+
+
+
+    }
+   }
+   if ( VAR_14->freeAfterEvent ) {
+
+    FUNC_8( VAR_14 );
+    continue;
+   } else if ( VAR_14->unlinkAfterEvent ) {
+
+    VAR_14->unlinkAfterEvent = VAR_11;
+    FUNC_20( VAR_14 );
+   }
+  }
+
+  if (VAR_14->item) {
+   FUNC_17( VAR_14->s.number, VAR_14->id, VAR_14->item->giType, VAR_14->s.eFlags, VAR_14->r.currentOrigin, VAR_14->item->classname );
+  }
+
+  if ( VAR_14->freeAfterEvent ) {
+   continue;
+  }
+
+  if ( !VAR_14->r.linked && VAR_14->neverFree ) {
+   continue;
+  }
+
+  if ( VAR_14->s.eType == VAR_1 ) {
+   FUNC_12( VAR_14 );
+   continue;
+  }
+
+  if ( VAR_14->s.eType == VAR_0 || VAR_14->physicsObject ) {
+   FUNC_11( VAR_14 );
+   continue;
+  }
+
+  if ( VAR_14->s.eType == VAR_2 ) {
+   FUNC_13( VAR_14 );
+   continue;
+  }
+
+  if ( VAR_13 < VAR_4 ) {
+   FUNC_10( VAR_14 );
+   continue;
+  }
+
+  FUNC_14( VAR_14 );
+ }
+
+
+ VAR_14 = &VAR_8[0];
+ for (VAR_13=0 ; VAR_13 < VAR_10.maxclients ; VAR_13++, VAR_14++ ) {
+  if ( VAR_14->inuse ) {
+   FUNC_7( VAR_14 );
+  }
+ }
+
+
+ FUNC_5();
+
+
+ FUNC_2();
+
+
+ FUNC_3();
+
+
+ FUNC_6();
+
+
+ FUNC_4( VAR_7 );
+ FUNC_4( VAR_6 );
+
+
+ FUNC_1();
+
+ if (VAR_9.integer) {
+  for (VAR_13 = 0; VAR_13 < VAR_5; VAR_13++) {
+   FUNC_9("%4i: %s\n", VAR_13, VAR_8[VAR_13].classname);
+  }
+  FUNC_19("g_listEntity", "0");
+ }
+}

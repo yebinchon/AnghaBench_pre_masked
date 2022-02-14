@@ -1,0 +1,53 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct lpfc_hba {int lpfc_hrb_pool; int lpfc_drb_pool; } ;
+struct TYPE_4__ {int phys; void* virt; } ;
+struct TYPE_3__ {void* virt; int phys; } ;
+struct hbq_dmabuf {int size; TYPE_2__ hbuf; TYPE_1__ dbuf; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (struct hbq_dmabuf*) ;
+ struct hbq_dmabuf* FUNC_1 (int,int ) ;
+ void* FUNC_2 (int ,int ,int *) ;
+ int FUNC_3 (int ,void*,int ) ;
+
+struct hbq_dmabuf *
+FUNC_4(struct lpfc_hba *VAR_2)
+{
+ struct hbq_dmabuf *VAR_3;
+
+ VAR_3 = FUNC_1(sizeof(struct hbq_dmabuf), VAR_0);
+ if (!VAR_3)
+  return ((void*)0);
+
+ VAR_3->hbuf.virt = FUNC_2(VAR_2->lpfc_hrb_pool, VAR_0,
+         &VAR_3->hbuf.phys);
+ if (!VAR_3->hbuf.virt) {
+  FUNC_0(VAR_3);
+  return ((void*)0);
+ }
+ VAR_3->dbuf.virt = FUNC_2(VAR_2->lpfc_drb_pool, VAR_0,
+         &VAR_3->dbuf.phys);
+ if (!VAR_3->dbuf.virt) {
+  FUNC_3(VAR_2->lpfc_hrb_pool, VAR_3->hbuf.virt,
+         VAR_3->hbuf.phys);
+  FUNC_0(VAR_3);
+  return ((void*)0);
+ }
+ VAR_3->size = VAR_1;
+ return VAR_3;
+}

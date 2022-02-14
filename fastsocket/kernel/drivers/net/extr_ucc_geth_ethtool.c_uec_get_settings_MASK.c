@@ -1,0 +1,38 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ucc_geth_private {struct ucc_geth_info* ug_info; struct phy_device* phydev; } ;
+struct ucc_geth_info {int * interruptcoalescingmaxvalue; } ;
+struct phy_device {int dummy; } ;
+struct net_device {int dummy; } ;
+struct ethtool_cmd {int maxtxpkt; int maxrxpkt; } ;
+
+
+ int VAR_0 ;
+ struct ucc_geth_private* FUNC_0 (struct net_device*) ;
+ int FUNC_1 (struct phy_device*,struct ethtool_cmd*) ;
+
+__attribute__((used)) static int
+FUNC_2(struct net_device *VAR_1, struct ethtool_cmd *VAR_2)
+{
+ struct ucc_geth_private *VAR_3 = FUNC_0(VAR_1);
+ struct phy_device *VAR_4 = VAR_3->phydev;
+ struct ucc_geth_info *VAR_5 = VAR_3->ug_info;
+
+ if (!VAR_4)
+  return -VAR_0;
+
+ VAR_2->maxtxpkt = 1;
+ VAR_2->maxrxpkt = VAR_5->interruptcoalescingmaxvalue[0];
+
+ return FUNC_1(VAR_4, VAR_2);
+}

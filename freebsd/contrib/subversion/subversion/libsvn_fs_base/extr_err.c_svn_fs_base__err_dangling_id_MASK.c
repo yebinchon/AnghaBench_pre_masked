@@ -1,0 +1,36 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+struct TYPE_5__ {int data; } ;
+typedef TYPE_1__ svn_string_t ;
+struct TYPE_6__ {int path; int pool; } ;
+typedef TYPE_2__ svn_fs_t ;
+typedef int svn_fs_id_t ;
+typedef int svn_error_t ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (char*) ;
+ int * FUNC_1 (int ,int ,int ,int ,int ) ;
+ TYPE_1__* FUNC_2 (int const*,int ) ;
+
+svn_error_t *
+FUNC_3(svn_fs_t *VAR_1, const svn_fs_id_t *VAR_2)
+{
+  svn_string_t *VAR_3 = FUNC_2(VAR_2, VAR_1->pool);
+  return FUNC_1
+    (VAR_0, 0,
+     FUNC_0("Reference to non-existent node '%s' in filesystem '%s'"),
+     VAR_3->data, VAR_1->path);
+}

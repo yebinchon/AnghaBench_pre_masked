@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {void* userPointer; } ;
+typedef TYPE_1__ _GLFWmonitor ;
+typedef int GLFWmonitor ;
+
+
+ int FUNC_0 () ;
+ int FUNC_1 (int ) ;
+
+void FUNC_2(GLFWmonitor* VAR_0, void* VAR_1)
+{
+    _GLFWmonitor* VAR_2 = (_GLFWmonitor*) VAR_0;
+    FUNC_1(VAR_2 != ((void*)0));
+
+    FUNC_0();
+    VAR_2->userPointer = VAR_1;
+}

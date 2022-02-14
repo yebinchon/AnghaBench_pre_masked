@@ -1,0 +1,41 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct news_gather_extra {int dummy; } ;
+struct gather {int extra; } ;
+struct TYPE_2__ {int h; } ;
+
+
+ TYPE_1__* VAR_0 ;
+ scalar_t__ FUNC_0 (int) ;
+ scalar_t__ FUNC_1 (struct gather*) ;
+ int FUNC_2 (struct gather*) ;
+ int FUNC_3 (int ,int) ;
+ int FUNC_4 () ;
+ int FUNC_5 () ;
+ int FUNC_6 () ;
+ int FUNC_7 (int ) ;
+ int FUNC_8 (int ,int) ;
+
+void FUNC_9 (struct gather *VAR_1, int VAR_2) {
+  int VAR_3 = FUNC_4 ();
+  if (FUNC_0 (VAR_3)) {
+    if (FUNC_1 (VAR_1) >= 0) {
+      FUNC_7 (VAR_0->h);
+      FUNC_3 (FUNC_5 (), 1);
+      FUNC_6 ();
+    }
+    FUNC_8 (VAR_1->extra, sizeof (struct news_gather_extra));
+    FUNC_2 (VAR_1);
+  }
+}

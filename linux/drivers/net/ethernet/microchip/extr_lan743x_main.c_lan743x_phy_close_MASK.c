@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct net_device {int * phydev; } ;
+struct lan743x_adapter {struct net_device* netdev; } ;
+
+
+ int FUNC_0 (int *) ;
+ int FUNC_1 (int *) ;
+
+__attribute__((used)) static void FUNC_2(struct lan743x_adapter *VAR_0)
+{
+ struct net_device *VAR_1 = VAR_0->netdev;
+
+ FUNC_1(VAR_1->phydev);
+ FUNC_0(VAR_1->phydev);
+ VAR_1->phydev = ((void*)0);
+}

@@ -1,0 +1,47 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct splice_pipe_desc {size_t nr_pages; TYPE_1__* partial; struct page** pages; } ;
+struct sock {int dummy; } ;
+struct sk_buff {int dummy; } ;
+struct page {int dummy; } ;
+struct TYPE_2__ {unsigned int len; unsigned int offset; } ;
+
+
+ size_t VAR_0 ;
+ int FUNC_0 (struct page*) ;
+ struct page* FUNC_1 (struct page*,unsigned int*,unsigned int*,struct sk_buff*,struct sock*) ;
+ scalar_t__ FUNC_2 (int) ;
+
+__attribute__((used)) static inline int FUNC_3(struct splice_pipe_desc *VAR_1, struct page *VAR_2,
+    unsigned int *VAR_3, unsigned int VAR_4,
+    struct sk_buff *VAR_5, int VAR_6,
+    struct sock *VAR_7)
+{
+ if (FUNC_2(VAR_1->nr_pages == VAR_0))
+  return 1;
+
+ if (VAR_6) {
+  VAR_2 = FUNC_1(VAR_2, VAR_3, &VAR_4, VAR_5, VAR_7);
+  if (!VAR_2)
+   return 1;
+ } else
+  FUNC_0(VAR_2);
+
+ VAR_1->pages[VAR_1->nr_pages] = VAR_2;
+ VAR_1->partial[VAR_1->nr_pages].len = *VAR_3;
+ VAR_1->partial[VAR_1->nr_pages].offset = VAR_4;
+ VAR_1->nr_pages++;
+
+ return 0;
+}

@@ -1,0 +1,40 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int umode_t ;
+typedef int u32 ;
+typedef enum hwmon_sensor_types { ____Placeholder_hwmon_sensor_types } hwmon_sensor_types ;
+
+
+
+
+
+ int FUNC_0 (void const*,int ,int) ;
+
+__attribute__((used)) static umode_t FUNC_1(const void *VAR_0,
+      enum hwmon_sensor_types VAR_1,
+      u32 VAR_2, int VAR_3)
+{
+ switch (VAR_1) {
+ case 130:
+  switch (VAR_2) {
+  case 129:
+   return 0644;
+  default:
+   return 0;
+  }
+ case 128:
+  return FUNC_0(VAR_0, VAR_2, VAR_3);
+ default:
+  return 0;
+ }
+}

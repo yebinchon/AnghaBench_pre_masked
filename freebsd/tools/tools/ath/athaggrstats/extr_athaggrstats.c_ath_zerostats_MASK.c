@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int ifr_name; } ;
+struct athaggrstatfoo_p {TYPE_1__ ifr; int s; } ;
+struct athaggrstatfoo {int dummy; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int,int ) ;
+ scalar_t__ FUNC_1 (int ,int ,TYPE_1__*) ;
+
+__attribute__((used)) static void
+FUNC_2(struct athaggrstatfoo *VAR_1)
+{
+
+
+
+
+
+
+}

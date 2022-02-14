@@ -1,0 +1,39 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int pm_method; } ;
+struct radeon_device {TYPE_1__ pm; } ;
+struct drm_device {struct radeon_device* dev_private; } ;
+struct device_attribute {int dummy; } ;
+struct device {int dummy; } ;
+typedef int ssize_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ struct drm_device* FUNC_0 (struct device*) ;
+ int FUNC_1 (char*,int ,char*,char*) ;
+
+__attribute__((used)) static ssize_t FUNC_2(struct device *VAR_3,
+        struct device_attribute *VAR_4,
+        char *VAR_5)
+{
+ struct drm_device *VAR_6 = FUNC_0(VAR_3);
+ struct radeon_device *VAR_7 = VAR_6->dev_private;
+ int VAR_8 = VAR_7->pm.pm_method;
+
+ return FUNC_1(VAR_5, VAR_0, "%s\n",
+   (VAR_8 == VAR_1) ? "dynpm" :
+   (VAR_8 == VAR_2) ? "profile" : "dpm");
+}

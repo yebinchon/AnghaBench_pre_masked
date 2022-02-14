@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct xfs_sb {int sb_features2; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ FUNC_0 (struct xfs_sb*) ;
+ scalar_t__ FUNC_1 (struct xfs_sb*,int ) ;
+ scalar_t__ FUNC_2 (struct xfs_sb*) ;
+
+__attribute__((used)) static inline int FUNC_3(struct xfs_sb *VAR_3)
+{
+ return (FUNC_0(VAR_3) == VAR_2 &&
+  FUNC_1(VAR_3, VAR_0)) ||
+        (FUNC_2(VAR_3) &&
+   (VAR_3->sb_features2 & VAR_1));
+}

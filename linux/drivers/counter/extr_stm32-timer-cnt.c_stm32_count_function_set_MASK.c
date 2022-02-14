@@ -1,0 +1,74 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct stm32_timer_cnt {int regmap; int ceiling; } ;
+struct counter_device {struct stm32_timer_cnt* priv; } ;
+struct counter_count {int dummy; } ;
+
+
+
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int FUNC_0 (int ,int ,int*) ;
+ int FUNC_1 (int ,int ,int,int) ;
+ int FUNC_2 (int ,int ,int ) ;
+
+__attribute__((used)) static int FUNC_3(struct counter_device *VAR_8,
+        struct counter_count *VAR_9,
+        size_t VAR_10)
+{
+ struct stm32_timer_cnt *const VAR_11 = VAR_8->priv;
+ u32 VAR_12, VAR_13;
+
+ switch (VAR_10) {
+ case 130:
+  VAR_13 = 1;
+  break;
+ case 129:
+  VAR_13 = 2;
+  break;
+ case 128:
+  VAR_13 = 3;
+  break;
+ default:
+  VAR_13 = 0;
+  break;
+ }
+
+
+ FUNC_0(VAR_11->regmap, VAR_1, &VAR_12);
+
+ FUNC_1(VAR_11->regmap, VAR_1, VAR_3, 0);
+
+
+ FUNC_1(VAR_11->regmap, VAR_1, VAR_2, 0);
+ FUNC_2(VAR_11->regmap, VAR_0, VAR_11->ceiling);
+
+ FUNC_1(VAR_11->regmap, VAR_6, VAR_7, VAR_13);
+
+
+ FUNC_1(VAR_11->regmap, VAR_4, VAR_5, VAR_5);
+
+
+ FUNC_1(VAR_11->regmap, VAR_1, VAR_3, VAR_12);
+
+ return 0;
+}

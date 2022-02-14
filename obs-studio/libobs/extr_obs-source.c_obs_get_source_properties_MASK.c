@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct obs_source_info {int * (* get_properties ) (int *) ;int type_data; int * (* get_properties2 ) (int *,int ) ;} ;
+typedef int obs_properties_t ;
+typedef int obs_data_t ;
+
+
+ int * FUNC_0 (struct obs_source_info const*) ;
+ struct obs_source_info* FUNC_1 (char const*) ;
+ int FUNC_2 (int *) ;
+ int FUNC_3 (int *,int *) ;
+ int * FUNC_4 (int *,int ) ;
+ int * FUNC_5 (int *) ;
+
+obs_properties_t *FUNC_6(const char *VAR_0)
+{
+ const struct obs_source_info *VAR_1 = FUNC_1(VAR_0);
+ if (VAR_1 && (VAR_1->get_properties || VAR_1->get_properties2)) {
+  obs_data_t *VAR_2 = FUNC_0(VAR_1);
+  obs_properties_t *VAR_3;
+
+  if (VAR_1->get_properties2)
+   VAR_3 = VAR_1->get_properties2(((void*)0), VAR_1->type_data);
+  else
+   VAR_3 = VAR_1->get_properties(((void*)0));
+
+  FUNC_3(VAR_3, VAR_2);
+  FUNC_2(VAR_2);
+  return VAR_3;
+ }
+ return ((void*)0);
+}

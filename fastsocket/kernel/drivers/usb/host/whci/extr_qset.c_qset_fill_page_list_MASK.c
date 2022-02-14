@@ -1,0 +1,61 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct whc_std {int dma_addr; int len; int num_pointers; TYPE_2__* pl_virt; } ;
+struct whc_page_list_entry {int dummy; } ;
+struct TYPE_4__ {int dev; } ;
+struct whc {TYPE_1__ wusbhc; } ;
+typedef int gfp_t ;
+typedef int dma_addr_t ;
+struct TYPE_5__ {int buf_ptr; } ;
+
+
+ int FUNC_0 (int,int) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_1 (int) ;
+ int FUNC_2 (int ,TYPE_2__*,size_t,int ) ;
+ TYPE_2__* FUNC_3 (size_t,int ) ;
+
+__attribute__((used)) static int FUNC_4(struct whc *VAR_3, struct whc_std *VAR_4, gfp_t VAR_5)
+{
+ dma_addr_t VAR_6 = VAR_4->dma_addr;
+ dma_addr_t VAR_7, VAR_8;
+ size_t VAR_9;
+ int VAR_10;
+
+
+ if (VAR_4->len <= VAR_2) {
+  VAR_4->num_pointers = 0;
+  return 0;
+ }
+
+ VAR_7 = VAR_6 & ~(VAR_2-1);
+ VAR_8 = VAR_6 + VAR_4->len;
+ VAR_4->num_pointers = FUNC_0(VAR_8 - VAR_7, VAR_2);
+
+ VAR_9 = VAR_4->num_pointers * sizeof(struct whc_page_list_entry);
+ VAR_4->pl_virt = FUNC_3(VAR_9, VAR_5);
+ if (VAR_4->pl_virt == ((void*)0))
+  return -VAR_1;
+ VAR_4->dma_addr = FUNC_2(VAR_3->wusbhc.dev, VAR_4->pl_virt, VAR_9, VAR_0);
+
+ for (VAR_10 = 0; VAR_10 < VAR_4->num_pointers; VAR_10++) {
+  VAR_4->pl_virt[VAR_10].buf_ptr = FUNC_1(VAR_6);
+  VAR_6 = (VAR_6 + VAR_2) & ~(VAR_2-1);
+ }
+
+ return 0;
+}

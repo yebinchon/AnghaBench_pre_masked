@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct gctl_req {int dummy; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ,char*) ;
+ int FUNC_1 (struct gctl_req*,char*,char const*) ;
+
+__attribute__((used)) static int
+FUNC_2(struct gctl_req *VAR_1, const char *VAR_2, const char *VAR_3)
+{
+
+ if (!FUNC_1(VAR_1, "%s", VAR_2))
+  return (0);
+
+ if (VAR_3 != ((void*)0))
+  FUNC_0(VAR_0, "-l and -r are mutually exclusive");
+
+ return (1);
+}

@@ -1,0 +1,44 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct ucred {int cr_label; } ;
+struct proc {TYPE_1__* p_ucred; } ;
+struct mac_mls {int dummy; } ;
+struct TYPE_2__ {int cr_label; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ struct mac_mls* FUNC_0 (int ) ;
+ int FUNC_1 (struct mac_mls*,struct mac_mls*) ;
+ int VAR_2 ;
+
+__attribute__((used)) static int
+FUNC_2(struct ucred *VAR_3, struct proc *VAR_4, int VAR_5)
+{
+ struct mac_mls *VAR_6, *VAR_7;
+
+ if (!VAR_2)
+  return (0);
+
+ VAR_6 = FUNC_0(VAR_3->cr_label);
+ VAR_7 = FUNC_0(VAR_4->p_ucred->cr_label);
+
+
+ if (!FUNC_1(VAR_6, VAR_7))
+  return (VAR_1);
+ if (!FUNC_1(VAR_7, VAR_6))
+  return (VAR_0);
+
+ return (0);
+}

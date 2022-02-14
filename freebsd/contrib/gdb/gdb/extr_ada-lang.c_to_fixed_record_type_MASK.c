@@ -1,0 +1,46 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct value {int dummy; } ;
+struct type {int dummy; } ;
+typedef int CORE_ADDR ;
+
+
+ scalar_t__ FUNC_0 (struct type*) ;
+ struct type* FUNC_1 (struct type*) ;
+ struct type* FUNC_2 (struct type*,char*,int ,struct value*) ;
+ struct type* FUNC_3 (struct type*,char*,int ,struct value*) ;
+
+__attribute__((used)) static struct type *
+FUNC_4 (struct type *VAR_0, char *VAR_1, CORE_ADDR VAR_2,
+        struct value *VAR_3)
+{
+  struct type *VAR_4;
+
+
+
+
+
+  VAR_4 = FUNC_1 (VAR_0);
+
+  if (VAR_4 != ((void*)0))
+    return FUNC_2 (VAR_4, VAR_1, VAR_2, VAR_3);
+  else if (FUNC_0 (VAR_0))
+    return FUNC_3 (VAR_0, VAR_1, VAR_2, VAR_3);
+  else
+    {
+
+
+      return VAR_0;
+    }
+
+}

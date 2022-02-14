@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct net_device {struct ethtool_ops const* ethtool_ops; } ;
+struct ethtool_ops {int dummy; } ;
+
+
+ struct ethtool_ops const VAR_0 ;
+
+void FUNC_0(struct net_device *VAR_1,
+        const struct ethtool_ops *VAR_2)
+{
+ if (VAR_1->ethtool_ops == &VAR_0)
+  VAR_1->ethtool_ops = VAR_2;
+}

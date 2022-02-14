@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct block_range_iter {scalar_t__ start; scalar_t__ end; } ;
+
+
+ scalar_t__ FUNC_0 (scalar_t__) ;
+
+__attribute__((used)) static inline bool FUNC_1(struct block_range_iter *VAR_0)
+{
+ if (VAR_0->start == VAR_0->end)
+  return 0;
+
+ VAR_0->start = FUNC_0(VAR_0->start);
+ return 1;
+}

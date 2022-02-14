@@ -1,0 +1,23 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct sge_rspq {int gen; } ;
+struct rsp_ctrl {int type_gen; } ;
+
+
+ int VAR_0 ;
+
+__attribute__((used)) static inline bool FUNC_0(const struct rsp_ctrl *VAR_1,
+       const struct sge_rspq *VAR_2)
+{
+ return ((VAR_1->type_gen >> VAR_0) & 0x1) == VAR_2->gen;
+}

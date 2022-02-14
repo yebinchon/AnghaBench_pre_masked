@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ad5272_data {int* buf; int lock; int client; } ;
+
+
+ int FUNC_0 (int ,int*,int) ;
+ int FUNC_1 (int ,int*,int) ;
+ int FUNC_2 (int *) ;
+ int FUNC_3 (int *) ;
+
+__attribute__((used)) static int FUNC_4(struct ad5272_data *VAR_0, int VAR_1, int *VAR_2)
+{
+ int VAR_3;
+
+ VAR_0->buf[0] = VAR_1 << 2;
+ VAR_0->buf[1] = 0;
+
+ FUNC_2(&VAR_0->lock);
+ VAR_3 = FUNC_1(VAR_0->client, VAR_0->buf, sizeof(VAR_0->buf));
+ if (VAR_3 < 0)
+  goto error;
+
+ VAR_3 = FUNC_0(VAR_0->client, VAR_0->buf, sizeof(VAR_0->buf));
+ if (VAR_3 < 0)
+  goto error;
+
+ *VAR_2 = ((VAR_0->buf[0] & 0x3) << 8) | VAR_0->buf[1];
+ VAR_3 = 0;
+error:
+ FUNC_3(&VAR_0->lock);
+ return VAR_3;
+}

@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct unwind_state {int dummy; } ;
+struct pt_regs {unsigned long ip; unsigned long sp; } ;
+
+
+ void* VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (struct unwind_state*,unsigned long,int ) ;
+
+__attribute__((used)) static bool FUNC_1(struct unwind_state *VAR_2, unsigned long VAR_3,
+      unsigned long *VAR_4, unsigned long *VAR_5)
+{
+ struct pt_regs *VAR_6 = (void *)VAR_3 - VAR_0;
+
+ if (!FUNC_0(VAR_2, VAR_3, VAR_1))
+  return 0;
+
+ *VAR_4 = VAR_6->ip;
+ *VAR_5 = VAR_6->sp;
+ return 1;
+}

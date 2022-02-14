@@ -1,0 +1,35 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct ib_umad_port {TYPE_1__* ib_dev; } ;
+struct device_attribute {int dummy; } ;
+struct device {int dummy; } ;
+typedef int ssize_t ;
+struct TYPE_2__ {int dev; } ;
+
+
+ int VAR_0 ;
+ struct ib_umad_port* FUNC_0 (struct device*) ;
+ char* FUNC_1 (int *) ;
+ int FUNC_2 (char*,char*,char*) ;
+
+__attribute__((used)) static ssize_t FUNC_3(struct device *VAR_1, struct device_attribute *VAR_2,
+     char *VAR_3)
+{
+ struct ib_umad_port *VAR_4 = FUNC_0(VAR_1);
+
+ if (!VAR_4)
+  return -VAR_0;
+
+ return FUNC_2(VAR_3, "%s\n", FUNC_1(&VAR_4->ib_dev->dev));
+}

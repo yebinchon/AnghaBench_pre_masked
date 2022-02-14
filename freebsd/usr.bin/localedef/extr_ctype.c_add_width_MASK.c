@@ -1,0 +1,50 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_3__ {int ctype; } ;
+typedef TYPE_1__ ctype_node_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ TYPE_1__* FUNC_0 (int) ;
+
+void
+FUNC_1(int VAR_6, int VAR_7)
+{
+ ctype_node_t *VAR_8;
+
+ if ((VAR_8 = FUNC_0(VAR_6)) == ((void*)0)) {
+  VAR_0;
+  return;
+ }
+ VAR_8->ctype &= ~(VAR_5);
+ switch (VAR_7) {
+ case 0:
+  VAR_8->ctype |= VAR_1;
+  break;
+ case 1:
+  VAR_8->ctype |= VAR_2;
+  break;
+ case 2:
+  VAR_8->ctype |= VAR_3;
+  break;
+ case 3:
+  VAR_8->ctype |= VAR_4;
+  break;
+ }
+}

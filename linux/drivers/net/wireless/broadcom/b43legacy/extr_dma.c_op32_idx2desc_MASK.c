@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct b43legacy_dmaring {struct b43legacy_dmadesc32* descbase; struct b43legacy_dmadesc_meta* meta; } ;
+struct b43legacy_dmadesc_meta {int dummy; } ;
+struct b43legacy_dmadesc32 {int dummy; } ;
+
+
+
+__attribute__((used)) static
+struct b43legacy_dmadesc32 *FUNC_0(struct b43legacy_dmaring *VAR_0,
+       int VAR_1,
+       struct b43legacy_dmadesc_meta **VAR_2)
+{
+ struct b43legacy_dmadesc32 *VAR_3;
+
+ *VAR_2 = &(VAR_0->meta[VAR_1]);
+ VAR_3 = VAR_0->descbase;
+ VAR_3 = &(VAR_3[VAR_1]);
+
+ return VAR_3;
+}

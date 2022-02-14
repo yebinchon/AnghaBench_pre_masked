@@ -1,0 +1,37 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct nubus_dirent {int dummy; } ;
+struct nubus_dir {int mask; scalar_t__ done; int base; int ptr; } ;
+struct nubus_board {int lanes; int directory; } ;
+
+
+ int FUNC_0 (struct nubus_dirent*,struct nubus_dir*) ;
+ int FUNC_1 (struct nubus_dir*,struct nubus_dirent*) ;
+
+int FUNC_2(const struct nubus_board *VAR_0,
+   struct nubus_dir *VAR_1)
+{
+ struct nubus_dirent VAR_2;
+
+ VAR_1->ptr = VAR_1->base = VAR_0->directory;
+ VAR_1->done = 0;
+ VAR_1->mask = VAR_0->lanes;
+
+
+
+ if (FUNC_1(VAR_1, &VAR_2) == -1)
+  return -1;
+ if (FUNC_0(&VAR_2, VAR_1) == -1)
+  return -1;
+ return 0;
+}

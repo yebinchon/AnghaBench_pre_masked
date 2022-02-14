@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct sockaddr {int dummy; } ;
+struct route {int dummy; } ;
+struct mbuf {int dummy; } ;
+struct ifnet {int dummy; } ;
+
+
+ int FUNC_0 (struct mbuf*) ;
+
+__attribute__((used)) static int
+FUNC_1(struct ifnet *VAR_0, struct mbuf *VAR_1,
+ const struct sockaddr *VAR_2, struct route *VAR_3)
+{
+
+ if (VAR_1 != ((void*)0))
+  FUNC_0(VAR_1);
+ return (0);
+}

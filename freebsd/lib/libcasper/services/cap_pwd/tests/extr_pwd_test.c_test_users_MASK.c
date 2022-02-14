@@ -1,0 +1,270 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int uid_t ;
+typedef int cap_channel_t ;
+
+
+ int FUNC_0 (int) ;
+ scalar_t__ VAR_0 ;
+ int * FUNC_1 (int *) ;
+ int FUNC_2 (int *) ;
+ int FUNC_3 (int *,char const**,int,int*,int) ;
+ scalar_t__ VAR_1 ;
+ int FUNC_4 (int *,char const**,int*,int) ;
+
+__attribute__((used)) static void
+FUNC_5(cap_channel_t *VAR_2)
+{
+ cap_channel_t *VAR_3;
+ const char *VAR_4[6];
+ uid_t VAR_5[6];
+
+
+
+
+
+
+
+ VAR_3 = FUNC_1(VAR_2);
+ FUNC_0(VAR_3 != ((void*)0));
+
+ VAR_4[0] = "root";
+ VAR_4[1] = "toor";
+ VAR_4[2] = "daemon";
+ VAR_4[3] = "operator";
+ VAR_4[4] = "bin";
+ VAR_4[5] = "tty";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 6, ((void*)0), 0) == 0);
+ VAR_5[0] = 0;
+ VAR_5[1] = 0;
+ VAR_5[2] = 1;
+ VAR_5[3] = 2;
+ VAR_5[4] = 3;
+ VAR_5[5] = 4;
+
+ FUNC_0(FUNC_4(VAR_3, VAR_4, VAR_5, 6));
+
+ FUNC_2(VAR_3);
+
+
+
+
+
+
+
+ VAR_3 = FUNC_1(VAR_2);
+ FUNC_0(VAR_3 != ((void*)0));
+
+ VAR_4[0] = "daemon";
+ VAR_4[1] = "operator";
+ VAR_4[2] = "bin";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 3, ((void*)0), 0) == 0);
+ VAR_4[3] = "tty";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 4, ((void*)0), 0) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_4[0] = "tty";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 1, ((void*)0), 0) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_4[0] = "daemon";
+ VAR_5[0] = 1;
+ VAR_5[1] = 2;
+ VAR_5[2] = 3;
+
+ FUNC_0(FUNC_4(VAR_3, VAR_4, VAR_5, 3));
+
+ FUNC_2(VAR_3);
+
+
+
+
+
+
+
+ VAR_3 = FUNC_1(VAR_2);
+ FUNC_0(VAR_3 != ((void*)0));
+
+ VAR_4[0] = "daemon";
+ VAR_4[1] = "bin";
+ VAR_4[2] = "tty";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 3, ((void*)0), 0) == 0);
+ VAR_4[3] = "operator";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 4, ((void*)0), 0) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_4[0] = "operator";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 1, ((void*)0), 0) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_4[0] = "daemon";
+ VAR_5[0] = 1;
+ VAR_5[1] = 3;
+ VAR_5[2] = 4;
+
+ FUNC_0(FUNC_4(VAR_3, VAR_4, VAR_5, 3));
+
+ FUNC_2(VAR_3);
+
+
+
+
+
+
+
+ VAR_3 = FUNC_1(VAR_2);
+ FUNC_0(VAR_3 != ((void*)0));
+
+ VAR_4[0] = "daemon";
+ VAR_4[1] = "operator";
+ VAR_4[2] = "bin";
+ VAR_5[0] = 1;
+ VAR_5[1] = 2;
+ VAR_5[2] = 3;
+ FUNC_0(FUNC_3(VAR_3, ((void*)0), 0, VAR_5, 3) == 0);
+ VAR_5[3] = 4;
+ FUNC_0(FUNC_3(VAR_3, ((void*)0), 0, VAR_5, 4) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_5[0] = 4;
+ FUNC_0(FUNC_3(VAR_3, ((void*)0), 0, VAR_5, 1) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_5[0] = 1;
+
+ FUNC_0(FUNC_4(VAR_3, VAR_4, VAR_5, 3));
+
+ FUNC_2(VAR_3);
+
+
+
+
+
+
+
+ VAR_3 = FUNC_1(VAR_2);
+ FUNC_0(VAR_3 != ((void*)0));
+
+ VAR_4[0] = "daemon";
+ VAR_4[1] = "bin";
+ VAR_4[2] = "tty";
+ VAR_5[0] = 1;
+ VAR_5[1] = 3;
+ VAR_5[2] = 4;
+ FUNC_0(FUNC_3(VAR_3, ((void*)0), 0, VAR_5, 3) == 0);
+ VAR_5[3] = 5;
+ FUNC_0(FUNC_3(VAR_3, ((void*)0), 0, VAR_5, 4) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_5[0] = 5;
+ FUNC_0(FUNC_3(VAR_3, ((void*)0), 0, VAR_5, 1) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_5[0] = 1;
+
+ FUNC_0(FUNC_4(VAR_3, VAR_4, VAR_5, 3));
+
+ FUNC_2(VAR_3);
+
+
+
+
+
+
+
+ VAR_3 = FUNC_1(VAR_2);
+ FUNC_0(VAR_3 != ((void*)0));
+
+ VAR_4[0] = "bin";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 1, ((void*)0), 0) == 0);
+ VAR_4[1] = "operator";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 2, ((void*)0), 0) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_4[0] = "operator";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 1, ((void*)0), 0) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_4[0] = "bin";
+ VAR_5[0] = 3;
+
+ FUNC_0(FUNC_4(VAR_3, VAR_4, VAR_5, 1));
+
+ FUNC_2(VAR_3);
+
+
+
+
+
+
+
+ VAR_3 = FUNC_1(VAR_2);
+ FUNC_0(VAR_3 != ((void*)0));
+
+ VAR_4[0] = "daemon";
+ VAR_4[1] = "tty";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 2, ((void*)0), 0) == 0);
+ VAR_4[2] = "operator";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 3, ((void*)0), 0) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_4[0] = "operator";
+ FUNC_0(FUNC_3(VAR_3, VAR_4, 1, ((void*)0), 0) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_4[0] = "daemon";
+ VAR_5[0] = 1;
+ VAR_5[1] = 4;
+
+ FUNC_0(FUNC_4(VAR_3, VAR_4, VAR_5, 2));
+
+ FUNC_2(VAR_3);
+
+
+
+
+
+
+
+ VAR_3 = FUNC_1(VAR_2);
+ FUNC_0(VAR_3 != ((void*)0));
+
+ VAR_4[0] = "bin";
+ VAR_5[0] = 3;
+ FUNC_0(FUNC_3(VAR_3, ((void*)0), 0, VAR_5, 1) == 0);
+ VAR_5[1] = 4;
+ FUNC_0(FUNC_3(VAR_3, ((void*)0), 0, VAR_5, 2) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_5[0] = 4;
+ FUNC_0(FUNC_3(VAR_3, ((void*)0), 0, VAR_5, 1) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_5[0] = 3;
+
+ FUNC_0(FUNC_4(VAR_3, VAR_4, VAR_5, 1));
+
+ FUNC_2(VAR_3);
+
+
+
+
+
+
+
+ VAR_3 = FUNC_1(VAR_2);
+ FUNC_0(VAR_3 != ((void*)0));
+
+ VAR_4[0] = "daemon";
+ VAR_4[1] = "tty";
+ VAR_5[0] = 1;
+ VAR_5[1] = 4;
+ FUNC_0(FUNC_3(VAR_3, ((void*)0), 0, VAR_5, 2) == 0);
+ VAR_5[2] = 3;
+ FUNC_0(FUNC_3(VAR_3, ((void*)0), 0, VAR_5, 3) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_5[0] = 3;
+ FUNC_0(FUNC_3(VAR_3, ((void*)0), 0, VAR_5, 1) == -1 &&
+     VAR_1 == VAR_0);
+ VAR_5[0] = 1;
+
+ FUNC_0(FUNC_4(VAR_3, VAR_4, VAR_5, 2));
+
+ FUNC_2(VAR_3);
+}

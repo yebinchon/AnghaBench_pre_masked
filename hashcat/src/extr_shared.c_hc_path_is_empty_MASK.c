@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct stat {scalar_t__ st_size; } ;
+
+
+ int FUNC_0 (char const*,struct stat*) ;
+
+bool FUNC_1 (const char *VAR_0)
+{
+  struct stat VAR_1;
+
+  if (FUNC_0 (VAR_0, &VAR_1) == -1) return 0;
+
+  if (VAR_1.st_size == 0) return 1;
+
+  return 0;
+}

@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+struct palmas {int dummy; } ;
+struct device {int parent; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ struct palmas* FUNC_0 (int ) ;
+ int FUNC_1 (struct palmas*,int ,int ,int ) ;
+
+__attribute__((used)) static int FUNC_2(struct device *VAR_3, unsigned VAR_4)
+{
+ struct palmas *VAR_5 = FUNC_0(VAR_3->parent);
+ u8 VAR_6;
+
+ VAR_6 = VAR_4 ? VAR_2 : 0;
+ return FUNC_1(VAR_5, VAR_0,
+  VAR_1, VAR_6);
+}

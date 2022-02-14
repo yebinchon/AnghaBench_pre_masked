@@ -1,0 +1,73 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+struct TYPE_5__ {int* D; scalar_t__ CD; } ;
+typedef TYPE_1__ TM2Context ;
+typedef int AVFrame ;
+
+
+ int FUNC_0 (TYPE_1__*,int ) ;
+ int VAR_0 ;
+ int FUNC_1 () ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ scalar_t__ VAR_8 ;
+ int* VAR_9 ;
+ int FUNC_2 (TYPE_1__*,int ,int ,int*,int*) ;
+ int FUNC_3 (int ,int ,scalar_t__,scalar_t__,int*,int) ;
+
+__attribute__((used)) static inline void FUNC_4(TM2Context *VAR_10, AVFrame *VAR_11, int VAR_12, int VAR_13)
+{
+    int VAR_14;
+    int VAR_15, VAR_16;
+    int VAR_17[16];
+    FUNC_1();
+
+
+    VAR_17[0] = FUNC_0(VAR_10, VAR_0);
+    VAR_17[1] = VAR_17[2] = VAR_17[3] = 0;
+    FUNC_3(VAR_2, VAR_3, VAR_8, VAR_10->CD, VAR_17, VAR_12);
+
+    VAR_17[0] = FUNC_0(VAR_10, VAR_0);
+    VAR_17[1] = VAR_17[2] = VAR_17[3] = 0;
+    FUNC_3(VAR_4, VAR_5, VAR_8 + 2, VAR_10->CD + 2, VAR_17, VAR_12);
+
+
+    for (VAR_14 = 0; VAR_14 < 16; VAR_14++)
+        VAR_17[VAR_14] = 0;
+
+    VAR_17[ 0] = FUNC_0(VAR_10, VAR_1);
+    VAR_17[ 2] = FUNC_0(VAR_10, VAR_1);
+    VAR_17[ 8] = FUNC_0(VAR_10, VAR_1);
+    VAR_17[10] = FUNC_0(VAR_10, VAR_1);
+
+    if (VAR_12 > 0)
+        VAR_9[0] = (int)((unsigned)VAR_9[-1] - VAR_10->D[0] - VAR_10->D[1] - VAR_10->D[2] - VAR_10->D[3] + VAR_9[1]) >> 1;
+    else
+        VAR_9[0] = (int)((unsigned)VAR_9[1] - VAR_10->D[0] - VAR_10->D[1] - VAR_10->D[2] - VAR_10->D[3])>> 1;
+    VAR_9[2] = (int)((unsigned)VAR_9[1] + VAR_9[3]) >> 1;
+
+    VAR_15 = VAR_10->D[0] + VAR_10->D[1];
+    VAR_10->D[0] = VAR_15 >> 1;
+    VAR_10->D[1] = VAR_15 - (VAR_15 >> 1);
+    VAR_16 = VAR_10->D[2] + VAR_10->D[3];
+    VAR_10->D[2] = VAR_16 >> 1;
+    VAR_10->D[3] = VAR_16 - (VAR_16 >> 1);
+
+    FUNC_2(VAR_10, VAR_6, VAR_7, VAR_17, VAR_9);
+}

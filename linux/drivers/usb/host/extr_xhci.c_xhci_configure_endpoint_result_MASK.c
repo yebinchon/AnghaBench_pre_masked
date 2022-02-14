@@ -1,0 +1,75 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct xhci_hcd {int dummy; } ;
+struct usb_device {int dev; } ;
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int FUNC_0 (int *,char*) ;
+ int VAR_5 ;
+ int FUNC_1 (struct xhci_hcd*,int ,char*) ;
+ int FUNC_2 (struct xhci_hcd*,char*,int) ;
+ int FUNC_3 (struct xhci_hcd*,char*) ;
+
+__attribute__((used)) static int FUNC_4(struct xhci_hcd *VAR_6,
+  struct usb_device *VAR_7, u32 *VAR_8)
+{
+ int VAR_9;
+
+ switch (*VAR_8) {
+ case 134:
+ case 133:
+  FUNC_3(VAR_6, "Timeout while waiting for configure endpoint command\n");
+  VAR_9 = -VAR_4;
+  break;
+ case 131:
+  FUNC_0(&VAR_7->dev,
+    "Not enough host controller resources for new device state.\n");
+  VAR_9 = -VAR_2;
+
+  break;
+ case 135:
+ case 130:
+  FUNC_0(&VAR_7->dev,
+    "Not enough bandwidth for new device state.\n");
+  VAR_9 = -VAR_3;
+
+  break;
+ case 128:
+
+  FUNC_0(&VAR_7->dev, "ERROR: Endpoint drop flag = 0, "
+    "add flag = 1, "
+    "and endpoint is not disabled.\n");
+  VAR_9 = -VAR_0;
+  break;
+ case 132:
+  FUNC_0(&VAR_7->dev,
+    "ERROR: Incompatible device for endpoint configure command.\n");
+  VAR_9 = -VAR_1;
+  break;
+ case 129:
+  FUNC_1(VAR_6, VAR_5,
+    "Successful Endpoint Configure command");
+  VAR_9 = 0;
+  break;
+ default:
+  FUNC_2(VAR_6, "ERROR: unexpected command completion code 0x%x.\n",
+    *VAR_8);
+  VAR_9 = -VAR_0;
+  break;
+ }
+ return VAR_9;
+}

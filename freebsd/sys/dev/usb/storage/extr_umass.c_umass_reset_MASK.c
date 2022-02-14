@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct umass_softc {size_t sc_last_xfer_index; int * sc_xfer; } ;
+
+
+ int FUNC_0 (struct umass_softc*,int ,char*) ;
+ int VAR_0 ;
+ int FUNC_1 (struct umass_softc*,int ) ;
+ int FUNC_2 (int ) ;
+
+__attribute__((used)) static void
+FUNC_3(struct umass_softc *VAR_1)
+{
+ FUNC_0(VAR_1, VAR_0, "resetting device\n");
+
+
+
+
+ FUNC_2(VAR_1->sc_xfer[VAR_1->sc_last_xfer_index]);
+ FUNC_1(VAR_1, 0);
+}

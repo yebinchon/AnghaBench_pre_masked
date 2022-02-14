@@ -1,0 +1,23 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ibmvfc_host {int dummy; } ;
+
+
+ int FUNC_0 (struct ibmvfc_host*,char*) ;
+ int FUNC_1 (struct ibmvfc_host*,int,int ) ;
+
+__attribute__((used)) static int FUNC_2(struct ibmvfc_host *VAR_0)
+{
+ FUNC_0(VAR_0, "Sending CRQ init\n");
+ return FUNC_1(VAR_0, 0xC001000000000000LL, 0);
+}

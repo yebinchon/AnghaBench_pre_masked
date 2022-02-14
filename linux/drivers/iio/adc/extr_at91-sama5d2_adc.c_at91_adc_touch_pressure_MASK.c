@@ -1,0 +1,50 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int u32 ;
+typedef int u16 ;
+struct TYPE_2__ {int x_pos; } ;
+struct at91_adc_state {TYPE_1__ touch_st; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (struct at91_adc_state*,int ) ;
+
+__attribute__((used)) static u16 FUNC_1(struct at91_adc_state *VAR_2)
+{
+ u32 VAR_3;
+ u32 VAR_4, VAR_5;
+ u32 VAR_6;
+ u32 VAR_7 = 1;
+ u32 VAR_8 = 1000;
+
+
+ VAR_3 = FUNC_0(VAR_2, VAR_0);
+ VAR_4 = VAR_3 & VAR_1;
+ VAR_5 = (VAR_3 >> 16) & VAR_1;
+
+ if (VAR_4 != 0)
+  VAR_6 = VAR_7 * (VAR_2->touch_st.x_pos * VAR_8 / 1024) *
+   (VAR_5 * VAR_8 / VAR_4 - VAR_8) /
+   VAR_8;
+ else
+  VAR_6 = 0xFFFF;
+
+
+
+
+
+
+ return 0xFFFF - VAR_6;
+}

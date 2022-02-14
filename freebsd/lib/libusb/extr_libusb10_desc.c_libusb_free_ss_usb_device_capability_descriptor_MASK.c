@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct libusb_ss_usb_device_capability_descriptor {int dummy; } ;
+
+
+ int FUNC_0 (struct libusb_ss_usb_device_capability_descriptor*) ;
+
+void
+FUNC_1(
+    struct libusb_ss_usb_device_capability_descriptor *VAR_0)
+{
+
+ FUNC_0(VAR_0);
+}

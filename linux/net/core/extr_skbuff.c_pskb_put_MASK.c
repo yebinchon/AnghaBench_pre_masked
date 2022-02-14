@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct sk_buff {int data_len; int len; } ;
+
+
+ void* FUNC_0 (struct sk_buff*,int) ;
+
+void *FUNC_1(struct sk_buff *VAR_0, struct sk_buff *VAR_1, int VAR_2)
+{
+ if (VAR_1 != VAR_0) {
+  VAR_0->data_len += VAR_2;
+  VAR_0->len += VAR_2;
+ }
+ return FUNC_0(VAR_1, VAR_2);
+}

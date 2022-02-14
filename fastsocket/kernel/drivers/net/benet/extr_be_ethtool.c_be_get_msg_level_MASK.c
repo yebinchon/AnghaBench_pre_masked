@@ -1,0 +1,35 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int u32 ;
+struct net_device {int dummy; } ;
+struct be_adapter {int msg_enable; TYPE_1__* pdev; } ;
+struct TYPE_2__ {int dev; } ;
+
+
+ int EOPNOTSUPP ;
+ int dev_err (int *,char*) ;
+ scalar_t__ lancer_chip (struct be_adapter*) ;
+ struct be_adapter* netdev_priv (struct net_device*) ;
+
+__attribute__((used)) static u32 be_get_msg_level(struct net_device *netdev)
+{
+ struct be_adapter *adapter = netdev_priv(netdev);
+
+ if (lancer_chip(adapter)) {
+  dev_err(&adapter->pdev->dev, "Operation not supported\n");
+  return -EOPNOTSUPP;
+ }
+
+ return adapter->msg_enable;
+}

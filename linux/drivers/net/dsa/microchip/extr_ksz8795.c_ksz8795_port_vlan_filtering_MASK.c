@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ksz_device {int dummy; } ;
+struct dsa_switch {struct ksz_device* priv; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (struct ksz_device*,int ,int ,int) ;
+
+__attribute__((used)) static int FUNC_1(struct dsa_switch *VAR_2, int VAR_3,
+           bool VAR_4)
+{
+ struct ksz_device *VAR_5 = VAR_2->priv;
+
+ FUNC_0(VAR_5, VAR_1, VAR_0, VAR_4);
+
+ return 0;
+}

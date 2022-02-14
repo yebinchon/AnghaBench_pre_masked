@@ -1,0 +1,52 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_11__ TYPE_4__ ;
+typedef struct TYPE_10__ TYPE_2__ ;
+typedef struct TYPE_9__ TYPE_1__ ;
+
+
+struct TYPE_10__ {TYPE_1__* chip_drv; int size; TYPE_4__* host; } ;
+typedef TYPE_2__ esp_flash_t ;
+typedef scalar_t__ esp_err_t ;
+struct TYPE_11__ {scalar_t__ (* flush_cache ) (TYPE_4__*,int ,int ) ;int (* erase_chip ) (TYPE_4__*) ;} ;
+struct TYPE_9__ {scalar_t__ (* set_chip_write_protect ) (TYPE_2__*,int) ;scalar_t__ (* wait_idle ) (TYPE_2__*,int ) ;} ;
+
+
+ int VAR_0 ;
+ scalar_t__ VAR_1 ;
+ int VAR_2 ;
+ scalar_t__ FUNC_0 (TYPE_2__*,int) ;
+ scalar_t__ FUNC_1 (TYPE_2__*,int ) ;
+ int FUNC_2 (TYPE_4__*) ;
+ scalar_t__ FUNC_3 (TYPE_4__*,int ,int ) ;
+ scalar_t__ FUNC_4 (TYPE_2__*,int ) ;
+
+esp_err_t FUNC_5(esp_flash_t *VAR_3)
+{
+    esp_err_t VAR_4;
+
+    VAR_4 = VAR_3->chip_drv->set_chip_write_protect(VAR_3, 0);
+    if (VAR_4 == VAR_1) {
+        VAR_4 = VAR_3->chip_drv->wait_idle(VAR_3, VAR_0);
+    }
+    if (VAR_4 == VAR_1) {
+        VAR_3->host->erase_chip(VAR_3->host);
+
+        if (VAR_3->host->flush_cache) {
+            VAR_4 = VAR_3->host->flush_cache(VAR_3->host, 0, VAR_3->size);
+            if (VAR_4 != VAR_1) {
+                return VAR_4;
+            }
+        }
+        VAR_4 = VAR_3->chip_drv->wait_idle(VAR_3, VAR_2);
+    }
+    return VAR_4;
+}

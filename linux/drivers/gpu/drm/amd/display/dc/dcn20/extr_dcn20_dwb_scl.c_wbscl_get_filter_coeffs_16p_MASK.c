@@ -1,0 +1,61 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int uint16_t ;
+struct fixed31_32 {int dummy; } ;
+
+
+ int FUNC_0 () ;
+ int const* FUNC_1 () ;
+ int const* FUNC_2 (struct fixed31_32) ;
+ int const* FUNC_3 (struct fixed31_32) ;
+ int const* FUNC_4 (struct fixed31_32) ;
+ int const* FUNC_5 (struct fixed31_32) ;
+ int const* FUNC_6 (struct fixed31_32) ;
+ int const* FUNC_7 (struct fixed31_32) ;
+ int const* FUNC_8 (struct fixed31_32) ;
+ int const* FUNC_9 (struct fixed31_32) ;
+ int const* FUNC_10 (struct fixed31_32) ;
+ int const* FUNC_11 (struct fixed31_32) ;
+
+__attribute__((used)) static const uint16_t *FUNC_12(int VAR_0, struct fixed31_32 VAR_1)
+{
+ if (VAR_0 == 12)
+  return FUNC_4(VAR_1);
+ else if (VAR_0 == 11)
+  return FUNC_3(VAR_1);
+ else if (VAR_0 == 10)
+  return FUNC_2(VAR_1);
+ else if (VAR_0 == 9)
+  return FUNC_11(VAR_1);
+ else if (VAR_0 == 8)
+  return FUNC_10(VAR_1);
+ else if (VAR_0 == 7)
+  return FUNC_9(VAR_1);
+ else if (VAR_0 == 6)
+  return FUNC_8(VAR_1);
+ else if (VAR_0 == 5)
+  return FUNC_7(VAR_1);
+ else if (VAR_0 == 4)
+  return FUNC_6(VAR_1);
+ else if (VAR_0 == 3)
+  return FUNC_5(VAR_1);
+ else if (VAR_0 == 2)
+  return FUNC_1();
+ else if (VAR_0 == 1)
+  return ((void*)0);
+ else {
+
+  FUNC_0();
+  return ((void*)0);
+ }
+}

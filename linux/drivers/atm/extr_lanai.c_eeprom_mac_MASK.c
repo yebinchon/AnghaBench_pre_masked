@@ -1,0 +1,22 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+struct lanai_dev {int const* eeprom; } ;
+
+
+ size_t VAR_0 ;
+
+__attribute__((used)) static inline const u8 *FUNC_0(const struct lanai_dev *VAR_1)
+{
+ return &VAR_1->eeprom[VAR_0];
+}

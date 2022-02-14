@@ -1,0 +1,33 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct frame_info {int dummy; } ;
+struct frame_id {int dummy; } ;
+struct amd64_frame_cache {scalar_t__ base; int pc; } ;
+
+
+ struct amd64_frame_cache* FUNC_0 (struct frame_info*,void**) ;
+ struct frame_id FUNC_1 (scalar_t__,int ) ;
+
+__attribute__((used)) static void
+FUNC_2 (struct frame_info *VAR_0, void **VAR_1,
+       struct frame_id *VAR_2)
+{
+  struct amd64_frame_cache *VAR_3 =
+    FUNC_0 (VAR_0, VAR_1);
+
+
+  if (VAR_3->base == 0)
+    return;
+
+  (*VAR_2) = FUNC_1 (VAR_3->base + 16, VAR_3->pc);
+}

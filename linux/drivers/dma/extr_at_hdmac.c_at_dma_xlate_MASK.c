@@ -1,0 +1,23 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct of_phandle_args {int dummy; } ;
+struct of_dma {int dummy; } ;
+struct dma_chan {int dummy; } ;
+
+
+
+__attribute__((used)) static struct dma_chan *FUNC_0(struct of_phandle_args *VAR_0,
+         struct of_dma *VAR_1)
+{
+ return ((void*)0);
+}

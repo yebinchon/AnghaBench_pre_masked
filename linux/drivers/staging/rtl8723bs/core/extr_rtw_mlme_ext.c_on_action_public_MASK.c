@@ -1,0 +1,60 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_3__ {scalar_t__* rx_data; } ;
+struct TYPE_4__ {TYPE_1__ hdr; } ;
+union recv_frame {TYPE_2__ u; } ;
+typedef scalar_t__ u8 ;
+struct ieee80211_hdr_3addr {int dummy; } ;
+struct adapter {int eeprompriv; } ;
+
+
+
+ int VAR_0 ;
+ int FUNC_0 (scalar_t__*) ;
+ scalar_t__ VAR_1 ;
+ unsigned int VAR_2 ;
+ scalar_t__ FUNC_1 (int ,int ,int ) ;
+ int FUNC_2 (int *) ;
+ unsigned int FUNC_3 (union recv_frame*,scalar_t__) ;
+ unsigned int FUNC_4 (union recv_frame*) ;
+
+unsigned int FUNC_5(struct adapter *VAR_3, union recv_frame *VAR_4)
+{
+ unsigned int VAR_5 = VAR_2;
+ u8 *VAR_6 = VAR_4->u.hdr.rx_data;
+ u8 *VAR_7 = VAR_6 + sizeof(struct ieee80211_hdr_3addr);
+ u8 VAR_8, VAR_9;
+
+
+ if (FUNC_1(FUNC_2(&(VAR_3->eeprompriv)), FUNC_0(VAR_6), VAR_0))
+  goto exit;
+
+ VAR_8 = VAR_7[0];
+ if (VAR_8 != VAR_1)
+  goto exit;
+
+ VAR_9 = VAR_7[1];
+ switch (VAR_9) {
+ case 128:
+  VAR_5 = FUNC_4(VAR_4);
+  break;
+ default:
+  VAR_5 = FUNC_3(VAR_4, VAR_9);
+  break;
+ }
+
+exit:
+ return VAR_5;
+}

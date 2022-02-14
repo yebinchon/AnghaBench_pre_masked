@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int git_filter_def ;
+struct TYPE_2__ {int filters; } ;
+
+
+ TYPE_1__ VAR_0 ;
+ int FUNC_0 (size_t*,char const*) ;
+ int * FUNC_1 (int *,size_t) ;
+
+__attribute__((used)) static git_filter_def *FUNC_2(size_t *VAR_1, const char *VAR_2)
+{
+ git_filter_def *VAR_3 = ((void*)0);
+
+ if (!FUNC_0(VAR_1, VAR_2))
+  VAR_3 = FUNC_1(&VAR_0.filters, *VAR_1);
+
+ return VAR_3;
+}

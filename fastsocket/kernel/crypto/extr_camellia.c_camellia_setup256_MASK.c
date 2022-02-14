@@ -1,0 +1,181 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+
+
+ int FUNC_0 (int,int,int ,int ,int,int,int,int,int,int) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int VAR_8 ;
+ int VAR_9 ;
+ int VAR_10 ;
+ int VAR_11 ;
+ int FUNC_1 (int,int,int,int,int,int,int) ;
+ int FUNC_2 (int,int,int,int,int,int,int) ;
+ int FUNC_3 (int*,int*,int*,int) ;
+ int FUNC_4 (unsigned char const*) ;
+
+__attribute__((used)) static void FUNC_5(const unsigned char *VAR_12, u32 *VAR_13)
+{
+ u32 VAR_14, VAR_15, VAR_16, VAR_17;
+ u32 VAR_18, VAR_19, VAR_20, VAR_21;
+ u32 VAR_22, VAR_23, VAR_24, VAR_25, VAR_26, VAR_27;
+ u32 VAR_28[34];
+ u32 VAR_29[34];
+
+
+
+
+
+ VAR_14 = FUNC_4(VAR_12);
+ VAR_15 = FUNC_4(VAR_12 + 4);
+ VAR_16 = FUNC_4(VAR_12 + 8);
+ VAR_17 = FUNC_4(VAR_12 + 12);
+ VAR_18 = FUNC_4(VAR_12 + 16);
+ VAR_19 = FUNC_4(VAR_12 + 20);
+ VAR_20 = FUNC_4(VAR_12 + 24);
+ VAR_21 = FUNC_4(VAR_12 + 28);
+
+
+
+ VAR_28[0] = VAR_14; VAR_29[0] = VAR_15;
+
+ VAR_28[1] = VAR_16; VAR_29[1] = VAR_17;
+ FUNC_2(VAR_14, VAR_15, VAR_16, VAR_17, VAR_26, VAR_27, 45);
+
+ VAR_28[12] = VAR_14; VAR_29[12] = VAR_15;
+
+ VAR_28[13] = VAR_16; VAR_29[13] = VAR_17;
+ FUNC_1(VAR_14, VAR_15, VAR_16, VAR_17, VAR_26, VAR_27, 15);
+
+ VAR_28[16] = VAR_14; VAR_29[16] = VAR_15;
+
+ VAR_28[17] = VAR_16; VAR_29[17] = VAR_17;
+ FUNC_1(VAR_14, VAR_15, VAR_16, VAR_17, VAR_26, VAR_27, 17);
+
+ VAR_28[22] = VAR_14; VAR_29[22] = VAR_15;
+
+ VAR_28[23] = VAR_16; VAR_29[23] = VAR_17;
+ FUNC_2(VAR_14, VAR_15, VAR_16, VAR_17, VAR_26, VAR_27, 34);
+
+ VAR_28[30] = VAR_14; VAR_29[30] = VAR_15;
+
+ VAR_28[31] = VAR_16; VAR_29[31] = VAR_17;
+
+
+ FUNC_1(VAR_18, VAR_19, VAR_20, VAR_21, VAR_26, VAR_27, 15);
+
+ VAR_28[4] = VAR_18; VAR_29[4] = VAR_19;
+
+ VAR_28[5] = VAR_20; VAR_29[5] = VAR_21;
+ FUNC_1(VAR_18, VAR_19, VAR_20, VAR_21, VAR_26, VAR_27, 15);
+
+ VAR_28[8] = VAR_18; VAR_29[8] = VAR_19;
+
+ VAR_28[9] = VAR_20; VAR_29[9] = VAR_21;
+ FUNC_1(VAR_18, VAR_19, VAR_20, VAR_21, VAR_26, VAR_27, 30);
+
+ VAR_28[18] = VAR_18; VAR_29[18] = VAR_19;
+
+ VAR_28[19] = VAR_20; VAR_29[19] = VAR_21;
+ FUNC_2(VAR_18, VAR_19, VAR_20, VAR_21, VAR_26, VAR_27, 34);
+
+ VAR_28[26] = VAR_18; VAR_29[26] = VAR_19;
+
+ VAR_28[27] = VAR_20; VAR_29[27] = VAR_21;
+ FUNC_2(VAR_18, VAR_19, VAR_20, VAR_21, VAR_26, VAR_27, 34);
+
+
+ VAR_14 = VAR_28[0] ^ VAR_18; VAR_15 = VAR_29[0] ^ VAR_19;
+ VAR_16 = VAR_28[1] ^ VAR_20; VAR_17 = VAR_29[1] ^ VAR_21;
+ FUNC_0(VAR_14, VAR_15,
+     VAR_0, VAR_1,
+     VAR_26, VAR_27, VAR_22, VAR_23, VAR_24, VAR_25);
+ VAR_16 ^= VAR_26; VAR_17 ^= VAR_27;
+ FUNC_0(VAR_16, VAR_17,
+     VAR_2, VAR_3,
+     VAR_14, VAR_15, VAR_22, VAR_23, VAR_24, VAR_25);
+ VAR_14 ^= VAR_18; VAR_15 ^= VAR_19;
+ FUNC_0(VAR_14, VAR_15,
+     VAR_4, VAR_5,
+     VAR_16, VAR_17, VAR_22, VAR_23, VAR_24, VAR_25);
+ VAR_16 ^= VAR_26 ^ VAR_20; VAR_17 ^= VAR_27 ^ VAR_21;
+ FUNC_0(VAR_16, VAR_17,
+     VAR_6, VAR_7,
+     VAR_26, VAR_27, VAR_22, VAR_23, VAR_24, VAR_25);
+ VAR_14 ^= VAR_26; VAR_15 ^= VAR_27;
+
+
+ VAR_18 ^= VAR_14; VAR_19 ^= VAR_15;
+ VAR_20 ^= VAR_16; VAR_21 ^= VAR_17;
+ FUNC_0(VAR_18, VAR_19,
+     VAR_8, VAR_9,
+     VAR_26, VAR_27, VAR_22, VAR_23, VAR_24, VAR_25);
+ VAR_20 ^= VAR_26; VAR_21 ^= VAR_27;
+ FUNC_0(VAR_20, VAR_21,
+     VAR_10, VAR_11,
+     VAR_26, VAR_27, VAR_22, VAR_23, VAR_24, VAR_25);
+ VAR_18 ^= VAR_26; VAR_19 ^= VAR_27;
+
+
+ FUNC_1(VAR_14, VAR_15, VAR_16, VAR_17, VAR_26, VAR_27, 15);
+
+ VAR_28[6] = VAR_14; VAR_29[6] = VAR_15;
+
+ VAR_28[7] = VAR_16; VAR_29[7] = VAR_17;
+ FUNC_1(VAR_14, VAR_15, VAR_16, VAR_17, VAR_26, VAR_27, 30);
+
+ VAR_28[14] = VAR_14; VAR_29[14] = VAR_15;
+
+ VAR_28[15] = VAR_16; VAR_29[15] = VAR_17;
+
+
+ VAR_28[24] = VAR_15; VAR_29[24] = VAR_16;
+
+ VAR_28[25] = VAR_17; VAR_29[25] = VAR_14;
+
+ FUNC_2(VAR_14, VAR_15, VAR_16, VAR_17, VAR_26, VAR_27, 49);
+
+ VAR_28[28] = VAR_14; VAR_29[28] = VAR_15;
+
+ VAR_28[29] = VAR_16; VAR_29[29] = VAR_17;
+
+
+
+ VAR_28[2] = VAR_18; VAR_29[2] = VAR_19;
+
+ VAR_28[3] = VAR_20; VAR_29[3] = VAR_21;
+ FUNC_1(VAR_18, VAR_19, VAR_20, VAR_21, VAR_26, VAR_27, 30);
+
+ VAR_28[10] = VAR_18; VAR_29[10] = VAR_19;
+
+ VAR_28[11] = VAR_20; VAR_29[11] = VAR_21;
+ FUNC_1(VAR_18, VAR_19, VAR_20, VAR_21, VAR_26, VAR_27, 30);
+
+ VAR_28[20] = VAR_18; VAR_29[20] = VAR_19;
+
+ VAR_28[21] = VAR_20; VAR_29[21] = VAR_21;
+ FUNC_2(VAR_18, VAR_19, VAR_20, VAR_21, VAR_26, VAR_27, 51);
+
+ VAR_28[32] = VAR_18; VAR_29[32] = VAR_19;
+
+ VAR_28[33] = VAR_20; VAR_29[33] = VAR_21;
+
+ FUNC_3(VAR_13, VAR_28, VAR_29, 32);
+}

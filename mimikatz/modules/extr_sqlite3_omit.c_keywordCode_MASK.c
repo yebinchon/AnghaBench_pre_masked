@@ -1,0 +1,142 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+ int* VAR_0 ;
+ scalar_t__* VAR_1 ;
+ int* VAR_2 ;
+ scalar_t__* VAR_3 ;
+ size_t* VAR_4 ;
+ int FUNC_0 (char const) ;
+ int FUNC_1 (int) ;
+ char const FUNC_2 (char const) ;
+ char* VAR_5 ;
+
+__attribute__((used)) static int FUNC_3(const char *VAR_6, int VAR_7, int *VAR_8){
+  int VAR_9, VAR_10;
+  const char *VAR_11;
+  if( VAR_7>=2 ){
+    VAR_9 = ((FUNC_0(VAR_6[0])*4) ^ (FUNC_0(VAR_6[VAR_7-1])*3) ^ VAR_7) % 127;
+    for(VAR_9=((int)VAR_1[VAR_9])-1; VAR_9>=0; VAR_9=((int)VAR_3[VAR_9])-1){
+      if( VAR_2[VAR_9]!=VAR_7 ) continue;
+      VAR_10 = 0;
+      VAR_11 = &VAR_5[VAR_4[VAR_9]];
+
+
+
+
+
+
+      if( VAR_10<VAR_7 ) continue;
+      FUNC_1( VAR_9==0 );
+      FUNC_1( VAR_9==1 );
+      FUNC_1( VAR_9==2 );
+      FUNC_1( VAR_9==3 );
+      FUNC_1( VAR_9==4 );
+      FUNC_1( VAR_9==5 );
+      FUNC_1( VAR_9==6 );
+      FUNC_1( VAR_9==7 );
+      FUNC_1( VAR_9==8 );
+      FUNC_1( VAR_9==9 );
+      FUNC_1( VAR_9==10 );
+      FUNC_1( VAR_9==11 );
+      FUNC_1( VAR_9==12 );
+      FUNC_1( VAR_9==13 );
+      FUNC_1( VAR_9==14 );
+      FUNC_1( VAR_9==15 );
+      FUNC_1( VAR_9==16 );
+      FUNC_1( VAR_9==17 );
+      FUNC_1( VAR_9==18 );
+      FUNC_1( VAR_9==19 );
+      FUNC_1( VAR_9==20 );
+      FUNC_1( VAR_9==21 );
+      FUNC_1( VAR_9==22 );
+      FUNC_1( VAR_9==23 );
+      FUNC_1( VAR_9==24 );
+      FUNC_1( VAR_9==25 );
+      FUNC_1( VAR_9==26 );
+      FUNC_1( VAR_9==27 );
+      FUNC_1( VAR_9==28 );
+      FUNC_1( VAR_9==29 );
+      FUNC_1( VAR_9==30 );
+      FUNC_1( VAR_9==31 );
+      FUNC_1( VAR_9==32 );
+      FUNC_1( VAR_9==33 );
+      FUNC_1( VAR_9==34 );
+      FUNC_1( VAR_9==35 );
+      FUNC_1( VAR_9==36 );
+      FUNC_1( VAR_9==37 );
+      FUNC_1( VAR_9==38 );
+      FUNC_1( VAR_9==39 );
+      FUNC_1( VAR_9==40 );
+      FUNC_1( VAR_9==41 );
+      FUNC_1( VAR_9==42 );
+      FUNC_1( VAR_9==43 );
+      FUNC_1( VAR_9==44 );
+      FUNC_1( VAR_9==45 );
+      FUNC_1( VAR_9==46 );
+      FUNC_1( VAR_9==47 );
+      FUNC_1( VAR_9==48 );
+      FUNC_1( VAR_9==49 );
+      FUNC_1( VAR_9==50 );
+      FUNC_1( VAR_9==51 );
+      FUNC_1( VAR_9==52 );
+      FUNC_1( VAR_9==53 );
+      FUNC_1( VAR_9==54 );
+      FUNC_1( VAR_9==55 );
+      FUNC_1( VAR_9==56 );
+      FUNC_1( VAR_9==57 );
+      FUNC_1( VAR_9==58 );
+      FUNC_1( VAR_9==59 );
+      FUNC_1( VAR_9==60 );
+      FUNC_1( VAR_9==61 );
+      FUNC_1( VAR_9==62 );
+      FUNC_1( VAR_9==63 );
+      FUNC_1( VAR_9==64 );
+      FUNC_1( VAR_9==65 );
+      FUNC_1( VAR_9==66 );
+      FUNC_1( VAR_9==67 );
+      FUNC_1( VAR_9==68 );
+      FUNC_1( VAR_9==69 );
+      FUNC_1( VAR_9==70 );
+      FUNC_1( VAR_9==71 );
+      FUNC_1( VAR_9==72 );
+      FUNC_1( VAR_9==73 );
+      FUNC_1( VAR_9==74 );
+      FUNC_1( VAR_9==75 );
+      FUNC_1( VAR_9==76 );
+      FUNC_1( VAR_9==77 );
+      FUNC_1( VAR_9==78 );
+      FUNC_1( VAR_9==79 );
+      FUNC_1( VAR_9==80 );
+      FUNC_1( VAR_9==81 );
+      FUNC_1( VAR_9==82 );
+      FUNC_1( VAR_9==83 );
+      FUNC_1( VAR_9==84 );
+      FUNC_1( VAR_9==85 );
+      FUNC_1( VAR_9==86 );
+      FUNC_1( VAR_9==87 );
+      FUNC_1( VAR_9==88 );
+      FUNC_1( VAR_9==89 );
+      FUNC_1( VAR_9==90 );
+      FUNC_1( VAR_9==91 );
+      FUNC_1( VAR_9==92 );
+      FUNC_1( VAR_9==93 );
+      FUNC_1( VAR_9==94 );
+      FUNC_1( VAR_9==95 );
+      FUNC_1( VAR_9==96 );
+      FUNC_1( VAR_9==97 );
+      FUNC_1( VAR_9==98 );
+      FUNC_1( VAR_9==99 );
+      FUNC_1( VAR_9==100 );
+      FUNC_1( VAR_9==101 );
+      FUNC_1( VAR_9==102 );
+      FUNC_1( VAR_9==103 );
+      *VAR_8 = VAR_0[VAR_9];
+      break;
+    }
+  }
+  return VAR_7;
+}

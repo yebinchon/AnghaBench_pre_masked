@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u_char ;
+struct mss_info {scalar_t__ opti_offset; int conf_base; } ;
+
+
+ int FUNC_0 (int ,scalar_t__) ;
+ int FUNC_1 (int ,scalar_t__,int ) ;
+
+__attribute__((used)) static u_char
+FUNC_2(struct mss_info *VAR_0, u_char VAR_1)
+{
+ FUNC_1(VAR_0->conf_base, VAR_0->opti_offset + 0, VAR_1);
+     return FUNC_0(VAR_0->conf_base, VAR_0->opti_offset + 1);
+}

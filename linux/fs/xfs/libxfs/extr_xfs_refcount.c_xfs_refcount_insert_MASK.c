@@ -1,0 +1,54 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_8__ TYPE_4__ ;
+typedef struct TYPE_7__ TYPE_3__ ;
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+struct xfs_refcount_irec {int rc_refcount; int rc_blockcount; int rc_startblock; } ;
+struct TYPE_7__ {int agno; } ;
+struct TYPE_8__ {TYPE_3__ a; } ;
+struct TYPE_5__ {int rc_refcount; int rc_blockcount; int rc_startblock; } ;
+struct TYPE_6__ {TYPE_1__ rc; } ;
+struct xfs_btree_cur {TYPE_4__ bc_private; int bc_mp; TYPE_2__ bc_rec; } ;
+
+
+ int FUNC_0 (int ,int,int ) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_1 (int ,int ,struct xfs_refcount_irec*) ;
+ int FUNC_2 (int ,int ,int,int ) ;
+ int FUNC_3 (struct xfs_btree_cur*,int*) ;
+
+int
+FUNC_4(
+ struct xfs_btree_cur *VAR_2,
+ struct xfs_refcount_irec *VAR_3,
+ int *VAR_4)
+{
+ int VAR_5;
+
+ FUNC_1(VAR_2->bc_mp, VAR_2->bc_private.a.agno, VAR_3);
+ VAR_2->bc_rec.rc.rc_startblock = VAR_3->rc_startblock;
+ VAR_2->bc_rec.rc.rc_blockcount = VAR_3->rc_blockcount;
+ VAR_2->bc_rec.rc.rc_refcount = VAR_3->rc_refcount;
+ VAR_5 = FUNC_3(VAR_2, VAR_4);
+ if (VAR_5)
+  goto out_error;
+ FUNC_0(VAR_2->bc_mp, *VAR_4 == 1, VAR_1);
+
+out_error:
+ if (VAR_5)
+  FUNC_2(VAR_2->bc_mp,
+    VAR_2->bc_private.a.agno, VAR_5, VAR_0);
+ return VAR_5;
+}

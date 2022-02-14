@@ -1,0 +1,22 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int * sds ;
+
+
+ size_t FUNC_0 (int ) ;
+ size_t FUNC_1 (int *) ;
+
+size_t FUNC_2(sds VAR_0) {
+    size_t VAR_1 = FUNC_1(VAR_0);
+    return FUNC_0(VAR_0[-1])+VAR_1+1;
+}

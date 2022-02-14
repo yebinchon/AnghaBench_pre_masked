@@ -1,0 +1,57 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int u32 ;
+struct samsung_usb2_phy_instance {TYPE_1__* cfg; struct samsung_usb2_phy_driver* drv; } ;
+struct samsung_usb2_phy_driver {int reg_pmu; } ;
+struct TYPE_2__ {int id; } ;
+
+
+
+
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int FUNC_0 (int ,int ,int ,int ) ;
+
+__attribute__((used)) static void FUNC_1(struct samsung_usb2_phy_instance *VAR_6, bool VAR_7)
+{
+ struct samsung_usb2_phy_driver *VAR_8 = VAR_6->drv;
+ u32 VAR_9;
+ u32 VAR_10;
+
+ switch (VAR_6->cfg->id) {
+ case 131:
+ case 130:
+  VAR_9 = VAR_4;
+  VAR_10 = VAR_5;
+  break;
+ case 129:
+  VAR_9 = VAR_1;
+  VAR_10 = VAR_0;
+  break;
+ case 128:
+  VAR_9 = VAR_3;
+  VAR_10 = VAR_2;
+  break;
+ default:
+  return;
+ }
+
+ FUNC_0(VAR_8->reg_pmu, VAR_9, VAR_10, VAR_7 ? 0 : VAR_10);
+}

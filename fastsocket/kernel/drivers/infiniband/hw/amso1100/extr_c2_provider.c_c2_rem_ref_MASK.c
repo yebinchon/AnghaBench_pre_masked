@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ib_qp {int dummy; } ;
+struct c2_qp {int wait; int refcount; } ;
+
+
+ int FUNC_0 (int) ;
+ scalar_t__ FUNC_1 (int *) ;
+ struct c2_qp* FUNC_2 (struct ib_qp*) ;
+ int FUNC_3 (int *) ;
+
+__attribute__((used)) static void FUNC_4(struct ib_qp *VAR_0)
+{
+ struct c2_qp *VAR_1;
+ FUNC_0(!VAR_0);
+ VAR_1 = FUNC_2(VAR_0);
+ if (FUNC_1(&VAR_1->refcount))
+  FUNC_3(&VAR_1->wait);
+}

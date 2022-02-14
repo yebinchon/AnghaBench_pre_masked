@@ -1,0 +1,53 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int u64 ;
+typedef int u32 ;
+struct net_device {int dummy; } ;
+struct ethtool_stats {int dummy; } ;
+struct e1000_adapter {int dummy; } ;
+struct TYPE_2__ {int type; int sizeof_stat; int stat_offset; } ;
+
+
+ int VAR_0 ;
+
+
+ TYPE_1__* VAR_1 ;
+ int FUNC_0 (struct e1000_adapter*) ;
+ struct e1000_adapter* FUNC_1 (struct net_device*) ;
+
+__attribute__((used)) static void FUNC_2(struct net_device *VAR_2,
+        struct ethtool_stats *VAR_3, u64 *VAR_4)
+{
+ struct e1000_adapter *VAR_5 = FUNC_1(VAR_2);
+ int VAR_6;
+ char *VAR_7 = ((void*)0);
+
+ FUNC_0(VAR_5);
+ for (VAR_6 = 0; VAR_6 < VAR_0; VAR_6++) {
+  switch (VAR_1[VAR_6].type) {
+  case 128:
+   VAR_7 = (char *) VAR_2 +
+     VAR_1[VAR_6].stat_offset;
+   break;
+  case 129:
+   VAR_7 = (char *) VAR_5 +
+     VAR_1[VAR_6].stat_offset;
+   break;
+  }
+
+  VAR_4[VAR_6] = (VAR_1[VAR_6].sizeof_stat ==
+   sizeof(u64)) ? *(u64 *)VAR_7 : *(u32 *)VAR_7;
+ }
+
+}

@@ -1,0 +1,52 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int ut8 ;
+typedef int ut16 ;
+typedef int buf ;
+
+
+ int FUNC_0 (unsigned char*,char*) ;
+ int FUNC_1 (char*,int *,int,int *) ;
+ int FUNC_2 (char*,...) ;
+
+int FUNC_3(int VAR_0, char **VAR_1) {
+ if (VAR_0>1) {
+  char VAR_2[32];
+  ut8 VAR_3[64] = {
+   0x01, 0x7c, 0x30, 0x00, 0xe1, 0x7d, 0x00, 0x10, 0x20, 0x00, 0x03,
+   0x78, 0x00, 0x10, 0x0d, 0xc0, 0xc1, 0x7d, 0x1a, 0x00, 0x61, 0xa8,
+   0x01, 0x7c, 0x00, 0x20, 0x61, 0x21, 0x00, 0x20, 0x63, 0x84, 0x6d,
+   0x80, 0xc1, 0x7d, 0x0d, 0x00, 0x31, 0x90, 0x10, 0x7c, 0x18, 0x00,
+   0xc1, 0x7d, 0x1a, 0x00, 0x37, 0x90, 0xc1, 0x61, 0xc1, 0x7d, 0x1a,
+   0x00, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, };
+  int VAR_4 = sizeof (VAR_3)-1;
+  ut16 *VAR_5 = (ut16*)VAR_3;
+
+  do {
+   int VAR_6 = FUNC_1 (VAR_2, VAR_5, VAR_4, ((void*)0));
+   VAR_4 -= VAR_6;
+   VAR_5 += (VAR_6/2);
+   FUNC_2 (" %d  %s\n", VAR_6, VAR_2);
+  } while (VAR_4>0);
+ } else {
+  unsigned char VAR_7[32];
+  char *VAR_8 = "set a, 0x30";
+  int VAR_9, VAR_10 = FUNC_0 (VAR_7, VAR_8);
+  FUNC_2 ("len=%d\n", VAR_10);
+  for (VAR_9=0;VAR_9<VAR_10; VAR_9++)
+   FUNC_2 ("%02x", VAR_7[VAR_9]);
+  FUNC_2 ("\n");
+ }
+
+ return 0;
+}

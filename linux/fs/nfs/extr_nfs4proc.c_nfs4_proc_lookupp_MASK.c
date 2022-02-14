@@ -1,0 +1,39 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct nfs_fh {int dummy; } ;
+struct nfs_fattr {int dummy; } ;
+struct nfs4_label {int dummy; } ;
+struct nfs4_exception {int interruptible; scalar_t__ retry; } ;
+struct inode {int dummy; } ;
+
+
+ int FUNC_0 (struct inode*) ;
+ int FUNC_1 (struct inode*,struct nfs_fh*,struct nfs_fattr*,struct nfs4_label*) ;
+ int FUNC_2 (int ,int,struct nfs4_exception*) ;
+ int FUNC_3 (struct inode*,int) ;
+
+__attribute__((used)) static int FUNC_4(struct inode *VAR_0, struct nfs_fh *VAR_1,
+        struct nfs_fattr *VAR_2, struct nfs4_label *VAR_3)
+{
+ struct nfs4_exception VAR_4 = {
+  .interruptible = 1,
+ };
+ int VAR_5;
+ do {
+  VAR_5 = FUNC_1(VAR_0, VAR_1, VAR_2, VAR_3);
+  FUNC_3(VAR_0, VAR_5);
+  VAR_5 = FUNC_2(FUNC_0(VAR_0), VAR_5,
+    &VAR_4);
+ } while (VAR_4.retry);
+ return VAR_5;
+}

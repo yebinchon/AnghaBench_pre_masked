@@ -1,0 +1,38 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct regulator_dev {int dummy; } ;
+struct max8925_regulator_info {int enable_reg; int i2c; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int FUNC_0 (int ,int ) ;
+ struct max8925_regulator_info* FUNC_1 (struct regulator_dev*) ;
+
+__attribute__((used)) static int FUNC_2(struct regulator_dev *VAR_5)
+{
+ struct max8925_regulator_info *VAR_6 = FUNC_1(VAR_5);
+ int VAR_7, VAR_8;
+
+ VAR_8 = FUNC_0(VAR_6->i2c, VAR_6->enable_reg);
+ if (VAR_8 < 0)
+  return VAR_8;
+ VAR_7 = (VAR_8 >> VAR_4) & VAR_3;
+ if (VAR_7 != VAR_2)
+  return 1;
+ else
+  return VAR_8 & (VAR_0 << VAR_1);
+}

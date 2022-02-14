@@ -1,0 +1,36 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct temac_local {int dummy; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ scalar_t__ FUNC_0 (struct temac_local*) ;
+ int FUNC_1 (struct temac_local*,int ) ;
+ int FUNC_2 (struct temac_local*,int ,int) ;
+
+u32 FUNC_3(struct temac_local *VAR_3, int VAR_4)
+{
+ u32 VAR_5;
+
+ if (FUNC_0(VAR_3))
+  return -VAR_0;
+ FUNC_2(VAR_3, VAR_1, VAR_4);
+ if (FUNC_0(VAR_3))
+  return -VAR_0;
+ VAR_5 = FUNC_1(VAR_3, VAR_2);
+
+ return VAR_5;
+}

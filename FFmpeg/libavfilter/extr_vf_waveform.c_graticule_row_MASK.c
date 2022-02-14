@@ -1,0 +1,71 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_11__ TYPE_4__ ;
+typedef struct TYPE_10__ TYPE_3__ ;
+typedef struct TYPE_9__ TYPE_2__ ;
+typedef struct TYPE_8__ TYPE_1__ ;
+
+
+typedef int uint8_t ;
+typedef int uint16_t ;
+struct TYPE_10__ {int flags; float opacity; scalar_t__ display; int acomp; int ncomp; int pcomp; int* grat_yuva_color; int nb_glines; int size; int (* draw_text ) (TYPE_4__*,int,int,int,float const,float const,char const*,int*) ;scalar_t__ mirror; TYPE_2__* glines; int (* blend_line ) (int *,int const,int,float const,float const,int const,int const) ;scalar_t__ rgb; } ;
+typedef TYPE_3__ WaveformContext ;
+struct TYPE_11__ {int height; int* linesize; int ** data; } ;
+struct TYPE_9__ {TYPE_1__* line; } ;
+struct TYPE_8__ {int pos; char* name; } ;
+typedef TYPE_4__ AVFrame ;
+
+
+ scalar_t__ VAR_0 ;
+ scalar_t__ VAR_1 ;
+ int FUNC_0 (int *,int const,int,float const,float const,int const,int const) ;
+ int FUNC_1 (TYPE_4__*,int,int,int,float const,float const,char const*,int*) ;
+
+__attribute__((used)) static void FUNC_2(WaveformContext *VAR_2, AVFrame *VAR_3)
+{
+    const int VAR_4 = (VAR_2->flags & 2) + 1;
+    const float VAR_5 = VAR_2->opacity;
+    const float VAR_6 = 1. - VAR_5;
+    const int VAR_7 = VAR_2->display == VAR_0 ? VAR_3->height / VAR_2->acomp : VAR_3->height;
+    int VAR_8, VAR_9 = 0, VAR_10, VAR_11, VAR_12, VAR_13 = 0, VAR_14 = 0;
+
+    for (VAR_10 = 0; VAR_10 < VAR_2->ncomp; VAR_10++) {
+        if (!((1 << VAR_10) & VAR_2->pcomp) || (!VAR_2->display && VAR_9 > 0))
+            continue;
+
+        VAR_9++;
+        VAR_8 = VAR_2->rgb ? 0 : VAR_10;
+        for (VAR_11 = 0; VAR_11 < VAR_2->ncomp; VAR_11++) {
+            const int VAR_15 = VAR_2->grat_yuva_color[VAR_11];
+            for (VAR_12 = 0; VAR_12 < VAR_2->nb_glines; VAR_12++) {
+                const uint16_t VAR_16 = VAR_2->glines[VAR_12].line[VAR_8].pos;
+                int VAR_17 = VAR_13 + (VAR_2->mirror ? VAR_2->size - 1 - VAR_16 : VAR_16);
+                uint8_t *VAR_18 = VAR_3->data[VAR_11] + VAR_14 * VAR_3->linesize[VAR_11] + VAR_17;
+
+                VAR_2->blend_line(VAR_18, VAR_7, VAR_3->linesize[VAR_11], VAR_5, VAR_6, VAR_15, VAR_4);
+            }
+        }
+
+        for (VAR_12 = 0; VAR_12 < VAR_2->nb_glines && (VAR_2->flags & 1); VAR_12++) {
+            const char *VAR_19 = VAR_2->glines[VAR_12].line[VAR_8].name;
+            const uint16_t VAR_20 = VAR_2->glines[VAR_12].line[VAR_8].pos;
+            int VAR_21 = VAR_13 + (VAR_2->mirror ? VAR_2->size - 1 - VAR_20 : VAR_20) - 10;
+
+            if (VAR_21 < 0)
+                VAR_21 = 4;
+
+            VAR_2->draw_text(VAR_3, VAR_21, VAR_14 + 2, 1, VAR_5, VAR_6, VAR_19, VAR_2->grat_yuva_color);
+        }
+
+        VAR_13 += VAR_2->size * (VAR_2->display == VAR_1);
+        VAR_14 += VAR_7 * (VAR_2->display == VAR_0);
+    }
+}

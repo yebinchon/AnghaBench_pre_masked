@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct iwl_rx_packet {int dummy; } ;
+struct iwl_rx_cmd_buffer {int dummy; } ;
+struct iwl_priv {int dummy; } ;
+
+
+ int FUNC_0 (struct iwl_priv*,struct iwl_rx_packet*) ;
+ struct iwl_rx_packet* FUNC_1 (struct iwl_rx_cmd_buffer*) ;
+
+void FUNC_2(struct iwl_priv *VAR_0, struct iwl_rx_cmd_buffer *VAR_1)
+{
+ struct iwl_rx_packet *VAR_2 = FUNC_1(VAR_1);
+
+ FUNC_0(VAR_0, VAR_2);
+}

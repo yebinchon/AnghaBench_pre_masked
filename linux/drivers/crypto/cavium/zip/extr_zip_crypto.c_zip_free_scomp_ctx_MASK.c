@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct zip_kernel_ctx {int dummy; } ;
+struct crypto_scomp {int dummy; } ;
+
+
+ int FUNC_0 (struct zip_kernel_ctx*) ;
+ int FUNC_1 (struct zip_kernel_ctx*) ;
+
+void FUNC_2(struct crypto_scomp *VAR_0, void *VAR_1)
+{
+ struct zip_kernel_ctx *VAR_2 = VAR_1;
+
+ FUNC_1(VAR_2);
+ FUNC_0(VAR_2);
+}

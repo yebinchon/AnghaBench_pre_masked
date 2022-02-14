@@ -1,0 +1,67 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct pci_bus {int number; } ;
+
+
+ int FUNC_0 (char*,int,...) ;
+ int VAR_0 ;
+ int FUNC_1 (unsigned int) ;
+ int FUNC_2 (unsigned int) ;
+ int FUNC_3 (struct pci_bus*,unsigned int,int) ;
+ int VAR_1 ;
+ int FUNC_4 () ;
+ int FUNC_5 (int *,unsigned long) ;
+ int FUNC_6 (int *,unsigned long) ;
+ int FUNC_7 (int ) ;
+ int FUNC_8 (int) ;
+
+__attribute__((used)) static int FUNC_9(struct pci_bus *VAR_2, unsigned int VAR_3, int VAR_4,
+  int VAR_5, u32 VAR_6)
+{
+ unsigned long VAR_7;
+ u32 VAR_8;
+ int VAR_9;
+
+ FUNC_5(&VAR_1, VAR_7);
+
+ FUNC_7(FUNC_3(VAR_2, VAR_3, VAR_4));
+ VAR_8 = FUNC_4();
+
+ FUNC_0("PCI: cfg_write %02u.%02u.%01u/%02X:%01d, cfg:0x%08X",
+  VAR_2->number, FUNC_2(VAR_3), FUNC_1(VAR_3),
+  VAR_4, VAR_5, VAR_8);
+
+ switch (VAR_5) {
+ case 1:
+  VAR_9 = ((VAR_4 & 3) << 3);
+  VAR_8 &= ~(0xFF << VAR_9);
+  VAR_8 |= ((VAR_6 & 0xFF) << VAR_9);
+  break;
+ case 2:
+  VAR_9 = ((VAR_4 & 2) << 4);
+  VAR_8 &= ~(0xFFFF << VAR_9);
+  VAR_8 |= ((VAR_6 & 0xFFFF) << VAR_9);
+  break;
+ case 4:
+  VAR_8 = VAR_6;
+  break;
+ }
+
+ FUNC_8(VAR_8);
+ FUNC_0(", 0x%08X written\n", VAR_8);
+
+ FUNC_6(&VAR_1, VAR_7);
+
+ return VAR_0;
+}

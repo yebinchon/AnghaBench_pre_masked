@@ -1,0 +1,40 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct kgdb_bkpt {scalar_t__ type; scalar_t__ saved_instr; scalar_t__ bpt_addr; } ;
+
+
+ scalar_t__ VAR_0 ;
+ int VAR_1 ;
+ scalar_t__ FUNC_0 (int *) ;
+ int FUNC_1 (char*,char*,int ) ;
+ int VAR_2 ;
+ int FUNC_2 (void*,scalar_t__,int ) ;
+
+int FUNC_3(struct kgdb_bkpt *VAR_3)
+{
+ if (VAR_3->type != VAR_0)
+  goto knl_write;
+
+
+
+
+ if (FUNC_0(&VAR_2))
+  goto knl_write;
+ FUNC_2((void *)VAR_3->bpt_addr, VAR_3->saved_instr,
+         VAR_1);
+ return 0;
+
+knl_write:
+ return FUNC_1((char *)VAR_3->bpt_addr,
+      (char *)VAR_3->saved_instr, VAR_1);
+}

@@ -1,0 +1,36 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int (* smgr_init ) () ;} ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ,int ) ;
+ int VAR_1 ;
+ TYPE_1__* VAR_2 ;
+ int FUNC_1 () ;
+
+void
+FUNC_2(void)
+{
+ int VAR_3;
+
+ for (VAR_3 = 0; VAR_3 < VAR_0; VAR_3++)
+ {
+  if (VAR_2[VAR_3].smgr_init)
+   VAR_2[VAR_3].smgr_init();
+ }
+
+
+ FUNC_0(VAR_1, 0);
+}

@@ -1,0 +1,85 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+typedef int tmp_buffer ;
+typedef int USHORT ;
+typedef scalar_t__ UINT ;
+typedef int UCHAR ;
+struct TYPE_3__ {int NextHeader; int UpperLayerPacketSize; int DestAddress; int SrcAddress; } ;
+typedef TYPE_1__ IPV6_PSEUDO_HEADER ;
+typedef void IPV6_ADDR ;
+
+
+ int FUNC_0 (int *,void*,scalar_t__) ;
+ int FUNC_1 (scalar_t__) ;
+ int FUNC_2 (int *) ;
+ scalar_t__ VAR_0 ;
+ int FUNC_3 (int *,scalar_t__) ;
+ int * FUNC_4 (scalar_t__) ;
+ int FUNC_5 (TYPE_1__*,int) ;
+
+USHORT FUNC_6(IPV6_ADDR *VAR_1, IPV6_ADDR *VAR_2, UCHAR VAR_3, void *VAR_4, UINT VAR_5, UINT VAR_6)
+{
+ UCHAR *VAR_7;
+ UINT VAR_8;
+ IPV6_PSEUDO_HEADER *VAR_9;
+ USHORT VAR_10;
+ bool VAR_11 = 0;
+ UCHAR VAR_12[256];
+
+ if (VAR_4 == ((void*)0) && VAR_5 != 0)
+ {
+  return 0;
+ }
+
+ if (VAR_6 == 0)
+ {
+  VAR_6 = VAR_5;
+ }
+
+ if (VAR_6 == VAR_0)
+ {
+  VAR_6 = 0;
+ }
+
+ VAR_8 = VAR_5 + sizeof(IPV6_PSEUDO_HEADER);
+
+ if (VAR_8 > sizeof(VAR_12))
+ {
+  VAR_7 = FUNC_4(VAR_8);
+
+  VAR_11 = 1;
+ }
+ else
+ {
+  VAR_7 = VAR_12;
+ }
+
+ VAR_9 = (IPV6_PSEUDO_HEADER *)VAR_7;
+ FUNC_5(VAR_9, sizeof(IPV6_PSEUDO_HEADER));
+ FUNC_0(&VAR_9->SrcAddress, VAR_1, sizeof(IPV6_ADDR));
+ FUNC_0(&VAR_9->DestAddress, VAR_2, sizeof(IPV6_ADDR));
+ VAR_9->UpperLayerPacketSize = FUNC_1(VAR_6);
+ VAR_9->NextHeader = VAR_3;
+
+ FUNC_0(((UCHAR *)VAR_7) + sizeof(IPV6_PSEUDO_HEADER), VAR_4, VAR_5);
+
+ VAR_10 = FUNC_3(VAR_7, VAR_8);
+
+ if (VAR_11)
+ {
+  FUNC_2(VAR_7);
+ }
+
+ return VAR_10;
+}

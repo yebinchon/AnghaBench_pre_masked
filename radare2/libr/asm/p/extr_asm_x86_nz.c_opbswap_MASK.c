@@ -1,0 +1,48 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+typedef int ut8 ;
+struct TYPE_6__ {TYPE_1__* operands; } ;
+struct TYPE_5__ {int type; scalar_t__ reg; } ;
+typedef int RAsm ;
+typedef TYPE_2__ Opcode ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ scalar_t__ VAR_3 ;
+ int FUNC_0 (TYPE_2__ const*) ;
+
+__attribute__((used)) static int FUNC_1(RAsm *VAR_4, ut8 *VAR_5, const Opcode *VAR_6) {
+ int VAR_7 = 0;
+ if (VAR_6->operands[0].type & VAR_2) {
+  FUNC_0 (VAR_6);
+  if (VAR_6->operands[0].reg == VAR_3) {
+   return -1;
+  }
+
+  if (VAR_6->operands[0].type & VAR_1) {
+   VAR_5[VAR_7++] = 0x48;
+   VAR_5[VAR_7++] = 0x0f;
+   VAR_5[VAR_7++] = 0xc8 + VAR_6->operands[0].reg;
+  } else if (VAR_6->operands[0].type & VAR_0) {
+   VAR_5[VAR_7++] = 0x0f;
+   VAR_5[VAR_7++] = 0xc8 + VAR_6->operands[0].reg;
+  } else {
+   return -1;
+  }
+ }
+ return VAR_7;
+}

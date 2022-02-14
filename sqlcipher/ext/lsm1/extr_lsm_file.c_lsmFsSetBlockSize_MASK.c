@@ -1,0 +1,21 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_3__ {int nBlocksize; } ;
+typedef TYPE_1__ FileSystem ;
+
+
+
+void FUNC_0(FileSystem *VAR_0, int VAR_1){
+  VAR_0->nBlocksize = VAR_1;
+}

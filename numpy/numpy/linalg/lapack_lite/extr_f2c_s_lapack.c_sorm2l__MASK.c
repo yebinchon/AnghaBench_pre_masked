@@ -1,0 +1,130 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef float real ;
+typedef void* logical ;
+typedef int integer ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int,int) ;
+ int FUNC_1 (char*,int*) ;
+
+int FUNC_2(char *VAR_1, char *VAR_2, integer *VAR_3, integer *VAR_4,
+ integer *VAR_5, real *VAR_6, integer *VAR_7, real *VAR_8, real *VAR_9, integer *VAR_10,
+  real *VAR_11, integer *VAR_12)
+{
+
+    integer VAR_13, VAR_14, VAR_15, VAR_16, VAR_17, VAR_18;
+
+
+    static integer VAR_19, VAR_20, VAR_21, VAR_22, VAR_23, VAR_24, VAR_25;
+    static real VAR_26;
+    static logical VAR_27;
+    extern logical FUNC_3(char *, char *);
+    extern int FUNC_4(char *, integer *, integer *, real *,
+     integer *, real *, real *, integer *, real *), FUNC_1(
+     char *, integer *);
+    static logical VAR_28;
+    VAR_13 = *VAR_7;
+    VAR_14 = 1 + VAR_13;
+    VAR_6 -= VAR_14;
+    --VAR_8;
+    VAR_15 = *VAR_10;
+    VAR_16 = 1 + VAR_15;
+    VAR_9 -= VAR_16;
+    --VAR_11;
+
+
+    *VAR_12 = 0;
+    VAR_27 = FUNC_3(VAR_1, "L");
+    VAR_28 = FUNC_3(VAR_2, "N");
+
+
+
+    if (VAR_27) {
+ VAR_25 = *VAR_3;
+    } else {
+ VAR_25 = *VAR_4;
+    }
+    if (! VAR_27 && ! FUNC_3(VAR_1, "R")) {
+ *VAR_12 = -1;
+    } else if (! VAR_28 && ! FUNC_3(VAR_2, "T")) {
+ *VAR_12 = -2;
+    } else if (*VAR_3 < 0) {
+ *VAR_12 = -3;
+    } else if (*VAR_4 < 0) {
+ *VAR_12 = -4;
+    } else if (*VAR_5 < 0 || *VAR_5 > VAR_25) {
+ *VAR_12 = -5;
+    } else if (*VAR_7 < FUNC_0(1,VAR_25)) {
+ *VAR_12 = -7;
+    } else if (*VAR_10 < FUNC_0(1,*VAR_3)) {
+ *VAR_12 = -10;
+    }
+    if (*VAR_12 != 0) {
+ VAR_17 = -(*VAR_12);
+ FUNC_1("SORM2L", &VAR_17);
+ return 0;
+    }
+
+
+
+    if (*VAR_3 == 0 || *VAR_4 == 0 || *VAR_5 == 0) {
+ return 0;
+    }
+
+    if (VAR_27 && VAR_28 || ! VAR_27 && ! VAR_28) {
+ VAR_20 = 1;
+ VAR_21 = *VAR_5;
+ VAR_22 = 1;
+    } else {
+ VAR_20 = *VAR_5;
+ VAR_21 = 1;
+ VAR_22 = -1;
+    }
+
+    if (VAR_27) {
+ VAR_24 = *VAR_4;
+    } else {
+ VAR_23 = *VAR_3;
+    }
+
+    VAR_17 = VAR_21;
+    VAR_18 = VAR_22;
+    for (VAR_19 = VAR_20; VAR_18 < 0 ? VAR_19 >= VAR_17 : VAR_19 <= VAR_17; VAR_19 += VAR_18) {
+ if (VAR_27) {
+
+
+
+     VAR_23 = *VAR_3 - *VAR_5 + VAR_19;
+ } else {
+
+
+
+     VAR_24 = *VAR_4 - *VAR_5 + VAR_19;
+ }
+
+
+
+ VAR_26 = VAR_6[VAR_25 - *VAR_5 + VAR_19 + VAR_19 * VAR_13];
+ VAR_6[VAR_25 - *VAR_5 + VAR_19 + VAR_19 * VAR_13] = 1.f;
+ FUNC_4(VAR_1, &VAR_23, &VAR_24, &VAR_6[VAR_19 * VAR_13 + 1], &VAR_0, &VAR_8[VAR_19], &VAR_9[
+  VAR_16], VAR_10, &VAR_11[1]);
+ VAR_6[VAR_25 - *VAR_5 + VAR_19 + VAR_19 * VAR_13] = VAR_26;
+
+    }
+    return 0;
+
+
+
+}

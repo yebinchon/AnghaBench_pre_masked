@@ -1,0 +1,99 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+typedef int u64 ;
+struct omfs_inode {int i_sibling; } ;
+struct inode {int i_sb; int * b_data; } ;
+struct TYPE_4__ {char* name; int len; } ;
+struct dentry {TYPE_2__ d_name; TYPE_1__* d_parent; } ;
+struct buffer_head {int i_sb; int * b_data; } ;
+typedef int __be64 ;
+struct TYPE_3__ {struct inode* d_inode; } ;
+
+
+ int VAR_0 ;
+ scalar_t__ FUNC_0 (struct inode*) ;
+ int FUNC_1 (int ) ;
+ int FUNC_2 (struct inode*) ;
+ int FUNC_3 (int ) ;
+ int FUNC_4 (struct inode*) ;
+ int FUNC_5 (int ,int ) ;
+ int FUNC_6 (struct inode*) ;
+ int FUNC_7 (struct inode*) ;
+ int FUNC_8 (struct inode*) ;
+ struct inode* FUNC_9 (struct inode*,char const*,int,int*) ;
+ struct inode* FUNC_10 (int ,int ) ;
+ struct inode* FUNC_11 (struct inode*,int ,char const*,int,int *) ;
+ struct inode* FUNC_12 (int ,int ) ;
+
+__attribute__((used)) static int FUNC_13(struct dentry *VAR_1)
+{
+ struct inode *VAR_2 = VAR_1->d_parent->d_inode;
+ struct inode *VAR_3;
+ const char *VAR_4 = VAR_1->d_name.name;
+ int VAR_5 = VAR_1->d_name.len;
+ struct omfs_inode *VAR_6;
+ struct buffer_head *VAR_7, *VAR_8;
+ __be64 *VAR_9, VAR_10;
+ u64 VAR_11, VAR_12;
+ int VAR_13;
+ int VAR_14 = -VAR_0;
+
+
+ VAR_7 = FUNC_9(VAR_2, VAR_4, VAR_5, &VAR_13);
+ if (!VAR_7)
+  goto out;
+
+ VAR_9 = (__be64 *) &VAR_7->b_data[VAR_13];
+ VAR_11 = FUNC_3(*VAR_9);
+
+ VAR_8 = FUNC_11(VAR_2, VAR_11, VAR_4, VAR_5, &VAR_12);
+ if (FUNC_0(VAR_8)) {
+  VAR_14 = FUNC_2(VAR_8);
+  goto out_free_bh;
+ }
+
+ VAR_6 = (struct omfs_inode *) VAR_8->b_data;
+ VAR_10 = VAR_6->i_sibling;
+ FUNC_4(VAR_8);
+
+ if (VAR_12 != ~0) {
+
+  FUNC_4(VAR_7);
+  VAR_7 = FUNC_12(VAR_2->i_sb,
+   FUNC_5(FUNC_1(VAR_2->i_sb), VAR_12));
+  if (!VAR_7)
+   goto out;
+
+  VAR_6 = (struct omfs_inode *) VAR_7->b_data;
+  VAR_9 = &VAR_6->i_sibling;
+ }
+
+ *VAR_9 = VAR_10;
+ FUNC_7(VAR_7);
+
+ if (VAR_12 != ~0) {
+  VAR_3 = FUNC_10(VAR_2->i_sb, VAR_12);
+  if (!FUNC_0(VAR_3)) {
+   FUNC_8(VAR_3);
+   FUNC_6(VAR_3);
+  }
+ }
+
+ VAR_14 = 0;
+out_free_bh:
+ FUNC_4(VAR_7);
+out:
+ return VAR_14;
+}

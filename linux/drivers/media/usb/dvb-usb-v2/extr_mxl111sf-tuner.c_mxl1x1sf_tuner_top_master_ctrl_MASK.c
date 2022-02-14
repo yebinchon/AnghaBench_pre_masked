@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct mxl111sf_tuner_state {int mxl_state; TYPE_1__* cfg; } ;
+struct TYPE_2__ {int (* top_master_ctrl ) (int ,int) ;} ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ,int) ;
+
+__attribute__((used)) static int FUNC_1(struct mxl111sf_tuner_state *VAR_1,
+       int VAR_2)
+{
+ return (VAR_1->cfg->top_master_ctrl) ?
+  VAR_1->cfg->top_master_ctrl(VAR_1->mxl_state, VAR_2) :
+  -VAR_0;
+}

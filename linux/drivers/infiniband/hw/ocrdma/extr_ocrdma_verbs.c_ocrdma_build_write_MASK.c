@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int u32 ;
+struct ocrdma_sge {int len; int lrkey; int addr_hi; int addr_lo; } ;
+struct ocrdma_qp {int dummy; } ;
+struct ocrdma_hdr_wqe {int total_len; } ;
+struct ib_send_wr {int dummy; } ;
+struct TYPE_2__ {int rkey; int remote_addr; } ;
+
+
+ int FUNC_0 (struct ocrdma_qp*,struct ocrdma_hdr_wqe*,struct ocrdma_sge*,struct ib_send_wr const*,int) ;
+ TYPE_1__* FUNC_1 (struct ib_send_wr const*) ;
+ int FUNC_2 (int ) ;
+
+__attribute__((used)) static int FUNC_3(struct ocrdma_qp *VAR_0, struct ocrdma_hdr_wqe *VAR_1,
+         const struct ib_send_wr *VAR_2)
+{
+ int VAR_3;
+ struct ocrdma_sge *VAR_4 = (struct ocrdma_sge *)(VAR_1 + 1);
+ struct ocrdma_sge *VAR_5 = VAR_4 + 1;
+ u32 VAR_6 = sizeof(*VAR_1) + sizeof(*VAR_4);
+
+ VAR_3 = FUNC_0(VAR_0, VAR_1, VAR_5, VAR_2, VAR_6);
+ if (VAR_3)
+  return VAR_3;
+ VAR_4->addr_lo = FUNC_1(VAR_2)->remote_addr;
+ VAR_4->addr_hi = FUNC_2(FUNC_1(VAR_2)->remote_addr);
+ VAR_4->lrkey = FUNC_1(VAR_2)->rkey;
+ VAR_4->len = VAR_1->total_len;
+ return 0;
+}

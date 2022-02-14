@@ -1,0 +1,52 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_3__ {int alarm_en; int auto_reload; int divider; int counter_en; int intr_type; int counter_dir; } ;
+typedef TYPE_1__ timer_config_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int FUNC_0 (int,int) ;
+ int FUNC_1 (int,int,TYPE_1__*) ;
+ int FUNC_2 (int,int,int ,int *,int ,int *) ;
+ int FUNC_3 (int,int) ;
+ int FUNC_4 (int,int,int) ;
+ int FUNC_5 (int,int,int) ;
+ int FUNC_6 (int,int,int) ;
+
+__attribute__((used)) static void FUNC_7(void)
+{
+
+    int VAR_7 = VAR_1;
+    int VAR_8 = VAR_3;
+    timer_config_t VAR_9;
+    VAR_9.alarm_en = 1;
+    VAR_9.auto_reload = 1;
+    VAR_9.counter_dir = VAR_0;
+    VAR_9.divider = 10000;
+    VAR_9.intr_type = VAR_2;
+    VAR_9.counter_en = VAR_4;
+    FUNC_1(VAR_7, VAR_8, &VAR_9);
+    FUNC_3(VAR_7, VAR_8);
+    FUNC_6(VAR_7, VAR_8, 0x00000000ULL);
+    FUNC_4(VAR_7, VAR_8, 20);
+    FUNC_0(VAR_7, VAR_8);
+    FUNC_5(VAR_7, VAR_8, 1);
+    FUNC_2(VAR_7, VAR_8, VAR_5, ((void*)0), 0, &VAR_6);
+}

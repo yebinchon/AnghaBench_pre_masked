@@ -1,0 +1,68 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETERSI4UIVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETERSI4IVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETERI4UIVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETERI4UINVPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETERI4IVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETERI4INVPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETERSI4UIVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETERSI4IVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETERI4UIVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETERI4UINVPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETERI4IVNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETERI4INVPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMLOCALPARAMETERIUIVNVPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMLOCALPARAMETERIIVNVPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMENVPARAMETERIUIVNVPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMENVPARAMETERIIVNVPROC ;
+typedef scalar_t__ (* GLADloadproc ) (char*) ;
+
+
+ int VAR_0 ;
+ scalar_t__ VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ VAR_3 ;
+ scalar_t__ VAR_4 ;
+ scalar_t__ VAR_5 ;
+ scalar_t__ VAR_6 ;
+ scalar_t__ VAR_7 ;
+ scalar_t__ VAR_8 ;
+ scalar_t__ VAR_9 ;
+ scalar_t__ VAR_10 ;
+ scalar_t__ VAR_11 ;
+ scalar_t__ VAR_12 ;
+ scalar_t__ VAR_13 ;
+ scalar_t__ VAR_14 ;
+ scalar_t__ VAR_15 ;
+ scalar_t__ VAR_16 ;
+
+__attribute__((used)) static void FUNC_0(GLADloadproc VAR_17) {
+ if(!VAR_0) return;
+ VAR_11 = (PFNGLPROGRAMLOCALPARAMETERI4INVPROC)VAR_17("glProgramLocalParameterI4iNV");
+ VAR_12 = (PFNGLPROGRAMLOCALPARAMETERI4IVNVPROC)VAR_17("glProgramLocalParameterI4ivNV");
+ VAR_15 = (PFNGLPROGRAMLOCALPARAMETERSI4IVNVPROC)VAR_17("glProgramLocalParametersI4ivNV");
+ VAR_13 = (PFNGLPROGRAMLOCALPARAMETERI4UINVPROC)VAR_17("glProgramLocalParameterI4uiNV");
+ VAR_14 = (PFNGLPROGRAMLOCALPARAMETERI4UIVNVPROC)VAR_17("glProgramLocalParameterI4uivNV");
+ VAR_16 = (PFNGLPROGRAMLOCALPARAMETERSI4UIVNVPROC)VAR_17("glProgramLocalParametersI4uivNV");
+ VAR_5 = (PFNGLPROGRAMENVPARAMETERI4INVPROC)VAR_17("glProgramEnvParameterI4iNV");
+ VAR_6 = (PFNGLPROGRAMENVPARAMETERI4IVNVPROC)VAR_17("glProgramEnvParameterI4ivNV");
+ VAR_9 = (PFNGLPROGRAMENVPARAMETERSI4IVNVPROC)VAR_17("glProgramEnvParametersI4ivNV");
+ VAR_7 = (PFNGLPROGRAMENVPARAMETERI4UINVPROC)VAR_17("glProgramEnvParameterI4uiNV");
+ VAR_8 = (PFNGLPROGRAMENVPARAMETERI4UIVNVPROC)VAR_17("glProgramEnvParameterI4uivNV");
+ VAR_10 = (PFNGLPROGRAMENVPARAMETERSI4UIVNVPROC)VAR_17("glProgramEnvParametersI4uivNV");
+ VAR_3 = (PFNGLGETPROGRAMLOCALPARAMETERIIVNVPROC)VAR_17("glGetProgramLocalParameterIivNV");
+ VAR_4 = (PFNGLGETPROGRAMLOCALPARAMETERIUIVNVPROC)VAR_17("glGetProgramLocalParameterIuivNV");
+ VAR_1 = (PFNGLGETPROGRAMENVPARAMETERIIVNVPROC)VAR_17("glGetProgramEnvParameterIivNV");
+ VAR_2 = (PFNGLGETPROGRAMENVPARAMETERIUIVNVPROC)VAR_17("glGetProgramEnvParameterIuivNV");
+}

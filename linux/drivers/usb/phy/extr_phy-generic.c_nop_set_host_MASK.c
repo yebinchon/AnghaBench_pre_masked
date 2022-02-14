@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct usb_otg {struct usb_bus* host; } ;
+struct usb_bus {int dummy; } ;
+
+
+ int VAR_0 ;
+
+__attribute__((used)) static int FUNC_0(struct usb_otg *VAR_1, struct usb_bus *VAR_2)
+{
+ if (!VAR_1)
+  return -VAR_0;
+
+ if (!VAR_2) {
+  VAR_1->host = ((void*)0);
+  return -VAR_0;
+ }
+
+ VAR_1->host = VAR_2;
+ return 0;
+}

@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u16 ;
+typedef int s32 ;
+
+
+ int FUNC_0 (char,int,int) ;
+ int FUNC_1 (int,int*) ;
+
+__attribute__((used)) static int FUNC_2(s32 VAR_0,char VAR_1)
+{
+ s32 VAR_2;
+ u16 VAR_3;
+
+ VAR_3 = (0xB000|FUNC_0(VAR_1,4,8));
+ VAR_2 = FUNC_1(VAR_0,&VAR_3);
+ if(VAR_2==1 && !(VAR_3&0x0400)) VAR_2 = 0;
+
+ return VAR_2;
+}

@@ -1,0 +1,39 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int uint32_t ;
+struct mtd_info {struct cafe_priv* priv; } ;
+struct cafe_priv {TYPE_1__* pdev; } ;
+typedef int irqreturn_t ;
+struct TYPE_2__ {int dev; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (int *,char*,int,int) ;
+ int FUNC_1 (struct cafe_priv*,int ) ;
+ int FUNC_2 (struct cafe_priv*,int,int ) ;
+
+__attribute__((used)) static irqreturn_t FUNC_3(int VAR_3, void *VAR_4)
+{
+ struct mtd_info *VAR_5 = VAR_4;
+ struct cafe_priv *VAR_6 = VAR_5->priv;
+ uint32_t VAR_7 = FUNC_1(VAR_6, VAR_2);
+ FUNC_2(VAR_6, VAR_7 & ~0x90000000, VAR_2);
+ if (!VAR_7)
+  return VAR_1;
+
+ FUNC_0(&VAR_6->pdev->dev, "irq, bits %x (%x)\n", VAR_7, FUNC_1(VAR_6, VAR_2));
+ return VAR_0;
+}

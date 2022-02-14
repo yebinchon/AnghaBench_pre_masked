@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_3__ {int * data; } ;
+typedef TYPE_1__ EVP_PKEY_CTX ;
+typedef int DSA_PKEY_CTX ;
+
+
+ int FUNC_0 (int *) ;
+
+__attribute__((used)) static void FUNC_1(EVP_PKEY_CTX *VAR_0)
+{
+    DSA_PKEY_CTX *VAR_1 = VAR_0->data;
+    FUNC_0(VAR_1);
+}

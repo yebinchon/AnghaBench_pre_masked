@@ -1,0 +1,34 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+struct TYPE_5__ {int * sy_frag; } ;
+typedef TYPE_1__ symbolS ;
+struct local_symbol {int dummy; } ;
+typedef int fragS ;
+
+
+ scalar_t__ FUNC_0 (TYPE_1__*) ;
+ int FUNC_1 (TYPE_1__*) ;
+ int FUNC_2 (struct local_symbol*,int *) ;
+
+void
+FUNC_3 (symbolS *VAR_0, fragS *VAR_1)
+{
+  if (FUNC_0 (VAR_0))
+    {
+      FUNC_2 ((struct local_symbol *) VAR_0, VAR_1);
+      return;
+    }
+  VAR_0->sy_frag = VAR_1;
+  FUNC_1 (VAR_0);
+}

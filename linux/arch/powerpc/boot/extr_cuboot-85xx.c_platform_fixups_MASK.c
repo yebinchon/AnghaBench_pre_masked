@@ -1,0 +1,55 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int bi_busfreq; int bi_intfreq; int bi_enet3addr; int bi_enet2addr; int bi_enet1addr; int bi_enetaddr; int bi_memsize; int bi_memstart; } ;
+
+
+ TYPE_1__ VAR_0 ;
+ int FUNC_0 (int ,int,int) ;
+ int FUNC_1 (char*,int ) ;
+ int FUNC_2 (int ,int ) ;
+ void* FUNC_3 (void*,char*) ;
+ void* FUNC_4 (void*) ;
+ int FUNC_5 (void*,char*,int*,int) ;
+
+__attribute__((used)) static void FUNC_6(void)
+{
+ void *VAR_1;
+
+ FUNC_2(VAR_0.bi_memstart, VAR_0.bi_memsize);
+ FUNC_1("ethernet0", VAR_0.bi_enetaddr);
+ FUNC_1("ethernet1", VAR_0.bi_enet1addr);
+ FUNC_1("ethernet2", VAR_0.bi_enet2addr);
+ FUNC_1("ethernet3", VAR_0.bi_enet3addr);
+ FUNC_0(VAR_0.bi_intfreq, VAR_0.bi_busfreq / 8, VAR_0.bi_busfreq);
+
+
+
+
+
+ VAR_1 = FUNC_3(((void*)0), "soc");
+ if (VAR_1) {
+  void *VAR_2 = ((void*)0);
+
+  FUNC_5(VAR_1, "bus-frequency", &VAR_0.bi_busfreq,
+          sizeof(VAR_0.bi_busfreq));
+
+  while ((VAR_2 = FUNC_3(VAR_2, "serial"))) {
+   if (FUNC_4(VAR_2) != VAR_1)
+    continue;
+
+   FUNC_5(VAR_2, "clock-frequency", &VAR_0.bi_busfreq,
+           sizeof(VAR_0.bi_busfreq));
+  }
+ }
+}

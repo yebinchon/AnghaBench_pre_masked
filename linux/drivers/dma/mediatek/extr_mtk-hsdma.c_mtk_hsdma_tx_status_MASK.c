@@ -1,0 +1,60 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct virt_dma_desc {int dummy; } ;
+struct mtk_hsdma_vdesc {size_t residue; } ;
+struct TYPE_2__ {int lock; } ;
+struct mtk_hsdma_vchan {TYPE_1__ vc; } ;
+struct dma_tx_state {int dummy; } ;
+struct dma_chan {int dummy; } ;
+typedef enum dma_status { ____Placeholder_dma_status } dma_status ;
+typedef int dma_cookie_t ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct dma_chan*,int ,struct dma_tx_state*) ;
+ int FUNC_1 (struct dma_tx_state*,size_t) ;
+ struct virt_dma_desc* FUNC_2 (struct dma_chan*,int ) ;
+ int FUNC_3 (int *,unsigned long) ;
+ int FUNC_4 (int *,unsigned long) ;
+ struct mtk_hsdma_vchan* FUNC_5 (struct dma_chan*) ;
+ struct mtk_hsdma_vdesc* FUNC_6 (struct virt_dma_desc*) ;
+
+__attribute__((used)) static enum dma_status FUNC_7(struct dma_chan *VAR_1,
+        dma_cookie_t VAR_2,
+        struct dma_tx_state *VAR_3)
+{
+ struct mtk_hsdma_vchan *VAR_4 = FUNC_5(VAR_1);
+ struct mtk_hsdma_vdesc *VAR_5;
+ struct virt_dma_desc *VAR_6;
+ enum dma_status VAR_7;
+ unsigned long VAR_8;
+ size_t VAR_9 = 0;
+
+ VAR_7 = FUNC_0(VAR_1, VAR_2, VAR_3);
+ if (VAR_7 == VAR_0 || !VAR_3)
+  return VAR_7;
+
+ FUNC_3(&VAR_4->vc.lock, VAR_8);
+ VAR_6 = FUNC_2(VAR_1, VAR_2);
+ FUNC_4(&VAR_4->vc.lock, VAR_8);
+
+ if (VAR_6) {
+  VAR_5 = FUNC_6(VAR_6);
+  VAR_9 = VAR_5->residue;
+ }
+
+ FUNC_1(VAR_3, VAR_9);
+
+ return VAR_7;
+}

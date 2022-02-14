@@ -1,0 +1,36 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct pm3_par {int base; } ;
+struct fb_var_screeninfo {int xres; int const yoffset; scalar_t__ xoffset; int bits_per_pixel; } ;
+struct fb_info {struct pm3_par* par; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct pm3_par*,int) ;
+ int FUNC_1 (struct pm3_par*,int ,int ) ;
+ int FUNC_2 (int ,scalar_t__) ;
+
+__attribute__((used)) static int FUNC_3(struct fb_var_screeninfo *VAR_1,
+     struct fb_info *VAR_2)
+{
+ struct pm3_par *VAR_3 = VAR_2->par;
+ const u32 VAR_4 = (VAR_1->xres + 31) & ~31;
+
+ VAR_3->base = FUNC_2(VAR_1->bits_per_pixel,
+     (VAR_1->yoffset * VAR_4)
+     + VAR_1->xoffset);
+ FUNC_0(VAR_3, 1);
+ FUNC_1(VAR_3, VAR_0, VAR_3->base);
+ return 0;
+}

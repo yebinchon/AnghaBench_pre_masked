@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct sdhci_host {int dummy; } ;
+struct platform_device {int dummy; } ;
+
+
+ struct sdhci_host* FUNC_0 (struct platform_device*) ;
+ int FUNC_1 (struct sdhci_host*) ;
+
+void FUNC_2(struct platform_device *VAR_0)
+{
+ struct sdhci_host *VAR_1 = FUNC_0(VAR_0);
+
+ FUNC_1(VAR_1);
+}

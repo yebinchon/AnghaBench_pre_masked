@@ -1,0 +1,36 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct nv44_mc_priv {int base; } ;
+struct nouveau_object {int dummy; } ;
+
+
+ int FUNC_0 (int *) ;
+ int FUNC_1 (struct nv44_mc_priv*,int) ;
+ int FUNC_2 (struct nv44_mc_priv*,int,int) ;
+
+__attribute__((used)) static int
+FUNC_3(struct nouveau_object *VAR_0)
+{
+ struct nv44_mc_priv *VAR_1 = (void *)VAR_0;
+ u32 VAR_2 = FUNC_1(VAR_1, 0x10020c);
+
+ FUNC_2(VAR_1, 0x000200, 0xffffffff);
+
+ FUNC_2(VAR_1, 0x001700, VAR_2);
+ FUNC_2(VAR_1, 0x001704, 0);
+ FUNC_2(VAR_1, 0x001708, 0);
+ FUNC_2(VAR_1, 0x00170c, VAR_2);
+
+ return FUNC_0(&VAR_1->base);
+}

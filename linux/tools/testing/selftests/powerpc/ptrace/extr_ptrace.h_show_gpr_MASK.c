@@ -1,0 +1,47 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct pt_regs {unsigned long* gpr; } ;
+typedef int pid_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ scalar_t__ FUNC_0 (int) ;
+ int FUNC_1 (char*) ;
+ int FUNC_2 (int ,int ,int *,struct pt_regs*) ;
+
+int FUNC_3(pid_t VAR_3, unsigned long *VAR_4)
+{
+ struct pt_regs *VAR_5;
+ int VAR_6, VAR_7;
+
+ VAR_5 = (struct pt_regs *) FUNC_0(sizeof(struct pt_regs));
+ if (!VAR_5) {
+  FUNC_1("malloc() failed");
+  return VAR_1;
+ }
+
+ VAR_6 = FUNC_2(VAR_0, VAR_3, ((void*)0), VAR_5);
+ if (VAR_6) {
+  FUNC_1("ptrace(PTRACE_GETREGSET) failed");
+  return VAR_1;
+ }
+
+ if (VAR_4) {
+  for (VAR_7 = 14; VAR_7 < 32; VAR_7++)
+   VAR_4[VAR_7-14] = VAR_5->gpr[VAR_7];
+ }
+
+ return VAR_2;
+}

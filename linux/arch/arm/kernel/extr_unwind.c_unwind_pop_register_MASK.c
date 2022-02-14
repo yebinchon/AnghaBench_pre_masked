@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct unwind_ctrl_block {int * vrs; scalar_t__ sp_high; int check_each_pop; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ scalar_t__ FUNC_0 (int ) ;
+
+__attribute__((used)) static int FUNC_1(struct unwind_ctrl_block *VAR_2,
+    unsigned long **VAR_3, unsigned int VAR_4)
+{
+ if (FUNC_0(VAR_2->check_each_pop))
+  if (*VAR_3 >= (unsigned long *)VAR_2->sp_high)
+   return -VAR_0;
+
+ VAR_2->vrs[VAR_4] = *(*VAR_3)++;
+ return VAR_1;
+}

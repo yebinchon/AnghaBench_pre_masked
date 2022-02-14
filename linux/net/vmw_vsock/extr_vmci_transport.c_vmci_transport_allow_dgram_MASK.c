@@ -1,0 +1,39 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef scalar_t__ u32 ;
+struct vsock_sock {scalar_t__ cached_peer; int cached_peer_allow_dgram; } ;
+
+
+ scalar_t__ VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (scalar_t__) ;
+ int FUNC_1 (struct vsock_sock*,scalar_t__) ;
+
+__attribute__((used)) static bool FUNC_2(struct vsock_sock *VAR_2, u32 VAR_3)
+{
+ if (VAR_0 == VAR_3)
+  return 1;
+
+ if (VAR_2->cached_peer != VAR_3) {
+  VAR_2->cached_peer = VAR_3;
+  if (!FUNC_1(VAR_2, VAR_3) &&
+      (FUNC_0(VAR_3) &
+       VAR_1)) {
+   VAR_2->cached_peer_allow_dgram = 0;
+  } else {
+   VAR_2->cached_peer_allow_dgram = 1;
+  }
+ }
+
+ return VAR_2->cached_peer_allow_dgram;
+}

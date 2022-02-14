@@ -1,0 +1,39 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct mp_cmd_ctx {int success; TYPE_2__* args; struct MPContext* mpctx; } ;
+struct MPContext {int input; } ;
+struct TYPE_3__ {char* s; } ;
+struct TYPE_4__ {TYPE_1__ v; } ;
+
+
+ int FUNC_0 (struct MPContext*,char*,char*) ;
+ int FUNC_1 (char const*) ;
+ int FUNC_2 (int ,int,int ) ;
+ int FUNC_3 (char*) ;
+
+__attribute__((used)) static void FUNC_4(void *VAR_0)
+{
+    struct mp_cmd_ctx *VAR_1 = VAR_0;
+    struct MPContext *VAR_2 = VAR_1->mpctx;
+
+    int VAR_3 = FUNC_3(VAR_1->args[0].v.s);
+    if (VAR_3 < 0) {
+        FUNC_0(VAR_2, "%s is not a valid input name.\n", VAR_1->args[0].v.s);
+        VAR_1->success = 0;
+        return;
+    }
+    const char *VAR_4 = VAR_1->args[1].v.s;
+    FUNC_2(VAR_2->input, VAR_3, FUNC_1(VAR_4));
+}

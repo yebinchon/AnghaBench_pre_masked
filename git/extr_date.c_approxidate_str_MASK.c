@@ -1,0 +1,62 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int timestamp_t ;
+typedef int time_t ;
+struct tm {int tm_year; int tm_mon; int tm_mday; } ;
+struct timeval {int tv_sec; } ;
+
+
+ char* FUNC_0 (char const*,struct tm*,struct tm*,int*,int*) ;
+ char* FUNC_1 (char const*,struct tm*,int*,int ) ;
+ scalar_t__ FUNC_2 (unsigned char) ;
+ scalar_t__ FUNC_3 (unsigned char) ;
+ int FUNC_4 (int *,struct tm*) ;
+ int FUNC_5 (struct tm*,int*) ;
+ int FUNC_6 (struct tm*,struct tm*,int ) ;
+
+__attribute__((used)) static timestamp_t FUNC_7(const char *VAR_0,
+       const struct timeval *VAR_1,
+       int *VAR_2)
+{
+ int VAR_3 = 0;
+ int VAR_4 = 0;
+ struct tm VAR_5, VAR_6;
+ time_t VAR_7;
+
+ VAR_7 = VAR_1->tv_sec;
+ FUNC_4(&VAR_7, &VAR_5);
+ VAR_6 = VAR_5;
+
+ VAR_5.tm_year = -1;
+ VAR_5.tm_mon = -1;
+ VAR_5.tm_mday = -1;
+
+ for (;;) {
+  unsigned char VAR_8 = *VAR_0;
+  if (!VAR_8)
+   break;
+  VAR_0++;
+  if (FUNC_3(VAR_8)) {
+   FUNC_5(&VAR_5, &VAR_3);
+   VAR_0 = FUNC_1(VAR_0-1, &VAR_5, &VAR_3, VAR_7);
+   VAR_4 = 1;
+   continue;
+  }
+  if (FUNC_2(VAR_8))
+   VAR_0 = FUNC_0(VAR_0-1, &VAR_5, &VAR_6, &VAR_3, &VAR_4);
+ }
+ FUNC_5(&VAR_5, &VAR_3);
+ if (!VAR_4)
+  *VAR_2 = 1;
+ return (timestamp_t)FUNC_6(&VAR_5, &VAR_6, 0);
+}

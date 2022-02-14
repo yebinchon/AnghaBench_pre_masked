@@ -1,0 +1,83 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+struct TYPE_5__ {char* zpool_name; int zpool_hdl; } ;
+typedef TYPE_1__ zpool_handle_t ;
+struct TYPE_6__ {char* member_0; char* zc_name; char* zc_value; scalar_t__ zc_obj; } ;
+typedef TYPE_2__ zfs_cmd_t ;
+typedef scalar_t__ uint64_t ;
+typedef char* longlong_t ;
+typedef int dsname ;
+typedef scalar_t__ boolean_t ;
+
+
+ scalar_t__ VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int FUNC_0 (char*) ;
+ scalar_t__ FUNC_1 (int ,char*,char**) ;
+ int FUNC_2 (char*,size_t,char*,char*,...) ;
+ int FUNC_3 (char*,char*,int) ;
+ scalar_t__ FUNC_4 (int ,int ,TYPE_2__*) ;
+
+void
+FUNC_5(zpool_handle_t *VAR_4, uint64_t VAR_5, uint64_t VAR_6,
+    char *VAR_7, size_t VAR_8)
+{
+ zfs_cmd_t VAR_9 = {"\0"};
+ boolean_t VAR_10 = VAR_0;
+ char *VAR_11 = ((void*)0);
+ char VAR_12[VAR_3];
+
+ if (VAR_5 == 0) {
+
+  (void) FUNC_2(VAR_7, VAR_8, "<metadata>:<0x%llx>",
+      (longlong_t)VAR_6);
+  return;
+ }
+
+
+ (void) FUNC_3(VAR_9.zc_name, VAR_4->zpool_name, sizeof (VAR_9.zc_name));
+ VAR_9.zc_obj = VAR_5;
+ if (FUNC_4(VAR_4->zpool_hdl,
+     VAR_1, &VAR_9) != 0) {
+
+  (void) FUNC_2(VAR_7, VAR_8, "<0x%llx>:<0x%llx>",
+      (longlong_t)VAR_5, (longlong_t)VAR_6);
+  return;
+ }
+ (void) FUNC_3(VAR_12, VAR_9.zc_value, sizeof (VAR_12));
+
+
+ VAR_10 = FUNC_1(VAR_4->zpool_hdl, VAR_12, &VAR_11);
+
+
+ (void) FUNC_3(VAR_9.zc_name, VAR_12, sizeof (VAR_9.zc_name));
+ VAR_9.zc_obj = VAR_6;
+ if (FUNC_4(VAR_4->zpool_hdl, VAR_2,
+     &VAR_9) == 0) {
+  if (VAR_10) {
+   (void) FUNC_2(VAR_7, VAR_8, "%s%s", VAR_11,
+       VAR_9.zc_value);
+  } else {
+   (void) FUNC_2(VAR_7, VAR_8, "%s:%s",
+       VAR_12, VAR_9.zc_value);
+  }
+ } else {
+  (void) FUNC_2(VAR_7, VAR_8, "%s:<0x%llx>", VAR_12,
+      (longlong_t)VAR_6);
+ }
+ FUNC_0(VAR_11);
+}

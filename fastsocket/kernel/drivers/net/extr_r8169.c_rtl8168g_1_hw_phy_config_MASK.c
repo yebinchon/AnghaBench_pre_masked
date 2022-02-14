@@ -1,0 +1,72 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+typedef int u16 ;
+struct rtl8169_private {int dummy; } ;
+
+
+ int FUNC_0 (int const*) ;
+ int FUNC_1 (struct rtl8169_private*,int,int const) ;
+ int FUNC_2 (struct rtl8169_private*,int) ;
+ int FUNC_3 (struct rtl8169_private*,int,int) ;
+ int FUNC_4 (struct rtl8169_private*) ;
+ int FUNC_5 (struct rtl8169_private*,int,int,int) ;
+
+__attribute__((used)) static void FUNC_6(struct rtl8169_private *VAR_0)
+{
+ static const u16 VAR_1[] = {
+  0xe008, 0xe01b, 0xe01d, 0xe01f,
+  0xe021, 0xe023, 0xe025, 0xe027,
+  0x49d2, 0xf10d, 0x766c, 0x49e2,
+  0xf00a, 0x1ec0, 0x8ee1, 0xc60a,
+
+  0x77c0, 0x4870, 0x9fc0, 0x1ea0,
+  0xc707, 0x8ee1, 0x9d6c, 0xc603,
+  0xbe00, 0xb416, 0x0076, 0xe86c,
+  0xc602, 0xbe00, 0x0000, 0xc602,
+
+  0xbe00, 0x0000, 0xc602, 0xbe00,
+  0x0000, 0xc602, 0xbe00, 0x0000,
+  0xc602, 0xbe00, 0x0000, 0xc602,
+  0xbe00, 0x0000, 0xc602, 0xbe00,
+
+  0x0000, 0x0000, 0x0000, 0x0000
+ };
+ u32 VAR_2;
+
+
+ for (VAR_2 = 0; VAR_2 < FUNC_0(VAR_1); VAR_2++)
+  FUNC_1(VAR_0, 0xf800 + 2*VAR_2, VAR_1[VAR_2]);
+ FUNC_1(VAR_0, 0xfc26, 0x8000);
+ FUNC_1(VAR_0, 0xfc28, 0x0075);
+
+ FUNC_4(VAR_0);
+
+ if (FUNC_2(VAR_0, 0xa460) & 0x0100)
+  FUNC_5(VAR_0, 0xbcc4, 0x0000, 0x8000);
+ else
+  FUNC_5(VAR_0, 0xbcc4, 0x8000, 0x0000);
+
+ if (FUNC_2(VAR_0, 0xa466) & 0x0100)
+  FUNC_5(VAR_0, 0xc41a, 0x0002, 0x0000);
+ else
+  FUNC_5(VAR_0, 0xbcc4, 0x0000, 0x0002);
+
+ FUNC_5(VAR_0, 0xa442, 0x000c, 0x0000);
+ FUNC_5(VAR_0, 0xa4b2, 0x0004, 0x0000);
+
+ FUNC_3(VAR_0, 0xa436, 0x8012);
+ FUNC_5(VAR_0, 0xa438, 0x8000, 0x0000);
+
+ FUNC_5(VAR_0, 0xc422, 0x4000, 0x2000);
+}

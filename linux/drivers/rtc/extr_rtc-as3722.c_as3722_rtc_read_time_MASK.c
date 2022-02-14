@@ -1,0 +1,41 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+struct rtc_time {int dummy; } ;
+struct device {int dummy; } ;
+struct as3722_rtc {struct as3722* as3722; } ;
+struct as3722 {int dummy; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct as3722*,int ,int,int *) ;
+ int FUNC_1 (int *,struct rtc_time*) ;
+ int FUNC_2 (struct device*,char*,int) ;
+ struct as3722_rtc* FUNC_3 (struct device*) ;
+
+__attribute__((used)) static int FUNC_4(struct device *VAR_1, struct rtc_time *VAR_2)
+{
+ struct as3722_rtc *VAR_3 = FUNC_3(VAR_1);
+ struct as3722 *VAR_4 = VAR_3->as3722;
+ u8 VAR_5[6];
+ int VAR_6;
+
+ VAR_6 = FUNC_0(VAR_4, VAR_0,
+   6, VAR_5);
+ if (VAR_6 < 0) {
+  FUNC_2(VAR_1, "RTC_SECOND reg block read failed %d\n", VAR_6);
+  return VAR_6;
+ }
+ FUNC_1(VAR_5, VAR_2);
+ return 0;
+}

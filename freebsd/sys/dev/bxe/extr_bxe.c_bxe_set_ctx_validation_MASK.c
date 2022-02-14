@@ -1,0 +1,41 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+typedef int uint32_t ;
+struct TYPE_4__ {void* cdu_reserved; } ;
+struct TYPE_3__ {void* cdu_usage; } ;
+struct eth_context {TYPE_2__ xstorm_ag_context; TYPE_1__ ustorm_ag_context; } ;
+struct bxe_softc {int dummy; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ void* FUNC_0 (int ,int ,int ) ;
+ int VAR_2 ;
+ int FUNC_1 (struct bxe_softc*,int ) ;
+
+void
+FUNC_2(struct bxe_softc *VAR_3,
+                       struct eth_context *VAR_4,
+                       uint32_t VAR_5)
+{
+
+    VAR_4->ustorm_ag_context.cdu_usage =
+        FUNC_0(FUNC_1(VAR_3, VAR_5),
+            VAR_0, VAR_2);
+
+    VAR_4->xstorm_ag_context.cdu_reserved =
+        FUNC_0(FUNC_1(VAR_3, VAR_5),
+            VAR_1, VAR_2);
+}

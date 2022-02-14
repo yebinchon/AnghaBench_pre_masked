@@ -1,0 +1,47 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct nlmsghdr {scalar_t__ nlmsg_len; } ;
+struct netlink_ext_ack {int dummy; } ;
+struct ifinfomsg {scalar_t__ ifi_index; scalar_t__ ifi_change; scalar_t__ ifi_flags; scalar_t__ ifi_type; scalar_t__ __ifi_pad; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct netlink_ext_ack*,char*) ;
+ scalar_t__ FUNC_1 (struct nlmsghdr const*,int) ;
+ struct ifinfomsg* FUNC_2 (struct nlmsghdr const*) ;
+ scalar_t__ FUNC_3 (int) ;
+
+__attribute__((used)) static int FUNC_4(const struct nlmsghdr *VAR_1,
+       struct netlink_ext_ack *VAR_2)
+{
+ struct ifinfomsg *VAR_3;
+
+ if (VAR_1->nlmsg_len < FUNC_3(sizeof(*VAR_3))) {
+  FUNC_0(VAR_2, "Invalid header for link dump request");
+  return -VAR_0;
+ }
+
+ if (FUNC_1(VAR_1, sizeof(*VAR_3))) {
+  FUNC_0(VAR_2, "Invalid data after header");
+  return -VAR_0;
+ }
+
+ VAR_3 = FUNC_2(VAR_1);
+ if (VAR_3->__ifi_pad || VAR_3->ifi_type || VAR_3->ifi_flags ||
+     VAR_3->ifi_change || VAR_3->ifi_index) {
+  FUNC_0(VAR_2, "Invalid values in header for dump request");
+  return -VAR_0;
+ }
+
+ return 0;
+}

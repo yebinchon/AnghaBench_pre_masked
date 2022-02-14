@@ -1,0 +1,21 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct s5p_mfc_hw_cmds {int dummy; } ;
+
+
+ struct s5p_mfc_hw_cmds VAR_0 ;
+
+struct s5p_mfc_hw_cmds *FUNC_0(void)
+{
+ return &VAR_0;
+}

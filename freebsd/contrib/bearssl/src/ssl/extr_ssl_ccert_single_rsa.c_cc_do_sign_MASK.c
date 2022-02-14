@@ -1,0 +1,48 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_3__ {TYPE_2__* sk; scalar_t__ (* irsasign ) (unsigned char const*,unsigned char*,size_t,TYPE_2__*,unsigned char*) ;} ;
+typedef TYPE_1__ br_ssl_client_certificate_rsa_context ;
+typedef int br_ssl_client_certificate_class ;
+struct TYPE_4__ {int n_bitlen; } ;
+
+
+ unsigned char** VAR_0 ;
+ int FUNC_0 (unsigned char*,unsigned char*,size_t) ;
+ scalar_t__ FUNC_1 (unsigned char const*,unsigned char*,size_t,TYPE_2__*,unsigned char*) ;
+
+__attribute__((used)) static size_t
+FUNC_2(const br_ssl_client_certificate_class **VAR_1,
+ int VAR_2, size_t VAR_3, unsigned char *VAR_4, size_t VAR_5)
+{
+ br_ssl_client_certificate_rsa_context *VAR_6;
+ unsigned char VAR_7[64];
+ const unsigned char *VAR_8;
+ size_t VAR_9;
+
+ VAR_6 = (br_ssl_client_certificate_rsa_context *)VAR_1;
+ FUNC_0(VAR_7, VAR_4, VAR_3);
+ if (VAR_2 == 0) {
+  VAR_8 = ((void*)0);
+ } else if (VAR_2 >= 2 && VAR_2 <= 6) {
+  VAR_8 = VAR_0[VAR_2 - 2];
+ } else {
+  return 0;
+ }
+ VAR_9 = (VAR_6->sk->n_bitlen + 7) >> 3;
+ if (VAR_5 < VAR_9) {
+  return 0;
+ }
+ return VAR_6->irsasign(VAR_8, VAR_7, VAR_3, VAR_6->sk, VAR_4) ? VAR_9 : 0;
+}

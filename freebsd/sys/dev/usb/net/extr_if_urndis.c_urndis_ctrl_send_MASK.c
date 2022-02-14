@@ -1,0 +1,35 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int usb_error_t ;
+typedef int uint16_t ;
+struct urndis_softc {int sc_ifaceno_ctl; } ;
+
+
+ int FUNC_0 (char*,int ) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_1 (struct urndis_softc*,int ,int ,int ,int ,void*,int ) ;
+ int FUNC_2 (int ) ;
+
+__attribute__((used)) static usb_error_t
+FUNC_3(struct urndis_softc *VAR_2, void *VAR_3, uint16_t VAR_4)
+{
+ usb_error_t VAR_5;
+
+ VAR_5 = FUNC_1(VAR_2, VAR_1,
+     VAR_0, VAR_2->sc_ifaceno_ctl, 0, VAR_3, VAR_4);
+
+ FUNC_0("%s\n", FUNC_2(VAR_5));
+
+ return (VAR_5);
+}

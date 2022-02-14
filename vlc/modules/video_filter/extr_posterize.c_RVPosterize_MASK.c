@@ -1,0 +1,55 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+typedef int uint8_t ;
+struct TYPE_6__ {TYPE_1__* p; } ;
+typedef TYPE_2__ picture_t ;
+struct TYPE_5__ {int i_visible_lines; int i_pitch; int i_visible_pitch; int * p_pixels; } ;
+
+
+ void* FUNC_0 (int ,int) ;
+
+__attribute__((used)) static void FUNC_1( picture_t *VAR_0, picture_t *VAR_1,
+                                 bool VAR_2, int VAR_3 )
+{
+    uint8_t *VAR_4, *VAR_5, *VAR_6, *VAR_7, VAR_8;
+
+    VAR_4 = VAR_0->p[0].p_pixels;
+    VAR_5 = VAR_4 + VAR_0->p[0].i_visible_lines
+        * VAR_0->p[0].i_pitch;
+    VAR_7 = VAR_1->p[0].p_pixels;
+
+    while( VAR_4 < VAR_5 )
+    {
+        VAR_6 = VAR_4 + VAR_0->p[0].i_visible_pitch;
+        while( VAR_4 < VAR_6 )
+        {
+            VAR_8 = *VAR_4++;
+            *VAR_7++ = FUNC_0( VAR_8, VAR_3 );
+            VAR_8 = *VAR_4++;
+            *VAR_7++ = FUNC_0( VAR_8, VAR_3 );
+            VAR_8 = *VAR_4++;
+            *VAR_7++ = FUNC_0( VAR_8, VAR_3 );
+
+            if ( VAR_2 )
+            {
+                VAR_8 = *VAR_4++;
+                *VAR_7++ = FUNC_0( VAR_8, VAR_3 );
+            }
+        }
+        VAR_4 += VAR_0->p[0].i_pitch - VAR_0->p[0].i_visible_pitch;
+        VAR_7 += VAR_1->p[0].i_pitch
+            - VAR_1->p[0].i_visible_pitch;
+    }
+}

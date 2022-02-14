@@ -1,0 +1,76 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+typedef int u32 ;
+struct net_device {int dummy; } ;
+struct ethtool_regs {scalar_t__ version; } ;
+struct bnx2 {int dev; } ;
+
+
+ int FUNC_0 (struct bnx2*,int) ;
+ int VAR_0 ;
+ int FUNC_1 (int*,int ,int) ;
+ struct bnx2* FUNC_2 (struct net_device*) ;
+ int FUNC_3 (int ) ;
+
+__attribute__((used)) static void
+FUNC_4(struct net_device *VAR_1, struct ethtool_regs *VAR_2, void *VAR_3)
+{
+ u32 *VAR_4 = VAR_3, VAR_5, VAR_6;
+ u8 *VAR_7 = VAR_3;
+ struct bnx2 *VAR_8 = FUNC_2(VAR_1);
+ static const u32 VAR_9[] = {
+  0x0000, 0x0098, 0x0400, 0x045c,
+  0x0800, 0x0880, 0x0c00, 0x0c10,
+  0x0c30, 0x0d08, 0x1000, 0x101c,
+  0x1040, 0x1048, 0x1080, 0x10a4,
+  0x1400, 0x1490, 0x1498, 0x14f0,
+  0x1500, 0x155c, 0x1580, 0x15dc,
+  0x1600, 0x1658, 0x1680, 0x16d8,
+  0x1800, 0x1820, 0x1840, 0x1854,
+  0x1880, 0x1894, 0x1900, 0x1984,
+  0x1c00, 0x1c0c, 0x1c40, 0x1c54,
+  0x1c80, 0x1c94, 0x1d00, 0x1d84,
+  0x2000, 0x2030, 0x23c0, 0x2400,
+  0x2800, 0x2820, 0x2830, 0x2850,
+  0x2b40, 0x2c10, 0x2fc0, 0x3058,
+  0x3c00, 0x3c94, 0x4000, 0x4010,
+  0x4080, 0x4090, 0x43c0, 0x4458,
+  0x4c00, 0x4c18, 0x4c40, 0x4c54,
+  0x4fc0, 0x5010, 0x53c0, 0x5444,
+  0x5c00, 0x5c18, 0x5c80, 0x5c90,
+  0x5fc0, 0x6000, 0x6400, 0x6428,
+  0x6800, 0x6848, 0x684c, 0x6860,
+  0x6888, 0x6910, 0x8000
+ };
+
+ VAR_2->version = 0;
+
+ FUNC_1(VAR_4, 0, VAR_0);
+
+ if (!FUNC_3(VAR_8->dev))
+  return;
+
+ VAR_5 = 0;
+ VAR_6 = VAR_9[0];
+ VAR_4 += VAR_6;
+ while (VAR_6 < VAR_0) {
+  *VAR_4++ = FUNC_0(VAR_8, VAR_6);
+  VAR_6 += 4;
+  if (VAR_6 == VAR_9[VAR_5 + 1]) {
+   VAR_6 = VAR_9[VAR_5 + 2];
+   VAR_4 = (u32 *) (VAR_7 + VAR_6);
+   VAR_5 += 2;
+  }
+ }
+}

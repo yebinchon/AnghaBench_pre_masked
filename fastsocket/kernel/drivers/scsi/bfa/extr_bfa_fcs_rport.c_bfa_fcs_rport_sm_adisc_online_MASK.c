@@ -1,0 +1,82 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct bfa_fcs_rport_s {int pwwn; int pid; int fcs; int fcxp; } ;
+typedef enum rport_event { ____Placeholder_rport_event } rport_event ;
+ int FUNC_0 (struct bfa_fcs_rport_s*) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int FUNC_1 (int ) ;
+ int FUNC_2 (int ,int) ;
+ int FUNC_3 (struct bfa_fcs_rport_s*,int ) ;
+ int FUNC_4 (int ,int) ;
+
+__attribute__((used)) static void
+FUNC_5(struct bfa_fcs_rport_s *VAR_4,
+    enum rport_event VAR_5)
+{
+ FUNC_4(VAR_4->fcs, VAR_4->pwwn);
+ FUNC_4(VAR_4->fcs, VAR_4->pid);
+ FUNC_4(VAR_4->fcs, VAR_5);
+
+ switch (VAR_5) {
+ case 136:
+  FUNC_3(VAR_4, VAR_3);
+  break;
+
+ case 129:
+
+
+
+
+  FUNC_1(VAR_4->fcxp);
+
+
+
+
+ case 132:
+ case 135:
+  FUNC_3(VAR_4, VAR_2);
+  FUNC_0(VAR_4);
+  break;
+
+ case 134:
+  FUNC_3(VAR_4, VAR_1);
+  FUNC_1(VAR_4->fcxp);
+  FUNC_0(VAR_4);
+  break;
+
+ case 133:
+
+
+
+  break;
+
+ case 131:
+  FUNC_3(VAR_4, VAR_2);
+  FUNC_1(VAR_4->fcxp);
+  FUNC_0(VAR_4);
+  break;
+
+ case 130:
+ case 128:
+  FUNC_3(VAR_4, VAR_0);
+  FUNC_1(VAR_4->fcxp);
+  FUNC_0(VAR_4);
+  break;
+
+ default:
+  FUNC_2(VAR_4->fcs, VAR_5);
+ }
+}

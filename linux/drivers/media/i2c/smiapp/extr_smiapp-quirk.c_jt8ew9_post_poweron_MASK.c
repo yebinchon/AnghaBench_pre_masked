@@ -1,0 +1,56 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct smiapp_sensor {int dummy; } ;
+struct smiapp_reg_8 {int member_0; int member_1; } ;
+
+
+ int FUNC_0 (struct smiapp_reg_8 const*) ;
+ int FUNC_1 (struct smiapp_sensor*,struct smiapp_reg_8 const*,int ) ;
+
+__attribute__((used)) static int FUNC_2(struct smiapp_sensor *VAR_0)
+{
+ static const struct smiapp_reg_8 VAR_1[] = {
+  { 0x30a3, 0xd8 },
+  { 0x30ae, 0x00 },
+  { 0x30af, 0xd0 },
+  { 0x322d, 0x04 },
+  { 0x3255, 0x0f },
+  { 0x3256, 0x15 },
+  { 0x3258, 0x70 },
+  { 0x3259, 0x70 },
+  { 0x325f, 0x7c },
+  { 0x3302, 0x06 },
+  { 0x3304, 0x00 },
+  { 0x3307, 0x22 },
+  { 0x3308, 0x8d },
+  { 0x331e, 0x0f },
+  { 0x3320, 0x30 },
+  { 0x3321, 0x11 },
+  { 0x3322, 0x98 },
+  { 0x3323, 0x64 },
+  { 0x3325, 0x83 },
+  { 0x3330, 0x18 },
+  { 0x333c, 0x01 },
+  { 0x3345, 0x2f },
+  { 0x33de, 0x38 },
+
+  { 0x32e0, 0x05 },
+  { 0x32e1, 0x05 },
+  { 0x32e2, 0x04 },
+  { 0x32e5, 0x04 },
+  { 0x32e6, 0x04 },
+
+ };
+
+ return FUNC_1(VAR_0, VAR_1, FUNC_0(VAR_1));
+}

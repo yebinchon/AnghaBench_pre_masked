@@ -1,0 +1,47 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct sock {int sk_callback_lock; struct iscsi_conn* sk_user_data; } ;
+struct iscsi_tcp_conn {struct iscsi_sw_tcp_conn* dd_data; } ;
+struct iscsi_sw_tcp_conn {void (* old_write_space ) (struct sock*) ;} ;
+struct iscsi_conn {struct iscsi_tcp_conn* dd_data; } ;
+
+
+ int FUNC_0 (struct iscsi_conn*,char*) ;
+ int FUNC_1 (struct iscsi_conn*) ;
+ int FUNC_2 (int *) ;
+ int FUNC_3 (int *) ;
+
+__attribute__((used)) static void FUNC_4(struct sock *VAR_0)
+{
+ struct iscsi_conn *VAR_1;
+ struct iscsi_tcp_conn *VAR_2;
+ struct iscsi_sw_tcp_conn *VAR_3;
+ void (*VAR_4)(struct sock *);
+
+ FUNC_2(&VAR_0->sk_callback_lock);
+ VAR_1 = VAR_0->sk_user_data;
+ if (!VAR_1) {
+  FUNC_3(&VAR_0->sk_callback_lock);
+  return;
+ }
+
+ VAR_2 = VAR_1->dd_data;
+ VAR_3 = VAR_2->dd_data;
+ VAR_4 = VAR_3->old_write_space;
+ FUNC_3(&VAR_0->sk_callback_lock);
+
+ VAR_4(VAR_0);
+
+ FUNC_0(VAR_1, "iscsi_write_space\n");
+ FUNC_1(VAR_1);
+}

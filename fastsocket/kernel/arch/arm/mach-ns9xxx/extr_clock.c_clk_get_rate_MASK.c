@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct clk {unsigned long (* get_rate ) (struct clk*) ;unsigned long rate; struct clk* parent; } ;
+
+
+ unsigned long FUNC_0 (struct clk*) ;
+
+unsigned long FUNC_1(struct clk *VAR_0)
+{
+ if (VAR_0->get_rate)
+  return VAR_0->get_rate(VAR_0);
+
+ if (VAR_0->rate)
+  return VAR_0->rate;
+
+ if (VAR_0->parent)
+  return FUNC_1(VAR_0->parent);
+
+ return 0;
+}

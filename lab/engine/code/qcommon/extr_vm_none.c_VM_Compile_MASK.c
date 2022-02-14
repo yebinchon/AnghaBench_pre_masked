@@ -1,0 +1,21 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int vm_t ;
+typedef int vmHeader_t ;
+
+
+ int FUNC_0 (int) ;
+
+void FUNC_1( vm_t *VAR_0, vmHeader_t *VAR_1 ) {
+ FUNC_0(99);
+}

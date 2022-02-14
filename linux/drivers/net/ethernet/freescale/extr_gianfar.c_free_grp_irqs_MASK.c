@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct gfar_priv_grp {int dummy; } ;
+struct TYPE_2__ {int irq; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (int ,struct gfar_priv_grp*) ;
+ TYPE_1__* FUNC_1 (struct gfar_priv_grp*,int ) ;
+
+__attribute__((used)) static void FUNC_2(struct gfar_priv_grp *VAR_3)
+{
+ FUNC_0(FUNC_1(VAR_3, VAR_2)->irq, VAR_3);
+ FUNC_0(FUNC_1(VAR_3, VAR_1)->irq, VAR_3);
+ FUNC_0(FUNC_1(VAR_3, VAR_0)->irq, VAR_3);
+}

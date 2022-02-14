@@ -1,0 +1,40 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct page {int dummy; } ;
+struct iommu_table {int dummy; } ;
+struct device {int dummy; } ;
+typedef enum dma_data_direction { ____Placeholder_dma_data_direction } dma_data_direction ;
+typedef int dma_addr_t ;
+
+
+ int VAR_0 ;
+ struct iommu_table* FUNC_0 (struct device*) ;
+ int FUNC_1 (struct device*,struct iommu_table*,void*,unsigned int,int) ;
+ unsigned int FUNC_2 (unsigned long,size_t,int ) ;
+ void* FUNC_3 (struct page*) ;
+
+__attribute__((used)) static dma_addr_t FUNC_4(struct device *VAR_1, struct page *VAR_2,
+       unsigned long VAR_3, size_t VAR_4,
+       enum dma_data_direction VAR_5,
+       unsigned long VAR_6)
+{
+ void *VAR_7 = FUNC_3(VAR_2) + VAR_3;
+ unsigned long VAR_8;
+ unsigned int VAR_9;
+ struct iommu_table *VAR_10 = FUNC_0(VAR_1);
+
+ VAR_8 = (unsigned long)VAR_7;
+ VAR_9 = FUNC_2(VAR_8, VAR_4, VAR_0);
+
+ return FUNC_1(VAR_1, VAR_10, VAR_7, VAR_9, VAR_5);
+}

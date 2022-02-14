@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct lcd_device {int dummy; } ;
+struct ili922x {int dummy; } ;
+
+
+ int FUNC_0 (struct ili922x*,int) ;
+ struct ili922x* FUNC_1 (struct lcd_device*) ;
+
+__attribute__((used)) static int FUNC_2(struct lcd_device *VAR_0, int VAR_1)
+{
+ struct ili922x *VAR_2 = FUNC_1(VAR_0);
+
+ return FUNC_0(VAR_2, VAR_1);
+}

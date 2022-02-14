@@ -1,0 +1,23 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct cfpkt {int dummy; } ;
+struct TYPE_2__ {int priority; } ;
+
+
+ TYPE_1__* FUNC_0 (struct cfpkt*) ;
+
+void FUNC_1(struct cfpkt *VAR_0, int VAR_1)
+{
+ FUNC_0(VAR_0)->priority = VAR_1;
+}

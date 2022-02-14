@@ -1,0 +1,50 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_3__ {int bottomlight; int toplight; int qx3_detected; } ;
+struct TYPE_4__ {TYPE_1__ qx3; } ;
+struct sd {TYPE_2__ params; } ;
+struct gspca_dev {int dummy; } ;
+typedef int __s32 ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (struct gspca_dev*) ;
+
+__attribute__((used)) static int FUNC_1(struct gspca_dev *VAR_2, __s32 VAR_3, int VAR_4)
+{
+ struct sd *VAR_5 = (struct sd *) VAR_2;
+ int VAR_6;
+
+ if (!VAR_5->params.qx3.qx3_detected)
+  return -VAR_1;
+
+ switch (VAR_4) {
+ case 1:
+  VAR_5->params.qx3.bottomlight = VAR_3 ? 1 : 0;
+  break;
+ case 2:
+  VAR_5->params.qx3.toplight = VAR_3 ? 1 : 0;
+  break;
+ default:
+  return -VAR_1;
+ }
+
+ VAR_6 = FUNC_0(VAR_2);
+ if (VAR_6 && VAR_6 != -VAR_1)
+  VAR_6 = -VAR_0;
+
+ return VAR_6;
+}

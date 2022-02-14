@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int (* pre_patch ) (struct klp_object*) ;int post_unpatch_enabled; } ;
+struct klp_object {TYPE_1__ callbacks; } ;
+
+
+ int FUNC_0 (struct klp_object*) ;
+
+__attribute__((used)) static inline int FUNC_1(struct klp_object *VAR_0)
+{
+ int VAR_1 = 0;
+
+ if (VAR_0->callbacks.pre_patch)
+  VAR_1 = (*VAR_0->callbacks.pre_patch)(VAR_0);
+
+ VAR_0->callbacks.post_unpatch_enabled = !VAR_1;
+
+ return VAR_1;
+}

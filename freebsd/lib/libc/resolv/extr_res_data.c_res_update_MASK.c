@@ -1,0 +1,35 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+typedef TYPE_1__* res_state ;
+typedef int ns_updrec ;
+struct TYPE_5__ {unsigned int options; } ;
+
+
+ int VAR_0 ;
+ unsigned int VAR_1 ;
+ int FUNC_0 (TYPE_1__*,int ) ;
+ TYPE_1__ VAR_2 ;
+ int FUNC_1 () ;
+ int FUNC_2 (TYPE_1__*,int *,int *) ;
+
+int
+FUNC_3(ns_updrec *VAR_3) {
+ res_state VAR_4 = &VAR_2;
+ if ((VAR_4->options & VAR_1) == 0U && FUNC_1() == -1) {
+  FUNC_0(VAR_4, VAR_0);
+  return (-1);
+ }
+
+ return (FUNC_2(VAR_4, VAR_3, ((void*)0)));
+}

@@ -1,0 +1,21 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+__attribute__((used)) static inline bool FUNC_0(int VAR_0)
+{
+ bool VAR_1 = 0;
+
+ switch (VAR_0) {
+ case 16:
+ case 32:
+ case 64:
+ case 128:
+  VAR_1 = 1;
+  break;
+ }
+
+ return VAR_1;
+}

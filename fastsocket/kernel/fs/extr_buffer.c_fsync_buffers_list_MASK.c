@@ -1,0 +1,114 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct list_head {int prev; int next; } ;
+struct buffer_head {struct address_space* b_assoc_map; int b_assoc_buffers; } ;
+struct address_space {struct list_head private_list; } ;
+typedef int spinlock_t ;
+
+
+ struct buffer_head* FUNC_0 (int ) ;
+ int VAR_0 ;
+ int FUNC_1 (struct list_head*) ;
+ int VAR_1 ;
+ int FUNC_2 (struct buffer_head*) ;
+ int FUNC_3 (struct address_space*) ;
+ int FUNC_4 (struct buffer_head*) ;
+ scalar_t__ FUNC_5 (struct buffer_head*) ;
+ scalar_t__ FUNC_6 (struct buffer_head*) ;
+ int FUNC_7 (struct buffer_head*) ;
+ int FUNC_8 (struct buffer_head*) ;
+ int FUNC_9 (int *,struct list_head*) ;
+ int FUNC_10 (struct list_head*) ;
+ int FUNC_11 (int *,struct list_head*) ;
+ int FUNC_12 () ;
+ int FUNC_13 (int *) ;
+ int FUNC_14 (int *) ;
+ int FUNC_15 (struct buffer_head*) ;
+ int FUNC_16 (struct buffer_head*,int ) ;
+
+__attribute__((used)) static int FUNC_17(spinlock_t *VAR_2, struct list_head *VAR_3)
+{
+ struct buffer_head *VAR_4;
+ struct list_head VAR_5;
+ struct address_space *VAR_6, *VAR_7 = ((void*)0);
+ int VAR_8 = 0, VAR_9;
+
+ FUNC_1(&VAR_5);
+
+ FUNC_13(VAR_2);
+ while (!FUNC_10(VAR_3)) {
+  VAR_4 = FUNC_0(VAR_3->next);
+  VAR_6 = VAR_4->b_assoc_map;
+  FUNC_2(VAR_4);
+
+
+  FUNC_12();
+  if (FUNC_5(VAR_4) || FUNC_6(VAR_4)) {
+   FUNC_9(&VAR_4->b_assoc_buffers, &VAR_5);
+   VAR_4->b_assoc_map = VAR_6;
+   if (FUNC_5(VAR_4)) {
+    FUNC_8(VAR_4);
+    FUNC_14(VAR_2);
+
+
+
+
+
+
+
+    FUNC_16(VAR_4, VAR_1);
+
+
+
+
+
+
+
+    if (VAR_7 && VAR_7 != VAR_6)
+     FUNC_3(VAR_7);
+    VAR_7 = VAR_6;
+
+    FUNC_4(VAR_4);
+    FUNC_13(VAR_2);
+   }
+  }
+ }
+
+ while (!FUNC_10(&VAR_5)) {
+  VAR_4 = FUNC_0(VAR_5.prev);
+  FUNC_8(VAR_4);
+  VAR_6 = VAR_4->b_assoc_map;
+  FUNC_2(VAR_4);
+
+
+  FUNC_12();
+  if (FUNC_5(VAR_4)) {
+   FUNC_9(&VAR_4->b_assoc_buffers,
+     &VAR_6->private_list);
+   VAR_4->b_assoc_map = VAR_6;
+  }
+  FUNC_14(VAR_2);
+  FUNC_15(VAR_4);
+  if (!FUNC_7(VAR_4))
+   VAR_8 = -VAR_0;
+  FUNC_4(VAR_4);
+  FUNC_13(VAR_2);
+ }
+
+ FUNC_14(VAR_2);
+ VAR_9 = FUNC_11(VAR_2, VAR_3);
+ if (VAR_8)
+  return VAR_8;
+ else
+  return VAR_9;
+}

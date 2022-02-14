@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int VGErrorCode ;
+typedef int CLIENT_THREAD_STATE_T ;
+
+
+ int * FUNC_0 () ;
+ int FUNC_1 (int ,int *,int ) ;
+ int FUNC_2 (int ) ;
+ int VAR_0 ;
+ int VAR_1 ;
+
+__attribute__((used)) static VGErrorCode FUNC_3(void)
+{
+   CLIENT_THREAD_STATE_T *VAR_2 = FUNC_0();
+   return (VGErrorCode)FUNC_2(FUNC_1(VAR_1,
+                                                  VAR_2,
+                                                  VAR_0));
+}

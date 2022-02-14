@@ -1,0 +1,133 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_33__ TYPE_7__ ;
+typedef struct TYPE_32__ TYPE_6__ ;
+typedef struct TYPE_31__ TYPE_5__ ;
+typedef struct TYPE_30__ TYPE_3__ ;
+typedef struct TYPE_29__ TYPE_2__ ;
+typedef struct TYPE_28__ TYPE_23__ ;
+typedef struct TYPE_27__ TYPE_21__ ;
+typedef struct TYPE_26__ TYPE_1__ ;
+
+
+typedef int ptrdiff_t ;
+struct TYPE_30__ {scalar_t__ top; scalar_t__ base; scalar_t__ stack_last; int hookmask; int savedpc; TYPE_1__* ci; } ;
+typedef TYPE_3__ lua_State ;
+typedef int (* lua_CFunction ) (TYPE_3__*) ;
+struct TYPE_33__ {scalar_t__ func; scalar_t__ base; scalar_t__ top; int nresults; scalar_t__ tailcalls; } ;
+struct TYPE_32__ {TYPE_5__* p; int isC; } ;
+struct TYPE_31__ {scalar_t__ maxstacksize; scalar_t__ numparams; int code; int is_vararg; } ;
+struct TYPE_29__ {int (* f ) (TYPE_3__*) ;} ;
+struct TYPE_28__ {TYPE_6__ l; } ;
+struct TYPE_27__ {TYPE_2__ c; } ;
+struct TYPE_26__ {int savedpc; } ;
+typedef scalar_t__ StkId ;
+typedef TYPE_5__ Proto ;
+typedef TYPE_6__ LClosure ;
+typedef TYPE_7__ CallInfo ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ scalar_t__ VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ scalar_t__ FUNC_0 (TYPE_3__*,TYPE_5__*,int) ;
+ int FUNC_1 (scalar_t__) ;
+ TYPE_23__* FUNC_2 (scalar_t__) ;
+ TYPE_21__* FUNC_3 (TYPE_3__*) ;
+ scalar_t__ FUNC_4 (scalar_t__) ;
+ TYPE_7__* FUNC_5 (TYPE_3__*) ;
+ int FUNC_6 (TYPE_3__*,int ,int) ;
+ int FUNC_7 (TYPE_3__*,scalar_t__) ;
+ int FUNC_8 (TYPE_3__*,scalar_t__) ;
+ int FUNC_9 (int) ;
+ int FUNC_10 (TYPE_3__*) ;
+ int FUNC_11 (TYPE_3__*) ;
+ void* FUNC_12 (TYPE_3__*,int ) ;
+ int FUNC_13 (TYPE_3__*,scalar_t__) ;
+ int FUNC_14 (scalar_t__) ;
+ int FUNC_15 (TYPE_3__*) ;
+ int FUNC_16 (TYPE_3__*) ;
+ scalar_t__ FUNC_17 (TYPE_3__*,scalar_t__) ;
+ scalar_t__ FUNC_18 (scalar_t__) ;
+ int FUNC_19 (scalar_t__) ;
+
+int FUNC_20 (lua_State *VAR_6, StkId VAR_7, int VAR_8) {
+  ptrdiff_t VAR_9;
+  LClosure *VAR_10 = ((void*)0);
+  if (!FUNC_18(VAR_7) && !FUNC_19(VAR_7))
+    VAR_7 = FUNC_17(VAR_6, VAR_7);
+  VAR_9 = FUNC_13(VAR_6, VAR_7);
+  if (FUNC_18(VAR_7))
+    VAR_10 = &FUNC_2(VAR_7)->l;
+  VAR_6->ci->savedpc = VAR_6->savedpc;
+  if (VAR_10 && !VAR_10->isC) {
+    CallInfo *VAR_11;
+    StkId VAR_12, VAR_13;
+    Proto *VAR_14 = VAR_10->p;
+    FUNC_7(VAR_6, VAR_14->maxstacksize);
+    VAR_7 = FUNC_12(VAR_6, VAR_9);
+    if (!VAR_14->is_vararg) {
+      VAR_13 = VAR_7 + 1;
+      if (VAR_6->top > VAR_13 + VAR_14->numparams)
+        VAR_6->top = VAR_13 + VAR_14->numparams;
+    }
+    else {
+      int VAR_15 = FUNC_1(VAR_6->top - VAR_7) - 1;
+      VAR_13 = FUNC_0(VAR_6, VAR_14, VAR_15);
+      VAR_7 = FUNC_12(VAR_6, VAR_9);
+    }
+    VAR_11 = FUNC_5(VAR_6);
+    VAR_11->func = VAR_7;
+    VAR_6->base = VAR_11->base = VAR_13;
+    VAR_11->top = VAR_6->base + VAR_14->maxstacksize;
+    FUNC_9(VAR_11->top <= VAR_6->stack_last);
+    VAR_6->savedpc = VAR_14->code;
+    VAR_11->tailcalls = 0;
+    VAR_11->nresults = VAR_8;
+    for (VAR_12 = VAR_6->top; VAR_12 < VAR_11->top; VAR_12++)
+      FUNC_14(VAR_12);
+    VAR_6->top = VAR_11->top;
+    if (VAR_6->hookmask & VAR_1) {
+      VAR_6->savedpc++;
+      FUNC_6(VAR_6, VAR_0, -1);
+      VAR_6->savedpc--;
+    }
+    return VAR_4;
+  }
+  else {
+    CallInfo *VAR_16;
+    int VAR_17;
+    FUNC_7(VAR_6, VAR_2);
+    VAR_16 = FUNC_5(VAR_6);
+    VAR_16->func = FUNC_12(VAR_6, VAR_9);
+    VAR_6->base = VAR_16->base = VAR_16->func + 1;
+    VAR_16->top = VAR_6->top + VAR_2;
+    FUNC_9(VAR_16->top <= VAR_6->stack_last);
+    VAR_16->nresults = VAR_8;
+    if (VAR_6->hookmask & VAR_1)
+      FUNC_6(VAR_6, VAR_0, -1);
+    FUNC_11(VAR_6);
+    if (FUNC_18(VAR_16->func))
+      VAR_17 = (*FUNC_3(VAR_6)->c.f)(VAR_6);
+    else
+      VAR_17 = ((lua_CFunction)FUNC_4(VAR_16->func))(VAR_6);
+    FUNC_10(VAR_6);
+    if (VAR_17 < 0)
+      return VAR_5;
+    else {
+      FUNC_8(VAR_6, VAR_6->top - VAR_17);
+      return VAR_3;
+    }
+  }
+}

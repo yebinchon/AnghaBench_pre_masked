@@ -1,0 +1,47 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_13__ TYPE_7__ ;
+typedef struct TYPE_12__ TYPE_5__ ;
+typedef struct TYPE_11__ TYPE_4__ ;
+typedef struct TYPE_10__ TYPE_3__ ;
+typedef struct TYPE_9__ TYPE_2__ ;
+typedef struct TYPE_8__ TYPE_1__ ;
+
+
+struct TYPE_13__ {int pred_flag; size_t* ref_idx; int * mv; } ;
+struct TYPE_9__ {TYPE_1__* sps; } ;
+struct TYPE_12__ {TYPE_3__* ref; TYPE_2__ ps; } ;
+struct TYPE_11__ {scalar_t__* list; } ;
+struct TYPE_10__ {TYPE_4__* refPicList; int * tab_mvf; } ;
+struct TYPE_8__ {int min_pu_width; } ;
+typedef TYPE_4__ RefPicList ;
+typedef int MvField ;
+typedef int Mv ;
+typedef TYPE_5__ HEVCContext ;
+
+
+ TYPE_7__ FUNC_0 (int,int) ;
+
+__attribute__((used)) static int FUNC_1(HEVCContext *VAR_0, int VAR_1, int VAR_2, int VAR_3,
+                         Mv *VAR_4, int VAR_5, int VAR_6)
+{
+    MvField *VAR_7 = VAR_0->ref->tab_mvf;
+    int VAR_8 = VAR_0->ps.sps->min_pu_width;
+
+    RefPicList *VAR_9 = VAR_0->ref->refPicList;
+
+    if (((FUNC_0(VAR_1, VAR_2).pred_flag) & (1 << VAR_3)) &&
+        VAR_9[VAR_3].list[FUNC_0(VAR_1, VAR_2).ref_idx[VAR_3]] == VAR_9[VAR_5].list[VAR_6]) {
+        *VAR_4 = FUNC_0(VAR_1, VAR_2).mv[VAR_3];
+        return 1;
+    }
+    return 0;
+}

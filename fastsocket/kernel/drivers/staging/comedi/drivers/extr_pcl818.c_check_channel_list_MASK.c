@@ -1,0 +1,82 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct comedi_subdevice {int n_chan; } ;
+struct comedi_device {int minor; } ;
+
+
+ int FUNC_0 (unsigned int) ;
+ unsigned int FUNC_1 (unsigned int) ;
+ int FUNC_2 (unsigned int) ;
+ int FUNC_3 (struct comedi_device*,char*) ;
+ int FUNC_4 (char*,unsigned int,...) ;
+
+__attribute__((used)) static int FUNC_5(struct comedi_device *VAR_0,
+         struct comedi_subdevice *VAR_1,
+         unsigned int *VAR_2, unsigned int VAR_3)
+{
+ unsigned int VAR_4[16];
+ unsigned int VAR_5, VAR_6, VAR_7, VAR_8;
+
+
+ if (VAR_3 < 1) {
+  FUNC_3(VAR_0, "range/channel list is empty!");
+  return 0;
+ }
+
+ if (VAR_3 > 1) {
+
+  VAR_4[0] = VAR_2[0];
+
+  for (VAR_5 = 1, VAR_7 = 1; VAR_5 < VAR_3; VAR_5++, VAR_7++) {
+
+
+
+
+
+
+   if (VAR_2[0] == VAR_2[VAR_5])
+    break;
+   VAR_6 =
+       (FUNC_1(VAR_4[VAR_5 - 1]) + 1) % VAR_1->n_chan;
+   if (VAR_6 != FUNC_1(VAR_2[VAR_5])) {
+    FUNC_4
+        ("comedi%d: pcl818: channel list must be continous! chanlist[%i]=%d but must be %d or %d!\n",
+         VAR_0->minor, VAR_5, FUNC_1(VAR_2[VAR_5]),
+         VAR_6, FUNC_1(VAR_2[0]));
+    return 0;
+   }
+
+   VAR_4[VAR_5] = VAR_2[VAR_5];
+  }
+
+
+  for (VAR_5 = 0, VAR_8 = 0; VAR_5 < VAR_3; VAR_5++) {
+
+   if (VAR_2[VAR_5] != VAR_4[VAR_5 % VAR_7]) {
+    FUNC_4
+        ("comedi%d: pcl818: bad channel or range number! chanlist[%i]=%d,%d,%d and not %d,%d,%d!\n",
+         VAR_0->minor, VAR_5, FUNC_1(VAR_4[VAR_5]),
+         FUNC_2(VAR_4[VAR_5]),
+         FUNC_0(VAR_4[VAR_5]),
+         FUNC_1(VAR_2[VAR_5 % VAR_7]),
+         FUNC_2(VAR_2[VAR_5 % VAR_7]),
+         FUNC_0(VAR_4[VAR_5 % VAR_7]));
+    return 0;
+   }
+  }
+ } else {
+  VAR_7 = 1;
+ }
+ FUNC_4("check_channel_list: seglen %d\n", VAR_7);
+ return VAR_7;
+}

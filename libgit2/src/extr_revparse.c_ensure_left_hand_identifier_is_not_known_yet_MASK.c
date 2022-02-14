@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int git_reference ;
+typedef int git_object ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int *) ;
+
+__attribute__((used)) static int FUNC_1(git_object *VAR_1, git_reference *VAR_2)
+{
+ if (!FUNC_0(VAR_1) && VAR_2 == ((void*)0))
+  return 0;
+
+ return VAR_0;
+}

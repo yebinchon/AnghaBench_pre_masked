@@ -1,0 +1,41 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u_char ;
+struct fs {scalar_t__ fs_fragshift; } ;
+typedef size_t int32_t ;
+
+
+ int FUNC_0 (char*,int) ;
+
+int
+FUNC_1(struct fs *VAR_0, u_char *VAR_1, int32_t VAR_2)
+{
+ u_char VAR_3;
+
+ switch ((int)VAR_0->fs_fragshift) {
+ case 3:
+  return (VAR_1[VAR_2] == 0xff);
+ case 2:
+  VAR_3 = 0x0f << ((VAR_2 & 0x1) << 2);
+  return ((VAR_1[VAR_2 >> 1] & VAR_3) == VAR_3);
+ case 1:
+  VAR_3 = 0x03 << ((VAR_2 & 0x3) << 1);
+  return ((VAR_1[VAR_2 >> 2] & VAR_3) == VAR_3);
+ case 0:
+  VAR_3 = 0x01 << (VAR_2 & 0x7);
+  return ((VAR_1[VAR_2 >> 3] & VAR_3) == VAR_3);
+ default:
+  FUNC_0("ffs_isblock: unknown fs_fragshift %d",
+      (int)VAR_0->fs_fragshift);
+ }
+}

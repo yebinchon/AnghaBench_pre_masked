@@ -1,0 +1,21 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct kbuffer {unsigned long long (* read_long ) (struct kbuffer*,void*) ;} ;
+
+
+ unsigned long long FUNC_0 (struct kbuffer*,void*) ;
+
+__attribute__((used)) static unsigned long long FUNC_1(struct kbuffer *VAR_0, void *VAR_1)
+{
+ return VAR_0->read_long(VAR_0, VAR_1);
+}

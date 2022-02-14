@@ -1,0 +1,41 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int float64 ;
+
+
+
+int
+FUNC_0(float64 VAR_0, float64 VAR_1)
+{
+ int VAR_2 = 0;
+
+
+ if ((VAR_0 << 1) > 0xffe0000000000000ull) {
+
+  if ((VAR_0 & 0x0008000000000000ull) == 0)
+   return (0);
+
+  VAR_2 = 1;
+ }
+
+
+ if ((VAR_1 << 1) > 0xffe0000000000000ull) {
+
+  if ((VAR_1 & 0x0008000000000000ull) == 0)
+   return (0);
+
+  VAR_2 = 1;
+ }
+
+ return (VAR_2);
+}

@@ -1,0 +1,43 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int u32 ;
+struct b43_wldev {TYPE_1__* dfsentry; } ;
+typedef int ssize_t ;
+struct TYPE_2__ {unsigned int shm32read_routing_next; unsigned int shm32read_addr_next; } ;
+
+
+ unsigned int VAR_0 ;
+ unsigned int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (struct b43_wldev*,unsigned int,unsigned int) ;
+ int FUNC_1 (char*,int ) ;
+
+__attribute__((used)) static ssize_t FUNC_2(struct b43_wldev *VAR_3,
+        char *VAR_4, size_t VAR_5)
+{
+ ssize_t VAR_6 = 0;
+ unsigned int VAR_7, VAR_8;
+ u32 VAR_9;
+
+ VAR_7 = VAR_3->dfsentry->shm32read_routing_next;
+ VAR_8 = VAR_3->dfsentry->shm32read_addr_next;
+ if ((VAR_7 > VAR_1) ||
+     (VAR_8 > VAR_0))
+  return -VAR_2;
+
+ VAR_9 = FUNC_0(VAR_3, VAR_7, VAR_8);
+ FUNC_1("0x%08X\n", VAR_9);
+
+ return VAR_6;
+}

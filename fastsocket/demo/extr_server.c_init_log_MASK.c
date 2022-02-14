@@ -1,0 +1,47 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int ,int ) ;
+ int FUNC_2 () ;
+ int FUNC_3 (scalar_t__) ;
+ scalar_t__ FUNC_4 (char*,char*) ;
+ scalar_t__ VAR_2 ;
+ char* VAR_3 ;
+ int FUNC_5 (char*) ;
+ int VAR_4 ;
+ int FUNC_6 (char*) ;
+ int FUNC_7 (char*,char*) ;
+ scalar_t__ VAR_5 ;
+
+void FUNC_8(void)
+{
+ if (VAR_5) {
+  VAR_2 = FUNC_4(VAR_3, "a");
+  if (!VAR_2)
+   FUNC_5("Open log file failed");
+  FUNC_7("Using specified log file %s\n\n", VAR_3);
+ }
+
+ if (!VAR_2) {
+  VAR_2 = FUNC_4("demo.log", "a");
+  if (!VAR_2) {
+   FUNC_5("Open log file failed");
+   FUNC_2();
+  } else {
+   FUNC_7("Using default log file %s\n\n", "./demo.log");
+  }
+ }
+
+ VAR_4 = FUNC_0(VAR_0);
+
+ FUNC_1(FUNC_3(VAR_2), VAR_1);
+ FUNC_1(FUNC_3(VAR_2), VAR_0);
+
+ FUNC_6("Log starts\n");
+}

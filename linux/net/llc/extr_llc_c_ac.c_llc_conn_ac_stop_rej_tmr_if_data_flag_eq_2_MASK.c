@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct sock {int dummy; } ;
+struct sk_buff {int dummy; } ;
+struct TYPE_2__ {int timer; } ;
+struct llc_sock {int data_flag; TYPE_1__ rej_sent_timer; } ;
+
+
+ int FUNC_0 (int *) ;
+ struct llc_sock* FUNC_1 (struct sock*) ;
+
+int FUNC_2(struct sock *VAR_0,
+            struct sk_buff *VAR_1)
+{
+ struct llc_sock *VAR_2 = FUNC_1(VAR_0);
+
+ if (VAR_2->data_flag == 2)
+  FUNC_0(&VAR_2->rej_sent_timer.timer);
+ return 0;
+}

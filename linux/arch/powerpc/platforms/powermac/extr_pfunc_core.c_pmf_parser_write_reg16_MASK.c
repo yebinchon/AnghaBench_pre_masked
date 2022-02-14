@@ -1,0 +1,34 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+typedef int u16 ;
+struct pmf_handlers {int dummy; } ;
+struct pmf_cmd {int dummy; } ;
+
+
+ int FUNC_0 (char*,int ,int ,int ) ;
+ int FUNC_1 (int ,struct pmf_cmd*,struct pmf_handlers*,int ,int ,int ) ;
+ int FUNC_2 (struct pmf_cmd*) ;
+ int VAR_0 ;
+
+__attribute__((used)) static int FUNC_3(struct pmf_cmd *VAR_1, struct pmf_handlers *VAR_2)
+{
+ u32 VAR_3 = FUNC_2(VAR_1);
+ u16 VAR_4 = (u16)FUNC_2(VAR_1);
+ u16 VAR_5 = (u16)FUNC_2(VAR_1);
+
+ FUNC_0("pmf: write_reg16(offset: %08x, value: %04x, mask: %04x)\n",
+    VAR_3, VAR_4, VAR_5);
+
+ FUNC_1(VAR_0, VAR_1, VAR_2, VAR_3, VAR_4, VAR_5);
+}

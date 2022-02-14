@@ -1,0 +1,283 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_12__ TYPE_5__ ;
+typedef struct TYPE_11__ TYPE_4__ ;
+typedef struct TYPE_10__ TYPE_3__ ;
+typedef struct TYPE_9__ TYPE_2__ ;
+typedef struct TYPE_8__ TYPE_1__ ;
+
+
+typedef int uint8_t ;
+typedef size_t uint64_t ;
+typedef int uint32_t ;
+typedef int uint16_t ;
+struct TYPE_11__ {scalar_t__ target_id; scalar_t__ target_lun; } ;
+struct TYPE_8__ {int* cdb_bytes; } ;
+struct ccb_scsiio {char sense_data; unsigned int dxfer_len; char* data_ptr; int resid; scalar_t__ scsi_status; TYPE_4__ ccb_h; TYPE_1__ cdb_io; } ;
+typedef size_t last_blk ;
+typedef int junk ;
+struct TYPE_10__ {char* disk; TYPE_2__* vhba; scalar_t__ dead; } ;
+typedef TYPE_3__ faulty_t ;
+typedef int cam_status ;
+struct TYPE_12__ {int tqe; } ;
+struct TYPE_9__ {int done; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ scalar_t__ VAR_7 ;
+ scalar_t__ VAR_8 ;
+
+
+ int VAR_9 ;
+ int VAR_10 ;
+ int VAR_11 ;
+
+
+
+
+
+ int VAR_12 ;
+ int VAR_13 ;
+ scalar_t__ VAR_14 ;
+ scalar_t__ VAR_15 ;
+
+
+
+ int VAR_16 ;
+
+
+ int VAR_17 ;
+ int VAR_18 ;
+ int VAR_19 ;
+ int VAR_20 ;
+ int VAR_21 ;
+ int FUNC_0 (int *,TYPE_4__*,int ) ;
+
+
+
+
+ int FUNC_1 (char*,char*,int) ;
+ int FUNC_2 (char*,int ,int) ;
+ int FUNC_3 (int,unsigned int) ;
+ TYPE_5__ VAR_22 ;
+ int FUNC_4 (struct ccb_scsiio*,scalar_t__,int *) ;
+ int FUNC_5 (struct ccb_scsiio*,int ,int,int) ;
+ int FUNC_6 (int*,size_t*,int*,int,int) ;
+ int FUNC_7 (TYPE_4__*,int ) ;
+
+__attribute__((used)) static void
+FUNC_8(faulty_t *VAR_23, struct ccb_scsiio *VAR_24)
+{
+ char VAR_25[128];
+ cam_status VAR_26;
+ uint8_t *VAR_27, *VAR_28, VAR_29;
+ uint32_t VAR_30;
+ uint64_t VAR_31;
+
+ VAR_30 = 0;
+ VAR_29 = VAR_15;
+
+ FUNC_2(&VAR_24->sense_data, 0, sizeof (VAR_24->sense_data));
+ VAR_27 = VAR_24->cdb_io.cdb_bytes;
+
+ if (VAR_24->ccb_h.target_id >= VAR_8) {
+  FUNC_7(&VAR_24->ccb_h, VAR_3);
+  FUNC_0(&VAR_23->vhba->done, &VAR_24->ccb_h, VAR_22.tqe);
+  return;
+ }
+ if (VAR_23->dead) {
+  VAR_23->dead = 0;
+  FUNC_7(&VAR_24->ccb_h, VAR_3);
+  FUNC_0(&VAR_23->vhba->done, &VAR_24->ccb_h, VAR_22.tqe);
+  return;
+ }
+ if (VAR_24->ccb_h.target_lun >= VAR_7 && VAR_27[0] != VAR_6 && VAR_27[0] != VAR_12 && VAR_27[0] != VAR_13) {
+  FUNC_5(VAR_24, VAR_20, 0x25, 0x0);
+  FUNC_0(&VAR_23->vhba->done, &VAR_24->ccb_h, VAR_22.tqe);
+  return;
+ }
+
+ switch (VAR_27[0]) {
+ case 143:
+ case 142:
+ {
+  unsigned int VAR_32;
+  uint8_t VAR_33 = VAR_27[2] & VAR_17;
+  uint8_t VAR_34 = VAR_27[2] & VAR_19;
+
+  switch (VAR_33) {
+  case 133:
+  case 132:
+  case 135:
+  case 134:
+  case 136:
+   break;
+  default:
+   FUNC_5(VAR_24, VAR_20, 0x24, 0x0);
+   FUNC_0(&VAR_23->vhba->done, &VAR_24->ccb_h, VAR_22.tqe);
+   return;
+  }
+  FUNC_2(VAR_25, 0, sizeof (VAR_25));
+  if (VAR_27[1] & VAR_16) {
+   VAR_28 = &VAR_25[4];
+  } else {
+   VAR_28 = VAR_25;
+   VAR_28[3] = 8;
+   VAR_28[4] = ((1 << VAR_5) >> 24) & 0xff;
+   VAR_28[5] = ((1 << VAR_5) >> 16) & 0xff;
+   VAR_28[6] = ((1 << VAR_5) >> 8) & 0xff;
+   VAR_28[7] = ((1 << VAR_5)) & 0xff;
+
+   VAR_28[8] = (VAR_4 >> 24) & 0xff;
+   VAR_28[9] = (VAR_4 >> 16) & 0xff;
+   VAR_28[10] = (VAR_4 >> 8) & 0xff;
+   VAR_28[11] = VAR_4 & 0xff;
+   VAR_28 += 12;
+  }
+
+  if (VAR_33 == 136 || VAR_33 == 133) {
+   VAR_28[0] = 133;
+   VAR_28[1] = 24;
+   if (VAR_34 != VAR_18) {
+    VAR_28[10] = (VAR_11 >> 8) & 0xff;
+    VAR_28[11] = VAR_11 & 0xff;
+
+    VAR_28[12] = ((1 << VAR_5) >> 8) & 0xff;
+    VAR_28[13] = (1 << VAR_5) & 0xff;
+   }
+   VAR_28 += 26;
+  }
+
+  if (VAR_33 == 136 || VAR_33 == 132) {
+   VAR_28[0] = 132;
+   VAR_28[1] = 24;
+   if (VAR_34 != VAR_18) {
+    uint32_t VAR_35 = (VAR_4 + ((VAR_10 - 1))) / VAR_10;
+
+    VAR_28[2] = (VAR_35 >> 24) & 0xff;
+    VAR_28[3] = (VAR_35 >> 16) & 0xff;
+    VAR_28[4] = VAR_35 & 0xff;
+
+    VAR_28[5] = VAR_9;
+    VAR_28[20] = 0x1c;
+    VAR_28[21] = 0x20;
+   }
+   VAR_28 += 26;
+  }
+
+  if (VAR_33 == 136 || VAR_33 == 135) {
+   VAR_28[0] = 135;
+   VAR_28[1] = 18;
+   VAR_28[2] = 1 << 2;
+   VAR_28 += 20;
+  }
+
+  if (VAR_33 == 136 || VAR_33 == 134) {
+   VAR_28[0] = 134;
+   VAR_28[1] = 10;
+   if (VAR_34 != VAR_18) {
+    VAR_28[3] = 1 << 4;
+    VAR_28[8] = 0x75;
+    VAR_28[9] = 0x30;
+   }
+   VAR_28 += 12;
+  }
+  VAR_32 = (char *)VAR_28 - &VAR_25[0];
+  VAR_28[0] = VAR_32 - 4;
+
+  if (VAR_27[0] == 143) {
+   VAR_30 = FUNC_3(VAR_27[4], VAR_24->dxfer_len);
+  } else {
+   uint16_t VAR_36 = (VAR_27[7] << 8) | VAR_27[8];
+   VAR_30 = FUNC_3(VAR_36, VAR_24->dxfer_len);
+  }
+  VAR_30 = FUNC_3(VAR_30, VAR_32);
+  if (VAR_30) {
+   FUNC_1(VAR_24->data_ptr, VAR_25, VAR_30);
+  }
+  VAR_24->resid = VAR_24->dxfer_len - VAR_30;
+  break;
+ }
+ case 138:
+ case 141:
+ case 140:
+ case 139:
+ case 128:
+ case 131:
+ case 130:
+ case 129:
+  if (FUNC_6(VAR_27, &VAR_31, &VAR_30, VAR_4, VAR_5)) {
+   FUNC_5(VAR_24, VAR_20, 0x24, 0x0);
+   break;
+  }
+  if (VAR_30) {
+   if ((VAR_27[0] & 0xf) == 8) {
+    FUNC_1(VAR_24->data_ptr, &VAR_23->disk[VAR_31], VAR_30);
+   } else {
+    FUNC_1(&VAR_23->disk[VAR_31], VAR_24->data_ptr, VAR_30);
+   }
+   VAR_24->resid = VAR_24->dxfer_len - VAR_30;
+  } else {
+   VAR_24->resid = VAR_24->dxfer_len;
+  }
+  break;
+
+ case 137:
+  if (VAR_27[2] || VAR_27[3] || VAR_27[4] || VAR_27[5]) {
+   FUNC_5(VAR_24, VAR_21, 0x24, 0x0);
+   break;
+  }
+  if (VAR_27[8] & 0x1) {
+   VAR_24->data_ptr[0] = 0xff;
+   VAR_24->data_ptr[1] = 0xff;
+   VAR_24->data_ptr[2] = 0xff;
+   VAR_24->data_ptr[3] = 0xff;
+  } else {
+   uint64_t VAR_37 = VAR_4 - 1;
+   if (VAR_37 < 0xffffffffULL) {
+       VAR_24->data_ptr[0] = (VAR_37 >> 24) & 0xff;
+       VAR_24->data_ptr[1] = (VAR_37 >> 16) & 0xff;
+       VAR_24->data_ptr[2] = (VAR_37 >> 8) & 0xff;
+       VAR_24->data_ptr[3] = (VAR_37) & 0xff;
+   } else {
+       VAR_24->data_ptr[0] = 0xff;
+       VAR_24->data_ptr[1] = 0xff;
+       VAR_24->data_ptr[2] = 0xff;
+       VAR_24->data_ptr[3] = 0xff;
+   }
+  }
+  VAR_24->data_ptr[4] = ((1 << VAR_5) >> 24) & 0xff;
+  VAR_24->data_ptr[5] = ((1 << VAR_5) >> 16) & 0xff;
+  VAR_24->data_ptr[6] = ((1 << VAR_5) >> 8) & 0xff;
+  VAR_24->data_ptr[7] = ((1 << VAR_5)) & 0xff;
+  break;
+ default:
+  FUNC_4(VAR_24, VAR_7, ((void*)0));
+  break;
+ }
+ if (VAR_24->scsi_status != VAR_15) {
+  VAR_26 = VAR_2;
+  if (VAR_24->scsi_status == VAR_14) {
+   VAR_26 |= VAR_0;
+  }
+ } else {
+  VAR_24->scsi_status = VAR_15;
+  VAR_26 = VAR_1;
+ }
+ FUNC_7(&VAR_24->ccb_h, VAR_26);
+ FUNC_0(&VAR_23->vhba->done, &VAR_24->ccb_h, VAR_22.tqe);
+}

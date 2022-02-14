@@ -1,0 +1,28 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int umode_t ;
+struct dentry {int dummy; } ;
+
+
+ struct dentry* FUNC_0 (char const*,int ,struct dentry*,unsigned long*,int *,int *,int *) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+
+struct dentry *FUNC_1(const char *VAR_3, umode_t VAR_4,
+        struct dentry *VAR_5, unsigned long *VAR_6)
+{
+ return FUNC_0(VAR_3, VAR_4, VAR_5, VAR_6,
+     &VAR_0, &VAR_1,
+     &VAR_2);
+}

@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct mthca_srq {int max; int wqe_shift; int wrid; int mr; int is_direct; int queue; } ;
+struct mthca_dev {int dummy; } ;
+
+
+ int FUNC_0 (int ) ;
+ int FUNC_1 (struct mthca_dev*,int,int *,int ,int *) ;
+
+__attribute__((used)) static void FUNC_2(struct mthca_dev *VAR_0, struct mthca_srq *VAR_1)
+{
+ FUNC_1(VAR_0, VAR_1->max << VAR_1->wqe_shift, &VAR_1->queue,
+         VAR_1->is_direct, &VAR_1->mr);
+ FUNC_0(VAR_1->wrid);
+}

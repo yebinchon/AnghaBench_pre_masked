@@ -1,0 +1,192 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+typedef int u32 ;
+struct serpent_ctx {int * expkey; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ,int ,int ,int ,int ,int *) ;
+ int FUNC_1 (int ,int ,int ,int ,int,int) ;
+ int FUNC_2 (int ) ;
+
+int FUNC_3(struct serpent_ctx *VAR_1, const u8 *VAR_2,
+       unsigned int VAR_3)
+{
+ u32 *VAR_4 = VAR_1->expkey;
+ u8 *VAR_5 = (u8 *)VAR_4;
+ u32 VAR_6, VAR_7, VAR_8, VAR_9, VAR_10;
+ int VAR_11;
+
+
+
+ for (VAR_11 = 0; VAR_11 < VAR_3; ++VAR_11)
+  VAR_5[VAR_11] = VAR_2[VAR_11];
+ if (VAR_11 < VAR_0)
+  VAR_5[VAR_11++] = 1;
+ while (VAR_11 < VAR_0)
+  VAR_5[VAR_11++] = 0;
+
+
+
+ VAR_6 = FUNC_2(VAR_4[3]);
+ VAR_7 = FUNC_2(VAR_4[4]);
+ VAR_8 = FUNC_2(VAR_4[5]);
+ VAR_9 = FUNC_2(VAR_4[6]);
+ VAR_10 = FUNC_2(VAR_4[7]);
+
+ FUNC_1(FUNC_2(VAR_4[0]), VAR_6, VAR_10, VAR_8, 0, 0);
+ FUNC_1(FUNC_2(VAR_4[1]), VAR_7, VAR_6, VAR_9, 1, 1);
+ FUNC_1(FUNC_2(VAR_4[2]), VAR_8, VAR_7, VAR_10, 2, 2);
+ FUNC_1(FUNC_2(VAR_4[3]), VAR_9, VAR_8, VAR_6, 3, 3);
+ FUNC_1(FUNC_2(VAR_4[4]), VAR_10, VAR_9, VAR_7, 4, 4);
+ FUNC_1(FUNC_2(VAR_4[5]), VAR_6, VAR_10, VAR_8, 5, 5);
+ FUNC_1(FUNC_2(VAR_4[6]), VAR_7, VAR_6, VAR_9, 6, 6);
+ FUNC_1(FUNC_2(VAR_4[7]), VAR_8, VAR_7, VAR_10, 7, 7);
+
+ FUNC_1(VAR_4[0], VAR_9, VAR_8, VAR_6, 8, 8);
+ FUNC_1(VAR_4[1], VAR_10, VAR_9, VAR_7, 9, 9);
+ FUNC_1(VAR_4[2], VAR_6, VAR_10, VAR_8, 10, 10);
+ FUNC_1(VAR_4[3], VAR_7, VAR_6, VAR_9, 11, 11);
+ FUNC_1(VAR_4[4], VAR_8, VAR_7, VAR_10, 12, 12);
+ FUNC_1(VAR_4[5], VAR_9, VAR_8, VAR_6, 13, 13);
+ FUNC_1(VAR_4[6], VAR_10, VAR_9, VAR_7, 14, 14);
+ FUNC_1(VAR_4[7], VAR_6, VAR_10, VAR_8, 15, 15);
+ FUNC_1(VAR_4[8], VAR_7, VAR_6, VAR_9, 16, 16);
+ FUNC_1(VAR_4[9], VAR_8, VAR_7, VAR_10, 17, 17);
+ FUNC_1(VAR_4[10], VAR_9, VAR_8, VAR_6, 18, 18);
+ FUNC_1(VAR_4[11], VAR_10, VAR_9, VAR_7, 19, 19);
+ FUNC_1(VAR_4[12], VAR_6, VAR_10, VAR_8, 20, 20);
+ FUNC_1(VAR_4[13], VAR_7, VAR_6, VAR_9, 21, 21);
+ FUNC_1(VAR_4[14], VAR_8, VAR_7, VAR_10, 22, 22);
+ FUNC_1(VAR_4[15], VAR_9, VAR_8, VAR_6, 23, 23);
+ FUNC_1(VAR_4[16], VAR_10, VAR_9, VAR_7, 24, 24);
+ FUNC_1(VAR_4[17], VAR_6, VAR_10, VAR_8, 25, 25);
+ FUNC_1(VAR_4[18], VAR_7, VAR_6, VAR_9, 26, 26);
+ FUNC_1(VAR_4[19], VAR_8, VAR_7, VAR_10, 27, 27);
+ FUNC_1(VAR_4[20], VAR_9, VAR_8, VAR_6, 28, 28);
+ FUNC_1(VAR_4[21], VAR_10, VAR_9, VAR_7, 29, 29);
+ FUNC_1(VAR_4[22], VAR_6, VAR_10, VAR_8, 30, 30);
+ FUNC_1(VAR_4[23], VAR_7, VAR_6, VAR_9, 31, 31);
+
+ VAR_4 += 50;
+
+ FUNC_1(VAR_4[-26], VAR_8, VAR_7, VAR_10, 32, -18);
+ FUNC_1(VAR_4[-25], VAR_9, VAR_8, VAR_6, 33, -17);
+ FUNC_1(VAR_4[-24], VAR_10, VAR_9, VAR_7, 34, -16);
+ FUNC_1(VAR_4[-23], VAR_6, VAR_10, VAR_8, 35, -15);
+ FUNC_1(VAR_4[-22], VAR_7, VAR_6, VAR_9, 36, -14);
+ FUNC_1(VAR_4[-21], VAR_8, VAR_7, VAR_10, 37, -13);
+ FUNC_1(VAR_4[-20], VAR_9, VAR_8, VAR_6, 38, -12);
+ FUNC_1(VAR_4[-19], VAR_10, VAR_9, VAR_7, 39, -11);
+ FUNC_1(VAR_4[-18], VAR_6, VAR_10, VAR_8, 40, -10);
+ FUNC_1(VAR_4[-17], VAR_7, VAR_6, VAR_9, 41, -9);
+ FUNC_1(VAR_4[-16], VAR_8, VAR_7, VAR_10, 42, -8);
+ FUNC_1(VAR_4[-15], VAR_9, VAR_8, VAR_6, 43, -7);
+ FUNC_1(VAR_4[-14], VAR_10, VAR_9, VAR_7, 44, -6);
+ FUNC_1(VAR_4[-13], VAR_6, VAR_10, VAR_8, 45, -5);
+ FUNC_1(VAR_4[-12], VAR_7, VAR_6, VAR_9, 46, -4);
+ FUNC_1(VAR_4[-11], VAR_8, VAR_7, VAR_10, 47, -3);
+ FUNC_1(VAR_4[-10], VAR_9, VAR_8, VAR_6, 48, -2);
+ FUNC_1(VAR_4[-9], VAR_10, VAR_9, VAR_7, 49, -1);
+ FUNC_1(VAR_4[-8], VAR_6, VAR_10, VAR_8, 50, 0);
+ FUNC_1(VAR_4[-7], VAR_7, VAR_6, VAR_9, 51, 1);
+ FUNC_1(VAR_4[-6], VAR_8, VAR_7, VAR_10, 52, 2);
+ FUNC_1(VAR_4[-5], VAR_9, VAR_8, VAR_6, 53, 3);
+ FUNC_1(VAR_4[-4], VAR_10, VAR_9, VAR_7, 54, 4);
+ FUNC_1(VAR_4[-3], VAR_6, VAR_10, VAR_8, 55, 5);
+ FUNC_1(VAR_4[-2], VAR_7, VAR_6, VAR_9, 56, 6);
+ FUNC_1(VAR_4[-1], VAR_8, VAR_7, VAR_10, 57, 7);
+ FUNC_1(VAR_4[0], VAR_9, VAR_8, VAR_6, 58, 8);
+ FUNC_1(VAR_4[1], VAR_10, VAR_9, VAR_7, 59, 9);
+ FUNC_1(VAR_4[2], VAR_6, VAR_10, VAR_8, 60, 10);
+ FUNC_1(VAR_4[3], VAR_7, VAR_6, VAR_9, 61, 11);
+ FUNC_1(VAR_4[4], VAR_8, VAR_7, VAR_10, 62, 12);
+ FUNC_1(VAR_4[5], VAR_9, VAR_8, VAR_6, 63, 13);
+ FUNC_1(VAR_4[6], VAR_10, VAR_9, VAR_7, 64, 14);
+ FUNC_1(VAR_4[7], VAR_6, VAR_10, VAR_8, 65, 15);
+ FUNC_1(VAR_4[8], VAR_7, VAR_6, VAR_9, 66, 16);
+ FUNC_1(VAR_4[9], VAR_8, VAR_7, VAR_10, 67, 17);
+ FUNC_1(VAR_4[10], VAR_9, VAR_8, VAR_6, 68, 18);
+ FUNC_1(VAR_4[11], VAR_10, VAR_9, VAR_7, 69, 19);
+ FUNC_1(VAR_4[12], VAR_6, VAR_10, VAR_8, 70, 20);
+ FUNC_1(VAR_4[13], VAR_7, VAR_6, VAR_9, 71, 21);
+ FUNC_1(VAR_4[14], VAR_8, VAR_7, VAR_10, 72, 22);
+ FUNC_1(VAR_4[15], VAR_9, VAR_8, VAR_6, 73, 23);
+ FUNC_1(VAR_4[16], VAR_10, VAR_9, VAR_7, 74, 24);
+ FUNC_1(VAR_4[17], VAR_6, VAR_10, VAR_8, 75, 25);
+ FUNC_1(VAR_4[18], VAR_7, VAR_6, VAR_9, 76, 26);
+ FUNC_1(VAR_4[19], VAR_8, VAR_7, VAR_10, 77, 27);
+ FUNC_1(VAR_4[20], VAR_9, VAR_8, VAR_6, 78, 28);
+ FUNC_1(VAR_4[21], VAR_10, VAR_9, VAR_7, 79, 29);
+ FUNC_1(VAR_4[22], VAR_6, VAR_10, VAR_8, 80, 30);
+ FUNC_1(VAR_4[23], VAR_7, VAR_6, VAR_9, 81, 31);
+
+ VAR_4 += 50;
+
+ FUNC_1(VAR_4[-26], VAR_8, VAR_7, VAR_10, 82, -18);
+ FUNC_1(VAR_4[-25], VAR_9, VAR_8, VAR_6, 83, -17);
+ FUNC_1(VAR_4[-24], VAR_10, VAR_9, VAR_7, 84, -16);
+ FUNC_1(VAR_4[-23], VAR_6, VAR_10, VAR_8, 85, -15);
+ FUNC_1(VAR_4[-22], VAR_7, VAR_6, VAR_9, 86, -14);
+ FUNC_1(VAR_4[-21], VAR_8, VAR_7, VAR_10, 87, -13);
+ FUNC_1(VAR_4[-20], VAR_9, VAR_8, VAR_6, 88, -12);
+ FUNC_1(VAR_4[-19], VAR_10, VAR_9, VAR_7, 89, -11);
+ FUNC_1(VAR_4[-18], VAR_6, VAR_10, VAR_8, 90, -10);
+ FUNC_1(VAR_4[-17], VAR_7, VAR_6, VAR_9, 91, -9);
+ FUNC_1(VAR_4[-16], VAR_8, VAR_7, VAR_10, 92, -8);
+ FUNC_1(VAR_4[-15], VAR_9, VAR_8, VAR_6, 93, -7);
+ FUNC_1(VAR_4[-14], VAR_10, VAR_9, VAR_7, 94, -6);
+ FUNC_1(VAR_4[-13], VAR_6, VAR_10, VAR_8, 95, -5);
+ FUNC_1(VAR_4[-12], VAR_7, VAR_6, VAR_9, 96, -4);
+ FUNC_1(VAR_4[-11], VAR_8, VAR_7, VAR_10, 97, -3);
+ FUNC_1(VAR_4[-10], VAR_9, VAR_8, VAR_6, 98, -2);
+ FUNC_1(VAR_4[-9], VAR_10, VAR_9, VAR_7, 99, -1);
+ FUNC_1(VAR_4[-8], VAR_6, VAR_10, VAR_8, 100, 0);
+ FUNC_1(VAR_4[-7], VAR_7, VAR_6, VAR_9, 101, 1);
+ FUNC_1(VAR_4[-6], VAR_8, VAR_7, VAR_10, 102, 2);
+ FUNC_1(VAR_4[-5], VAR_9, VAR_8, VAR_6, 103, 3);
+ FUNC_1(VAR_4[-4], VAR_10, VAR_9, VAR_7, 104, 4);
+ FUNC_1(VAR_4[-3], VAR_6, VAR_10, VAR_8, 105, 5);
+ FUNC_1(VAR_4[-2], VAR_7, VAR_6, VAR_9, 106, 6);
+ FUNC_1(VAR_4[-1], VAR_8, VAR_7, VAR_10, 107, 7);
+ FUNC_1(VAR_4[0], VAR_9, VAR_8, VAR_6, 108, 8);
+ FUNC_1(VAR_4[1], VAR_10, VAR_9, VAR_7, 109, 9);
+ FUNC_1(VAR_4[2], VAR_6, VAR_10, VAR_8, 110, 10);
+ FUNC_1(VAR_4[3], VAR_7, VAR_6, VAR_9, 111, 11);
+ FUNC_1(VAR_4[4], VAR_8, VAR_7, VAR_10, 112, 12);
+ FUNC_1(VAR_4[5], VAR_9, VAR_8, VAR_6, 113, 13);
+ FUNC_1(VAR_4[6], VAR_10, VAR_9, VAR_7, 114, 14);
+ FUNC_1(VAR_4[7], VAR_6, VAR_10, VAR_8, 115, 15);
+ FUNC_1(VAR_4[8], VAR_7, VAR_6, VAR_9, 116, 16);
+ FUNC_1(VAR_4[9], VAR_8, VAR_7, VAR_10, 117, 17);
+ FUNC_1(VAR_4[10], VAR_9, VAR_8, VAR_6, 118, 18);
+ FUNC_1(VAR_4[11], VAR_10, VAR_9, VAR_7, 119, 19);
+ FUNC_1(VAR_4[12], VAR_6, VAR_10, VAR_8, 120, 20);
+ FUNC_1(VAR_4[13], VAR_7, VAR_6, VAR_9, 121, 21);
+ FUNC_1(VAR_4[14], VAR_8, VAR_7, VAR_10, 122, 22);
+ FUNC_1(VAR_4[15], VAR_9, VAR_8, VAR_6, 123, 23);
+ FUNC_1(VAR_4[16], VAR_10, VAR_9, VAR_7, 124, 24);
+ FUNC_1(VAR_4[17], VAR_6, VAR_10, VAR_8, 125, 25);
+ FUNC_1(VAR_4[18], VAR_7, VAR_6, VAR_9, 126, 26);
+ FUNC_1(VAR_4[19], VAR_8, VAR_7, VAR_10, 127, 27);
+ FUNC_1(VAR_4[20], VAR_9, VAR_8, VAR_6, 128, 28);
+ FUNC_1(VAR_4[21], VAR_10, VAR_9, VAR_7, 129, 29);
+ FUNC_1(VAR_4[22], VAR_6, VAR_10, VAR_8, 130, 30);
+ FUNC_1(VAR_4[23], VAR_7, VAR_6, VAR_9, 131, 31);
+
+
+ FUNC_0(VAR_6, VAR_7, VAR_8, VAR_9, VAR_10, VAR_1->expkey);
+
+ return 0;
+}

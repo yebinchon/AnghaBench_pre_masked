@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct iovec {int dummy; } ;
+typedef int ssize_t ;
+typedef int int64_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (int ,int,struct iovec const*,int,long,long) ;
+
+ssize_t FUNC_1(int VAR_3, const struct iovec *VAR_4, int VAR_5, int64_t VAR_6) {
+
+
+
+  return VAR_2 = VAR_0, -1;
+
+}

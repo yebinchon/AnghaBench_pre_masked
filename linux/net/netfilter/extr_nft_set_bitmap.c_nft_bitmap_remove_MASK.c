@@ -1,0 +1,41 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef size_t u8 ;
+typedef size_t u32 ;
+struct nft_set_elem {struct nft_bitmap_elem* priv; } ;
+struct nft_set {int dummy; } ;
+struct nft_bitmap_elem {int head; int ext; } ;
+struct nft_bitmap {size_t* bitmap; } ;
+struct net {int dummy; } ;
+
+
+ int FUNC_0 (int *) ;
+ int FUNC_1 (struct nft_set const*,int ,size_t*,size_t*) ;
+ size_t FUNC_2 (struct net const*) ;
+ int FUNC_3 (int *) ;
+ struct nft_bitmap* FUNC_4 (struct nft_set const*) ;
+
+__attribute__((used)) static void FUNC_5(const struct net *VAR_0,
+         const struct nft_set *VAR_1,
+         const struct nft_set_elem *VAR_2)
+{
+ struct nft_bitmap *VAR_3 = FUNC_4(VAR_1);
+ struct nft_bitmap_elem *VAR_4 = VAR_2->priv;
+ u8 VAR_5 = FUNC_2(VAR_0);
+ u32 VAR_6, VAR_7;
+
+ FUNC_1(VAR_1, FUNC_3(&VAR_4->ext), &VAR_6, &VAR_7);
+
+ VAR_3->bitmap[VAR_6] &= ~(VAR_5 << VAR_7);
+ FUNC_0(&VAR_4->head);
+}

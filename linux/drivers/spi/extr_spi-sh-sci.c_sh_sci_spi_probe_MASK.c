@@ -1,0 +1,110 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct spi_master {int num_chipselect; int bus_num; } ;
+struct TYPE_3__ {struct spi_master* master; int * txrx_word; int chipselect; } ;
+struct sh_sci_spi {TYPE_1__ bitbang; int membase; int val; TYPE_2__* info; } ;
+struct resource {int start; } ;
+struct platform_device {int dev; } ;
+struct TYPE_4__ {int num_chipselect; int bus_num; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int FUNC_0 (struct sh_sci_spi*) ;
+ size_t VAR_5 ;
+ size_t VAR_6 ;
+ size_t VAR_7 ;
+ size_t VAR_8 ;
+ int FUNC_1 (int *,char*) ;
+ TYPE_2__* FUNC_2 (int *) ;
+ int FUNC_3 (int ) ;
+ int FUNC_4 (int ,int ) ;
+ int FUNC_5 (int ) ;
+ struct resource* FUNC_6 (struct platform_device*,int ,int ) ;
+ int FUNC_7 (struct platform_device*,struct sh_sci_spi*) ;
+ int FUNC_8 (struct resource*) ;
+ int FUNC_9 (struct sh_sci_spi*,int ,int) ;
+ int VAR_9 ;
+ int VAR_10 ;
+ int VAR_11 ;
+ int VAR_12 ;
+ int VAR_13 ;
+ struct spi_master* FUNC_10 (int *,int) ;
+ int FUNC_11 (TYPE_1__*) ;
+ struct sh_sci_spi* FUNC_12 (struct spi_master*) ;
+ int FUNC_13 (struct spi_master*) ;
+
+__attribute__((used)) static int FUNC_14(struct platform_device *VAR_14)
+{
+ struct resource *VAR_15;
+ struct spi_master *VAR_16;
+ struct sh_sci_spi *VAR_17;
+ int VAR_18;
+
+ VAR_16 = FUNC_10(&VAR_14->dev, sizeof(struct sh_sci_spi));
+ if (VAR_16 == ((void*)0)) {
+  FUNC_1(&VAR_14->dev, "failed to allocate spi master\n");
+  VAR_18 = -VAR_1;
+  goto err0;
+ }
+
+ VAR_17 = FUNC_12(VAR_16);
+
+ FUNC_7(VAR_14, VAR_17);
+ VAR_17->info = FUNC_2(&VAR_14->dev);
+ if (!VAR_17->info) {
+  FUNC_1(&VAR_14->dev, "platform data is missing\n");
+  VAR_18 = -VAR_0;
+  goto err1;
+ }
+
+
+ VAR_17->bitbang.master = VAR_16;
+ VAR_17->bitbang.master->bus_num = VAR_17->info->bus_num;
+ VAR_17->bitbang.master->num_chipselect = VAR_17->info->num_chipselect;
+ VAR_17->bitbang.chipselect = VAR_9;
+
+ VAR_17->bitbang.txrx_word[VAR_5] = VAR_10;
+ VAR_17->bitbang.txrx_word[VAR_6] = VAR_11;
+ VAR_17->bitbang.txrx_word[VAR_7] = VAR_12;
+ VAR_17->bitbang.txrx_word[VAR_8] = VAR_13;
+
+ VAR_15 = FUNC_6(VAR_14, VAR_3, 0);
+ if (VAR_15 == ((void*)0)) {
+  VAR_18 = -VAR_0;
+  goto err1;
+ }
+ VAR_17->membase = FUNC_4(VAR_15->start, FUNC_8(VAR_15));
+ if (!VAR_17->membase) {
+  VAR_18 = -VAR_2;
+  goto err1;
+ }
+ VAR_17->val = FUNC_3(FUNC_0(VAR_17));
+ FUNC_9(VAR_17, VAR_4, 1);
+
+ VAR_18 = FUNC_11(&VAR_17->bitbang);
+ if (!VAR_18)
+  return 0;
+
+ FUNC_9(VAR_17, VAR_4, 0);
+ FUNC_5(VAR_17->membase);
+ err1:
+ FUNC_13(VAR_17->bitbang.master);
+ err0:
+ return VAR_18;
+}

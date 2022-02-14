@@ -1,0 +1,50 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u64 ;
+struct trace_seq {char* buffer; int len; } ;
+typedef int sector_t ;
+
+
+ unsigned char VAR_0 ;
+ int FUNC_0 (struct trace_seq*,char*,unsigned char,...) ;
+ int FUNC_1 (struct trace_seq*,int ) ;
+
+__attribute__((used)) static const char *
+FUNC_2(struct trace_seq *VAR_1, unsigned char *VAR_2, int VAR_3)
+{
+ const char *VAR_4 = VAR_1->buffer + VAR_1->len;
+ sector_t VAR_5 = 0, VAR_6 = 0;
+
+ VAR_5 |= ((u64)VAR_2[2] << 56);
+ VAR_5 |= ((u64)VAR_2[3] << 48);
+ VAR_5 |= ((u64)VAR_2[4] << 40);
+ VAR_5 |= ((u64)VAR_2[5] << 32);
+ VAR_5 |= (VAR_2[6] << 24);
+ VAR_5 |= (VAR_2[7] << 16);
+ VAR_5 |= (VAR_2[8] << 8);
+ VAR_5 |= VAR_2[9];
+ VAR_6 |= (VAR_2[10] << 24);
+ VAR_6 |= (VAR_2[11] << 16);
+ VAR_6 |= (VAR_2[12] << 8);
+ VAR_6 |= VAR_2[13];
+
+ FUNC_0(VAR_1, "lba=%llu txlen=%llu protect=%u",
+    (unsigned long long)VAR_5, (unsigned long long)VAR_6,
+    VAR_2[1] >> 5);
+
+ if (VAR_2[0] == VAR_0)
+  FUNC_0(VAR_1, " unmap=%u", VAR_2[1] >> 3 & 1);
+
+ FUNC_1(VAR_1, 0);
+ return VAR_4;
+}

@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct Layer2 {int ** windowar; } ;
+
+
+ int VAR_0 ;
+
+__attribute__((used)) static void
+FUNC_0(struct Layer2 *VAR_1)
+{
+ int VAR_2;
+
+ for (VAR_2 = 0; VAR_2 < VAR_0; VAR_2++)
+  VAR_1->windowar[VAR_2] = ((void*)0);
+}

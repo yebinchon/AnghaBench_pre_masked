@@ -1,0 +1,28 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct se_lun {int lun_sep; } ;
+typedef int ssize_t ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct se_lun*,char*) ;
+
+__attribute__((used)) static ssize_t FUNC_1(
+ struct se_lun *VAR_1,
+ char *VAR_2)
+{
+ if (!VAR_1 || !VAR_1->lun_sep)
+  return -VAR_0;
+
+ return FUNC_0(VAR_1, VAR_2);
+}

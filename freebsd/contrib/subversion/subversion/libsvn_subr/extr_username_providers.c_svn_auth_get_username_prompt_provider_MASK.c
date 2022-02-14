@@ -1,0 +1,44 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct TYPE_4__ {int retry_limit; void* prompt_baton; int prompt_func; } ;
+typedef TYPE_1__ username_prompt_provider_baton_t ;
+typedef int svn_auth_username_prompt_func_t ;
+struct TYPE_5__ {TYPE_1__* provider_baton; int * vtable; } ;
+typedef TYPE_2__ svn_auth_provider_object_t ;
+typedef int apr_pool_t ;
+
+
+ void* FUNC_0 (int *,int) ;
+ int VAR_0 ;
+
+void
+FUNC_1
+  (svn_auth_provider_object_t **VAR_1,
+   svn_auth_username_prompt_func_t VAR_2,
+   void *VAR_3,
+   int VAR_4,
+   apr_pool_t *VAR_5)
+{
+  svn_auth_provider_object_t *VAR_6 = FUNC_0(VAR_5, sizeof(*VAR_6));
+  username_prompt_provider_baton_t *VAR_7 = FUNC_0(VAR_5, sizeof(*VAR_7));
+
+  VAR_7->prompt_func = VAR_2;
+  VAR_7->prompt_baton = VAR_3;
+  VAR_7->retry_limit = VAR_4;
+
+  VAR_6->vtable = &VAR_0;
+  VAR_6->provider_baton = VAR_7;
+  *VAR_1 = VAR_6;
+}

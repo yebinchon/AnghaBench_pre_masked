@@ -1,0 +1,50 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+typedef int tree ;
+typedef TYPE_1__* subvar_t ;
+struct TYPE_3__ {int var; struct TYPE_3__* next; } ;
+
+
+
+
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int ,int ) ;
+
+ TYPE_1__* FUNC_2 (int ) ;
+ int FUNC_3 (int ) ;
+
+__attribute__((used)) static bool
+FUNC_4 (tree VAR_0)
+{
+  switch (FUNC_0 (VAR_0))
+    {
+      case 128:
+ {
+   subvar_t VAR_1;
+   if (FUNC_3 (VAR_0))
+     return 0;
+   for (VAR_1 = FUNC_2 (VAR_0);
+        VAR_1;
+        VAR_1 = VAR_1->next)
+     if (FUNC_3 (VAR_1->var))
+       return 0;
+   return 1;
+ }
+      case 130:
+      case 129:
+ return FUNC_4 (FUNC_1 (VAR_0, 0));
+      default:
+ return 0;
+    }
+}

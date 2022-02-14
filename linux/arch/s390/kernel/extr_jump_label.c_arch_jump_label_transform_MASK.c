@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct jump_entry {int dummy; } ;
+typedef enum jump_label_type { ____Placeholder_jump_label_type } jump_label_type ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct jump_entry*,int,int ) ;
+ int FUNC_1 (int ,int *,int) ;
+
+void FUNC_2(struct jump_entry *VAR_1,
+          enum jump_label_type VAR_2)
+{
+ FUNC_0(VAR_1, VAR_2, 0);
+ FUNC_1(VAR_0, ((void*)0), 1);
+}

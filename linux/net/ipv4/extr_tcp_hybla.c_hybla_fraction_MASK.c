@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+
+
+ int FUNC_0 (int const*) ;
+
+__attribute__((used)) static inline u32 FUNC_1(u32 VAR_0)
+{
+ static const u32 VAR_1[] = {
+  128, 139, 152, 165, 181, 197, 215, 234,
+ };
+
+ return (VAR_0 < FUNC_0(VAR_1)) ? VAR_1[VAR_0] : 128;
+}

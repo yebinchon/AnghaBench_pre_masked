@@ -1,0 +1,38 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_3__ ;
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct snd_pcm_substream {TYPE_2__* runtime; } ;
+struct snd_pcm_indirect {int hw_data; scalar_t__ sw_data; } ;
+struct TYPE_4__ {unsigned char* buffer; } ;
+struct snd_hal2 {TYPE_3__* card; TYPE_1__ dac; } ;
+struct TYPE_6__ {int dev; } ;
+struct TYPE_5__ {scalar_t__ dma_area; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ,unsigned char*,size_t,int ) ;
+ int FUNC_1 (unsigned char*,scalar_t__,size_t) ;
+ struct snd_hal2* FUNC_2 (struct snd_pcm_substream*) ;
+
+__attribute__((used)) static void FUNC_3(struct snd_pcm_substream *VAR_1,
+       struct snd_pcm_indirect *VAR_2, size_t VAR_3)
+{
+ struct snd_hal2 *VAR_4 = FUNC_2(VAR_1);
+ unsigned char *VAR_5 = VAR_4->dac.buffer + VAR_2->hw_data;
+
+ FUNC_1(VAR_5, VAR_1->runtime->dma_area + VAR_2->sw_data, VAR_3);
+ FUNC_0(VAR_4->card->dev, VAR_5, VAR_3, VAR_0);
+
+}

@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct netconfig {int dummy; } ;
+typedef int rpcvers_t ;
+typedef int rpcprog_t ;
+typedef int CLIENT ;
+
+
+ int * FUNC_0 (char const*,int const,int const,struct netconfig const*,int *) ;
+
+CLIENT *
+FUNC_1(const char *VAR_0, const rpcprog_t VAR_1, const rpcvers_t VAR_2,
+    const struct netconfig *VAR_3)
+{
+ return (FUNC_0(VAR_0, VAR_1, VAR_2, VAR_3, ((void*)0)));
+}

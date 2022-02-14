@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct tls_rec {int msg_plaintext; int msg_encrypted; } ;
+struct sock {int dummy; } ;
+
+
+ int FUNC_0 (struct tls_rec*) ;
+ int FUNC_1 (struct sock*,int *) ;
+
+__attribute__((used)) static void FUNC_2(struct sock *VAR_0, struct tls_rec *VAR_1)
+{
+ FUNC_1(VAR_0, &VAR_1->msg_encrypted);
+ FUNC_1(VAR_0, &VAR_1->msg_plaintext);
+ FUNC_0(VAR_1);
+}

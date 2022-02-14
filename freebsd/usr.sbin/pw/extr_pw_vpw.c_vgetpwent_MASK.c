@@ -1,0 +1,22 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct passwd {int dummy; } ;
+
+
+ struct passwd* FUNC_0 (int *,int,int ) ;
+
+struct passwd *
+FUNC_1(void)
+{
+  return FUNC_0(((void*)0), -1, 0);
+}

@@ -1,0 +1,77 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef scalar_t__ PFNGLPROGRAMSTRINGARBPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETER4FVARBPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETER4FARBPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETER4DVARBPROC ;
+typedef scalar_t__ PFNGLPROGRAMLOCALPARAMETER4DARBPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETER4FVARBPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETER4FARBPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETER4DVARBPROC ;
+typedef scalar_t__ PFNGLPROGRAMENVPARAMETER4DARBPROC ;
+typedef scalar_t__ PFNGLISPROGRAMARBPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMSTRINGARBPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMIVARBPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMENVPARAMETERFVARBPROC ;
+typedef scalar_t__ PFNGLGETPROGRAMENVPARAMETERDVARBPROC ;
+typedef scalar_t__ PFNGLGENPROGRAMSARBPROC ;
+typedef scalar_t__ PFNGLDELETEPROGRAMSARBPROC ;
+typedef scalar_t__ PFNGLBINDPROGRAMARBPROC ;
+typedef scalar_t__ (* GLADloadproc ) (char*) ;
+
+
+ int VAR_0 ;
+ scalar_t__ VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ VAR_3 ;
+ scalar_t__ VAR_4 ;
+ scalar_t__ VAR_5 ;
+ scalar_t__ VAR_6 ;
+ scalar_t__ VAR_7 ;
+ scalar_t__ VAR_8 ;
+ scalar_t__ VAR_9 ;
+ scalar_t__ VAR_10 ;
+ scalar_t__ VAR_11 ;
+ scalar_t__ VAR_12 ;
+ scalar_t__ VAR_13 ;
+ scalar_t__ VAR_14 ;
+ scalar_t__ VAR_15 ;
+ scalar_t__ VAR_16 ;
+ scalar_t__ VAR_17 ;
+ scalar_t__ VAR_18 ;
+ scalar_t__ VAR_19 ;
+
+__attribute__((used)) static void FUNC_0(GLADloadproc VAR_20) {
+ if(!VAR_0) return;
+ VAR_19 = (PFNGLPROGRAMSTRINGARBPROC)VAR_20("glProgramStringARB");
+ VAR_1 = (PFNGLBINDPROGRAMARBPROC)VAR_20("glBindProgramARB");
+ VAR_2 = (PFNGLDELETEPROGRAMSARBPROC)VAR_20("glDeleteProgramsARB");
+ VAR_3 = (PFNGLGENPROGRAMSARBPROC)VAR_20("glGenProgramsARB");
+ VAR_11 = (PFNGLPROGRAMENVPARAMETER4DARBPROC)VAR_20("glProgramEnvParameter4dARB");
+ VAR_12 = (PFNGLPROGRAMENVPARAMETER4DVARBPROC)VAR_20("glProgramEnvParameter4dvARB");
+ VAR_13 = (PFNGLPROGRAMENVPARAMETER4FARBPROC)VAR_20("glProgramEnvParameter4fARB");
+ VAR_14 = (PFNGLPROGRAMENVPARAMETER4FVARBPROC)VAR_20("glProgramEnvParameter4fvARB");
+ VAR_15 = (PFNGLPROGRAMLOCALPARAMETER4DARBPROC)VAR_20("glProgramLocalParameter4dARB");
+ VAR_16 = (PFNGLPROGRAMLOCALPARAMETER4DVARBPROC)VAR_20("glProgramLocalParameter4dvARB");
+ VAR_17 = (PFNGLPROGRAMLOCALPARAMETER4FARBPROC)VAR_20("glProgramLocalParameter4fARB");
+ VAR_18 = (PFNGLPROGRAMLOCALPARAMETER4FVARBPROC)VAR_20("glProgramLocalParameter4fvARB");
+ VAR_4 = (PFNGLGETPROGRAMENVPARAMETERDVARBPROC)VAR_20("glGetProgramEnvParameterdvARB");
+ VAR_5 = (PFNGLGETPROGRAMENVPARAMETERFVARBPROC)VAR_20("glGetProgramEnvParameterfvARB");
+ VAR_6 = (PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC)VAR_20("glGetProgramLocalParameterdvARB");
+ VAR_7 = (PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC)VAR_20("glGetProgramLocalParameterfvARB");
+ VAR_9 = (PFNGLGETPROGRAMIVARBPROC)VAR_20("glGetProgramivARB");
+ VAR_8 = (PFNGLGETPROGRAMSTRINGARBPROC)VAR_20("glGetProgramStringARB");
+ VAR_10 = (PFNGLISPROGRAMARBPROC)VAR_20("glIsProgramARB");
+}

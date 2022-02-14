@@ -1,0 +1,36 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct spi_master {int dummy; } ;
+struct platform_device {int dev; } ;
+struct dln2_spi {int dummy; } ;
+
+
+ int FUNC_0 (int *,char*) ;
+ scalar_t__ FUNC_1 (struct dln2_spi*,int) ;
+ int FUNC_2 (struct platform_device*) ;
+ int FUNC_3 (int *) ;
+ struct spi_master* FUNC_4 (int ) ;
+ struct dln2_spi* FUNC_5 (struct spi_master*) ;
+
+__attribute__((used)) static int FUNC_6(struct platform_device *VAR_0)
+{
+ struct spi_master *VAR_1 = FUNC_4(FUNC_2(VAR_0));
+ struct dln2_spi *VAR_2 = FUNC_5(VAR_1);
+
+ FUNC_3(&VAR_0->dev);
+
+ if (FUNC_1(VAR_2, 0) < 0)
+  FUNC_0(&VAR_0->dev, "Failed to disable SPI module\n");
+
+ return 0;
+}

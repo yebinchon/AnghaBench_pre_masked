@@ -1,0 +1,20 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct flow_table {scalar_t__ count; scalar_t__ n_buckets; } ;
+
+
+
+__attribute__((used)) static inline int FUNC_0(struct flow_table *VAR_0)
+{
+ return (VAR_0->count > VAR_0->n_buckets);
+}

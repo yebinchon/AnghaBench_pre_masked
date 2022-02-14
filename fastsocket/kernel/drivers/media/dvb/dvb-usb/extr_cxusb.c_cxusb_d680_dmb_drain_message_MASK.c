@@ -1,0 +1,46 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int u8 ;
+struct TYPE_2__ {int generic_bulk_ctrl_endpoint; } ;
+struct dvb_usb_device {int udev; TYPE_1__ props; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int *) ;
+ int * FUNC_1 (int const,int ) ;
+ scalar_t__ FUNC_2 (int ,int ,int *,int const,int*,int const) ;
+ int FUNC_3 (int ,int) ;
+
+__attribute__((used)) static void FUNC_4(struct dvb_usb_device *VAR_1)
+{
+ int VAR_2 = VAR_1->props.generic_bulk_ctrl_endpoint;
+ const int VAR_3 = 100;
+ const int VAR_4 = 32;
+ u8 *VAR_5;
+ int VAR_6;
+
+
+ VAR_5 = FUNC_1(VAR_4, VAR_0);
+ if (!VAR_5)
+  return;
+ while (1) {
+  if (FUNC_2(VAR_1->udev,
+   FUNC_3(VAR_1->udev, VAR_2),
+   VAR_5, VAR_4, &VAR_6, VAR_3) < 0)
+   break;
+  if (!VAR_6)
+   break;
+ }
+ FUNC_0(VAR_5);
+}

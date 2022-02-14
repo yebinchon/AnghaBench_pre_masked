@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u16 ;
+struct ace_device {int * data_ptr; scalar_t__ baseaddr; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (scalar_t__) ;
+
+__attribute__((used)) static void FUNC_1(struct ace_device *VAR_1)
+{
+ int VAR_2 = VAR_0 / 2;
+ u16 *VAR_3 = VAR_1->data_ptr;
+ while (VAR_2--)
+  *VAR_3++ = FUNC_0(VAR_1->baseaddr + 0x40);
+ VAR_1->data_ptr = VAR_3;
+}

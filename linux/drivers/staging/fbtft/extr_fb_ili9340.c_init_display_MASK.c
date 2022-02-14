@@ -1,0 +1,84 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int (* reset ) (struct fbtft_par*) ;} ;
+struct fbtft_par {TYPE_1__ fbtftops; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int FUNC_0 (int) ;
+ int FUNC_1 (struct fbtft_par*) ;
+ int FUNC_2 (struct fbtft_par*,int,...) ;
+
+__attribute__((used)) static int FUNC_3(struct fbtft_par *VAR_4)
+{
+ VAR_4->fbtftops.reset(VAR_4);
+
+ FUNC_2(VAR_4, 0xEF, 0x03, 0x80, 0x02);
+ FUNC_2(VAR_4, 0xCF, 0x00, 0XC1, 0X30);
+ FUNC_2(VAR_4, 0xED, 0x64, 0x03, 0X12, 0X81);
+ FUNC_2(VAR_4, 0xE8, 0x85, 0x00, 0x78);
+ FUNC_2(VAR_4, 0xCB, 0x39, 0x2C, 0x00, 0x34, 0x02);
+ FUNC_2(VAR_4, 0xF7, 0x20);
+ FUNC_2(VAR_4, 0xEA, 0x00, 0x00);
+
+
+ FUNC_2(VAR_4, 0xC0, 0x23);
+
+
+ FUNC_2(VAR_4, 0xC1, 0x10);
+
+
+ FUNC_2(VAR_4, 0xC5, 0x3e, 0x28);
+
+
+ FUNC_2(VAR_4, 0xC7, 0x86);
+
+
+
+ FUNC_2(VAR_4, VAR_3, 0x55);
+
+
+
+ FUNC_2(VAR_4, 0xB1, 0x00, 0x18);
+
+
+ FUNC_2(VAR_4, 0xB6, 0x08, 0x82, 0x27);
+
+
+ FUNC_2(VAR_4, 0xF2, 0x00);
+
+
+ FUNC_2(VAR_4, VAR_2, 0x01);
+
+
+ FUNC_2(VAR_4, 0xE0,
+    0x0F, 0x31, 0x2B, 0x0C, 0x0E, 0x08, 0x4E, 0xF1,
+    0x37, 0x07, 0x10, 0x03, 0x0E, 0x09, 0x00);
+
+
+ FUNC_2(VAR_4, 0xE1,
+    0x00, 0x0E, 0x14, 0x03, 0x11, 0x07, 0x31, 0xC1,
+    0x48, 0x08, 0x0F, 0x0C, 0x31, 0x36, 0x0F);
+
+ FUNC_2(VAR_4, VAR_0);
+
+ FUNC_0(120);
+
+ FUNC_2(VAR_4, VAR_1);
+
+ return 0;
+}

@@ -1,0 +1,128 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct st7701 {int sleep_delay; TYPE_1__* desc; } ;
+struct drm_display_mode {int dummy; } ;
+struct TYPE_2__ {struct drm_display_mode* mode; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int VAR_8 ;
+ int VAR_9 ;
+ int VAR_10 ;
+ int VAR_11 ;
+ int FUNC_0 (struct drm_display_mode const*) ;
+ int FUNC_1 (struct drm_display_mode const*) ;
+ int VAR_12 ;
+ int VAR_13 ;
+ int VAR_14 ;
+ int VAR_15 ;
+ int VAR_16 ;
+ int VAR_17 ;
+ int VAR_18 ;
+ int VAR_19 ;
+ int VAR_20 ;
+ int VAR_21 ;
+ int VAR_22 ;
+ int VAR_23 ;
+ int VAR_24 ;
+ int VAR_25 ;
+ int VAR_26 ;
+ int VAR_27 ;
+ int VAR_28 ;
+ int VAR_29 ;
+ int VAR_30 ;
+ int VAR_31 ;
+ int VAR_32 ;
+ int VAR_33 ;
+ int VAR_34 ;
+ int FUNC_2 (struct st7701*,int,int,...) ;
+ int FUNC_3 (int) ;
+
+__attribute__((used)) static void FUNC_4(struct st7701 *VAR_35)
+{
+ const struct drm_display_mode *VAR_36 = VAR_35->desc->mode;
+
+ FUNC_2(VAR_35, VAR_34, 0x00);
+
+
+ FUNC_3(5);
+
+ FUNC_2(VAR_35, VAR_33, 0x00);
+
+ FUNC_3(VAR_35->sleep_delay);
+
+
+ FUNC_2(VAR_35, VAR_2,
+     0x77, 0x01, 0x00, 0x00, VAR_0);
+ FUNC_2(VAR_35, VAR_12, 0x00, 0x0E, 0x15, 0x0F,
+     0x11, 0x08, 0x08, 0x08, 0x08, 0x23, 0x04, 0x13, 0x12,
+     0x2B, 0x34, 0x1F);
+ FUNC_2(VAR_35, VAR_10, 0x00, 0x0E, 0x95, 0x0F,
+     0x13, 0x07, 0x09, 0x08, 0x08, 0x22, 0x04, 0x10, 0x0E,
+     0x2C, 0x34, 0x1F);
+ FUNC_2(VAR_35, VAR_7,
+     VAR_8, VAR_9);
+ FUNC_2(VAR_35, VAR_11,
+     FUNC_0(VAR_36),
+     FUNC_1(VAR_36));
+ FUNC_2(VAR_35, VAR_4,
+     VAR_5, VAR_6);
+
+
+ FUNC_2(VAR_35, VAR_2,
+   0x77, 0x01, 0x00, 0x00, VAR_1);
+ FUNC_2(VAR_35, VAR_32, VAR_31);
+ FUNC_2(VAR_35, VAR_25, VAR_26);
+ FUNC_2(VAR_35, VAR_27, VAR_28);
+ FUNC_2(VAR_35, VAR_23, VAR_24);
+ FUNC_2(VAR_35, VAR_29, VAR_30);
+ FUNC_2(VAR_35, VAR_15, VAR_16);
+ FUNC_2(VAR_35, VAR_17, VAR_18);
+ FUNC_2(VAR_35, VAR_19, VAR_20);
+ FUNC_2(VAR_35, VAR_21, VAR_22);
+ FUNC_2(VAR_35, VAR_13, VAR_14);
+
+
+
+
+
+ FUNC_2(VAR_35, 0xE0, 0x00, 0x00, 0x02);
+ FUNC_2(VAR_35, 0xE1, 0x0B, 0x00, 0x0D, 0x00, 0x0C, 0x00, 0x0E,
+     0x00, 0x00, 0x44, 0x44);
+ FUNC_2(VAR_35, 0xE2, 0x33, 0x33, 0x44, 0x44, 0x64, 0x00, 0x66,
+     0x00, 0x65, 0x00, 0x67, 0x00, 0x00);
+ FUNC_2(VAR_35, 0xE3, 0x00, 0x00, 0x33, 0x33);
+ FUNC_2(VAR_35, 0xE4, 0x44, 0x44);
+ FUNC_2(VAR_35, 0xE5, 0x0C, 0x78, 0x3C, 0xA0, 0x0E, 0x78, 0x3C,
+     0xA0, 0x10, 0x78, 0x3C, 0xA0, 0x12, 0x78, 0x3C, 0xA0);
+ FUNC_2(VAR_35, 0xE6, 0x00, 0x00, 0x33, 0x33);
+ FUNC_2(VAR_35, 0xE7, 0x44, 0x44);
+ FUNC_2(VAR_35, 0xE8, 0x0D, 0x78, 0x3C, 0xA0, 0x0F, 0x78, 0x3C,
+     0xA0, 0x11, 0x78, 0x3C, 0xA0, 0x13, 0x78, 0x3C, 0xA0);
+ FUNC_2(VAR_35, 0xEB, 0x02, 0x02, 0x39, 0x39, 0xEE, 0x44, 0x00);
+ FUNC_2(VAR_35, 0xEC, 0x00, 0x00);
+ FUNC_2(VAR_35, 0xED, 0xFF, 0xF1, 0x04, 0x56, 0x72, 0x3F, 0xFF,
+     0xFF, 0xFF, 0xFF, 0xF3, 0x27, 0x65, 0x40, 0x1F, 0xFF);
+
+
+ FUNC_2(VAR_35, VAR_2,
+     0x77, 0x01, 0x00, 0x00, VAR_3);
+}

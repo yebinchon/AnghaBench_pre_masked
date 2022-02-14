@@ -1,0 +1,62 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_7__ TYPE_2__ ;
+typedef struct TYPE_6__ TYPE_1__ ;
+
+
+struct TYPE_7__ {int ByteCount; int* Bytes; int Function; } ;
+struct TYPE_6__ {int ExtensionBlockCount; int Function; TYPE_2__* ExtensionBlocks; } ;
+typedef TYPE_1__ Extensions ;
+typedef TYPE_2__ ExtensionBlock ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (int*,unsigned char const*,int) ;
+ void* FUNC_1 (int) ;
+ TYPE_2__* FUNC_2 (TYPE_2__*,int) ;
+
+__attribute__((used)) static int
+FUNC_3(Extensions *VAR_2,
+                  int VAR_3,
+                  const unsigned char VAR_4[]) {
+
+    ExtensionBlock *VAR_5;
+
+    if (VAR_2->ExtensionBlocks == ((void*)0))
+        VAR_2->ExtensionBlocks = FUNC_1(sizeof(ExtensionBlock));
+    else
+        VAR_2->ExtensionBlocks = FUNC_2(VAR_2->ExtensionBlocks,
+                                      sizeof(ExtensionBlock) *
+                                      (VAR_2->ExtensionBlockCount + 1));
+
+    if (VAR_2->ExtensionBlocks == ((void*)0))
+        return (VAR_0);
+
+    VAR_5 = &VAR_2->ExtensionBlocks[VAR_2->ExtensionBlockCount++];
+
+    VAR_5->ByteCount=VAR_3 + 3;
+    VAR_5->Bytes = FUNC_1(VAR_5->ByteCount + 3);
+    if (VAR_5->Bytes == ((void*)0))
+        return (VAR_0);
+
+
+    VAR_5->Bytes[0] = 0x21;
+    VAR_5->Bytes[1] = VAR_2->Function;
+    VAR_5->Bytes[2] = VAR_3;
+
+    if (VAR_4) {
+        FUNC_0(VAR_5->Bytes + 3, VAR_4, VAR_3);
+        VAR_5->Function = VAR_2->Function;
+    }
+
+    return (VAR_1);
+}

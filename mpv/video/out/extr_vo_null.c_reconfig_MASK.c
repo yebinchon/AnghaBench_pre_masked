@@ -1,0 +1,21 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct vo {int dummy; } ;
+struct mp_image_params {int dummy; } ;
+
+
+
+__attribute__((used)) static int FUNC_0(struct vo *VAR_0, struct mp_image_params *VAR_1)
+{
+    return 0;
+}

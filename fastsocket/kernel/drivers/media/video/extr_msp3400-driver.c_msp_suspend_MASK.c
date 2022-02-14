@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct i2c_client {int dummy; } ;
+typedef int pm_message_t ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct i2c_client*) ;
+ int FUNC_1 (int,int ,struct i2c_client*,char*) ;
+
+__attribute__((used)) static int FUNC_2(struct i2c_client *VAR_1, pm_message_t VAR_2)
+{
+ FUNC_1(1, VAR_0, VAR_1, "suspend\n");
+ FUNC_0(VAR_1);
+ return 0;
+}

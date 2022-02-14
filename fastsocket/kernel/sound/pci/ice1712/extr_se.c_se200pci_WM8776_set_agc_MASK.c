@@ -1,0 +1,34 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct snd_ice1712 {int dummy; } ;
+
+
+ int FUNC_0 (struct snd_ice1712*,int,int) ;
+
+__attribute__((used)) static void FUNC_1(struct snd_ice1712 *VAR_0, unsigned int VAR_1)
+{
+
+ switch (VAR_1) {
+ case 0:
+  FUNC_0(VAR_0, 0x11, 0x000);
+  break;
+ case 1:
+  FUNC_0(VAR_0, 0x10, 0x07b);
+  FUNC_0(VAR_0, 0x11, 0x100);
+  break;
+ case 2:
+  FUNC_0(VAR_0, 0x10, 0x1fb);
+  FUNC_0(VAR_0, 0x11, 0x100);
+  break;
+ }
+}

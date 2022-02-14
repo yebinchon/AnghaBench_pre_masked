@@ -1,0 +1,28 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct led_classdev {int flags; } ;
+typedef enum led_brightness { ____Placeholder_led_brightness } led_brightness ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct led_classdev*,int) ;
+
+__attribute__((used)) static void FUNC_1(struct led_classdev *VAR_1,
+   enum led_brightness VAR_2)
+{
+
+ if (VAR_1->flags & VAR_0)
+  return;
+
+ FUNC_0(VAR_1, VAR_2);
+}

@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int mpc_int32_t ;
+struct TYPE_2__ {int s; } ;
+typedef TYPE_1__ demux_t ;
+
+
+ int FUNC_0 (int ,void*,int ) ;
+
+__attribute__((used)) static mpc_int32_t FUNC_1( void *VAR_0, void *VAR_1, mpc_int32_t VAR_2 )
+{
+    demux_t *VAR_3 = (demux_t*)VAR_0;
+    return FUNC_0( VAR_3->s, VAR_1, VAR_2 );
+}

@@ -1,0 +1,97 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_20__ TYPE_8__ ;
+typedef struct TYPE_19__ TYPE_7__ ;
+typedef struct TYPE_18__ TYPE_6__ ;
+typedef struct TYPE_17__ TYPE_5__ ;
+typedef struct TYPE_16__ TYPE_4__ ;
+typedef struct TYPE_15__ TYPE_3__ ;
+typedef struct TYPE_14__ TYPE_2__ ;
+typedef struct TYPE_13__ TYPE_1__ ;
+
+
+typedef int uint32_t ;
+struct lpfc_sli4_cfg_mhdr {int dummy; } ;
+struct TYPE_17__ {int req; } ;
+struct lpfc_mbx_set_link_diag_loopback {TYPE_5__ u; } ;
+struct TYPE_15__ {int lnk_tp; int lnk_no; } ;
+struct TYPE_16__ {TYPE_3__ lnk_info; } ;
+struct lpfc_hba {int mbox_mem_pool; TYPE_4__ sli4_hba; } ;
+struct TYPE_18__ {scalar_t__ mbxStatus; } ;
+struct TYPE_13__ {struct lpfc_mbx_set_link_diag_loopback link_diag_loopback; } ;
+struct TYPE_14__ {TYPE_1__ un; } ;
+struct TYPE_19__ {TYPE_6__ mb; TYPE_2__ mqe; } ;
+struct TYPE_20__ {TYPE_7__ u; } ;
+typedef TYPE_8__ LPFC_MBOXQ_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int VAR_8 ;
+ int VAR_9 ;
+ int VAR_10 ;
+ int VAR_11 ;
+ int FUNC_0 (int ,int *,int ) ;
+ int VAR_12 ;
+ int VAR_13 ;
+ int VAR_14 ;
+ int FUNC_1 (struct lpfc_hba*,int ,int ,char*,int,scalar_t__) ;
+ int FUNC_2 (struct lpfc_hba*,TYPE_8__*,int ,int ,int,int ) ;
+ int FUNC_3 (struct lpfc_hba*,TYPE_8__*,int ) ;
+ TYPE_8__* FUNC_4 (int ,int ) ;
+ int FUNC_5 (TYPE_8__*,int ) ;
+
+__attribute__((used)) static int
+FUNC_6(struct lpfc_hba *VAR_15)
+{
+ LPFC_MBOXQ_t *VAR_16;
+ uint32_t VAR_17, VAR_18;
+ struct lpfc_mbx_set_link_diag_loopback *VAR_19;
+ int VAR_20 = VAR_10, VAR_21 = 0;
+
+ VAR_16 = FUNC_4(VAR_15->mbox_mem_pool, VAR_2);
+ if (!VAR_16)
+  return -VAR_1;
+ VAR_17 = (sizeof(struct lpfc_mbx_set_link_diag_loopback) -
+     sizeof(struct lpfc_sli4_cfg_mhdr));
+ VAR_18 = FUNC_2(VAR_15, VAR_16, VAR_7,
+    VAR_6,
+    VAR_17, VAR_9);
+ if (VAR_18 != VAR_17) {
+  FUNC_5(VAR_16, VAR_15->mbox_mem_pool);
+  return -VAR_1;
+ }
+ VAR_19 = &VAR_16->u.mqe.un.link_diag_loopback;
+ FUNC_0(VAR_13,
+        &VAR_19->u.req, VAR_15->sli4_hba.lnk_info.lnk_no);
+ FUNC_0(VAR_14,
+        &VAR_19->u.req, VAR_15->sli4_hba.lnk_info.lnk_tp);
+ FUNC_0(VAR_12, &VAR_19->u.req,
+        VAR_5);
+
+ VAR_20 = FUNC_3(VAR_15, VAR_16, VAR_8);
+ if ((VAR_20 != VAR_10) || (VAR_16->u.mb.mbxStatus)) {
+  FUNC_1(VAR_15, VAR_3, VAR_4,
+    "3127 Failed setup loopback mode mailbox "
+    "command, rc:x%x, status:x%x\n", VAR_20,
+    VAR_16->u.mb.mbxStatus);
+  VAR_21 = -VAR_0;
+ }
+ if (VAR_16 && (VAR_20 != VAR_11))
+  FUNC_5(VAR_16, VAR_15->mbox_mem_pool);
+ return VAR_21;
+}

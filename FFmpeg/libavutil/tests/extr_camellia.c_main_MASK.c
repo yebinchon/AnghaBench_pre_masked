@@ -1,0 +1,75 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int uint8_t ;
+struct AVCAMELLIA {int dummy; } ;
+
+
+ int VAR_0 ;
+ struct AVCAMELLIA* FUNC_0 () ;
+ int FUNC_1 (struct AVCAMELLIA*,int*,int const*,int,int*,int) ;
+ int FUNC_2 (struct AVCAMELLIA*,int const*,int const) ;
+ int FUNC_3 (struct AVCAMELLIA*) ;
+ int FUNC_4 (int *,int ,char*,int,int const,int) ;
+ int FUNC_5 (int*,char*,int) ;
+
+int FUNC_6(int VAR_1, char *VAR_2[])
+{
+    const uint8_t VAR_3[3][32] = {
+        {0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef, 0xfe, 0xdc, 0xba, 0x98, 0x76, 0x54, 0x32, 0x10},
+        {0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef, 0xfe, 0xdc, 0xba, 0x98, 0x76, 0x54, 0x32, 0x10, 0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77},
+        {0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef, 0xfe, 0xdc, 0xba, 0x98, 0x76, 0x54, 0x32, 0x10, 0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, 0xaa, 0xbb, 0xcc, 0xdd, 0xee, 0xff}
+    };
+    const uint8_t VAR_4[3][16] = {
+        {0x67, 0x67, 0x31, 0x38, 0x54, 0x96, 0x69, 0x73, 0x08, 0x57, 0x06, 0x56, 0x48, 0xea, 0xbe, 0x43},
+        {0xb4, 0x99, 0x34, 0x01, 0xb3, 0xe9,0x96, 0xf8, 0x4e, 0xe5, 0xce, 0xe7, 0xd7, 0x9b, 0x09, 0xb9},
+        {0x9a, 0xcc, 0x23, 0x7d, 0xff, 0x16, 0xd7, 0x6c, 0x20, 0xef, 0x7c, 0x91, 0x9e, 0x3a, 0x75, 0x09}
+    };
+    const uint8_t VAR_5[32] = {0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef, 0xfe, 0xdc, 0xba, 0x98, 0x76, 0x54, 0x32, 0x10, 0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef, 0xfe, 0xdc, 0xba, 0x98, 0x76, 0x54, 0x32, 0x10};
+    const int VAR_6[3] = {128, 192, 256};
+    int VAR_7, VAR_8, VAR_9 = 0;
+    uint8_t VAR_10[32], VAR_11[16];
+    struct AVCAMELLIA *VAR_12;
+    VAR_12 = FUNC_0();
+    if (!VAR_12)
+        return 1;
+    for (VAR_8 = 0; VAR_8 < 3; VAR_8++) {
+        FUNC_2(VAR_12, VAR_3[VAR_8], VAR_6[VAR_8]);
+        FUNC_1(VAR_12, VAR_10, VAR_5, 1, ((void*)0), 0);
+        for (VAR_7 = 0; VAR_7 < 16; VAR_7++) {
+            if (VAR_4[VAR_8][VAR_7] != VAR_10[VAR_7]) {
+                FUNC_4(((void*)0), VAR_0, "%d %02x %02x\n", VAR_7, VAR_4[VAR_8][VAR_7], VAR_10[VAR_7]);
+                VAR_9 = 1;
+            }
+        }
+        FUNC_1(VAR_12, VAR_10, VAR_4[VAR_8], 1, ((void*)0), 1);
+        for (VAR_7 = 0; VAR_7 < 16; VAR_7++) {
+            if (VAR_5[VAR_7] != VAR_10[VAR_7]) {
+                FUNC_4(((void*)0), VAR_0, "%d %02x %02x\n", VAR_7, VAR_5[VAR_7], VAR_10[VAR_7]);
+                VAR_9 = 1;
+            }
+        }
+    }
+    FUNC_2(VAR_12, VAR_3[0], 128);
+    FUNC_5(VAR_11, "HALLO123HALLO123", 16);
+    FUNC_1(VAR_12, VAR_10, VAR_5, 2, VAR_11, 0);
+    FUNC_5(VAR_11, "HALLO123HALLO123", 16);
+    FUNC_1(VAR_12, VAR_10, VAR_10, 2, VAR_11, 1);
+    for (VAR_7 = 0; VAR_7 < 32; VAR_7++) {
+        if (VAR_5[VAR_7] != VAR_10[VAR_7]) {
+            FUNC_4(((void*)0), VAR_0, "%d %02x %02x\n", VAR_7, VAR_5[VAR_7], VAR_10[VAR_7]);
+            VAR_9 = 1;
+        }
+    }
+    FUNC_3(VAR_12);
+    return VAR_9;
+}

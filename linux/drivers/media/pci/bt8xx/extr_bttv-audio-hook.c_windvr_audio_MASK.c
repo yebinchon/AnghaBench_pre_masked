@@ -1,0 +1,57 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct v4l2_tuner {int audmode; int rxsubchans; } ;
+struct bttv {int dummy; } ;
+
+
+ int VAR_0 ;
+
+
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ scalar_t__ VAR_5 ;
+ int FUNC_0 (struct bttv*,char*) ;
+ int FUNC_1 (int,unsigned long) ;
+
+void FUNC_2(struct bttv *VAR_6, struct v4l2_tuner *VAR_7, int VAR_8)
+{
+ unsigned long VAR_9;
+
+ if (!VAR_8) {
+
+  VAR_7->audmode = VAR_0;
+  VAR_7->rxsubchans = VAR_3 |
+    VAR_4 |
+    VAR_1 |
+    VAR_2;
+
+  return;
+ }
+
+ switch (VAR_7->audmode) {
+ case 128:
+  VAR_9 = 0x040000;
+  break;
+ case 129:
+  VAR_9 = 0x100000;
+  break;
+ default:
+  return;
+ }
+
+ FUNC_1(0x140000, VAR_9);
+ if (VAR_5)
+  FUNC_0(VAR_6, "windvr");
+}

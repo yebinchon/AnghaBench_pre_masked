@@ -1,0 +1,47 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_3__ {int * HCCtx; int * fastCtx; } ;
+typedef int LZ4_stream_t ;
+typedef int LZ4_streamHC_t ;
+typedef scalar_t__ LZ4F_blockMode_t ;
+typedef TYPE_1__ LZ4F_CDict ;
+
+
+ scalar_t__ VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (int *,int *) ;
+ int FUNC_1 (int *,int *) ;
+ int FUNC_2 (int *,int) ;
+ int FUNC_3 (int *) ;
+
+__attribute__((used)) static void FUNC_4(void* VAR_2,
+                            const LZ4F_CDict* VAR_3,
+                            int VAR_4,
+                            LZ4F_blockMode_t VAR_5) {
+    if (VAR_4 < VAR_1) {
+        if (VAR_3 != ((void*)0) || VAR_5 == VAR_0) {
+
+
+
+
+
+
+            FUNC_3((LZ4_stream_t*)VAR_2);
+        }
+        FUNC_1((LZ4_stream_t *)VAR_2, VAR_3 ? VAR_3->fastCtx : ((void*)0));
+    } else {
+        FUNC_2((LZ4_streamHC_t*)VAR_2, VAR_4);
+        FUNC_0((LZ4_streamHC_t *)VAR_2, VAR_3 ? VAR_3->HCCtx : ((void*)0));
+    }
+}

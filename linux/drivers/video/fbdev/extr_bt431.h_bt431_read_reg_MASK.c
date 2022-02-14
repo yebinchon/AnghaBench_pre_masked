@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+struct bt431_regs {int dummy; } ;
+
+
+ int FUNC_0 (struct bt431_regs*) ;
+ int FUNC_1 (struct bt431_regs*,int) ;
+
+__attribute__((used)) static inline u8 FUNC_2(struct bt431_regs *VAR_0, int VAR_1)
+{
+ FUNC_1(VAR_0, VAR_1);
+ return FUNC_0(VAR_0);
+}

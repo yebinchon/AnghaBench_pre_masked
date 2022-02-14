@@ -1,0 +1,23 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct dma_desc {scalar_t__ des3; scalar_t__ des2; scalar_t__ des1; scalar_t__ des0; } ;
+
+
+
+__attribute__((used)) static void FUNC_0(struct dma_desc *VAR_0, int VAR_1, int VAR_2)
+{
+ VAR_0->des0 = 0;
+ VAR_0->des1 = 0;
+ VAR_0->des2 = 0;
+ VAR_0->des3 = 0;
+}

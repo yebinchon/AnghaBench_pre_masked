@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int LPWSTR ;
+typedef int INT ;
+typedef int BOOL ;
+
+
+ int FUNC_0 (int ,char*) ;
+ int VAR_0 ;
+ int VAR_1 ;
+
+BOOL FUNC_1(INT VAR_2, LPWSTR *VAR_3)
+{
+    FUNC_0(VAR_0, L"\nTODO: Add code later since Win 7 Home Premium doesn't have this feature.\n");
+    return VAR_1;
+}

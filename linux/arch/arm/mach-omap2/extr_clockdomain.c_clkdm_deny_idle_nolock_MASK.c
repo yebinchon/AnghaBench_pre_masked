@@ -1,0 +1,56 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_3__ {int ptr; } ;
+struct clockdomain {int flags; TYPE_1__ pwrdm; int _flags; int name; int forcewake_count; } ;
+struct TYPE_4__ {int (* clkdm_deny_idle ) (struct clockdomain*) ;} ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ TYPE_2__* VAR_4 ;
+ int FUNC_0 (struct clockdomain*) ;
+ int FUNC_1 (char*,int ) ;
+ int FUNC_2 (int ) ;
+ int FUNC_3 (struct clockdomain*) ;
+
+void FUNC_4(struct clockdomain *VAR_5)
+{
+ if (!VAR_5)
+  return;
+
+ if (VAR_5->forcewake_count++)
+  return;
+
+ if (VAR_5->flags & VAR_1)
+  FUNC_0(VAR_5);
+
+ if (!(VAR_5->flags & VAR_0))
+  return;
+
+ if (VAR_5->flags & VAR_2)
+  return;
+
+ if (!VAR_4 || !VAR_4->clkdm_deny_idle)
+  return;
+
+ FUNC_1("clockdomain: disabling automatic idle transitions for %s\n",
+   VAR_5->name);
+
+ VAR_5->_flags &= ~VAR_3;
+ VAR_4->clkdm_deny_idle(VAR_5);
+ FUNC_2(VAR_5->pwrdm.ptr);
+}

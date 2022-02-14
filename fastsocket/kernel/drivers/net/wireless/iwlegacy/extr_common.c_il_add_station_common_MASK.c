@@ -1,0 +1,95 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_3__ ;
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+typedef size_t u8 ;
+struct il_priv {int sta_lock; TYPE_2__* stations; } ;
+struct il_addsta_cmd {int dummy; } ;
+struct ieee80211_sta {int dummy; } ;
+struct TYPE_4__ {size_t const* addr; } ;
+struct TYPE_6__ {TYPE_1__ sta; } ;
+struct TYPE_5__ {int used; TYPE_3__ sta; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (char*,size_t,size_t const*) ;
+ int FUNC_1 (char*,size_t) ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_2 (char*,size_t const*) ;
+ size_t VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ size_t FUNC_3 (struct il_priv*,size_t const*,int,struct ieee80211_sta*) ;
+ int FUNC_4 (struct il_priv*,struct il_addsta_cmd*,int ) ;
+ int FUNC_5 (struct il_addsta_cmd*,TYPE_3__*,int) ;
+ int FUNC_6 (int *,unsigned long) ;
+ int FUNC_7 (int *,unsigned long) ;
+
+int
+FUNC_8(struct il_priv *VAR_7, const u8 *VAR_8, bool VAR_9,
+        struct ieee80211_sta *VAR_10, u8 *VAR_11)
+{
+ unsigned long VAR_12;
+ int VAR_13 = 0;
+ u8 VAR_14;
+ struct il_addsta_cmd VAR_15;
+
+ *VAR_11 = 0;
+ FUNC_6(&VAR_7->sta_lock, VAR_12);
+ VAR_14 = FUNC_3(VAR_7, VAR_8, VAR_9, VAR_10);
+ if (VAR_14 == VAR_3) {
+  FUNC_2("Unable to prepare station %pM for addition\n", VAR_8);
+  FUNC_7(&VAR_7->sta_lock, VAR_12);
+  return -VAR_2;
+ }
+
+
+
+
+
+
+ if (VAR_7->stations[VAR_14].used & VAR_6) {
+  FUNC_1("STA %d already in process of being added.\n", VAR_14);
+  FUNC_7(&VAR_7->sta_lock, VAR_12);
+  return -VAR_1;
+ }
+
+ if ((VAR_7->stations[VAR_14].used & VAR_4) &&
+     (VAR_7->stations[VAR_14].used & VAR_5)) {
+  FUNC_0("STA %d (%pM) already added, not adding again.\n",
+   VAR_14, VAR_8);
+  FUNC_7(&VAR_7->sta_lock, VAR_12);
+  return -VAR_1;
+ }
+
+ VAR_7->stations[VAR_14].used |= VAR_6;
+ FUNC_5(&VAR_15, &VAR_7->stations[VAR_14].sta,
+        sizeof(struct il_addsta_cmd));
+ FUNC_7(&VAR_7->sta_lock, VAR_12);
+
+
+ VAR_13 = FUNC_4(VAR_7, &VAR_15, VAR_0);
+ if (VAR_13) {
+  FUNC_6(&VAR_7->sta_lock, VAR_12);
+  FUNC_2("Adding station %pM failed.\n",
+         VAR_7->stations[VAR_14].sta.sta.addr);
+  VAR_7->stations[VAR_14].used &= ~VAR_4;
+  VAR_7->stations[VAR_14].used &= ~VAR_6;
+  FUNC_7(&VAR_7->sta_lock, VAR_12);
+ }
+ *VAR_11 = VAR_14;
+ return VAR_13;
+}

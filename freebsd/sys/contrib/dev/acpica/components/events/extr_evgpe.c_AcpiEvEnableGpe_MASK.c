@@ -1,0 +1,37 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int ACPI_STATUS ;
+typedef int ACPI_GPE_EVENT_INFO ;
+
+
+ int FUNC_0 (int ) ;
+ int VAR_0 ;
+ int FUNC_1 (int *,int ) ;
+ int VAR_1 ;
+ int FUNC_2 (int ) ;
+
+ACPI_STATUS
+FUNC_3 (
+    ACPI_GPE_EVENT_INFO *VAR_2)
+{
+    ACPI_STATUS VAR_3;
+
+
+    FUNC_0 (VAR_1);
+
+
+
+
+    VAR_3 = FUNC_1 (VAR_2, VAR_0);
+    FUNC_2 (VAR_3);
+}

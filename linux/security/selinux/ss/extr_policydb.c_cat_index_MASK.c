@@ -1,0 +1,38 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int nprim; } ;
+struct policydb {void*** sym_val_to_name; TYPE_1__ p_cats; } ;
+struct cat_datum {int value; int isalias; } ;
+
+
+ int VAR_0 ;
+ size_t VAR_1 ;
+
+__attribute__((used)) static int FUNC_0(void *VAR_2, void *VAR_3, void *VAR_4)
+{
+ struct policydb *VAR_5;
+ struct cat_datum *VAR_6;
+
+ VAR_6 = VAR_3;
+ VAR_5 = VAR_4;
+
+ if (!VAR_6->isalias) {
+  if (!VAR_6->value || VAR_6->value > VAR_5->p_cats.nprim)
+   return -VAR_0;
+
+  VAR_5->sym_val_to_name[VAR_1][VAR_6->value - 1] = VAR_2;
+ }
+
+ return 0;
+}

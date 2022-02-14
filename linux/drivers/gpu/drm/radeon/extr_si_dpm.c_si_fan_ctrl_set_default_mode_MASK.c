@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct si_power_info {int fan_ctrl_is_in_default_mode; int t_min; int fan_ctrl_default_mode; } ;
+struct radeon_device {int dummy; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ) ;
+ int VAR_1 ;
+ int FUNC_1 (int ) ;
+ int FUNC_2 (int ) ;
+ int VAR_2 ;
+ int FUNC_3 (int ,int) ;
+ struct si_power_info* FUNC_4 (struct radeon_device*) ;
+
+__attribute__((used)) static void FUNC_5(struct radeon_device *VAR_3)
+{
+ struct si_power_info *VAR_4 = FUNC_4(VAR_3);
+ u32 VAR_5;
+
+ if (!VAR_4->fan_ctrl_is_in_default_mode) {
+  VAR_5 = FUNC_1(VAR_0) & ~VAR_1;
+  VAR_5 |= FUNC_0(VAR_4->fan_ctrl_default_mode);
+  FUNC_3(VAR_0, VAR_5);
+
+  VAR_5 = FUNC_1(VAR_0) & ~VAR_2;
+  VAR_5 |= FUNC_2(VAR_4->t_min);
+  FUNC_3(VAR_0, VAR_5);
+  VAR_4->fan_ctrl_is_in_default_mode = 1;
+ }
+}

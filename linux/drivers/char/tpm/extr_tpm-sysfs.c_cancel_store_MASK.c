@@ -1,0 +1,37 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct tpm_chip {TYPE_1__* ops; } ;
+struct device_attribute {int dummy; } ;
+struct device {int dummy; } ;
+typedef size_t ssize_t ;
+struct TYPE_2__ {int (* cancel ) (struct tpm_chip*) ;} ;
+
+
+ int FUNC_0 (struct tpm_chip*) ;
+ struct tpm_chip* FUNC_1 (struct device*) ;
+ int FUNC_2 (struct tpm_chip*) ;
+ scalar_t__ FUNC_3 (struct tpm_chip*) ;
+
+__attribute__((used)) static ssize_t FUNC_4(struct device *VAR_0, struct device_attribute *VAR_1,
+       const char *VAR_2, size_t VAR_3)
+{
+ struct tpm_chip *VAR_4 = FUNC_1(VAR_0);
+
+ if (FUNC_3(VAR_4))
+  return 0;
+
+ VAR_4->ops->cancel(VAR_4);
+ FUNC_2(VAR_4);
+ return VAR_3;
+}

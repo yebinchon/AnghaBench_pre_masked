@@ -1,0 +1,44 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct mlxsw_sp_acl_tcam_region {int id; } ;
+struct mlxsw_sp_acl_erp_table {int erp_index_bitmap; int base_index; TYPE_2__* erp_core; TYPE_1__* aregion; } ;
+struct mlxsw_sp {int core; } ;
+struct TYPE_4__ {struct mlxsw_sp* mlxsw_sp; } ;
+struct TYPE_3__ {struct mlxsw_sp_acl_tcam_region* region; } ;
+
+
+ int FUNC_0 (int ) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_1 (char*,int ,int ) ;
+ int FUNC_2 (char*,int ,int,int,int ,int ,int ) ;
+ int FUNC_3 (int ,int ,char*) ;
+ int VAR_2 ;
+
+__attribute__((used)) static int
+FUNC_4(struct mlxsw_sp_acl_erp_table *VAR_3,
+         bool VAR_4)
+{
+ struct mlxsw_sp_acl_tcam_region *VAR_5 = VAR_3->aregion->region;
+ struct mlxsw_sp *VAR_6 = VAR_3->erp_core->mlxsw_sp;
+ char VAR_7[VAR_0];
+
+ FUNC_2(VAR_7, VAR_5->id, VAR_4, 1, 0,
+         VAR_3->base_index, 0);
+ FUNC_1(VAR_7, VAR_3->erp_index_bitmap,
+      VAR_1);
+
+ return FUNC_3(VAR_6->core, FUNC_0(VAR_2), VAR_7);
+}

@@ -1,0 +1,39 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ata_queued_cmd {struct ata_device* dev; struct ata_port* ap; } ;
+struct ata_port {struct ata_device* private_data; } ;
+struct ata_device {int dummy; } ;
+
+
+ unsigned int FUNC_0 (struct ata_queued_cmd*) ;
+ scalar_t__ FUNC_1 (struct ata_device*) ;
+ scalar_t__ FUNC_2 (struct ata_device*) ;
+ int FUNC_3 (struct ata_port*,struct ata_device*) ;
+
+__attribute__((used)) static unsigned int FUNC_4(struct ata_queued_cmd *VAR_0)
+{
+ struct ata_port *VAR_1 = VAR_0->ap;
+ struct ata_device *VAR_2 = VAR_0->dev;
+ struct ata_device *VAR_3 = VAR_1->private_data;
+
+
+ if (FUNC_1(VAR_2) && VAR_2 != VAR_3 && VAR_3 != ((void*)0)) {
+
+  if ((FUNC_2(VAR_2) && !FUNC_2(VAR_3)) ||
+      (FUNC_2(VAR_3) && !FUNC_2(VAR_2)))
+
+       FUNC_3(VAR_1, VAR_2);
+ }
+
+ return FUNC_0(VAR_0);
+}

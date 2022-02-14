@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int vlc_inhibit_t ;
+struct TYPE_2__ {int module; } ;
+typedef TYPE_1__ inhibit_t ;
+
+
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int *,int ) ;
+ int FUNC_2 (int *) ;
+
+void FUNC_3 (vlc_inhibit_t *VAR_0)
+{
+    FUNC_0 (VAR_0 != ((void*)0));
+
+    FUNC_1 (VAR_0, ((inhibit_t *)VAR_0)->module);
+    FUNC_2(VAR_0);
+}

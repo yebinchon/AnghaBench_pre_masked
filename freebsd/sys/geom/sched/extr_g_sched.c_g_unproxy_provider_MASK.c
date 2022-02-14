@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct g_provider {struct g_geom* geom; } ;
+struct g_geom {int dummy; } ;
+
+
+ int FUNC_0 (struct g_provider*,struct g_geom*,struct g_provider*) ;
+
+__attribute__((used)) static inline void
+FUNC_1(struct g_provider *VAR_0, struct g_provider *VAR_1)
+{
+ struct g_geom *VAR_2 = VAR_0->geom;
+
+ FUNC_0(VAR_0, VAR_1->geom, VAR_1);
+
+
+
+
+
+
+ FUNC_0(VAR_1, VAR_2, ((void*)0));
+}

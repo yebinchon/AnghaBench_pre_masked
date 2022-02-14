@@ -1,0 +1,47 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_3__ ;
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+typedef int u8 ;
+struct TYPE_5__ {int CR1; int CR2; int CR3; int HIRQ; } ;
+struct TYPE_4__ {int vidplaymode; int dectimingmode; int outmode; int slmode; } ;
+struct TYPE_6__ {TYPE_2__ reg; int status; TYPE_1__ mpegmode; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ TYPE_3__* VAR_2 ;
+ int FUNC_0 (int ) ;
+
+void FUNC_1(void) {
+   u8 VAR_3=VAR_2->reg.CR1 & 0xFF;
+   u8 VAR_4=VAR_2->reg.CR2 >> 8;
+   u8 VAR_5=VAR_2->reg.CR2 & 0xFF;
+   u8 VAR_6=VAR_2->reg.CR3 >> 8;
+
+   if (VAR_3 != 0xFF)
+      VAR_2->mpegmode.vidplaymode = VAR_3;
+
+   if (VAR_4 != 0xFF)
+      VAR_2->mpegmode.dectimingmode = VAR_4;
+
+   if (VAR_5 != 0xFF)
+      VAR_2->mpegmode.outmode = VAR_5;
+
+   if (VAR_6 != 0xFF)
+      VAR_2->mpegmode.slmode = VAR_6;
+
+   FUNC_0(VAR_2->status);
+   VAR_2->reg.HIRQ |= VAR_0 | VAR_1;
+}

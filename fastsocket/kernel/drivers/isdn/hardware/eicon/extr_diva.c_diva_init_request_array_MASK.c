@@ -1,0 +1,75 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int VAR_8 ;
+ int VAR_9 ;
+ int VAR_10 ;
+ int VAR_11 ;
+ int VAR_12 ;
+ int VAR_13 ;
+ int VAR_14 ;
+ int VAR_15 ;
+ int VAR_16 ;
+ int VAR_17 ;
+ int VAR_18 ;
+ int VAR_19 ;
+ int VAR_20 ;
+ int VAR_21 ;
+ int VAR_22 ;
+ int VAR_23 ;
+ int VAR_24 ;
+ int VAR_25 ;
+ int VAR_26 ;
+ int VAR_27 ;
+ int VAR_28 ;
+ int VAR_29 ;
+ int VAR_30 ;
+ int VAR_31 ;
+ int * VAR_32 ;
+
+__attribute__((used)) static void FUNC_0(void)
+{
+ VAR_32[0] = VAR_0;
+ VAR_32[1] = VAR_1;
+ VAR_32[2] = VAR_12;
+ VAR_32[3] = VAR_23;
+ VAR_32[4] = VAR_26;
+ VAR_32[5] = VAR_27;
+ VAR_32[6] = VAR_28;
+ VAR_32[7] = VAR_29;
+ VAR_32[8] = VAR_30;
+ VAR_32[9] = VAR_31;
+ VAR_32[10] = VAR_2;
+ VAR_32[11] = VAR_3;
+ VAR_32[12] = VAR_4;
+ VAR_32[13] = VAR_5;
+ VAR_32[14] = VAR_6;
+ VAR_32[15] = VAR_7;
+ VAR_32[16] = VAR_8;
+ VAR_32[17] = VAR_9;
+ VAR_32[18] = VAR_10;
+ VAR_32[19] = VAR_11;
+ VAR_32[20] = VAR_13;
+ VAR_32[21] = VAR_14;
+ VAR_32[22] = VAR_15;
+ VAR_32[23] = VAR_16;
+ VAR_32[24] = VAR_17;
+ VAR_32[25] = VAR_18;
+ VAR_32[26] = VAR_19;
+ VAR_32[27] = VAR_20;
+ VAR_32[28] = VAR_21;
+ VAR_32[29] = VAR_22;
+ VAR_32[30] = VAR_24;
+ VAR_32[31] = VAR_25;
+}

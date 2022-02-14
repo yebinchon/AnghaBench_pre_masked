@@ -1,0 +1,95 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int UINT ;
+typedef scalar_t__ INT ;
+typedef int DWORD ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int VAR_8 ;
+ int VAR_9 ;
+ int VAR_10 ;
+ int VAR_11 ;
+ int VAR_12 ;
+ int VAR_13 ;
+ int VAR_14 ;
+ int VAR_15 ;
+ int VAR_16 ;
+ int VAR_17 ;
+ int VAR_18 ;
+ int VAR_19 ;
+ int VAR_20 ;
+ int VAR_21 ;
+ int VAR_22 ;
+ int VAR_23 ;
+ int FUNC_0 (int ,int ,char*) ;
+ int FUNC_1 (int ,char*) ;
+ int FUNC_2 (char*,...) ;
+
+void
+FUNC_3(DWORD *VAR_24, char *VAR_25)
+{
+    UINT VAR_26;
+    INT VAR_27;
+
+    FUNC_2("dumping the CallBackFlags from %s\n",VAR_25);
+    FUNC_2("pCallBackFlags[0] : ");
+
+    VAR_26=VAR_24[0];
+    VAR_27=0;
+    FUNC_0(VAR_26,VAR_0,"DDHAL_CB32_CANCREATESURFACE");
+    FUNC_0(VAR_26,VAR_1,"DDHAL_CB32_CREATEPALETTE");
+    FUNC_0(VAR_26,VAR_2,"DDHAL_CB32_CREATESURFACE");
+    FUNC_0(VAR_26,VAR_3,"DDHAL_CB32_GETSCANLINE");
+    FUNC_0(VAR_26,VAR_4,"DDHAL_CB32_MAPMEMORY");
+    FUNC_0(VAR_26,VAR_5,"DDHAL_CB32_SETCOLORKEY");
+    FUNC_0(VAR_26,VAR_6,"DDHAL_CB32_SETMODE");
+    FUNC_0(VAR_26,VAR_7,"DDHAL_CB32_WAITFORVERTICALBLANK");
+    FUNC_1(VAR_26,"pCallBackFlags[0]");
+
+
+    FUNC_2("pCallBackFlags[1] : ");
+    VAR_26 = VAR_24[1];
+    VAR_27 = 0;
+    FUNC_0(VAR_26,VAR_10,"DDHAL_SURFCB32_ADDATTACHEDSURFACE");
+    FUNC_0(VAR_26,VAR_11,"DDHAL_SURFCB32_BLT");
+    FUNC_0(VAR_26,VAR_12,"DDHAL_SURFCB32_DESTROYSURFACE");
+    FUNC_0(VAR_26,VAR_13,"DDHAL_SURFCB32_FLIP");
+    FUNC_0(VAR_26,VAR_14,"DDHAL_SURFCB32_GETBLTSTATUS");
+    FUNC_0(VAR_26,VAR_15,"DDHAL_SURFCB32_GETFLIPSTATUS");
+    FUNC_0(VAR_26,VAR_16,"DDHAL_SURFCB32_LOCK");
+    FUNC_0(VAR_26,VAR_17,"DDHAL_SURFCB32_RESERVED4");
+    FUNC_0(VAR_26,VAR_18,"DDHAL_SURFCB32_SETCLIPLIST");
+    FUNC_0(VAR_26,VAR_19,"DDHAL_SURFCB32_SETCOLORKEY");
+    FUNC_0(VAR_26,VAR_20,"DDHAL_SURFCB32_SETOVERLAYPOSITION");
+    FUNC_0(VAR_26,VAR_21,"DDHAL_SURFCB32_SETPALETTE");
+    FUNC_0(VAR_26,VAR_22,"DDHAL_SURFCB32_UNLOCK");
+    FUNC_0(VAR_26,VAR_23,"DDHAL_SURFCB32_UPDATEOVERLAY");
+    FUNC_1(VAR_26,"pCallBackFlags[1]");
+
+
+
+    FUNC_2("pCallBackFlags[2] : ");
+    VAR_26 = VAR_24[2];
+    VAR_27 = 0;
+    FUNC_0(VAR_26,VAR_8,"DDHAL_PALCB32_DESTROYPALETTE");
+    FUNC_0(VAR_26,VAR_9,"DDHAL_PALCB32_SETENTRIES");
+    FUNC_1(VAR_26,"pCallBackFlags[2]");
+}

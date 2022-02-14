@@ -1,0 +1,70 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int stbi ;
+struct TYPE_2__ {int size; int channel; void* type; } ;
+typedef TYPE_1__ pic_packet_t ;
+typedef int packets ;
+
+
+ scalar_t__ FUNC_0 (int *) ;
+ int FUNC_1 (int *) ;
+ int FUNC_2 (int *) ;
+ void* FUNC_3 (int *) ;
+ int FUNC_4 (int *,int) ;
+ int FUNC_5 (int *) ;
+
+__attribute__((used)) static int FUNC_6(stbi *VAR_0, int *VAR_1, int *VAR_2, int *VAR_3)
+{
+   int VAR_4=0,VAR_5=0,VAR_6;
+   pic_packet_t VAR_7[10];
+
+   FUNC_4(VAR_0, 92);
+
+   *VAR_1 = FUNC_1(VAR_0);
+   *VAR_2 = FUNC_1(VAR_0);
+   if (FUNC_0(VAR_0)) return 0;
+   if ( (*VAR_1) != 0 && (1 << 28) / (*VAR_1) < (*VAR_2)) {
+       FUNC_5( VAR_0 );
+       return 0;
+   }
+
+   FUNC_4(VAR_0, 8);
+
+   do {
+      pic_packet_t *VAR_8;
+
+      if (VAR_5==sizeof(VAR_7)/sizeof(VAR_7[0]))
+         return 0;
+
+      VAR_8 = &VAR_7[VAR_5++];
+      VAR_6 = FUNC_2(VAR_0);
+      VAR_8->size = FUNC_3(VAR_0);
+      VAR_8->type = FUNC_3(VAR_0);
+      VAR_8->channel = FUNC_3(VAR_0);
+      VAR_4 |= VAR_8->channel;
+
+      if (FUNC_0(VAR_0)) {
+          FUNC_5( VAR_0 );
+          return 0;
+      }
+      if (VAR_8->size != 8) {
+          FUNC_5( VAR_0 );
+          return 0;
+      }
+   } while (VAR_6);
+
+   *VAR_3 = (VAR_4 & 0x10 ? 4 : 3);
+
+   return 1;
+}

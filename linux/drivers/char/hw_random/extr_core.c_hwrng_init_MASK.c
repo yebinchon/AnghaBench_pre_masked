@@ -1,0 +1,56 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct hwrng {int (* init ) (struct hwrng*) ;scalar_t__ quality; int cleanup_done; int ref; } ;
+
+
+ int FUNC_0 (struct hwrng*) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ FUNC_1 (int *) ;
+ int FUNC_2 (int *) ;
+ int FUNC_3 (scalar_t__) ;
+ int FUNC_4 (int *) ;
+ int FUNC_5 () ;
+ int FUNC_6 (struct hwrng*) ;
+
+__attribute__((used)) static int FUNC_7(struct hwrng *VAR_3)
+{
+ if (FUNC_1(&VAR_3->ref))
+  goto skip_init;
+
+ if (VAR_3->init) {
+  int VAR_4;
+
+  VAR_4 = VAR_3->init(VAR_3);
+  if (VAR_4)
+   return VAR_4;
+ }
+
+ FUNC_2(&VAR_3->ref);
+ FUNC_4(&VAR_3->cleanup_done);
+
+skip_init:
+ FUNC_0(VAR_3);
+
+ VAR_0 = VAR_3->quality ? : VAR_1;
+ if (VAR_0 > 1024)
+  VAR_0 = 1024;
+
+ if (VAR_0 == 0 && VAR_2)
+  FUNC_3(VAR_2);
+ if (VAR_0 > 0 && !VAR_2)
+  FUNC_5();
+
+ return 0;
+}

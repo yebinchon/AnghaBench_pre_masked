@@ -1,0 +1,69 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_4__ {int swizzle; } ;
+struct shader_reg {int * rel_reg; int srcmod; TYPE_2__ u; int regnum; int type; } ;
+struct instruction {struct shader_reg* src; scalar_t__ comptype; void* shift; void* dstmod; int opcode; } ;
+struct asm_parser {int status; int shader; TYPE_1__* funcs; } ;
+struct TYPE_3__ {int (* dstreg ) (struct asm_parser*,struct instruction*,struct shader_reg const*) ;} ;
+typedef void* DWORD ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int FUNC_0 (char*) ;
+ int VAR_4 ;
+ int FUNC_1 (struct shader_reg*,int) ;
+ int FUNC_2 (int ,struct instruction*) ;
+ struct instruction* FUNC_3 (int) ;
+ int FUNC_4 (int *,int ) ;
+ int FUNC_5 (struct asm_parser*,struct instruction*,struct shader_reg const*) ;
+
+__attribute__((used)) static void FUNC_6(struct asm_parser *VAR_5, DWORD VAR_6, DWORD VAR_7,
+                                const struct shader_reg *VAR_8,
+                                const struct shader_reg *VAR_9) {
+    struct instruction *VAR_10 = FUNC_3(2);
+
+    if(!VAR_10) {
+        FUNC_0("Error allocating memory for the instruction\n");
+        FUNC_4(&VAR_5->status, VAR_4);
+        return;
+    }
+
+    VAR_10->opcode = VAR_0;
+    VAR_10->dstmod = VAR_6;
+    VAR_10->shift = VAR_7;
+    VAR_10->comptype = 0;
+
+    VAR_5->funcs->dstreg(VAR_5, VAR_10, VAR_8);
+
+    VAR_10->src[0] = *VAR_9;
+
+
+
+
+    FUNC_1(&VAR_10->src[1], sizeof(VAR_10->src[1]));
+    VAR_10->src[1].type = VAR_1;
+    VAR_10->src[1].regnum = VAR_8->regnum;
+    VAR_10->src[1].u.swizzle = VAR_3;
+    VAR_10->src[1].srcmod = VAR_2;
+    VAR_10->src[1].rel_reg = ((void*)0);
+
+    if(!FUNC_2(VAR_5->shader, VAR_10)) {
+        FUNC_0("Out of memory\n");
+        FUNC_4(&VAR_5->status, VAR_4);
+    }
+}

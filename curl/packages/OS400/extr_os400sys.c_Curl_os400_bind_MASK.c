@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct sockaddr_storage {int dummy; } ;
+struct sockaddr {int dummy; } ;
+
+
+ int FUNC_0 (int,struct sockaddr*,int) ;
+ int FUNC_1 (struct sockaddr_storage*,struct sockaddr*,int) ;
+
+int
+FUNC_2(int VAR_0, struct sockaddr * VAR_1, int VAR_2)
+{
+  int VAR_3;
+  struct sockaddr_storage VAR_4;
+
+  VAR_3 = FUNC_1(&VAR_4, VAR_1, VAR_2);
+
+  if(VAR_3 < 0)
+    return -1;
+
+  return FUNC_0(VAR_0, (struct sockaddr *) &VAR_4, VAR_3);
+}

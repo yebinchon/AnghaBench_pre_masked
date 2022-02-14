@@ -1,0 +1,98 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+ scalar_t__ FUNC_0 (scalar_t__,char*) ;
+ scalar_t__ FUNC_1 (char*) ;
+ scalar_t__ VAR_0 ;
+ void* VAR_1 ;
+ void* VAR_2 ;
+ void* VAR_3 ;
+ void* VAR_4 ;
+ void* VAR_5 ;
+ void* VAR_6 ;
+ void* VAR_7 ;
+ void* VAR_8 ;
+ void* VAR_9 ;
+ void* VAR_10 ;
+ void* VAR_11 ;
+ void* VAR_12 ;
+ void* VAR_13 ;
+ void* VAR_14 ;
+ void* VAR_15 ;
+ void* VAR_16 ;
+ void* VAR_17 ;
+ void* VAR_18 ;
+ void* VAR_19 ;
+ void* VAR_20 ;
+ void* VAR_21 ;
+ void* VAR_22 ;
+ void* VAR_23 ;
+ void* VAR_24 ;
+ void* VAR_25 ;
+ void* VAR_26 ;
+ void* VAR_27 ;
+ void* VAR_28 ;
+ void* VAR_29 ;
+ void* VAR_30 ;
+ void* VAR_31 ;
+ void* VAR_32 ;
+ void* VAR_33 ;
+ void* VAR_34 ;
+ void* VAR_35 ;
+ void* VAR_36 ;
+ void* VAR_37 ;
+ void* VAR_38 ;
+ void* VAR_39 ;
+ void* VAR_40 ;
+ void* VAR_41 ;
+
+__attribute__((used)) static void FUNC_2(void)
+{
+  VAR_0 = FUNC_1("iphlpapi.dll");
+  if (VAR_0) {
+    VAR_30 = (void *)FUNC_0(VAR_0, "GetNumberOfInterfaces");
+    VAR_24 = (void *)FUNC_0(VAR_0, "GetIpAddrTable");
+    VAR_19 = (void *)FUNC_0(VAR_0, "GetIfEntry");
+    VAR_20 = (void *)FUNC_0(VAR_0, "GetIfEntry2");
+    VAR_16 = (void *)FUNC_0(VAR_0, "GetFriendlyIfIndex");
+    VAR_21 = (void *)FUNC_0(VAR_0, "GetIfTable");
+    VAR_22 = (void *)FUNC_0(VAR_0, "GetIfTable2");
+    VAR_25 = (void *)FUNC_0(VAR_0, "GetIpForwardTable");
+    VAR_26 = (void *)FUNC_0(VAR_0, "GetIpNetTable");
+    VAR_23 = (void *)FUNC_0(VAR_0, "GetInterfaceInfo");
+    VAR_13 = (void *)FUNC_0(VAR_0, "GetAdaptersInfo");
+    VAR_29 = (void *)FUNC_0(VAR_0, "GetNetworkParams");
+    VAR_17 = (void *)FUNC_0(VAR_0, "GetIcmpStatistics");
+    VAR_27 = (void *)FUNC_0(VAR_0, "GetIpStatistics");
+    VAR_32 = (void *)FUNC_0(VAR_0, "GetTcpStatistics");
+    VAR_35 = (void *)FUNC_0(VAR_0, "GetUdpStatistics");
+    VAR_18 = (void *)FUNC_0(VAR_0, "GetIcmpStatisticsEx");
+    VAR_28 = (void *)FUNC_0(VAR_0, "GetIpStatisticsEx");
+    VAR_33 = (void *)FUNC_0(VAR_0, "GetTcpStatisticsEx");
+    VAR_36 = (void *)FUNC_0(VAR_0, "GetUdpStatisticsEx");
+    VAR_34 = (void *)FUNC_0(VAR_0, "GetTcpTable");
+    VAR_37 = (void *)FUNC_0(VAR_0, "GetUdpTable");
+    VAR_31 = (void *)FUNC_0(VAR_0, "GetPerAdapterInfo");
+    VAR_12 = (void *)FUNC_0(VAR_0, "GetAdaptersAddresses");
+    VAR_40 = (void *)FUNC_0(VAR_0, "NotifyAddrChange");
+    VAR_1 = (void *)FUNC_0(VAR_0, "CancelIPChangeNotify");
+    VAR_14 = (void *)FUNC_0(VAR_0, "GetExtendedTcpTable");
+    VAR_15 = (void *)FUNC_0(VAR_0, "GetExtendedUdpTable");
+    VAR_41 = (void *)FUNC_0(VAR_0, "SetTcpEntry");
+    VAR_38 = (void *)FUNC_0(VAR_0, "IcmpCreateFile");
+    VAR_39 = (void *)FUNC_0(VAR_0, "IcmpSendEcho");
+    VAR_10 = (void *)FUNC_0(VAR_0, "CreateSortedAddressPairs");
+    VAR_11 = (void *)FUNC_0(VAR_0, "FreeMibTable");
+    VAR_2 = (void *)FUNC_0(VAR_0, "ConvertInterfaceGuidToLuid");
+    VAR_3 = (void *)FUNC_0(VAR_0, "ConvertInterfaceIndexToLuid");
+    VAR_4 = (void *)FUNC_0(VAR_0, "ConvertInterfaceLuidToGuid");
+    VAR_5 = (void *)FUNC_0(VAR_0, "ConvertInterfaceLuidToIndex");
+    VAR_6 = (void *)FUNC_0(VAR_0, "ConvertInterfaceLuidToNameA");
+    VAR_7 = (void *)FUNC_0(VAR_0, "ConvertInterfaceLuidToNameW");
+    VAR_8 = (void *)FUNC_0(VAR_0, "ConvertInterfaceNameToLuidA");
+    VAR_9 = (void *)FUNC_0(VAR_0, "ConvertInterfaceNameToLuidW");
+  }
+}

@@ -1,0 +1,120 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_16__ TYPE_8__ ;
+typedef struct TYPE_15__ TYPE_7__ ;
+typedef struct TYPE_14__ TYPE_6__ ;
+typedef struct TYPE_13__ TYPE_5__ ;
+typedef struct TYPE_12__ TYPE_4__ ;
+typedef struct TYPE_11__ TYPE_3__ ;
+typedef struct TYPE_10__ TYPE_2__ ;
+typedef struct TYPE_9__ TYPE_1__ ;
+
+
+struct TYPE_13__ {int is_io; int qosgrp; int get_rmt; int get_des_get_tail; int did; void* mem_region; } ;
+struct TYPE_11__ {int is_io; int index; int get_des; int get_wqp; int did; void* mem_region; } ;
+struct TYPE_9__ {int is_io; int coreid; int get_rev; int get_cur; int get_wqp; int did; void* mem_region; } ;
+struct TYPE_15__ {scalar_t__ u64; TYPE_5__ sindexload; TYPE_3__ smemload; TYPE_1__ sstatus; } ;
+typedef TYPE_7__ cvmx_pow_load_addr_t ;
+struct TYPE_16__ {TYPE_6__** sindexload; TYPE_4__** smemload; TYPE_2__** sstatus; } ;
+typedef TYPE_8__ __cvmx_pow_dump_t ;
+struct TYPE_14__ {int u64; } ;
+struct TYPE_12__ {void* u64; } ;
+struct TYPE_10__ {int u64; } ;
+
+
+ void* VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int FUNC_0 (char*) ;
+ int FUNC_1 () ;
+ int FUNC_2 () ;
+ void* FUNC_3 (scalar_t__) ;
+
+__attribute__((used)) static int FUNC_4(void *VAR_4, int VAR_5)
+{
+    __cvmx_pow_dump_t *VAR_6 = (__cvmx_pow_dump_t*)VAR_4;
+    int VAR_7;
+    int VAR_8 = FUNC_2();
+    int VAR_9;
+    int VAR_10;
+    int VAR_11;
+
+    if (VAR_5 < (int)sizeof(__cvmx_pow_dump_t))
+    {
+        FUNC_0("cvmx_pow_capture: Buffer too small\n");
+        return -1;
+    }
+
+    VAR_7 = FUNC_1();
+
+
+    for (VAR_9=0; VAR_9<VAR_7; VAR_9++)
+    {
+        cvmx_pow_load_addr_t VAR_12;
+        VAR_12.u64 = 0;
+        VAR_12.sstatus.mem_region = VAR_0;
+        VAR_12.sstatus.is_io = 1;
+        VAR_12.sstatus.did = VAR_1;
+        VAR_12.sstatus.coreid = VAR_9;
+        for (VAR_11=0; VAR_11<8; VAR_11++)
+        {
+            VAR_12.sstatus.get_rev = (VAR_11 & 1) != 0;
+            VAR_12.sstatus.get_cur = (VAR_11 & 2) != 0;
+            VAR_12.sstatus.get_wqp = (VAR_11 & 4) != 0;
+            if ((VAR_12.sstatus.get_cur == 0) && VAR_12.sstatus.get_rev)
+                VAR_6->sstatus[VAR_9][VAR_11].u64 = -1;
+            else
+                VAR_6->sstatus[VAR_9][VAR_11].u64 = FUNC_3(VAR_12.u64);
+        }
+    }
+
+
+    for (VAR_10=0; VAR_10<VAR_8; VAR_10++)
+    {
+        cvmx_pow_load_addr_t VAR_13;
+        VAR_13.u64 = 0;
+        VAR_13.smemload.mem_region = VAR_0;
+        VAR_13.smemload.is_io = 1;
+        VAR_13.smemload.did = VAR_2;
+        VAR_13.smemload.index = VAR_10;
+        for (VAR_11=0; VAR_11<3; VAR_11++)
+        {
+            VAR_13.smemload.get_des = (VAR_11 & 1) != 0;
+            VAR_13.smemload.get_wqp = (VAR_11 & 2) != 0;
+            VAR_6->smemload[VAR_10][VAR_11].u64 = FUNC_3(VAR_13.u64);
+        }
+    }
+
+
+    for (VAR_10=0; VAR_10<16; VAR_10++)
+    {
+        cvmx_pow_load_addr_t VAR_14;
+        VAR_14.u64 = 0;
+        VAR_14.sindexload.mem_region = VAR_0;
+        VAR_14.sindexload.is_io = 1;
+        VAR_14.sindexload.did = VAR_3;
+        VAR_14.sindexload.qosgrp = VAR_10;
+        for (VAR_11=0; VAR_11<4; VAR_11++)
+        {
+            VAR_14.sindexload.get_rmt = (VAR_11 & 1) != 0;
+            VAR_14.sindexload.get_des_get_tail = (VAR_11 & 2) != 0;
+
+            if ((VAR_14.sindexload.get_rmt == 0) &&
+                (VAR_14.sindexload.get_des_get_tail == 0) &&
+                (VAR_10 >= 8))
+                VAR_6->sindexload[VAR_10][VAR_11].u64 = -1;
+            else
+                VAR_6->sindexload[VAR_10][VAR_11].u64 = FUNC_3(VAR_14.u64);
+        }
+    }
+    return 0;
+}

@@ -1,0 +1,81 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_20__ TYPE_9__ ;
+typedef struct TYPE_19__ TYPE_8__ ;
+typedef struct TYPE_18__ TYPE_7__ ;
+typedef struct TYPE_17__ TYPE_6__ ;
+typedef struct TYPE_16__ TYPE_5__ ;
+typedef struct TYPE_15__ TYPE_4__ ;
+typedef struct TYPE_14__ TYPE_3__ ;
+typedef struct TYPE_13__ TYPE_2__ ;
+typedef struct TYPE_12__ TYPE_1__ ;
+typedef struct TYPE_11__ TYPE_10__ ;
+
+
+typedef union uni_ieall {int dummy; } uni_ieall ;
+typedef size_t u_int ;
+struct unicx {int dummy; } ;
+struct TYPE_20__ {int present; } ;
+struct TYPE_11__ {TYPE_9__ h; } ;
+struct TYPE_16__ {int present; } ;
+struct TYPE_17__ {TYPE_5__ h; } ;
+struct TYPE_14__ {int present; } ;
+struct TYPE_15__ {TYPE_3__ h; } ;
+struct TYPE_12__ {int present; } ;
+struct TYPE_13__ {TYPE_1__ h; } ;
+struct uni_party_alerting {TYPE_10__ unrec; TYPE_8__* git; TYPE_6__ uu; TYPE_4__ notify; TYPE_2__ epref; int hdr; } ;
+struct uni_msg {size_t* b_buf; size_t b_wptr; size_t b_rptr; } ;
+struct TYPE_18__ {int present; } ;
+struct TYPE_19__ {TYPE_7__ h; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ size_t VAR_6 ;
+ int VAR_7 ;
+ scalar_t__ FUNC_0 (int,struct uni_msg*,union uni_ieall*,struct unicx*) ;
+ scalar_t__ FUNC_1 (struct uni_msg*,int *,int ,struct unicx*,size_t*) ;
+
+__attribute__((used)) static int
+FUNC_2(struct uni_msg *VAR_8, struct uni_party_alerting *VAR_9, struct unicx *VAR_10)
+{
+ u_int VAR_11;
+ u_int VAR_12;
+
+ if(FUNC_1(VAR_8, &VAR_9->hdr, VAR_7, VAR_10, &VAR_11))
+  return (-2);
+
+ if((VAR_9->epref.h.present & VAR_3) &&
+    FUNC_0(VAR_0, VAR_8, (union uni_ieall *)&VAR_9->epref, VAR_10))
+  return (VAR_0);
+ if((VAR_9->notify.h.present & VAR_3) &&
+    FUNC_0(VAR_2, VAR_8, (union uni_ieall *)&VAR_9->notify, VAR_10))
+  return (VAR_2);
+ if((VAR_9->uu.h.present & VAR_3) &&
+    FUNC_0(VAR_5, VAR_8, (union uni_ieall *)&VAR_9->uu, VAR_10))
+  return (VAR_5);
+ for(VAR_12 = 0; VAR_12 < VAR_6; VAR_12++)
+  if((VAR_9->git[VAR_12].h.present & VAR_3) &&
+     FUNC_0(VAR_1, VAR_8, (union uni_ieall *)&VAR_9->git[VAR_12], VAR_10))
+  return ((VAR_12 << 16) + VAR_1);
+ if((VAR_9->unrec.h.present & VAR_3) &&
+    FUNC_0(VAR_4, VAR_8, (union uni_ieall *)&VAR_9->unrec, VAR_10))
+  return (VAR_4);
+
+ VAR_8->b_buf[VAR_11+0] = ((VAR_8->b_wptr-VAR_8->b_rptr)-VAR_11-2) >> 8;
+ VAR_8->b_buf[VAR_11+1] = ((VAR_8->b_wptr-VAR_8->b_rptr)-VAR_11-2) >> 0;
+
+ return (0);
+}

@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+typedef int uint32_t ;
+struct TYPE_3__ {int transferred; } ;
+typedef TYPE_1__ ocs_io_t ;
+
+
+
+void
+FUNC_0(ocs_io_t *VAR_0, uint32_t VAR_1)
+{
+ VAR_0->transferred = VAR_1;
+}

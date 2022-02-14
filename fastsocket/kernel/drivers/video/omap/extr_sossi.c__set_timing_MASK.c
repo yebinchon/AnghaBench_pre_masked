@@ -1,0 +1,45 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_2__ ;
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+typedef int u32 ;
+struct TYPE_4__ {int fck_hz; int fck; TYPE_1__* fbdev; } ;
+struct TYPE_3__ {int dev; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int ) ;
+ int FUNC_2 (int ,int) ;
+ int FUNC_3 (int ,char*,int,int,int) ;
+ TYPE_2__ VAR_1 ;
+ int FUNC_4 (int ) ;
+ int FUNC_5 (int ,int) ;
+
+__attribute__((used)) static void FUNC_6(int VAR_2, int VAR_3, int VAR_4)
+{
+ u32 VAR_5;
+
+
+
+
+
+
+ FUNC_2(VAR_1.fck, VAR_1.fck_hz / VAR_2);
+ FUNC_1(VAR_1.fck);
+ VAR_5 = FUNC_4(VAR_0);
+ VAR_5 &= ~((0x0f << 20) | (0x3f << 24));
+ VAR_5 |= (VAR_3 << 20) | (VAR_4 << 24);
+ FUNC_5(VAR_0, VAR_5);
+ FUNC_0(VAR_1.fck);
+}

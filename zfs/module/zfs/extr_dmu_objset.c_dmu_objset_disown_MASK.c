@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct TYPE_4__ {int os_dsl_dataset; } ;
+typedef TYPE_1__ objset_t ;
+typedef scalar_t__ boolean_t ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (TYPE_1__*) ;
+ int FUNC_1 (int ,int ,void*) ;
+
+void
+FUNC_2(objset_t *VAR_1, boolean_t VAR_2, void *VAR_3)
+{
+
+
+
+ FUNC_0(VAR_1);
+ FUNC_1(VAR_1->os_dsl_dataset,
+     (VAR_2) ? VAR_0 : 0, VAR_3);
+}

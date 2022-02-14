@@ -1,0 +1,39 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct a6xx_gmu {int* gx_arc_votes; int nr_gpu_freqs; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int FUNC_0 (struct a6xx_gmu*,int ) ;
+ int FUNC_1 (struct a6xx_gmu*,int ,int) ;
+
+__attribute__((used)) static int FUNC_2(struct a6xx_gmu *VAR_4)
+{
+ u32 VAR_5;
+
+
+ FUNC_1(VAR_4, VAR_1, 0);
+
+
+ VAR_5 = VAR_4->gx_arc_votes[VAR_4->nr_gpu_freqs - 1];
+
+ FUNC_1(VAR_4, VAR_2, VAR_5 & 0xff);
+ FUNC_1(VAR_4, VAR_3, (VAR_5 >> 8) & 0xff);
+
+
+ return FUNC_0(VAR_4, VAR_0);
+}

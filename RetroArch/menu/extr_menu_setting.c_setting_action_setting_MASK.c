@@ -1,0 +1,82 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct TYPE_4__ {int triggered; int idx; } ;
+struct TYPE_5__ {char const* name; char const* short_description; char const* group; char const* subgroup; char const* parent_group; double min; double max; float step; int enforce_minrange; int enforce_maxrange; int dont_use_enum_idx_representation; TYPE_1__ cmd_trigger; int * rounding_fraction; int browser_selection_type; scalar_t__ bind_type; int * get_string_representation; void* action_select; void* action_ok; int * action_cancel; int * action_down; int * action_up; int * action_right; int * action_left; int * action_start; int * read_handler; int * change_handler; scalar_t__ free_flags; scalar_t__ flags; scalar_t__ offset_by; scalar_t__ index_offset; scalar_t__ index; int * values; scalar_t__ size; int type; int enum_idx; } ;
+typedef TYPE_2__ rarch_setting_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ void* VAR_4 ;
+ int VAR_5 ;
+
+__attribute__((used)) static rarch_setting_t FUNC_0(const char* VAR_6,
+      const char* VAR_7,
+      const char *VAR_8, const char *VAR_9,
+      const char *VAR_10,
+      bool VAR_11)
+{
+   rarch_setting_t VAR_12;
+
+   VAR_12.enum_idx = VAR_1;
+   VAR_12.type = VAR_2;
+
+   VAR_12.size = 0;
+
+   VAR_12.name = VAR_6;
+   VAR_12.short_description = VAR_7;
+   VAR_12.group = VAR_8;
+   VAR_12.subgroup = VAR_9;
+   VAR_12.parent_group = VAR_10;
+   VAR_12.values = ((void*)0);
+
+   VAR_12.index = 0;
+   VAR_12.index_offset = 0;
+   VAR_12.offset_by = 0;
+
+   VAR_12.min = 0.0;
+   VAR_12.max = 0.0;
+
+   VAR_12.flags = 0;
+   VAR_12.free_flags = 0;
+
+   VAR_12.change_handler = ((void*)0);
+   VAR_12.read_handler = ((void*)0);
+   VAR_12.action_start = ((void*)0);
+   VAR_12.action_left = ((void*)0);
+   VAR_12.action_right = ((void*)0);
+   VAR_12.action_up = ((void*)0);
+   VAR_12.action_down = ((void*)0);
+   VAR_12.action_cancel = ((void*)0);
+   VAR_12.action_ok = VAR_4;
+   VAR_12.action_select = VAR_4;
+   VAR_12.get_string_representation = &VAR_5;
+
+   VAR_12.bind_type = 0;
+   VAR_12.browser_selection_type = VAR_3;
+   VAR_12.step = 0.0f;
+   VAR_12.rounding_fraction = ((void*)0);
+   VAR_12.enforce_minrange = 0;
+   VAR_12.enforce_maxrange = 0;
+
+   VAR_12.cmd_trigger.idx = VAR_0;
+   VAR_12.cmd_trigger.triggered = 0;
+
+   VAR_12.dont_use_enum_idx_representation = VAR_11;
+
+   return VAR_12;
+}

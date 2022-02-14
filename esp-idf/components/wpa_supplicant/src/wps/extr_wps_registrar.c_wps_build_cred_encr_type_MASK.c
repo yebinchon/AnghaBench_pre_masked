@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct wps_credential {int encr_type; } ;
+struct wpabuf {int dummy; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (int ,char*,int) ;
+ int FUNC_1 (struct wpabuf*,int) ;
+
+__attribute__((used)) static int FUNC_2(struct wpabuf *VAR_2,
+        const struct wps_credential *VAR_3)
+{
+ FUNC_0(VAR_1, "WPS:  * Encryption Type (0x%x)",
+     VAR_3->encr_type);
+ FUNC_1(VAR_2, VAR_0);
+ FUNC_1(VAR_2, 2);
+ FUNC_1(VAR_2, VAR_3->encr_type);
+ return 0;
+}

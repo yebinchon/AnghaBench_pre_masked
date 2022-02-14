@@ -1,0 +1,28 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int svn_error_t ;
+struct reporter_3in2_baton {int reporter3_baton; TYPE_1__* reporter3; } ;
+typedef int apr_pool_t ;
+struct TYPE_2__ {int * (* abort_report ) (int ,int *) ;} ;
+
+
+ int * FUNC_0 (int ,int *) ;
+
+__attribute__((used)) static svn_error_t *
+FUNC_1(void *VAR_0,
+             apr_pool_t *VAR_1)
+{
+  struct reporter_3in2_baton *VAR_2 = VAR_0;
+  return VAR_2->reporter3->abort_report(VAR_2->reporter3_baton, VAR_1);
+}

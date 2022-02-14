@@ -1,0 +1,119 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef scalar_t__ PFNGLUNIFORM4UI64VNVPROC ;
+typedef scalar_t__ PFNGLUNIFORM4UI64NVPROC ;
+typedef scalar_t__ PFNGLUNIFORM4I64VNVPROC ;
+typedef scalar_t__ PFNGLUNIFORM4I64NVPROC ;
+typedef scalar_t__ PFNGLUNIFORM3UI64VNVPROC ;
+typedef scalar_t__ PFNGLUNIFORM3UI64NVPROC ;
+typedef scalar_t__ PFNGLUNIFORM3I64VNVPROC ;
+typedef scalar_t__ PFNGLUNIFORM3I64NVPROC ;
+typedef scalar_t__ PFNGLUNIFORM2UI64VNVPROC ;
+typedef scalar_t__ PFNGLUNIFORM2UI64NVPROC ;
+typedef scalar_t__ PFNGLUNIFORM2I64VNVPROC ;
+typedef scalar_t__ PFNGLUNIFORM2I64NVPROC ;
+typedef scalar_t__ PFNGLUNIFORM1UI64VNVPROC ;
+typedef scalar_t__ PFNGLUNIFORM1UI64NVPROC ;
+typedef scalar_t__ PFNGLUNIFORM1I64VNVPROC ;
+typedef scalar_t__ PFNGLUNIFORM1I64NVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM4UI64VNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM4UI64NVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM4I64VNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM4I64NVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM3UI64VNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM3UI64NVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM3I64VNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM3I64NVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM2UI64VNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM2UI64NVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM2I64VNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM2I64NVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM1UI64VNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM1UI64NVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM1I64VNVPROC ;
+typedef scalar_t__ PFNGLPROGRAMUNIFORM1I64NVPROC ;
+typedef scalar_t__ PFNGLGETUNIFORMI64VNVPROC ;
+typedef scalar_t__ (* GLADloadproc ) (char*) ;
+
+
+ int VAR_0 ;
+ scalar_t__ VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ VAR_3 ;
+ scalar_t__ VAR_4 ;
+ scalar_t__ VAR_5 ;
+ scalar_t__ VAR_6 ;
+ scalar_t__ VAR_7 ;
+ scalar_t__ VAR_8 ;
+ scalar_t__ VAR_9 ;
+ scalar_t__ VAR_10 ;
+ scalar_t__ VAR_11 ;
+ scalar_t__ VAR_12 ;
+ scalar_t__ VAR_13 ;
+ scalar_t__ VAR_14 ;
+ scalar_t__ VAR_15 ;
+ scalar_t__ VAR_16 ;
+ scalar_t__ VAR_17 ;
+ scalar_t__ VAR_18 ;
+ scalar_t__ VAR_19 ;
+ scalar_t__ VAR_20 ;
+ scalar_t__ VAR_21 ;
+ scalar_t__ VAR_22 ;
+ scalar_t__ VAR_23 ;
+ scalar_t__ VAR_24 ;
+ scalar_t__ VAR_25 ;
+ scalar_t__ VAR_26 ;
+ scalar_t__ VAR_27 ;
+ scalar_t__ VAR_28 ;
+ scalar_t__ VAR_29 ;
+ scalar_t__ VAR_30 ;
+ scalar_t__ VAR_31 ;
+ scalar_t__ VAR_32 ;
+ scalar_t__ VAR_33 ;
+
+__attribute__((used)) static void FUNC_0(GLADloadproc VAR_34) {
+ if(!VAR_0) return;
+ VAR_18 = (PFNGLUNIFORM1I64NVPROC)VAR_34("glUniform1i64NV");
+ VAR_22 = (PFNGLUNIFORM2I64NVPROC)VAR_34("glUniform2i64NV");
+ VAR_26 = (PFNGLUNIFORM3I64NVPROC)VAR_34("glUniform3i64NV");
+ VAR_30 = (PFNGLUNIFORM4I64NVPROC)VAR_34("glUniform4i64NV");
+ VAR_19 = (PFNGLUNIFORM1I64VNVPROC)VAR_34("glUniform1i64vNV");
+ VAR_23 = (PFNGLUNIFORM2I64VNVPROC)VAR_34("glUniform2i64vNV");
+ VAR_27 = (PFNGLUNIFORM3I64VNVPROC)VAR_34("glUniform3i64vNV");
+ VAR_31 = (PFNGLUNIFORM4I64VNVPROC)VAR_34("glUniform4i64vNV");
+ VAR_20 = (PFNGLUNIFORM1UI64NVPROC)VAR_34("glUniform1ui64NV");
+ VAR_24 = (PFNGLUNIFORM2UI64NVPROC)VAR_34("glUniform2ui64NV");
+ VAR_28 = (PFNGLUNIFORM3UI64NVPROC)VAR_34("glUniform3ui64NV");
+ VAR_32 = (PFNGLUNIFORM4UI64NVPROC)VAR_34("glUniform4ui64NV");
+ VAR_21 = (PFNGLUNIFORM1UI64VNVPROC)VAR_34("glUniform1ui64vNV");
+ VAR_25 = (PFNGLUNIFORM2UI64VNVPROC)VAR_34("glUniform2ui64vNV");
+ VAR_29 = (PFNGLUNIFORM3UI64VNVPROC)VAR_34("glUniform3ui64vNV");
+ VAR_33 = (PFNGLUNIFORM4UI64VNVPROC)VAR_34("glUniform4ui64vNV");
+ VAR_1 = (PFNGLGETUNIFORMI64VNVPROC)VAR_34("glGetUniformi64vNV");
+ VAR_2 = (PFNGLPROGRAMUNIFORM1I64NVPROC)VAR_34("glProgramUniform1i64NV");
+ VAR_6 = (PFNGLPROGRAMUNIFORM2I64NVPROC)VAR_34("glProgramUniform2i64NV");
+ VAR_10 = (PFNGLPROGRAMUNIFORM3I64NVPROC)VAR_34("glProgramUniform3i64NV");
+ VAR_14 = (PFNGLPROGRAMUNIFORM4I64NVPROC)VAR_34("glProgramUniform4i64NV");
+ VAR_3 = (PFNGLPROGRAMUNIFORM1I64VNVPROC)VAR_34("glProgramUniform1i64vNV");
+ VAR_7 = (PFNGLPROGRAMUNIFORM2I64VNVPROC)VAR_34("glProgramUniform2i64vNV");
+ VAR_11 = (PFNGLPROGRAMUNIFORM3I64VNVPROC)VAR_34("glProgramUniform3i64vNV");
+ VAR_15 = (PFNGLPROGRAMUNIFORM4I64VNVPROC)VAR_34("glProgramUniform4i64vNV");
+ VAR_4 = (PFNGLPROGRAMUNIFORM1UI64NVPROC)VAR_34("glProgramUniform1ui64NV");
+ VAR_8 = (PFNGLPROGRAMUNIFORM2UI64NVPROC)VAR_34("glProgramUniform2ui64NV");
+ VAR_12 = (PFNGLPROGRAMUNIFORM3UI64NVPROC)VAR_34("glProgramUniform3ui64NV");
+ VAR_16 = (PFNGLPROGRAMUNIFORM4UI64NVPROC)VAR_34("glProgramUniform4ui64NV");
+ VAR_5 = (PFNGLPROGRAMUNIFORM1UI64VNVPROC)VAR_34("glProgramUniform1ui64vNV");
+ VAR_9 = (PFNGLPROGRAMUNIFORM2UI64VNVPROC)VAR_34("glProgramUniform2ui64vNV");
+ VAR_13 = (PFNGLPROGRAMUNIFORM3UI64VNVPROC)VAR_34("glProgramUniform3ui64vNV");
+ VAR_17 = (PFNGLPROGRAMUNIFORM4UI64VNVPROC)VAR_34("glProgramUniform4ui64vNV");
+}

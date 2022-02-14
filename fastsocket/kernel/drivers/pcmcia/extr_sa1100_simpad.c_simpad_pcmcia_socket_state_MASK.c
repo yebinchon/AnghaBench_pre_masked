@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct soc_pcmcia_socket {int dummy; } ;
+struct pcmcia_state {int detect; int ready; int bvd1; int bvd2; int vs_3v; scalar_t__ vs_Xv; scalar_t__ wrprot; } ;
+
+
+ unsigned long VAR_0 ;
+ unsigned long VAR_1 ;
+ unsigned long VAR_2 ;
+ long FUNC_0 () ;
+
+__attribute__((used)) static void
+FUNC_1(struct soc_pcmcia_socket *VAR_3,
+      struct pcmcia_state *VAR_4)
+{
+ unsigned long VAR_5 = VAR_2;
+ long VAR_6 = FUNC_0();
+
+ VAR_4->detect=((VAR_5 & VAR_0)==0)?1:0;
+ VAR_4->ready=(VAR_5 & VAR_1)?1:0;
+ VAR_4->bvd1=1;
+ VAR_4->bvd2=1;
+ VAR_4->wrprot=0;
+
+ if((VAR_6 & 0x0c) == 0x0c) {
+  VAR_4->vs_3v=0;
+  VAR_4->vs_Xv=0;
+ } else {
+  VAR_4->vs_3v=1;
+  VAR_4->vs_Xv=0;
+ }
+}

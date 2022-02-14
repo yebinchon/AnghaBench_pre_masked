@@ -1,0 +1,67 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int tmp ;
+typedef int (* cbc128_f ) (unsigned char const*,unsigned char*,int,void const*,unsigned char*,int ) ;
+
+
+ int FUNC_0 (unsigned char*,unsigned char const*,int) ;
+ int FUNC_1 (unsigned char*,int ,int) ;
+ int FUNC_2 (unsigned char const*,unsigned char*,int,void const*,unsigned char*,int ) ;
+ int FUNC_3 (unsigned char const*,unsigned char*,int,void const*,unsigned char*,int ) ;
+ int FUNC_4 (unsigned char const*,unsigned char*,int,void const*,unsigned char*,int ) ;
+ int FUNC_5 (unsigned char const*,unsigned char*,int,void const*,unsigned char*,int ) ;
+ int FUNC_6 (unsigned char const*,unsigned char*,int,void const*,unsigned char*,int ) ;
+
+size_t FUNC_7(const unsigned char *VAR_0, unsigned char *VAR_1,
+                                 size_t VAR_2, const void *VAR_3,
+                                 unsigned char VAR_4[16], cbc128_f VAR_5)
+{
+    size_t VAR_6;
+    union {
+        size_t align;
+        unsigned char c[32];
+    } VAR_7;
+
+    if (VAR_2 < 16)
+        return 0;
+
+    VAR_6 = VAR_2 % 16;
+
+    if (VAR_6 == 0) {
+        (*VAR_5) (VAR_0, VAR_1, VAR_2, VAR_3, VAR_4, 0);
+        return VAR_2;
+    }
+
+    VAR_2 -= 16 + VAR_6;
+
+    if (VAR_2) {
+        (*VAR_5) (VAR_0, VAR_1, VAR_2, VAR_3, VAR_4, 0);
+        VAR_0 += VAR_2;
+        VAR_1 += VAR_2;
+    }
+
+    FUNC_1(VAR_7.c, 0, sizeof(VAR_7));
+
+
+
+    (*VAR_5) (VAR_0 + VAR_6, VAR_7.c, 16, VAR_3, VAR_7.c + 16, 0);
+
+    FUNC_0(VAR_7.c, VAR_0, VAR_6);
+
+
+
+    (*VAR_5) (VAR_7.c, VAR_7.c, 32, VAR_3, VAR_4, 0);
+    FUNC_0(VAR_1, VAR_7.c, 16 + VAR_6);
+
+    return 16 + VAR_2 + VAR_6;
+}

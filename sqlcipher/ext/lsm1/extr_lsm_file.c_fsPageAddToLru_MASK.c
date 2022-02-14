@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+struct TYPE_6__ {TYPE_1__* pLruLast; TYPE_1__* pLruFirst; } ;
+struct TYPE_5__ {scalar_t__ pLruNext; struct TYPE_5__* pLruPrev; } ;
+typedef TYPE_1__ Page ;
+typedef TYPE_2__ FileSystem ;
+
+
+ int FUNC_0 (int) ;
+
+__attribute__((used)) static void FUNC_1(FileSystem *VAR_0, Page *VAR_1){
+  FUNC_0( VAR_1->pLruNext==0 && VAR_1->pLruPrev==0 );
+  VAR_1->pLruPrev = VAR_0->pLruLast;
+  if( VAR_1->pLruPrev ){
+    VAR_1->pLruPrev->pLruNext = VAR_1;
+  }else{
+    VAR_0->pLruFirst = VAR_1;
+  }
+  VAR_0->pLruLast = VAR_1;
+}

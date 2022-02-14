@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct regulator {int uA_load; } ;
+struct device_attribute {int dummy; } ;
+struct device {int dummy; } ;
+typedef int ssize_t ;
+
+
+ struct regulator* FUNC_0 (struct device*) ;
+ int FUNC_1 (char*,char*,int) ;
+
+__attribute__((used)) static ssize_t FUNC_2(struct device *VAR_0,
+        struct device_attribute *VAR_1, char *VAR_2)
+{
+ struct regulator *VAR_3;
+
+ VAR_3 = FUNC_0(VAR_0);
+ if (VAR_3 == ((void*)0))
+  return 0;
+
+ return FUNC_1(VAR_2, "%d\n", VAR_3->uA_load);
+}

@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+struct savagefb_par {scalar_t__ paletteEnabled; } ;
+
+
+ int FUNC_0 (int,struct savagefb_par*) ;
+ int FUNC_1 (int,int,struct savagefb_par*) ;
+
+__attribute__((used)) static inline void FUNC_2(u8 VAR_0, u8 VAR_1, struct savagefb_par *VAR_2)
+{
+ u8 VAR_3;
+
+ if (VAR_2->paletteEnabled)
+  VAR_0 &= ~0x20;
+ else
+  VAR_0 |= 0x20;
+
+ VAR_3 = FUNC_0(0x3da, VAR_2);
+ FUNC_1(0x3c0, VAR_0, VAR_2);
+ FUNC_1 (0x3c0, VAR_1, VAR_2);
+}

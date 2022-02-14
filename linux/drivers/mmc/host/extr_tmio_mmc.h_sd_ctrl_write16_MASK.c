@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u16 ;
+struct tmio_mmc_host {int bus_shift; scalar_t__ ctl; scalar_t__ (* write16_hook ) (struct tmio_mmc_host*,int) ;} ;
+
+
+ int FUNC_0 (int ,scalar_t__) ;
+ scalar_t__ FUNC_1 (struct tmio_mmc_host*,int) ;
+
+__attribute__((used)) static inline void FUNC_2(struct tmio_mmc_host *VAR_0, int VAR_1,
+       u16 VAR_2)
+{
+
+
+
+ if (VAR_0->write16_hook && VAR_0->write16_hook(VAR_0, VAR_1))
+  return;
+ FUNC_0(VAR_2, VAR_0->ctl + (VAR_1 << VAR_0->bus_shift));
+}

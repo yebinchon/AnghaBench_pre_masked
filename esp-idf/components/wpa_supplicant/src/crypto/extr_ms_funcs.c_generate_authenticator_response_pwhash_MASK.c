@@ -1,0 +1,66 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+typedef int magic2 ;
+typedef int magic1 ;
+
+
+ int VAR_0 ;
+ scalar_t__ FUNC_0 (int const*,int const*,int const*,size_t,int*) ;
+ scalar_t__ FUNC_1 (int const*,int*) ;
+ int FUNC_2 (int,unsigned char const**,size_t const*,int*) ;
+
+int FUNC_3(
+ const u8 *VAR_1,
+ const u8 *VAR_2, const u8 *VAR_3,
+ const u8 *VAR_4, size_t VAR_5,
+ const u8 *VAR_6, u8 *VAR_7)
+{
+ static const u8 VAR_8[39] = {
+  0x4D, 0x61, 0x67, 0x69, 0x63, 0x20, 0x73, 0x65, 0x72, 0x76,
+  0x65, 0x72, 0x20, 0x74, 0x6F, 0x20, 0x63, 0x6C, 0x69, 0x65,
+  0x6E, 0x74, 0x20, 0x73, 0x69, 0x67, 0x6E, 0x69, 0x6E, 0x67,
+  0x20, 0x63, 0x6F, 0x6E, 0x73, 0x74, 0x61, 0x6E, 0x74
+ };
+ static const u8 VAR_9[41] = {
+  0x50, 0x61, 0x64, 0x20, 0x74, 0x6F, 0x20, 0x6D, 0x61, 0x6B,
+  0x65, 0x20, 0x69, 0x74, 0x20, 0x64, 0x6F, 0x20, 0x6D, 0x6F,
+  0x72, 0x65, 0x20, 0x74, 0x68, 0x61, 0x6E, 0x20, 0x6F, 0x6E,
+  0x65, 0x20, 0x69, 0x74, 0x65, 0x72, 0x61, 0x74, 0x69, 0x6F,
+  0x6E
+ };
+
+ u8 VAR_10[16], VAR_11[8];
+ const unsigned char *VAR_12[3];
+ const size_t VAR_13[3] = { 16, 24, sizeof(VAR_8) };
+ const unsigned char *VAR_14[3];
+ const size_t VAR_15[3] = { VAR_0, 8, sizeof(VAR_9) };
+
+ VAR_12[0] = VAR_10;
+ VAR_12[1] = VAR_6;
+ VAR_12[2] = VAR_8;
+
+ VAR_14[0] = VAR_7;
+ VAR_14[1] = VAR_11;
+ VAR_14[2] = VAR_9;
+
+ if (FUNC_1(VAR_1, VAR_10))
+  return -1;
+ if (FUNC_2(3, VAR_12, VAR_13, VAR_7))
+  return -1;
+
+ if (FUNC_0(VAR_2, VAR_3, VAR_4,
+      VAR_5, VAR_11))
+  return -1;
+ return FUNC_2(3, VAR_14, VAR_15, VAR_7);
+}

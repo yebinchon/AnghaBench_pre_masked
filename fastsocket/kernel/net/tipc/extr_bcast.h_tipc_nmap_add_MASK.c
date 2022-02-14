@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct tipc_node_map {int* map; int count; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int) ;
+
+__attribute__((used)) static inline void FUNC_1(struct tipc_node_map *VAR_1, u32 VAR_2)
+{
+ int VAR_3 = FUNC_0(VAR_2);
+ int VAR_4 = VAR_3 / VAR_0;
+ u32 VAR_5 = (1 << (VAR_3 % VAR_0));
+
+ if ((VAR_1->map[VAR_4] & VAR_5) == 0) {
+  VAR_1->count++;
+  VAR_1->map[VAR_4] |= VAR_5;
+ }
+}

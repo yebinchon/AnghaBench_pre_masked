@@ -1,0 +1,34 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int uint32_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int FUNC_0 (char*,int *,int) ;
+ int FUNC_1 (char*,int *,int) ;
+
+__attribute__((used)) static void
+FUNC_2(void)
+{
+ FUNC_0("EC_prime_i31", &VAR_3,
+  (uint32_t)1 << VAR_0
+  | (uint32_t)1 << VAR_1
+  | (uint32_t)1 << VAR_2);
+ FUNC_1("EC_prime_i31", &VAR_3,
+  (uint32_t)1 << VAR_0
+  | (uint32_t)1 << VAR_1
+  | (uint32_t)1 << VAR_2);
+}

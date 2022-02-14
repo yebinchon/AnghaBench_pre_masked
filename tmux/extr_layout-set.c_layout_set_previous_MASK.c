@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+typedef size_t u_int ;
+struct window {int lastlayout; } ;
+struct TYPE_3__ {int (* arrange ) (struct window*) ;} ;
+
+
+ TYPE_1__* VAR_0 ;
+ int FUNC_0 (TYPE_1__*) ;
+ int FUNC_1 (struct window*) ;
+
+u_int
+FUNC_2(struct window *VAR_1)
+{
+ u_int VAR_2;
+
+ if (VAR_1->lastlayout == -1)
+  VAR_2 = FUNC_0(VAR_0) - 1;
+ else {
+  VAR_2 = VAR_1->lastlayout;
+  if (VAR_2 == 0)
+   VAR_2 = FUNC_0(VAR_0) - 1;
+  else
+   VAR_2--;
+ }
+
+ if (VAR_0[VAR_2].arrange != ((void*)0))
+  VAR_0[VAR_2].arrange(VAR_1);
+ VAR_1->lastlayout = VAR_2;
+ return (VAR_2);
+}

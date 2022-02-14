@@ -1,0 +1,286 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct addrinfo {int * ai_next; int * ai_addr; int * ai_canonname; scalar_t__ ai_addrlen; scalar_t__ ai_protocol; scalar_t__ ai_socktype; int ai_family; int ai_flags; } ;
+typedef int repltok ;
+typedef int path ;
+typedef int WSADATA ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ char* VAR_2 ;
+ int VAR_3 ;
+
+
+
+ int VAR_4 ;
+ int VAR_5 ;
+ int VAR_6 ;
+ int VAR_7 ;
+ int VAR_8 ;
+ char* VAR_9 ;
+ int VAR_10 ;
+ int FUNC_0 (int,int) ;
+ int VAR_11 ;
+ scalar_t__ VAR_12 ;
+ int FUNC_1 (int ,int *) ;
+ int FUNC_2 (char*) ;
+ char* VAR_13 ;
+ char* VAR_14 ;
+ int FUNC_3 () ;
+ scalar_t__ FUNC_4 (char*,int ) ;
+ int VAR_15 ;
+ scalar_t__ VAR_16 ;
+ scalar_t__ VAR_17 ;
+ char* VAR_18 ;
+ char* FUNC_5 (scalar_t__) ;
+ int FUNC_6 (int) ;
+ int FUNC_7 (int ) ;
+ char** FUNC_8 (char**,char*) ;
+ int FUNC_9 (int ,int ) ;
+ int FUNC_10 (char**) ;
+ scalar_t__ FUNC_11 (char*,int *,struct addrinfo*,struct addrinfo**) ;
+ int VAR_19 ;
+ int VAR_20 ;
+ scalar_t__ VAR_21 ;
+ scalar_t__ VAR_22 ;
+ scalar_t__ VAR_23 ;
+ scalar_t__ VAR_24 ;
+ int FUNC_12 (scalar_t__) ;
+ int VAR_25 ;
+ int VAR_26 ;
+ char* VAR_27 ;
+ scalar_t__ VAR_28 ;
+ int VAR_29 ;
+ int FUNC_13 (char*,char*) ;
+ char* FUNC_14 (char*) ;
+ char* FUNC_15 (int ) ;
+ char** FUNC_16 (int ) ;
+ char** FUNC_17 (char**,char*,char*) ;
+ int FUNC_18 (char*,int,char*,...) ;
+ int FUNC_19 (char*,char*,char*) ;
+ int VAR_30 ;
+ scalar_t__ FUNC_20 (char*,char*) ;
+ int FUNC_21 (char*,char*) ;
+ int FUNC_22 (char*,char**) ;
+
+__attribute__((used)) static void
+FUNC_23(void)
+{
+ char **VAR_31;
+ char VAR_32[VAR_11];
+ char VAR_33[VAR_11];
+ char *VAR_34[3];
+
+ FUNC_9(FUNC_2("creating configuration files ... "), VAR_30);
+ FUNC_7(VAR_30);
+
+
+
+ VAR_31 = FUNC_16(VAR_15);
+
+ FUNC_18(VAR_32, sizeof(VAR_32), "max_connections = %d", VAR_26);
+ VAR_31 = FUNC_17(VAR_31, "#max_connections = 100", VAR_32);
+
+ if ((VAR_25 * (VAR_3 / 1024)) % 1024 == 0)
+  FUNC_18(VAR_32, sizeof(VAR_32), "shared_buffers = %dMB",
+     (VAR_25 * (VAR_3 / 1024)) / 1024);
+ else
+  FUNC_18(VAR_32, sizeof(VAR_32), "shared_buffers = %dkB",
+     VAR_25 * (VAR_3 / 1024));
+ VAR_31 = FUNC_17(VAR_31, "#shared_buffers = 32MB", VAR_32);
+
+
+
+
+
+ FUNC_18(VAR_32, sizeof(VAR_32), "#unix_socket_directories = ''");
+
+ VAR_31 = FUNC_17(VAR_31, "#unix_socket_directories = '/tmp'",
+         VAR_32);
+
+
+ FUNC_18(VAR_32, sizeof(VAR_32), "#port = %d", VAR_10);
+ VAR_31 = FUNC_17(VAR_31, "#port = 5432", VAR_32);
+
+
+
+ FUNC_18(VAR_32, sizeof(VAR_32), "min_wal_size = %s",
+    FUNC_15(VAR_8));
+ VAR_31 = FUNC_17(VAR_31, "#min_wal_size = 80MB", VAR_32);
+
+ FUNC_18(VAR_32, sizeof(VAR_32), "max_wal_size = %s",
+    FUNC_15(VAR_7));
+ VAR_31 = FUNC_17(VAR_31, "#max_wal_size = 1GB", VAR_32);
+
+ FUNC_18(VAR_32, sizeof(VAR_32), "lc_messages = '%s'",
+    FUNC_5(VAR_21));
+ VAR_31 = FUNC_17(VAR_31, "#lc_messages = 'C'", VAR_32);
+
+ FUNC_18(VAR_32, sizeof(VAR_32), "lc_monetary = '%s'",
+    FUNC_5(VAR_22));
+ VAR_31 = FUNC_17(VAR_31, "#lc_monetary = 'C'", VAR_32);
+
+ FUNC_18(VAR_32, sizeof(VAR_32), "lc_numeric = '%s'",
+    FUNC_5(VAR_23));
+ VAR_31 = FUNC_17(VAR_31, "#lc_numeric = 'C'", VAR_32);
+
+ FUNC_18(VAR_32, sizeof(VAR_32), "lc_time = '%s'",
+    FUNC_5(VAR_24));
+ VAR_31 = FUNC_17(VAR_31, "#lc_time = 'C'", VAR_32);
+
+ switch (FUNC_12(VAR_24))
+ {
+  case 128:
+   FUNC_21(VAR_32, "datestyle = 'iso, ymd'");
+   break;
+  case 130:
+   FUNC_21(VAR_32, "datestyle = 'iso, dmy'");
+   break;
+  case 129:
+  default:
+   FUNC_21(VAR_32, "datestyle = 'iso, mdy'");
+   break;
+ }
+ VAR_31 = FUNC_17(VAR_31, "#datestyle = 'iso, mdy'", VAR_32);
+
+ FUNC_18(VAR_32, sizeof(VAR_32),
+    "default_text_search_config = 'pg_catalog.%s'",
+    FUNC_5(VAR_16));
+ VAR_31 = FUNC_17(VAR_31,
+         "#default_text_search_config = 'pg_catalog.simple'",
+         VAR_32);
+
+ if (VAR_17)
+ {
+  FUNC_18(VAR_32, sizeof(VAR_32), "timezone = '%s'",
+     FUNC_5(VAR_17));
+  VAR_31 = FUNC_17(VAR_31, "#timezone = 'GMT'", VAR_32);
+  FUNC_18(VAR_32, sizeof(VAR_32), "log_timezone = '%s'",
+     FUNC_5(VAR_17));
+  VAR_31 = FUNC_17(VAR_31, "#log_timezone = 'GMT'", VAR_32);
+ }
+
+ FUNC_18(VAR_32, sizeof(VAR_32), "dynamic_shared_memory_type = %s",
+    VAR_18);
+ VAR_31 = FUNC_17(VAR_31, "#dynamic_shared_memory_type = posix",
+         VAR_32);
+ VAR_31 = FUNC_17(VAR_31,
+         "#effective_io_concurrency = 1",
+         "#effective_io_concurrency = 0");
+ if (FUNC_20(VAR_14, "scram-sha-256") == 0 ||
+  FUNC_20(VAR_13, "scram-sha-256") == 0)
+ {
+  VAR_31 = FUNC_17(VAR_31,
+          "#password_encryption = md5",
+          "password_encryption = scram-sha-256");
+ }
+
+
+
+
+
+
+
+ if (VAR_28 == VAR_12)
+ {
+  VAR_31 = FUNC_17(VAR_31,
+          "#log_file_mode = 0600",
+          "log_file_mode = 0640");
+ }
+
+ FUNC_18(VAR_33, sizeof(VAR_33), "%s/postgresql.conf", VAR_27);
+
+ FUNC_22(VAR_33, VAR_31);
+ if (FUNC_4(VAR_33, VAR_29) != 0)
+ {
+  FUNC_13("could not change permissions of \"%s\": %m", VAR_33);
+  FUNC_6(1);
+ }
+
+
+
+
+
+
+
+ VAR_34[0] = FUNC_14("# Do not edit this file manually!\n");
+ VAR_34[1] = FUNC_14("# It will be overwritten by the ALTER SYSTEM command.\n");
+ VAR_34[2] = ((void*)0);
+
+ FUNC_19(VAR_33, "%s/postgresql.auto.conf", VAR_27);
+
+ FUNC_22(VAR_33, VAR_34);
+ if (FUNC_4(VAR_33, VAR_29) != 0)
+ {
+  FUNC_13("could not change permissions of \"%s\": %m", VAR_33);
+  FUNC_6(1);
+ }
+
+ FUNC_10(VAR_31);
+
+
+
+
+ VAR_31 = FUNC_16(VAR_19);
+
+
+ VAR_31 = FUNC_8(VAR_31, "@remove-line-for-nolocal@");
+ VAR_31 = FUNC_17(VAR_31,
+         "host    all             all             ::1",
+         "#host    all             all             ::1");
+ VAR_31 = FUNC_17(VAR_31,
+         "host    replication     all             ::1",
+         "#host    replication     all             ::1");
+
+
+
+ VAR_31 = FUNC_17(VAR_31,
+         "@authmethodhost@",
+         VAR_13);
+ VAR_31 = FUNC_17(VAR_31,
+         "@authmethodlocal@",
+         VAR_14);
+
+ VAR_31 = FUNC_17(VAR_31,
+         "@authcomment@",
+         (FUNC_20(VAR_14, "trust") == 0 || FUNC_20(VAR_13, "trust") == 0) ? VAR_2 : "");
+
+ FUNC_18(VAR_33, sizeof(VAR_33), "%s/pg_hba.conf", VAR_27);
+
+ FUNC_22(VAR_33, VAR_31);
+ if (FUNC_4(VAR_33, VAR_29) != 0)
+ {
+  FUNC_13("could not change permissions of \"%s\": %m", VAR_33);
+  FUNC_6(1);
+ }
+
+ FUNC_10(VAR_31);
+
+
+
+ VAR_31 = FUNC_16(VAR_20);
+
+ FUNC_18(VAR_33, sizeof(VAR_33), "%s/pg_ident.conf", VAR_27);
+
+ FUNC_22(VAR_33, VAR_31);
+ if (FUNC_4(VAR_33, VAR_29) != 0)
+ {
+  FUNC_13("could not change permissions of \"%s\": %m", VAR_33);
+  FUNC_6(1);
+ }
+
+ FUNC_10(VAR_31);
+
+ FUNC_3();
+}

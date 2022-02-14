@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef scalar_t__ u8b ;
+
+
+ scalar_t__ VAR_0 ;
+ scalar_t__ VAR_1 ;
+
+u8b FUNC_0( u8b *VAR_2 )
+{
+  if( *VAR_2 == VAR_1 )
+    return VAR_0;
+  return VAR_1;
+}

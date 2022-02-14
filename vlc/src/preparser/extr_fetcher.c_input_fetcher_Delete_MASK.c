@@ -1,0 +1,34 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct TYPE_4__ {int lock; int album_cache; int downloader; int network; int local; } ;
+typedef TYPE_1__ input_fetcher_t ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ) ;
+ int FUNC_1 (TYPE_1__*) ;
+ int FUNC_2 (int *,int ,int *) ;
+ int FUNC_3 (int *) ;
+
+void FUNC_4( input_fetcher_t* VAR_1 )
+{
+    FUNC_0( VAR_1->local );
+    FUNC_0( VAR_1->network );
+    FUNC_0( VAR_1->downloader );
+
+    FUNC_2( &VAR_1->album_cache, VAR_0, ((void*)0) );
+    FUNC_3( &VAR_1->lock );
+
+    FUNC_1( VAR_1 );
+}

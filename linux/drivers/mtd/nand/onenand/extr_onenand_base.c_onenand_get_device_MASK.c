@@ -1,0 +1,61 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct onenand_chip {int state; int wq; int chip_lock; int (* enable ) (struct mtd_info*) ;} ;
+struct mtd_info {struct onenand_chip* priv; } ;
+
+
+ int FUNC_0 (int ,int ) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int FUNC_1 (int *,int *) ;
+ int VAR_4 ;
+ int FUNC_2 (int *,int *) ;
+ int FUNC_3 () ;
+ int FUNC_4 (int ) ;
+ int FUNC_5 (int *) ;
+ int FUNC_6 (int *) ;
+ int FUNC_7 (struct mtd_info*) ;
+ int VAR_5 ;
+
+__attribute__((used)) static int FUNC_8(struct mtd_info *VAR_6, int VAR_7)
+{
+ struct onenand_chip *VAR_8 = VAR_6->priv;
+ FUNC_0(VAR_5, VAR_4);
+
+
+
+
+ while (1) {
+  FUNC_5(&VAR_8->chip_lock);
+  if (VAR_8->state == VAR_2) {
+   VAR_8->state = VAR_7;
+   FUNC_6(&VAR_8->chip_lock);
+   if (VAR_7 != VAR_1 && VAR_8->enable)
+    VAR_8->enable(VAR_6);
+   break;
+  }
+  if (VAR_7 == VAR_1) {
+   FUNC_6(&VAR_8->chip_lock);
+   return (VAR_8->state == VAR_1) ? 0 : -VAR_0;
+  }
+  FUNC_4(VAR_3);
+  FUNC_1(&VAR_8->wq, &VAR_5);
+  FUNC_6(&VAR_8->chip_lock);
+  FUNC_3();
+  FUNC_2(&VAR_8->wq, &VAR_5);
+ }
+
+ return 0;
+}

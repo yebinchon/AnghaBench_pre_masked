@@ -1,0 +1,34 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct drbd_device {struct drbd_bitmap* bitmap; } ;
+struct drbd_bitmap {int bm_lock; scalar_t__ bm_set; int bm_words; struct drbd_bitmap* bm_pages; } ;
+
+
+ int FUNC_0 (struct drbd_bitmap*,int ,int ,int ) ;
+ int FUNC_1 (struct drbd_bitmap*) ;
+ int FUNC_2 (int *) ;
+ int FUNC_3 (int *) ;
+
+void FUNC_4(struct drbd_device *VAR_0)
+{
+ struct drbd_bitmap *VAR_1 = VAR_0->bitmap;
+ if (!FUNC_1(VAR_1))
+  return;
+ if (!FUNC_1(VAR_1->bm_pages))
+  return;
+
+ FUNC_2(&VAR_1->bm_lock);
+ FUNC_0(VAR_1, 0, 0, VAR_1->bm_words);
+ VAR_1->bm_set = 0;
+ FUNC_3(&VAR_1->bm_lock);
+}

@@ -1,0 +1,54 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct r8192_priv {scalar_t__ btxpowerdata_readfromEEPORM; } ;
+struct net_device {int dummy; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int FUNC_0 (int ,char*,...) ;
+ int* VAR_4 ;
+ struct r8192_priv* FUNC_1 (struct net_device*) ;
+ int FUNC_2 (struct net_device*,int,int,int) ;
+ int* VAR_5 ;
+
+void FUNC_3(struct net_device *VAR_6)
+{
+ u32 VAR_7 = 0, VAR_8;
+ u32 *VAR_9 = ((void*)0);
+ struct r8192_priv *VAR_10 = FUNC_1(VAR_6);
+
+ if (VAR_10->btxpowerdata_readfromEEPORM) {
+  FUNC_0(VAR_1, "Rtl819XMACPHY_Array_PG\n");
+  VAR_7 = VAR_3;
+  VAR_9 = VAR_4;
+
+ } else {
+  FUNC_0(VAR_1, "Rtl819XMACPHY_Array\n");
+  VAR_7 = VAR_2;
+  VAR_9 = VAR_5;
+ }
+ for (VAR_8 = 0; VAR_8 < VAR_7; VAR_8 = VAR_8+3) {
+  if (VAR_9[VAR_8] == 0x318)
+   VAR_9[VAR_8+2] = 0x00000800;
+
+  FUNC_0(VAR_0,
+    "Rtl8190MACPHY_Array[0]=%x Rtl8190MACPHY_Array[1]=%x Rtl8190MACPHY_Array[2]=%x\n",
+    VAR_9[VAR_8], VAR_9[VAR_8+1], VAR_9[VAR_8+2]);
+  FUNC_2(VAR_6, VAR_9[VAR_8], VAR_9[VAR_8+1],
+     VAR_9[VAR_8+2]);
+ }
+}

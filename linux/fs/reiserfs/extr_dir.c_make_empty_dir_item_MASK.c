@@ -1,0 +1,60 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct reiserfs_de_head {scalar_t__ deh_state; void* deh_objectid; void* deh_dir_id; } ;
+typedef void* __le32 ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (int ) ;
+ int FUNC_1 (struct reiserfs_de_head*) ;
+ int FUNC_2 (struct reiserfs_de_head*) ;
+ int FUNC_3 (char*,char*,int) ;
+ int FUNC_4 (char*,int ,int) ;
+ int FUNC_5 (struct reiserfs_de_head*,int) ;
+ int FUNC_6 (struct reiserfs_de_head*,int ) ;
+ int FUNC_7 (char*) ;
+
+void FUNC_8(char *VAR_3, __le32 VAR_4, __le32 VAR_5,
+    __le32 VAR_6, __le32 VAR_7)
+{
+ struct reiserfs_de_head *VAR_8, *VAR_9;
+
+ FUNC_4(VAR_3, 0, VAR_2);
+ VAR_8 = (struct reiserfs_de_head *)VAR_3;
+ VAR_9 = VAR_8 + 1;
+
+
+ FUNC_6(VAR_8, VAR_1);
+
+ VAR_8->deh_dir_id = VAR_4;
+ VAR_8->deh_objectid = VAR_5;
+ VAR_8->deh_state = 0;
+ FUNC_5(VAR_8, VAR_2 - FUNC_0(FUNC_7(".")));
+ FUNC_2(VAR_8);
+
+
+ FUNC_6(VAR_9, VAR_0);
+
+
+ VAR_9->deh_dir_id = VAR_6;
+ VAR_9->deh_objectid = VAR_7;
+ VAR_9->deh_state = 0;
+ FUNC_5(VAR_9, FUNC_1(VAR_8) - FUNC_0(FUNC_7("..")));
+ FUNC_2(VAR_9);
+
+
+ FUNC_3(VAR_3 + FUNC_1(VAR_8), ".", 1);
+ FUNC_3(VAR_3 + FUNC_1(VAR_9), "..", 2);
+}

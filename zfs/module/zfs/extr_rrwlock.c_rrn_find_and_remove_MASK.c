@@ -1,0 +1,52 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_8__ TYPE_2__ ;
+typedef struct TYPE_7__ TYPE_1__ ;
+
+
+struct TYPE_7__ {int rr_linked_rcount; } ;
+typedef TYPE_1__ rrwlock_t ;
+struct TYPE_8__ {void* rn_tag; struct TYPE_8__* rn_next; TYPE_1__* rn_rrl; } ;
+typedef TYPE_2__ rrw_node_t ;
+typedef int boolean_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (int) ;
+ int FUNC_1 (TYPE_2__*,int) ;
+ int VAR_2 ;
+ TYPE_2__* FUNC_2 (int ) ;
+ scalar_t__ FUNC_3 (int ,TYPE_2__*) ;
+ scalar_t__ FUNC_4 (int *) ;
+
+__attribute__((used)) static boolean_t
+FUNC_5(rrwlock_t *VAR_3, void *VAR_4)
+{
+ rrw_node_t *VAR_5;
+ rrw_node_t *VAR_6 = ((void*)0);
+
+ if (FUNC_4(&VAR_3->rr_linked_rcount) == 0)
+  return (VAR_0);
+
+ for (VAR_5 = FUNC_2(VAR_2); VAR_5 != ((void*)0); VAR_5 = VAR_5->rn_next) {
+  if (VAR_5->rn_rrl == VAR_3 && VAR_5->rn_tag == VAR_4) {
+   if (VAR_6)
+    VAR_6->rn_next = VAR_5->rn_next;
+   else
+    FUNC_0(FUNC_3(VAR_2, VAR_5->rn_next) == 0);
+   FUNC_1(VAR_5, sizeof (*VAR_5));
+   return (VAR_1);
+  }
+  VAR_6 = VAR_5;
+ }
+ return (VAR_0);
+}

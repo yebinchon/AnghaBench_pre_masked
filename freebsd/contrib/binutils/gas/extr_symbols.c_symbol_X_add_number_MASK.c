@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+struct TYPE_5__ {int X_add_number; } ;
+struct TYPE_6__ {TYPE_1__ sy_value; } ;
+typedef TYPE_2__ symbolS ;
+struct local_symbol {int lsy_value; } ;
+typedef int offsetT ;
+
+
+ scalar_t__ FUNC_0 (TYPE_2__*) ;
+
+offsetT *
+FUNC_1 (symbolS *VAR_0)
+{
+  if (FUNC_0 (VAR_0))
+    return (offsetT *) &((struct local_symbol *) VAR_0)->lsy_value;
+
+  return &VAR_0->sy_value.X_add_number;
+}

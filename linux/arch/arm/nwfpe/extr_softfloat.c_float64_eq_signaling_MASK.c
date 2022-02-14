@@ -1,0 +1,34 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int float64 ;
+typedef int flag ;
+typedef scalar_t__ bits64 ;
+
+
+ int FUNC_0 (int) ;
+ scalar_t__ FUNC_1 (int) ;
+ int VAR_0 ;
+ int FUNC_2 (int ) ;
+
+flag FUNC_3( float64 VAR_1, float64 VAR_2 )
+{
+
+    if ( ( ( FUNC_0( VAR_1 ) == 0x7FF ) && FUNC_1( VAR_1 ) )
+         || ( ( FUNC_0( VAR_2 ) == 0x7FF ) && FUNC_1( VAR_2 ) )
+       ) {
+        FUNC_2( VAR_0 );
+        return 0;
+    }
+    return ( VAR_1 == VAR_2 ) || ( (bits64) ( ( VAR_1 | VAR_2 )<<1 ) == 0 );
+
+}

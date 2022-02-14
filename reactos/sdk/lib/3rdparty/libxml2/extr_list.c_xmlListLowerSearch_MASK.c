@@ -1,0 +1,32 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+typedef TYPE_1__* xmlListPtr ;
+typedef TYPE_2__* xmlLinkPtr ;
+struct TYPE_6__ {struct TYPE_6__* next; int data; } ;
+struct TYPE_5__ {scalar_t__ (* linkCompare ) (int ,void*) ;TYPE_2__* sentinel; } ;
+
+
+ scalar_t__ FUNC_0 (int ,void*) ;
+
+__attribute__((used)) static xmlLinkPtr
+FUNC_1(xmlListPtr VAR_0, void *VAR_1)
+{
+    xmlLinkPtr VAR_2;
+
+    if (VAR_0 == ((void*)0))
+        return(((void*)0));
+    for(VAR_2 = VAR_0->sentinel->next;VAR_2 != VAR_0->sentinel && VAR_0->linkCompare(VAR_2->data, VAR_1) <0 ;VAR_2 = VAR_2->next);
+    return VAR_2;
+}

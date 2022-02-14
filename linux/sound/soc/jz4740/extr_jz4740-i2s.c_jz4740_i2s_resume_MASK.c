@@ -1,0 +1,49 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int uint32_t ;
+struct snd_soc_dai {scalar_t__ active; } ;
+struct jz4740_i2s {int clk_aic; int clk_i2s; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int ) ;
+ int FUNC_2 (struct jz4740_i2s*,int ) ;
+ int FUNC_3 (struct jz4740_i2s*,int ,int ) ;
+ struct jz4740_i2s* FUNC_4 (struct snd_soc_dai*) ;
+
+__attribute__((used)) static int FUNC_5(struct snd_soc_dai *VAR_2)
+{
+ struct jz4740_i2s *VAR_3 = FUNC_4(VAR_2);
+ uint32_t VAR_4;
+ int VAR_5;
+
+ VAR_5 = FUNC_1(VAR_3->clk_aic);
+ if (VAR_5)
+  return VAR_5;
+
+ if (VAR_2->active) {
+  VAR_5 = FUNC_1(VAR_3->clk_i2s);
+  if (VAR_5) {
+   FUNC_0(VAR_3->clk_aic);
+   return VAR_5;
+  }
+
+  VAR_4 = FUNC_2(VAR_3, VAR_1);
+  VAR_4 |= VAR_0;
+  FUNC_3(VAR_3, VAR_1, VAR_4);
+ }
+
+ return 0;
+}

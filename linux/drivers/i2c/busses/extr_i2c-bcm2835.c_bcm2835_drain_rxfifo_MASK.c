@@ -1,0 +1,35 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct bcm2835_i2c_dev {scalar_t__ msg_buf_remaining; void** msg_buf; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ void* FUNC_0 (struct bcm2835_i2c_dev*,int ) ;
+
+__attribute__((used)) static void FUNC_1(struct bcm2835_i2c_dev *VAR_3)
+{
+ u32 VAR_4;
+
+ while (VAR_3->msg_buf_remaining) {
+  VAR_4 = FUNC_0(VAR_3, VAR_1);
+  if (!(VAR_4 & VAR_2))
+   break;
+  *VAR_3->msg_buf = FUNC_0(VAR_3,
+            VAR_0);
+  VAR_3->msg_buf++;
+  VAR_3->msg_buf_remaining--;
+ }
+}

@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct tgec_cfg {int promiscuous_mode_enable; int pause_ignore; int pause_quant; int max_frame_length; int tx_ipg_length; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+
+__attribute__((used)) static void FUNC_0(struct tgec_cfg *VAR_3)
+{
+ VAR_3->promiscuous_mode_enable = 0;
+ VAR_3->pause_ignore = 0;
+ VAR_3->tx_ipg_length = VAR_2;
+ VAR_3->max_frame_length = VAR_0;
+ VAR_3->pause_quant = VAR_1;
+}

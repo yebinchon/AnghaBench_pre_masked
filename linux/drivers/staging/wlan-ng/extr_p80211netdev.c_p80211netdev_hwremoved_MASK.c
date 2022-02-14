@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct wlandevice {int hwremoved; scalar_t__ state; int netdev; } ;
+
+
+ scalar_t__ VAR_0 ;
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int ) ;
+
+void FUNC_2(struct wlandevice *VAR_1)
+{
+ VAR_1->hwremoved = 1;
+ if (VAR_1->state == VAR_0)
+  FUNC_1(VAR_1->netdev);
+
+ FUNC_0(VAR_1->netdev);
+}

@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct gspca_dev {int dummy; } ;
+
+
+ scalar_t__** VAR_0 ;
+ int FUNC_0 (struct gspca_dev*,int,scalar_t__*,int) ;
+ int FUNC_1 (struct gspca_dev*,int,int) ;
+
+__attribute__((used)) static void FUNC_2(struct gspca_dev*VAR_1)
+{
+ int VAR_2 = 0;
+
+ FUNC_1(VAR_1, 0x006a, 0x02);
+ while (VAR_0[VAR_2][1]) {
+  FUNC_0(VAR_1, 0x006b, VAR_0[VAR_2], 3);
+  VAR_2++;
+ }
+ FUNC_1(VAR_1, 0x006a, 0x00);
+}

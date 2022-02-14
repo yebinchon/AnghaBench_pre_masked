@@ -1,0 +1,157 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef scalar_t__ PFNGLMULTITEXCOORD4SVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD4SARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD4IVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD4IARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD4FVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD4FARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD4DVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD4DARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD3SVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD3SARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD3IVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD3IARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD3FVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD3FARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD3DVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD3DARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD2SVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD2SARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD2IVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD2IARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD2FVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD2FARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD2DVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD2DARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD1SVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD1SARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD1IVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD1IARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD1FVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD1FARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD1DVARBPROC ;
+typedef scalar_t__ PFNGLMULTITEXCOORD1DARBPROC ;
+typedef scalar_t__ PFNGLCLIENTACTIVETEXTUREARBPROC ;
+typedef scalar_t__ PFNGLACTIVETEXTUREARBPROC ;
+
+
+ scalar_t__ FUNC_0 (char*) ;
+ scalar_t__ VAR_0 ;
+ scalar_t__ VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ VAR_3 ;
+ scalar_t__ VAR_4 ;
+ scalar_t__ VAR_5 ;
+ scalar_t__ VAR_6 ;
+ scalar_t__ VAR_7 ;
+ scalar_t__ VAR_8 ;
+ scalar_t__ VAR_9 ;
+ scalar_t__ VAR_10 ;
+ scalar_t__ VAR_11 ;
+ scalar_t__ VAR_12 ;
+ scalar_t__ VAR_13 ;
+ scalar_t__ VAR_14 ;
+ scalar_t__ VAR_15 ;
+ scalar_t__ VAR_16 ;
+ scalar_t__ VAR_17 ;
+ scalar_t__ VAR_18 ;
+ scalar_t__ VAR_19 ;
+ scalar_t__ VAR_20 ;
+ scalar_t__ VAR_21 ;
+ scalar_t__ VAR_22 ;
+ scalar_t__ VAR_23 ;
+ scalar_t__ VAR_24 ;
+ scalar_t__ VAR_25 ;
+ scalar_t__ VAR_26 ;
+ scalar_t__ VAR_27 ;
+ scalar_t__ VAR_28 ;
+ scalar_t__ VAR_29 ;
+ scalar_t__ VAR_30 ;
+ scalar_t__ VAR_31 ;
+ scalar_t__ VAR_32 ;
+ scalar_t__ VAR_33 ;
+
+__attribute__((used)) static int FUNC_1()
+{
+ int VAR_34 = 0;
+ VAR_0 = (PFNGLACTIVETEXTUREARBPROC)FUNC_0("glActiveTextureARB");
+ if(!VAR_0) ++VAR_34;
+ VAR_1 = (PFNGLCLIENTACTIVETEXTUREARBPROC)FUNC_0("glClientActiveTextureARB");
+ if(!VAR_1) ++VAR_34;
+ VAR_2 = (PFNGLMULTITEXCOORD1DARBPROC)FUNC_0("glMultiTexCoord1dARB");
+ if(!VAR_2) ++VAR_34;
+ VAR_3 = (PFNGLMULTITEXCOORD1DVARBPROC)FUNC_0("glMultiTexCoord1dvARB");
+ if(!VAR_3) ++VAR_34;
+ VAR_4 = (PFNGLMULTITEXCOORD1FARBPROC)FUNC_0("glMultiTexCoord1fARB");
+ if(!VAR_4) ++VAR_34;
+ VAR_5 = (PFNGLMULTITEXCOORD1FVARBPROC)FUNC_0("glMultiTexCoord1fvARB");
+ if(!VAR_5) ++VAR_34;
+ VAR_6 = (PFNGLMULTITEXCOORD1IARBPROC)FUNC_0("glMultiTexCoord1iARB");
+ if(!VAR_6) ++VAR_34;
+ VAR_7 = (PFNGLMULTITEXCOORD1IVARBPROC)FUNC_0("glMultiTexCoord1ivARB");
+ if(!VAR_7) ++VAR_34;
+ VAR_8 = (PFNGLMULTITEXCOORD1SARBPROC)FUNC_0("glMultiTexCoord1sARB");
+ if(!VAR_8) ++VAR_34;
+ VAR_9 = (PFNGLMULTITEXCOORD1SVARBPROC)FUNC_0("glMultiTexCoord1svARB");
+ if(!VAR_9) ++VAR_34;
+ VAR_10 = (PFNGLMULTITEXCOORD2DARBPROC)FUNC_0("glMultiTexCoord2dARB");
+ if(!VAR_10) ++VAR_34;
+ VAR_11 = (PFNGLMULTITEXCOORD2DVARBPROC)FUNC_0("glMultiTexCoord2dvARB");
+ if(!VAR_11) ++VAR_34;
+ VAR_12 = (PFNGLMULTITEXCOORD2FARBPROC)FUNC_0("glMultiTexCoord2fARB");
+ if(!VAR_12) ++VAR_34;
+ VAR_13 = (PFNGLMULTITEXCOORD2FVARBPROC)FUNC_0("glMultiTexCoord2fvARB");
+ if(!VAR_13) ++VAR_34;
+ VAR_14 = (PFNGLMULTITEXCOORD2IARBPROC)FUNC_0("glMultiTexCoord2iARB");
+ if(!VAR_14) ++VAR_34;
+ VAR_15 = (PFNGLMULTITEXCOORD2IVARBPROC)FUNC_0("glMultiTexCoord2ivARB");
+ if(!VAR_15) ++VAR_34;
+ VAR_16 = (PFNGLMULTITEXCOORD2SARBPROC)FUNC_0("glMultiTexCoord2sARB");
+ if(!VAR_16) ++VAR_34;
+ VAR_17 = (PFNGLMULTITEXCOORD2SVARBPROC)FUNC_0("glMultiTexCoord2svARB");
+ if(!VAR_17) ++VAR_34;
+ VAR_18 = (PFNGLMULTITEXCOORD3DARBPROC)FUNC_0("glMultiTexCoord3dARB");
+ if(!VAR_18) ++VAR_34;
+ VAR_19 = (PFNGLMULTITEXCOORD3DVARBPROC)FUNC_0("glMultiTexCoord3dvARB");
+ if(!VAR_19) ++VAR_34;
+ VAR_20 = (PFNGLMULTITEXCOORD3FARBPROC)FUNC_0("glMultiTexCoord3fARB");
+ if(!VAR_20) ++VAR_34;
+ VAR_21 = (PFNGLMULTITEXCOORD3FVARBPROC)FUNC_0("glMultiTexCoord3fvARB");
+ if(!VAR_21) ++VAR_34;
+ VAR_22 = (PFNGLMULTITEXCOORD3IARBPROC)FUNC_0("glMultiTexCoord3iARB");
+ if(!VAR_22) ++VAR_34;
+ VAR_23 = (PFNGLMULTITEXCOORD3IVARBPROC)FUNC_0("glMultiTexCoord3ivARB");
+ if(!VAR_23) ++VAR_34;
+ VAR_24 = (PFNGLMULTITEXCOORD3SARBPROC)FUNC_0("glMultiTexCoord3sARB");
+ if(!VAR_24) ++VAR_34;
+ VAR_25 = (PFNGLMULTITEXCOORD3SVARBPROC)FUNC_0("glMultiTexCoord3svARB");
+ if(!VAR_25) ++VAR_34;
+ VAR_26 = (PFNGLMULTITEXCOORD4DARBPROC)FUNC_0("glMultiTexCoord4dARB");
+ if(!VAR_26) ++VAR_34;
+ VAR_27 = (PFNGLMULTITEXCOORD4DVARBPROC)FUNC_0("glMultiTexCoord4dvARB");
+ if(!VAR_27) ++VAR_34;
+ VAR_28 = (PFNGLMULTITEXCOORD4FARBPROC)FUNC_0("glMultiTexCoord4fARB");
+ if(!VAR_28) ++VAR_34;
+ VAR_29 = (PFNGLMULTITEXCOORD4FVARBPROC)FUNC_0("glMultiTexCoord4fvARB");
+ if(!VAR_29) ++VAR_34;
+ VAR_30 = (PFNGLMULTITEXCOORD4IARBPROC)FUNC_0("glMultiTexCoord4iARB");
+ if(!VAR_30) ++VAR_34;
+ VAR_31 = (PFNGLMULTITEXCOORD4IVARBPROC)FUNC_0("glMultiTexCoord4ivARB");
+ if(!VAR_31) ++VAR_34;
+ VAR_32 = (PFNGLMULTITEXCOORD4SARBPROC)FUNC_0("glMultiTexCoord4sARB");
+ if(!VAR_32) ++VAR_34;
+ VAR_33 = (PFNGLMULTITEXCOORD4SVARBPROC)FUNC_0("glMultiTexCoord4svARB");
+ if(!VAR_33) ++VAR_34;
+ return VAR_34;
+}

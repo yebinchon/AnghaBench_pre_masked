@@ -1,0 +1,77 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef scalar_t__ PFNGLVERTEXATTRIBLFORMATNVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL4UI64VNVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL4UI64NVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL4I64VNVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL4I64NVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL3UI64VNVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL3UI64NVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL3I64VNVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL3I64NVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL2UI64VNVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL2UI64NVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL2I64VNVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL2I64NVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL1UI64VNVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL1UI64NVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL1I64VNVPROC ;
+typedef scalar_t__ PFNGLVERTEXATTRIBL1I64NVPROC ;
+typedef scalar_t__ PFNGLGETVERTEXATTRIBLUI64VNVPROC ;
+typedef scalar_t__ PFNGLGETVERTEXATTRIBLI64VNVPROC ;
+typedef scalar_t__ (* GLADloadproc ) (char*) ;
+
+
+ int VAR_0 ;
+ scalar_t__ VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ VAR_3 ;
+ scalar_t__ VAR_4 ;
+ scalar_t__ VAR_5 ;
+ scalar_t__ VAR_6 ;
+ scalar_t__ VAR_7 ;
+ scalar_t__ VAR_8 ;
+ scalar_t__ VAR_9 ;
+ scalar_t__ VAR_10 ;
+ scalar_t__ VAR_11 ;
+ scalar_t__ VAR_12 ;
+ scalar_t__ VAR_13 ;
+ scalar_t__ VAR_14 ;
+ scalar_t__ VAR_15 ;
+ scalar_t__ VAR_16 ;
+ scalar_t__ VAR_17 ;
+ scalar_t__ VAR_18 ;
+ scalar_t__ VAR_19 ;
+
+__attribute__((used)) static void FUNC_0(GLADloadproc VAR_20) {
+ if(!VAR_0) return;
+ VAR_3 = (PFNGLVERTEXATTRIBL1I64NVPROC)VAR_20("glVertexAttribL1i64NV");
+ VAR_7 = (PFNGLVERTEXATTRIBL2I64NVPROC)VAR_20("glVertexAttribL2i64NV");
+ VAR_11 = (PFNGLVERTEXATTRIBL3I64NVPROC)VAR_20("glVertexAttribL3i64NV");
+ VAR_15 = (PFNGLVERTEXATTRIBL4I64NVPROC)VAR_20("glVertexAttribL4i64NV");
+ VAR_4 = (PFNGLVERTEXATTRIBL1I64VNVPROC)VAR_20("glVertexAttribL1i64vNV");
+ VAR_8 = (PFNGLVERTEXATTRIBL2I64VNVPROC)VAR_20("glVertexAttribL2i64vNV");
+ VAR_12 = (PFNGLVERTEXATTRIBL3I64VNVPROC)VAR_20("glVertexAttribL3i64vNV");
+ VAR_16 = (PFNGLVERTEXATTRIBL4I64VNVPROC)VAR_20("glVertexAttribL4i64vNV");
+ VAR_5 = (PFNGLVERTEXATTRIBL1UI64NVPROC)VAR_20("glVertexAttribL1ui64NV");
+ VAR_9 = (PFNGLVERTEXATTRIBL2UI64NVPROC)VAR_20("glVertexAttribL2ui64NV");
+ VAR_13 = (PFNGLVERTEXATTRIBL3UI64NVPROC)VAR_20("glVertexAttribL3ui64NV");
+ VAR_17 = (PFNGLVERTEXATTRIBL4UI64NVPROC)VAR_20("glVertexAttribL4ui64NV");
+ VAR_6 = (PFNGLVERTEXATTRIBL1UI64VNVPROC)VAR_20("glVertexAttribL1ui64vNV");
+ VAR_10 = (PFNGLVERTEXATTRIBL2UI64VNVPROC)VAR_20("glVertexAttribL2ui64vNV");
+ VAR_14 = (PFNGLVERTEXATTRIBL3UI64VNVPROC)VAR_20("glVertexAttribL3ui64vNV");
+ VAR_18 = (PFNGLVERTEXATTRIBL4UI64VNVPROC)VAR_20("glVertexAttribL4ui64vNV");
+ VAR_1 = (PFNGLGETVERTEXATTRIBLI64VNVPROC)VAR_20("glGetVertexAttribLi64vNV");
+ VAR_2 = (PFNGLGETVERTEXATTRIBLUI64VNVPROC)VAR_20("glGetVertexAttribLui64vNV");
+ VAR_19 = (PFNGLVERTEXATTRIBLFORMATNVPROC)VAR_20("glVertexAttribLFormatNV");
+}

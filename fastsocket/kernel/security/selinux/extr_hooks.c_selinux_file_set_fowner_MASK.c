@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct file_security_struct {int fown_sid; } ;
+struct file {struct file_security_struct* f_security; } ;
+
+
+ int FUNC_0 () ;
+
+__attribute__((used)) static int FUNC_1(struct file *VAR_0)
+{
+ struct file_security_struct *VAR_1;
+
+ VAR_1 = VAR_0->f_security;
+ VAR_1->fown_sid = FUNC_0();
+
+ return 0;
+}

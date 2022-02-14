@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct snd_pcm_substream {int dummy; } ;
+struct hda_pcm_stream {int dummy; } ;
+struct hda_codec {struct conexant_spec* spec; } ;
+struct conexant_spec {scalar_t__ cur_adc; } ;
+
+
+ int FUNC_0 (struct hda_codec*,scalar_t__) ;
+
+__attribute__((used)) static int FUNC_1(struct hda_pcm_stream *VAR_0,
+          struct hda_codec *VAR_1,
+          struct snd_pcm_substream *VAR_2)
+{
+ struct conexant_spec *VAR_3 = VAR_1->spec;
+ FUNC_0(VAR_1, VAR_3->cur_adc);
+ VAR_3->cur_adc = 0;
+ return 0;
+}

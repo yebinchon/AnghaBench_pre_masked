@@ -1,0 +1,48 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ti_syscon_reset_data {unsigned long nr_controls; int regmap; struct ti_syscon_reset_control* controls; } ;
+struct ti_syscon_reset_control {int flags; int status_bit; int status_offset; } ;
+struct reset_controller_dev {int dummy; } ;
+
+
+ unsigned int FUNC_0 (int ) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int FUNC_1 (int ,int ,unsigned int*) ;
+ struct ti_syscon_reset_data* FUNC_2 (struct reset_controller_dev*) ;
+
+__attribute__((used)) static int FUNC_3(struct reset_controller_dev *VAR_4,
+      unsigned long VAR_5)
+{
+ struct ti_syscon_reset_data *VAR_6 = FUNC_2(VAR_4);
+ struct ti_syscon_reset_control *VAR_7;
+ unsigned int VAR_8;
+ int VAR_9;
+
+ if (VAR_5 >= VAR_6->nr_controls)
+  return -VAR_0;
+
+ VAR_7 = &VAR_6->controls[VAR_5];
+
+ if (VAR_7->flags & VAR_2)
+  return -VAR_1;
+
+ VAR_9 = FUNC_1(VAR_6->regmap, VAR_7->status_offset, &VAR_8);
+ if (VAR_9)
+  return VAR_9;
+
+ return !(VAR_8 & FUNC_0(VAR_7->status_bit)) ==
+  !(VAR_7->flags & VAR_3);
+}

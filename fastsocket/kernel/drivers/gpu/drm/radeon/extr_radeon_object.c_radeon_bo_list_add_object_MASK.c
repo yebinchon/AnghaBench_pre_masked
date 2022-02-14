@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int head; } ;
+struct radeon_bo_list {TYPE_1__ tv; scalar_t__ wdomain; } ;
+struct list_head {int dummy; } ;
+
+
+ int FUNC_0 (int *,struct list_head*) ;
+ int FUNC_1 (int *,struct list_head*) ;
+
+void FUNC_2(struct radeon_bo_list *VAR_0,
+    struct list_head *VAR_1)
+{
+ if (VAR_0->wdomain) {
+  FUNC_0(&VAR_0->tv.head, VAR_1);
+ } else {
+  FUNC_1(&VAR_0->tv.head, VAR_1);
+ }
+}

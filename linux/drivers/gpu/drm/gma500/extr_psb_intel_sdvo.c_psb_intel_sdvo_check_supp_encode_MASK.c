@@ -1,0 +1,30 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct psb_intel_sdvo_encode {int dummy; } ;
+struct psb_intel_sdvo {int dummy; } ;
+typedef int encode ;
+
+
+ int FUNC_0 (int) ;
+ int VAR_0 ;
+ int FUNC_1 (struct psb_intel_sdvo*,int ,struct psb_intel_sdvo_encode*,int) ;
+
+__attribute__((used)) static bool FUNC_2(struct psb_intel_sdvo *VAR_1)
+{
+ struct psb_intel_sdvo_encode VAR_2;
+
+ FUNC_0(sizeof(VAR_2) != 2);
+ return FUNC_1(VAR_1,
+      VAR_0,
+      &VAR_2, sizeof(VAR_2));
+}

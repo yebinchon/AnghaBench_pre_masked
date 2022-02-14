@@ -1,0 +1,33 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+typedef int u32 ;
+struct m88rs6000t_dev {int regmap; } ;
+typedef scalar_t__ s32 ;
+
+
+ int FUNC_0 (int,unsigned int,unsigned int) ;
+ int FUNC_1 (int ,int,int) ;
+
+__attribute__((used)) static int FUNC_2(struct m88rs6000t_dev *VAR_0,
+  u32 VAR_1, s32 VAR_2)
+{
+ u32 VAR_3;
+ u8 VAR_4;
+
+ VAR_3 = VAR_1 * 9 / 14 + 2000;
+ VAR_3 += VAR_2;
+ VAR_3 = FUNC_0(VAR_3, 6000U, 43000U);
+ VAR_4 = VAR_3 / 1000;
+ return FUNC_1(VAR_0->regmap, 0x40, VAR_4);
+}

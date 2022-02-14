@@ -1,0 +1,44 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int uint32_t ;
+struct lpfc_vport {scalar_t__ vpi; } ;
+struct TYPE_2__ {void* AttrInt; } ;
+struct lpfc_fdmi_attr_entry {TYPE_1__ un; } ;
+struct lpfc_fdmi_attr_def {void* AttrType; void* AttrLen; int AttrValue; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ void* FUNC_0 (int) ;
+ void* FUNC_1 (int) ;
+
+__attribute__((used)) static int
+FUNC_2(struct lpfc_vport *VAR_2,
+          struct lpfc_fdmi_attr_def *VAR_3)
+{
+ struct lpfc_fdmi_attr_entry *VAR_4;
+ uint32_t VAR_5;
+
+ VAR_4 = (struct lpfc_fdmi_attr_entry *)&VAR_3->AttrValue;
+
+
+ if (VAR_2->vpi)
+  VAR_4->un.AttrInt = FUNC_1(2);
+ else
+  VAR_4->un.AttrInt = FUNC_1(1);
+ VAR_5 = VAR_0 + sizeof(uint32_t);
+ VAR_3->AttrLen = FUNC_0(VAR_5);
+ VAR_3->AttrType = FUNC_0(VAR_1);
+ return VAR_5;
+}

@@ -1,0 +1,40 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct sock {int dummy; } ;
+struct hash_ctx {scalar_t__ result; int req; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ unsigned int FUNC_0 (int ) ;
+ int FUNC_1 (int *) ;
+ int FUNC_2 (scalar_t__,int ,unsigned int) ;
+ scalar_t__ FUNC_3 (struct sock*,unsigned int,int ) ;
+
+__attribute__((used)) static int FUNC_4(struct sock *VAR_2, struct hash_ctx *VAR_3)
+{
+ unsigned VAR_4;
+
+ if (VAR_3->result)
+  return 0;
+
+ VAR_4 = FUNC_0(FUNC_1(&VAR_3->req));
+
+ VAR_3->result = FUNC_3(VAR_2, VAR_4, VAR_1);
+ if (!VAR_3->result)
+  return -VAR_0;
+
+ FUNC_2(VAR_3->result, 0, VAR_4);
+
+ return 0;
+}

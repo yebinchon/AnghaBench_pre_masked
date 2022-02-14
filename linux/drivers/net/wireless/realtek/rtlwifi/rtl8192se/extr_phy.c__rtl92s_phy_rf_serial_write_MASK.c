@@ -1,0 +1,46 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u32 ;
+struct rtl_phy {struct bb_reg_def* phyreg_def; } ;
+struct rtl_priv {struct rtl_phy phy; } ;
+struct ieee80211_hw {int dummy; } ;
+struct bb_reg_def {int rf3wire_offset; } ;
+typedef enum radio_path { ____Placeholder_radio_path } radio_path ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (struct rtl_priv*,int ,int ,char*,int,int ,int) ;
+ struct rtl_priv* FUNC_1 (struct ieee80211_hw*) ;
+ int FUNC_2 (struct ieee80211_hw*,int ,int ,int) ;
+
+__attribute__((used)) static void FUNC_3(struct ieee80211_hw *VAR_3,
+     enum radio_path VAR_4, u32 VAR_5,
+     u32 VAR_6)
+{
+ struct rtl_priv *VAR_7 = FUNC_1(VAR_3);
+ struct rtl_phy *VAR_8 = &(VAR_7->phy);
+ struct bb_reg_def *VAR_9 = &VAR_8->phyreg_def[VAR_4];
+ u32 VAR_10 = 0;
+ u32 VAR_11;
+
+ VAR_5 &= 0x3f;
+ VAR_11 = VAR_5;
+
+ VAR_10 = ((VAR_11 << 20) | (VAR_6 & 0x000fffff)) & 0x0fffffff;
+ FUNC_2(VAR_3, VAR_9->rf3wire_offset, VAR_2, VAR_10);
+
+ FUNC_0(VAR_7, VAR_0, VAR_1, "RFW-%d Addr[0x%x]=0x%x\n",
+   VAR_4, VAR_9->rf3wire_offset, VAR_10);
+}

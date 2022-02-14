@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ieee80211_device {int softmac_features; int basic_rate; int dev; int (* start_send_beacons ) (int ,int ) ;} ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (struct ieee80211_device*) ;
+ int FUNC_1 (int ,int ) ;
+
+void FUNC_2(struct ieee80211_device *VAR_1)
+{
+ if (VAR_1->start_send_beacons)
+  VAR_1->start_send_beacons(VAR_1->dev, VAR_1->basic_rate);
+ if (VAR_1->softmac_features & VAR_0)
+  FUNC_0(VAR_1);
+}

@@ -1,0 +1,21 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int yaml_char_t ;
+
+
+ char* FUNC_0 (char*) ;
+
+__attribute__((used)) static inline char *FUNC_1(yaml_char_t *VAR_0)
+{
+    return FUNC_0((char *)VAR_0);
+}

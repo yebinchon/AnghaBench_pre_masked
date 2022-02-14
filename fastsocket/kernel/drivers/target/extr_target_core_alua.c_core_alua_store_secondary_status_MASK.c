@@ -1,0 +1,49 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct se_lun {TYPE_1__* lun_sep; } ;
+typedef size_t ssize_t ;
+struct TYPE_2__ {int sep_tg_pt_secondary_stat; } ;
+
+
+ unsigned long VAR_0 ;
+ unsigned long VAR_1 ;
+ unsigned long VAR_2 ;
+ size_t VAR_3 ;
+ int FUNC_0 (char*,...) ;
+ int FUNC_1 (char const*,int ,unsigned long*) ;
+
+ssize_t FUNC_2(
+ struct se_lun *VAR_4,
+ const char *VAR_5,
+ size_t VAR_6)
+{
+ unsigned long VAR_7;
+ int VAR_8;
+
+ VAR_8 = FUNC_1(VAR_5, 0, &VAR_7);
+ if (VAR_8 < 0) {
+  FUNC_0("Unable to extract alua_tg_pt_status\n");
+  return -VAR_3;
+ }
+ if ((VAR_7 != VAR_2) &&
+     (VAR_7 != VAR_0) &&
+     (VAR_7 != VAR_1)) {
+  FUNC_0("Illegal value for alua_tg_pt_status: %lu\n",
+    VAR_7);
+  return -VAR_3;
+ }
+ VAR_4->lun_sep->sep_tg_pt_secondary_stat = (int)VAR_7;
+
+ return VAR_6;
+}

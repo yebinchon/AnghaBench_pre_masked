@@ -1,0 +1,49 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct task_struct {int dummy; } ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (unsigned long*) ;
+ int VAR_1 ;
+ int FUNC_1 (char*,...) ;
+ int FUNC_2 (char*) ;
+
+void FUNC_3(struct task_struct *VAR_2, unsigned long *VAR_3)
+{
+ unsigned long *VAR_4;
+ int VAR_5;
+
+
+
+
+
+ if(VAR_3==((void*)0))
+  VAR_3=(unsigned long*)&VAR_3;
+
+ VAR_4 = VAR_3;
+ for(VAR_5=0; VAR_5 < VAR_1; VAR_5++) {
+  if (((long) VAR_4 & (VAR_0-1)) == 0)
+   break;
+  if ((VAR_5 % 4) == 0) {
+   if (VAR_5)
+    FUNC_1("\n");
+   FUNC_2("       ");
+  } else {
+   FUNC_1(" ");
+  }
+  FUNC_1("%016lx", *VAR_4++);
+ }
+ FUNC_1("\n");
+ FUNC_0(VAR_3);
+}

@@ -1,0 +1,42 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct TYPE_4__ {int magic; int catalog; } ;
+typedef TYPE_1__ isc_msgcat_t ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int) ;
+ int FUNC_1 (char const*,int ) ;
+ TYPE_1__* FUNC_2 (int) ;
+
+void
+FUNC_3(const char *VAR_1, isc_msgcat_t **VAR_2) {
+ isc_msgcat_t *VAR_3;
+
+
+
+
+
+ FUNC_0(VAR_1 != ((void*)0));
+ FUNC_0(VAR_2 != ((void*)0) && *VAR_2 == ((void*)0));
+
+ VAR_3 = FUNC_2(sizeof(*VAR_3));
+ if (VAR_3 == ((void*)0)) {
+  *VAR_2 = ((void*)0);
+  return;
+ }
+ VAR_3->magic = VAR_0;
+
+ *VAR_2 = VAR_3;
+}

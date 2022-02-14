@@ -1,0 +1,123 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct cmac {TYPE_1__* instance; int * adapter; int * ops; } ;
+struct TYPE_2__ {int fc; } ;
+typedef TYPE_1__ cmac_instance ;
+typedef int adapter_t ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int) ;
+ int VAR_1 ;
+ int VAR_2 ;
+ struct cmac* FUNC_1 (int,int ) ;
+ int VAR_3 ;
+ int FUNC_2 (int *,int ,int) ;
+
+__attribute__((used)) static struct cmac *FUNC_3(adapter_t *VAR_4, int VAR_5)
+{
+ struct cmac *VAR_6;
+
+ VAR_6 = FUNC_1(sizeof(*VAR_6) + sizeof(cmac_instance), VAR_0);
+ if (!VAR_6)
+  return ((void*)0);
+
+ VAR_6->ops = &VAR_3;
+ VAR_6->instance = (cmac_instance *) (VAR_6 + 1);
+ VAR_6->adapter = VAR_4;
+ VAR_6->instance->fc = VAR_2 | VAR_1;
+
+ FUNC_2(VAR_4, FUNC_0(0x0001), 0x00008000);
+ FUNC_2(VAR_4, FUNC_0(0x0001), 0x00000000);
+ FUNC_2(VAR_4, FUNC_0(0x2308), 0x00009800);
+ FUNC_2(VAR_4, FUNC_0(0x2305), 0x00001001);
+ FUNC_2(VAR_4, FUNC_0(0x2320), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x2321), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x2322), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x2323), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x2324), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x2325), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x2326), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x2327), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x2328), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x2329), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x232a), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x232b), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x232c), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x232d), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x232e), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x232f), 0x00008800);
+ FUNC_2(VAR_4, FUNC_0(0x230d), 0x00009c00);
+ FUNC_2(VAR_4, FUNC_0(0x2304), 0x00000202);
+
+ FUNC_2(VAR_4, FUNC_0(0x3200), 0x00008080);
+ FUNC_2(VAR_4, FUNC_0(0x3210), 0x00000000);
+ FUNC_2(VAR_4, FUNC_0(0x3203), 0x00000000);
+ FUNC_2(VAR_4, FUNC_0(0x3204), 0x00000040);
+ FUNC_2(VAR_4, FUNC_0(0x3205), 0x000002cc);
+ FUNC_2(VAR_4, FUNC_0(0x3206), 0x00000199);
+ FUNC_2(VAR_4, FUNC_0(0x3207), 0x00000240);
+ FUNC_2(VAR_4, FUNC_0(0x3202), 0x00000000);
+ FUNC_2(VAR_4, FUNC_0(0x3210), 0x00000001);
+ FUNC_2(VAR_4, FUNC_0(0x3208), 0x0000ffff);
+ FUNC_2(VAR_4, FUNC_0(0x320a), 0x0000ffff);
+ FUNC_2(VAR_4, FUNC_0(0x320c), 0x0000ffff);
+ FUNC_2(VAR_4, FUNC_0(0x320e), 0x0000ffff);
+
+ FUNC_2(VAR_4, FUNC_0(0x2200), 0x0000c000);
+ FUNC_2(VAR_4, FUNC_0(0x2201), 0x00000000);
+ FUNC_2(VAR_4, FUNC_0(0x220e), 0x00000000);
+ FUNC_2(VAR_4, FUNC_0(0x220f), 0x00000100);
+ FUNC_2(VAR_4, FUNC_0(0x2210), 0x00000c00);
+ FUNC_2(VAR_4, FUNC_0(0x2211), 0x00000599);
+ FUNC_2(VAR_4, FUNC_0(0x220d), 0x00000000);
+ FUNC_2(VAR_4, FUNC_0(0x2201), 0x00000001);
+ FUNC_2(VAR_4, FUNC_0(0x2203), 0x0000ffff);
+ FUNC_2(VAR_4, FUNC_0(0x2205), 0x0000ffff);
+ FUNC_2(VAR_4, FUNC_0(0x2209), 0x0000ffff);
+
+ FUNC_2(VAR_4, FUNC_0(0x2241), 0xfffffffe);
+ FUNC_2(VAR_4, FUNC_0(0x2242), 0x0000ffff);
+ FUNC_2(VAR_4, FUNC_0(0x2243), 0x00000008);
+ FUNC_2(VAR_4, FUNC_0(0x2244), 0x00000008);
+ FUNC_2(VAR_4, FUNC_0(0x2245), 0x00000008);
+ FUNC_2(VAR_4, FUNC_0(0x2240), 0x00000005);
+
+ FUNC_2(VAR_4, FUNC_0(0x2280), 0x00002103);
+ FUNC_2(VAR_4, FUNC_0(0x2284), 0x00000000);
+
+ FUNC_2(VAR_4, FUNC_0(0x3280), 0x00000087);
+ FUNC_2(VAR_4, FUNC_0(0x3282), 0x0000001f);
+
+ FUNC_2(VAR_4, FUNC_0(0x3040), 0x0c32);
+
+ FUNC_2(VAR_4, FUNC_0(0x304d), 0x8000);
+ FUNC_2(VAR_4, FUNC_0(0x2040), 0x059c);
+ FUNC_2(VAR_4, FUNC_0(0x2049), 0x0001);
+ FUNC_2(VAR_4, FUNC_0(0x2070), 0x0000);
+
+
+
+ FUNC_2(VAR_4, FUNC_0(0x206e), 0x0000);
+ FUNC_2(VAR_4, FUNC_0(0x204a), 0xffff);
+ FUNC_2(VAR_4, FUNC_0(0x204b), 0xffff);
+ FUNC_2(VAR_4, FUNC_0(0x204c), 0xffff);
+ FUNC_2(VAR_4, FUNC_0(0x206e), 0x0009);
+
+ FUNC_2(VAR_4, FUNC_0(0x0003), 0x0000);
+ FUNC_2(VAR_4, FUNC_0(0x0100), 0x0ff0);
+ FUNC_2(VAR_4, FUNC_0(0x0101), 0x0f0f);
+
+ return VAR_6;
+}

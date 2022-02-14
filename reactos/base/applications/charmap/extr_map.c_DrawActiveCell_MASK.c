@@ -1,0 +1,37 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_7__ TYPE_3__ ;
+typedef struct TYPE_6__ TYPE_2__ ;
+typedef struct TYPE_5__ TYPE_1__ ;
+
+
+typedef int VOID ;
+struct TYPE_7__ {TYPE_2__* pActiveCell; } ;
+struct TYPE_5__ {int bottom; int right; int top; int left; } ;
+struct TYPE_6__ {TYPE_1__ CellInt; } ;
+typedef TYPE_3__* PMAP ;
+typedef int HDC ;
+
+
+ int FUNC_0 (int ,int ,int ,int ,int ) ;
+
+__attribute__((used)) static
+VOID
+FUNC_1(PMAP VAR_0,
+               HDC VAR_1)
+{
+    FUNC_0(VAR_1,
+              VAR_0->pActiveCell->CellInt.left,
+              VAR_0->pActiveCell->CellInt.top,
+              VAR_0->pActiveCell->CellInt.right,
+              VAR_0->pActiveCell->CellInt.bottom);
+
+}

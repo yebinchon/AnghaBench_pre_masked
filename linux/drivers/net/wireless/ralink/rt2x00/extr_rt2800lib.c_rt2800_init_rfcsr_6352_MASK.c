@@ -1,0 +1,289 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct rt2x00_dev {int freq_offset; } ;
+
+
+ int FUNC_0 (struct rt2x00_dev*,int) ;
+ scalar_t__ FUNC_1 (struct rt2x00_dev*) ;
+ int FUNC_2 (struct rt2x00_dev*,int,int) ;
+ int FUNC_3 (struct rt2x00_dev*,int,int,int) ;
+ int FUNC_4 (struct rt2x00_dev*,int,int) ;
+ int FUNC_5 (struct rt2x00_dev*,int,int) ;
+
+__attribute__((used)) static void FUNC_6(struct rt2x00_dev *VAR_0)
+{
+
+ FUNC_2(VAR_0, 0, 0x02);
+ FUNC_2(VAR_0, 1, 0x03);
+ FUNC_2(VAR_0, 2, 0x33);
+ FUNC_2(VAR_0, 3, 0xFF);
+ FUNC_2(VAR_0, 4, 0x0C);
+ FUNC_2(VAR_0, 5, 0x40);
+ FUNC_2(VAR_0, 6, 0x00);
+ FUNC_2(VAR_0, 7, 0x00);
+ FUNC_2(VAR_0, 8, 0x00);
+ FUNC_2(VAR_0, 9, 0x00);
+ FUNC_2(VAR_0, 10, 0x00);
+ FUNC_2(VAR_0, 11, 0x00);
+ FUNC_2(VAR_0, 12, VAR_0->freq_offset);
+ FUNC_2(VAR_0, 13, 0x00);
+ FUNC_2(VAR_0, 14, 0x40);
+ FUNC_2(VAR_0, 15, 0x22);
+ FUNC_2(VAR_0, 16, 0x4C);
+ FUNC_2(VAR_0, 17, 0x00);
+ FUNC_2(VAR_0, 18, 0x00);
+ FUNC_2(VAR_0, 19, 0x00);
+ FUNC_2(VAR_0, 20, 0xA0);
+ FUNC_2(VAR_0, 21, 0x12);
+ FUNC_2(VAR_0, 22, 0x07);
+ FUNC_2(VAR_0, 23, 0x13);
+ FUNC_2(VAR_0, 24, 0xFE);
+ FUNC_2(VAR_0, 25, 0x24);
+ FUNC_2(VAR_0, 26, 0x7A);
+ FUNC_2(VAR_0, 27, 0x00);
+ FUNC_2(VAR_0, 28, 0x00);
+ FUNC_2(VAR_0, 29, 0x05);
+ FUNC_2(VAR_0, 30, 0x00);
+ FUNC_2(VAR_0, 31, 0x00);
+ FUNC_2(VAR_0, 32, 0x00);
+ FUNC_2(VAR_0, 33, 0x00);
+ FUNC_2(VAR_0, 34, 0x00);
+ FUNC_2(VAR_0, 35, 0x00);
+ FUNC_2(VAR_0, 36, 0x00);
+ FUNC_2(VAR_0, 37, 0x00);
+ FUNC_2(VAR_0, 38, 0x00);
+ FUNC_2(VAR_0, 39, 0x00);
+ FUNC_2(VAR_0, 40, 0x00);
+ FUNC_2(VAR_0, 41, 0xD0);
+ FUNC_2(VAR_0, 42, 0x5B);
+ FUNC_2(VAR_0, 43, 0x00);
+
+ FUNC_2(VAR_0, 11, 0x21);
+ if (FUNC_1(VAR_0))
+  FUNC_2(VAR_0, 13, 0x03);
+ else
+  FUNC_2(VAR_0, 13, 0x00);
+ FUNC_2(VAR_0, 14, 0x7C);
+ FUNC_2(VAR_0, 16, 0x80);
+ FUNC_2(VAR_0, 17, 0x99);
+ FUNC_2(VAR_0, 18, 0x99);
+ FUNC_2(VAR_0, 19, 0x09);
+ FUNC_2(VAR_0, 20, 0x50);
+ FUNC_2(VAR_0, 21, 0xB0);
+ FUNC_2(VAR_0, 22, 0x00);
+ FUNC_2(VAR_0, 23, 0x06);
+ FUNC_2(VAR_0, 24, 0x00);
+ FUNC_2(VAR_0, 25, 0x00);
+ FUNC_2(VAR_0, 26, 0x5D);
+ FUNC_2(VAR_0, 27, 0x00);
+ FUNC_2(VAR_0, 28, 0x61);
+ FUNC_2(VAR_0, 29, 0xB5);
+ FUNC_2(VAR_0, 43, 0x02);
+
+ FUNC_2(VAR_0, 28, 0x62);
+ FUNC_2(VAR_0, 29, 0xAD);
+ FUNC_2(VAR_0, 39, 0x80);
+
+
+ FUNC_4(VAR_0, 0, 0x03);
+ FUNC_4(VAR_0, 1, 0x00);
+ FUNC_4(VAR_0, 2, 0x00);
+ FUNC_4(VAR_0, 3, 0x00);
+ FUNC_4(VAR_0, 4, 0x00);
+ FUNC_4(VAR_0, 5, 0x08);
+ FUNC_4(VAR_0, 6, 0x00);
+ FUNC_4(VAR_0, 7, 0x51);
+ FUNC_4(VAR_0, 8, 0x53);
+ FUNC_4(VAR_0, 9, 0x16);
+ FUNC_4(VAR_0, 10, 0x61);
+ FUNC_4(VAR_0, 11, 0x53);
+ FUNC_4(VAR_0, 12, 0x22);
+ FUNC_4(VAR_0, 13, 0x3D);
+ FUNC_4(VAR_0, 14, 0x06);
+ FUNC_4(VAR_0, 15, 0x13);
+ FUNC_4(VAR_0, 16, 0x22);
+ FUNC_4(VAR_0, 17, 0x27);
+ FUNC_4(VAR_0, 18, 0x02);
+ FUNC_4(VAR_0, 19, 0xA7);
+ FUNC_4(VAR_0, 20, 0x01);
+ FUNC_4(VAR_0, 21, 0x52);
+ FUNC_4(VAR_0, 22, 0x80);
+ FUNC_4(VAR_0, 23, 0xB3);
+ FUNC_4(VAR_0, 24, 0x00);
+ FUNC_4(VAR_0, 25, 0x00);
+ FUNC_4(VAR_0, 26, 0x00);
+ FUNC_4(VAR_0, 27, 0x00);
+ FUNC_4(VAR_0, 28, 0x5C);
+ FUNC_4(VAR_0, 29, 0x6B);
+ FUNC_4(VAR_0, 30, 0x6B);
+ FUNC_4(VAR_0, 31, 0x31);
+ FUNC_4(VAR_0, 32, 0x5D);
+ FUNC_4(VAR_0, 33, 0x00);
+ FUNC_4(VAR_0, 34, 0xE6);
+ FUNC_4(VAR_0, 35, 0x55);
+ FUNC_4(VAR_0, 36, 0x00);
+ FUNC_4(VAR_0, 37, 0xBB);
+ FUNC_4(VAR_0, 38, 0xB3);
+ FUNC_4(VAR_0, 39, 0xB3);
+ FUNC_4(VAR_0, 40, 0x03);
+ FUNC_4(VAR_0, 41, 0x00);
+ FUNC_4(VAR_0, 42, 0x00);
+ FUNC_4(VAR_0, 43, 0xB3);
+ FUNC_4(VAR_0, 44, 0xD3);
+ FUNC_4(VAR_0, 45, 0xD5);
+ FUNC_4(VAR_0, 46, 0x07);
+ FUNC_4(VAR_0, 47, 0x68);
+ FUNC_4(VAR_0, 48, 0xEF);
+ FUNC_4(VAR_0, 49, 0x1C);
+ FUNC_4(VAR_0, 54, 0x07);
+ FUNC_4(VAR_0, 55, 0xA8);
+ FUNC_4(VAR_0, 56, 0x85);
+ FUNC_4(VAR_0, 57, 0x10);
+ FUNC_4(VAR_0, 58, 0x07);
+ FUNC_4(VAR_0, 59, 0x6A);
+ FUNC_4(VAR_0, 60, 0x85);
+ FUNC_4(VAR_0, 61, 0x10);
+ FUNC_4(VAR_0, 62, 0x1C);
+ FUNC_4(VAR_0, 63, 0x00);
+
+ FUNC_3(VAR_0, 6, 45, 0xC5);
+
+ FUNC_4(VAR_0, 9, 0x47);
+ FUNC_4(VAR_0, 10, 0x71);
+ FUNC_4(VAR_0, 11, 0x33);
+ FUNC_4(VAR_0, 14, 0x0E);
+ FUNC_4(VAR_0, 17, 0x23);
+ FUNC_4(VAR_0, 19, 0xA4);
+ FUNC_4(VAR_0, 20, 0x02);
+ FUNC_4(VAR_0, 21, 0x12);
+ FUNC_4(VAR_0, 28, 0x1C);
+ FUNC_4(VAR_0, 29, 0xEB);
+ FUNC_4(VAR_0, 32, 0x7D);
+ FUNC_4(VAR_0, 34, 0xD6);
+ FUNC_4(VAR_0, 36, 0x08);
+ FUNC_4(VAR_0, 38, 0xB4);
+ FUNC_4(VAR_0, 43, 0xD3);
+ FUNC_4(VAR_0, 44, 0xB3);
+ FUNC_4(VAR_0, 45, 0xD5);
+ FUNC_4(VAR_0, 46, 0x27);
+ FUNC_3(VAR_0, 4, 47, 0x67);
+ FUNC_3(VAR_0, 6, 47, 0x69);
+ FUNC_4(VAR_0, 48, 0xFF);
+ FUNC_3(VAR_0, 4, 54, 0x27);
+ FUNC_3(VAR_0, 6, 54, 0x20);
+ FUNC_4(VAR_0, 55, 0x66);
+ FUNC_4(VAR_0, 56, 0xFF);
+ FUNC_4(VAR_0, 57, 0x1C);
+ FUNC_4(VAR_0, 58, 0x20);
+ FUNC_4(VAR_0, 59, 0x6B);
+ FUNC_4(VAR_0, 60, 0xF7);
+ FUNC_4(VAR_0, 61, 0x09);
+
+ FUNC_4(VAR_0, 10, 0x51);
+ FUNC_4(VAR_0, 14, 0x06);
+ FUNC_4(VAR_0, 19, 0xA7);
+ FUNC_4(VAR_0, 28, 0x2C);
+ FUNC_4(VAR_0, 55, 0x64);
+ FUNC_4(VAR_0, 8, 0x51);
+ FUNC_4(VAR_0, 9, 0x36);
+ FUNC_4(VAR_0, 11, 0x53);
+ FUNC_4(VAR_0, 14, 0x16);
+
+ FUNC_4(VAR_0, 47, 0x6C);
+ FUNC_4(VAR_0, 48, 0xFC);
+ FUNC_4(VAR_0, 49, 0x1F);
+ FUNC_4(VAR_0, 54, 0x27);
+ FUNC_4(VAR_0, 55, 0x66);
+ FUNC_4(VAR_0, 59, 0x6B);
+
+
+ FUNC_4(VAR_0, 43, 0xD3);
+ FUNC_4(VAR_0, 44, 0xE3);
+ FUNC_4(VAR_0, 45, 0xE5);
+ FUNC_4(VAR_0, 47, 0x28);
+ FUNC_4(VAR_0, 55, 0x68);
+ FUNC_4(VAR_0, 56, 0xF7);
+ FUNC_4(VAR_0, 58, 0x02);
+ FUNC_4(VAR_0, 60, 0xC7);
+
+
+ FUNC_5(VAR_0, 0, 0x47);
+ FUNC_5(VAR_0, 1, 0x00);
+ FUNC_5(VAR_0, 2, 0x00);
+ FUNC_5(VAR_0, 3, 0x00);
+ FUNC_5(VAR_0, 4, 0x00);
+ FUNC_5(VAR_0, 5, 0x00);
+ FUNC_5(VAR_0, 6, 0x10);
+ FUNC_5(VAR_0, 7, 0x10);
+ FUNC_5(VAR_0, 8, 0x04);
+ FUNC_5(VAR_0, 9, 0x00);
+ FUNC_5(VAR_0, 10, 0x07);
+ FUNC_5(VAR_0, 11, 0x01);
+ FUNC_5(VAR_0, 12, 0x07);
+ FUNC_5(VAR_0, 13, 0x07);
+ FUNC_5(VAR_0, 14, 0x07);
+ FUNC_5(VAR_0, 15, 0x20);
+ FUNC_5(VAR_0, 16, 0x22);
+ FUNC_5(VAR_0, 17, 0x00);
+ FUNC_5(VAR_0, 18, 0x00);
+ FUNC_5(VAR_0, 19, 0x00);
+ FUNC_5(VAR_0, 20, 0x00);
+ FUNC_5(VAR_0, 21, 0xF1);
+ FUNC_5(VAR_0, 22, 0x11);
+ FUNC_5(VAR_0, 23, 0x02);
+ FUNC_5(VAR_0, 24, 0x41);
+ FUNC_5(VAR_0, 25, 0x20);
+ FUNC_5(VAR_0, 26, 0x00);
+ FUNC_5(VAR_0, 27, 0xD7);
+ FUNC_5(VAR_0, 28, 0xA2);
+ FUNC_5(VAR_0, 29, 0x20);
+ FUNC_5(VAR_0, 30, 0x49);
+ FUNC_5(VAR_0, 31, 0x20);
+ FUNC_5(VAR_0, 32, 0x04);
+ FUNC_5(VAR_0, 33, 0xF1);
+ FUNC_5(VAR_0, 34, 0xA1);
+ FUNC_5(VAR_0, 35, 0x01);
+ FUNC_5(VAR_0, 41, 0x00);
+ FUNC_5(VAR_0, 42, 0x00);
+ FUNC_5(VAR_0, 43, 0x00);
+ FUNC_5(VAR_0, 44, 0x00);
+ FUNC_5(VAR_0, 45, 0x00);
+ FUNC_5(VAR_0, 46, 0x00);
+ FUNC_5(VAR_0, 47, 0x3E);
+ FUNC_5(VAR_0, 48, 0x3D);
+ FUNC_5(VAR_0, 49, 0x3E);
+ FUNC_5(VAR_0, 50, 0x3D);
+ FUNC_5(VAR_0, 51, 0x3E);
+ FUNC_5(VAR_0, 52, 0x3D);
+ FUNC_5(VAR_0, 53, 0x00);
+ FUNC_5(VAR_0, 54, 0x00);
+ FUNC_5(VAR_0, 55, 0x00);
+ FUNC_5(VAR_0, 56, 0x00);
+ FUNC_5(VAR_0, 57, 0x00);
+ FUNC_5(VAR_0, 58, 0x10);
+ FUNC_5(VAR_0, 59, 0x10);
+ FUNC_5(VAR_0, 60, 0x0A);
+ FUNC_5(VAR_0, 61, 0x00);
+ FUNC_5(VAR_0, 62, 0x00);
+ FUNC_5(VAR_0, 63, 0x00);
+
+ FUNC_5(VAR_0, 3, 0x08);
+ FUNC_5(VAR_0, 4, 0x04);
+ FUNC_5(VAR_0, 5, 0x20);
+
+ FUNC_5(VAR_0, 5, 0x00);
+ FUNC_5(VAR_0, 17, 0x7C);
+
+ FUNC_0(VAR_0, 1);
+ FUNC_0(VAR_0, 0);
+}

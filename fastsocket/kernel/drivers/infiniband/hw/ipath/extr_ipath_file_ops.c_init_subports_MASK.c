@@ -1,0 +1,115 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int u32 ;
+struct ipath_user_info {unsigned int spu_subport_cnt; int spu_userversion; int spu_subport_id; } ;
+struct ipath_portdata {unsigned int port_rcvegrbuf_chunks; unsigned int port_rcvegrbuf_size; unsigned int port_subport_cnt; int active_slaves; int * subport_uregbase; int * subport_rcvhdr_base; int port_flag; int port_subport_id; void* subport_rcvegrbuf; } ;
+struct ipath_devdata {int ipath_rcvhdrcnt; int ipath_rcvhdrentsize; TYPE_1__* pcidev; } ;
+struct TYPE_2__ {int dev; } ;
+
+
+ unsigned int FUNC_0 (int,unsigned int) ;
+ int VAR_0 ;
+ int VAR_1 ;
+ unsigned int VAR_2 ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ unsigned int VAR_6 ;
+ int FUNC_1 (int *,char*,...) ;
+ int FUNC_2 (int,int) ;
+ scalar_t__ FUNC_3 (int,int) ;
+ int FUNC_4 (int ,int *) ;
+ int FUNC_5 (int *) ;
+ void* FUNC_6 (unsigned int) ;
+
+__attribute__((used)) static int FUNC_7(struct ipath_devdata *VAR_7,
+    struct ipath_portdata *VAR_8,
+    const struct ipath_user_info *VAR_9)
+{
+ int VAR_10 = 0;
+ unsigned VAR_11;
+ size_t VAR_12;
+
+
+
+
+
+ if (VAR_9->spu_subport_cnt <= 0)
+  goto bail;
+
+
+ if (FUNC_3(VAR_4, VAR_5) &&
+     !FUNC_2(VAR_4,
+           VAR_5)) {
+  FUNC_1(&VAR_7->pcidev->dev,
+    "Inconsistent ipath_compatible_subports()\n");
+  goto bail;
+ }
+
+
+ if (!FUNC_2(VAR_9->spu_userversion >> 16,
+           VAR_9->spu_userversion & 0xffff)) {
+  FUNC_1(&VAR_7->pcidev->dev,
+    "Mismatched user version (%d.%d) and driver "
+    "version (%d.%d) while port sharing. Ensure "
+                         "that driver and library are from the same "
+                         "release.\n",
+    (int) (VAR_9->spu_userversion >> 16),
+                         (int) (VAR_9->spu_userversion & 0xffff),
+    VAR_4,
+                  VAR_5);
+  goto bail;
+ }
+ if (VAR_9->spu_subport_cnt > VAR_2) {
+  VAR_10 = -VAR_0;
+  goto bail;
+ }
+
+ VAR_11 = VAR_9->spu_subport_cnt;
+ VAR_8->subport_uregbase = FUNC_6(VAR_6 * VAR_11);
+ if (!VAR_8->subport_uregbase) {
+  VAR_10 = -VAR_1;
+  goto bail;
+ }
+
+ VAR_12 = FUNC_0(VAR_7->ipath_rcvhdrcnt * VAR_7->ipath_rcvhdrentsize *
+       sizeof(u32), VAR_6) * VAR_11;
+ VAR_8->subport_rcvhdr_base = FUNC_6(VAR_12);
+ if (!VAR_8->subport_rcvhdr_base) {
+  VAR_10 = -VAR_1;
+  goto bail_ureg;
+ }
+
+ VAR_8->subport_rcvegrbuf = FUNC_6(VAR_8->port_rcvegrbuf_chunks *
+     VAR_8->port_rcvegrbuf_size *
+     VAR_11);
+ if (!VAR_8->subport_rcvegrbuf) {
+  VAR_10 = -VAR_1;
+  goto bail_rhdr;
+ }
+
+ VAR_8->port_subport_cnt = VAR_9->spu_subport_cnt;
+ VAR_8->port_subport_id = VAR_9->spu_subport_id;
+ VAR_8->active_slaves = 1;
+ FUNC_4(VAR_3, &VAR_8->port_flag);
+ goto bail;
+
+bail_rhdr:
+ FUNC_5(VAR_8->subport_rcvhdr_base);
+bail_ureg:
+ FUNC_5(VAR_8->subport_uregbase);
+ VAR_8->subport_uregbase = ((void*)0);
+bail:
+ return VAR_10;
+}

@@ -1,0 +1,36 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct snd_pcm_substream {struct snd_pcm_runtime* runtime; } ;
+struct snd_pcm_runtime {int channels; int format; } ;
+
+
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int ) ;
+
+__attribute__((used)) static unsigned int FUNC_2(struct snd_pcm_substream *VAR_0)
+{
+ unsigned int VAR_1;
+ struct snd_pcm_runtime *VAR_2 = VAR_0->runtime;
+
+
+
+
+ VAR_1 = 0x00000001;
+ if (FUNC_1(VAR_2->format) == 16)
+  VAR_1 |= 0x00000008;
+ if (!FUNC_0(VAR_2->format))
+  VAR_1 |= 0x00000002;
+ if (VAR_2->channels > 1)
+  VAR_1 |= 0x00000004;
+ return VAR_1;
+}

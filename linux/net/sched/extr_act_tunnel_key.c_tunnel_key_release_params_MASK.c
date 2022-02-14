@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct tcf_tunnel_key_params {scalar_t__ tcft_action; TYPE_1__* tcft_enc_metadata; } ;
+struct TYPE_2__ {int dst; } ;
+
+
+ scalar_t__ VAR_0 ;
+ int FUNC_0 (int *) ;
+ int FUNC_1 (struct tcf_tunnel_key_params*,int ) ;
+ int VAR_1 ;
+
+__attribute__((used)) static void FUNC_2(struct tcf_tunnel_key_params *VAR_2)
+{
+ if (!VAR_2)
+  return;
+ if (VAR_2->tcft_action == VAR_0)
+  FUNC_0(&VAR_2->tcft_enc_metadata->dst);
+
+ FUNC_1(VAR_2, VAR_1);
+}

@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+union i2c_smbus_data {int byte; } ;
+struct i2c_client {int flags; int addr; int adapter; } ;
+typedef int s32 ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (int ,int ,int ,int ,int ,int ,union i2c_smbus_data*) ;
+
+s32 FUNC_1(const struct i2c_client *VAR_2)
+{
+ union i2c_smbus_data VAR_3;
+ int VAR_4;
+
+ VAR_4 = FUNC_0(VAR_2->adapter, VAR_2->addr, VAR_2->flags,
+    VAR_1, 0,
+    VAR_0, &VAR_3);
+ return (VAR_4 < 0) ? VAR_4 : VAR_3.byte;
+}

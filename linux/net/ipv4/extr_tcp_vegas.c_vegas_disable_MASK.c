@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct vegas {scalar_t__ doing_vegas_now; } ;
+struct sock {int dummy; } ;
+
+
+ struct vegas* FUNC_0 (struct sock*) ;
+
+__attribute__((used)) static inline void FUNC_1(struct sock *VAR_0)
+{
+ struct vegas *VAR_1 = FUNC_0(VAR_0);
+
+ VAR_1->doing_vegas_now = 0;
+}

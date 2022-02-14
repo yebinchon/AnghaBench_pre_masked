@@ -1,0 +1,40 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+typedef int gint ;
+struct TYPE_3__ {int group; int keyfile; int options; } ;
+typedef TYPE_1__ YuiResolution ;
+typedef int GtkWidget ;
+
+
+ int FUNC_0 (int ) ;
+ int FUNC_1 (int ,int ,char*,int) ;
+ int FUNC_2 (int ) ;
+
+__attribute__((used)) static void FUNC_3(GtkWidget * VAR_0, YuiResolution * VAR_1) {
+ gint VAR_2 = FUNC_2(FUNC_0(VAR_1->options));
+ switch(VAR_2) {
+  case 0:
+   FUNC_1(VAR_1->keyfile, VAR_1->group, "Fullscreen", 0);
+   FUNC_1(VAR_1->keyfile, VAR_1->group, "KeepRatio", 0);
+   break;
+  case 1:
+   FUNC_1(VAR_1->keyfile, VAR_1->group, "Fullscreen", 1);
+   FUNC_1(VAR_1->keyfile, VAR_1->group, "KeepRatio", 0);
+   break;
+  case 2:
+   FUNC_1(VAR_1->keyfile, VAR_1->group, "Fullscreen", 0);
+   FUNC_1(VAR_1->keyfile, VAR_1->group, "KeepRatio", 1);
+   break;
+ }
+}

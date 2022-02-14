@@ -1,0 +1,33 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct TYPE_4__ {scalar_t__ idx; int triggered; } ;
+struct TYPE_5__ {TYPE_1__ cmd_trigger; } ;
+typedef TYPE_2__ rarch_setting_t ;
+
+
+ scalar_t__ VAR_0 ;
+
+int FUNC_0(rarch_setting_t *VAR_1, bool VAR_2)
+{
+   if (!VAR_1)
+      return -1;
+
+   (void)VAR_2;
+
+   if (VAR_1->cmd_trigger.idx != VAR_0)
+      VAR_1->cmd_trigger.triggered = 1;
+
+   return 0;
+}

@@ -1,0 +1,46 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u8 ;
+struct sd {int gamma; } ;
+struct gspca_dev {int dummy; } ;
+
+
+ int FUNC_0 (struct gspca_dev*,int,int*,int) ;
+
+__attribute__((used)) static int FUNC_1(struct gspca_dev *VAR_0)
+{
+ struct sd *VAR_1 = (struct sd *) VAR_0;
+ u8 VAR_2[17];
+ u8 VAR_3 = VAR_1->gamma * 0xb8 / 0x100;
+
+
+ VAR_2[0] = 0x0a;
+ VAR_2[1] = 0x13 + (VAR_3 * (0xcb - 0x13) / 0xb8);
+ VAR_2[2] = 0x25 + (VAR_3 * (0xee - 0x25) / 0xb8);
+ VAR_2[3] = 0x37 + (VAR_3 * (0xfa - 0x37) / 0xb8);
+ VAR_2[4] = 0x45 + (VAR_3 * (0xfc - 0x45) / 0xb8);
+ VAR_2[5] = 0x55 + (VAR_3 * (0xfb - 0x55) / 0xb8);
+ VAR_2[6] = 0x65 + (VAR_3 * (0xfc - 0x65) / 0xb8);
+ VAR_2[7] = 0x74 + (VAR_3 * (0xfd - 0x74) / 0xb8);
+ VAR_2[8] = 0x83 + (VAR_3 * (0xfe - 0x83) / 0xb8);
+ VAR_2[9] = 0x92 + (VAR_3 * (0xfc - 0x92) / 0xb8);
+ VAR_2[10] = 0xa1 + (VAR_3 * (0xfc - 0xa1) / 0xb8);
+ VAR_2[11] = 0xb0 + (VAR_3 * (0xfc - 0xb0) / 0xb8);
+ VAR_2[12] = 0xbf + (VAR_3 * (0xfb - 0xbf) / 0xb8);
+ VAR_2[13] = 0xce + (VAR_3 * (0xfb - 0xce) / 0xb8);
+ VAR_2[14] = 0xdf + (VAR_3 * (0xfd - 0xdf) / 0xb8);
+ VAR_2[15] = 0xea + (VAR_3 * (0xf9 - 0xea) / 0xb8);
+ VAR_2[16] = 0xf5;
+
+ return FUNC_0(VAR_0, 0x1190, VAR_2, 17);
+}

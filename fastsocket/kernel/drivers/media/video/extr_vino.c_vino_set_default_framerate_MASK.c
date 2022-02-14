@@ -1,0 +1,25 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct vino_channel_settings {size_t data_norm; } ;
+struct TYPE_2__ {int fps_max; } ;
+
+
+ TYPE_1__* VAR_0 ;
+ int FUNC_0 (struct vino_channel_settings*,int ) ;
+
+__attribute__((used)) static inline void FUNC_1(struct
+           vino_channel_settings *VAR_1)
+{
+ FUNC_0(VAR_1, VAR_0[VAR_1->data_norm].fps_max);
+}

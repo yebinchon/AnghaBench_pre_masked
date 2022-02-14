@@ -1,0 +1,16 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+__attribute__((used)) static unsigned char FUNC_0(unsigned char VAR_0){
+  if( VAR_0>='a' && VAR_0<='z' ){
+    VAR_0 += 13;
+    if( VAR_0>'z' ) VAR_0 -= 26;
+  }else if( VAR_0>='A' && VAR_0<='Z' ){
+    VAR_0 += 13;
+    if( VAR_0>'Z' ) VAR_0 -= 26;
+  }
+  return VAR_0;
+}

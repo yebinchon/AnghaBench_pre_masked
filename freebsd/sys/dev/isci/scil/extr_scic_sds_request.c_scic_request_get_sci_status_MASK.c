@@ -1,0 +1,27 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef int U32 ;
+struct TYPE_2__ {int sci_status; } ;
+typedef scalar_t__ SCI_IO_REQUEST_HANDLE_T ;
+typedef TYPE_1__ SCIC_SDS_REQUEST_T ;
+
+
+
+U32 FUNC_0(
+   SCI_IO_REQUEST_HANDLE_T VAR_0
+)
+{
+   SCIC_SDS_REQUEST_T * VAR_1 = (SCIC_SDS_REQUEST_T*)VAR_0;
+   return VAR_1->sci_status;
+}

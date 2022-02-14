@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct TYPE_2__ {int maskHash; } ;
+typedef TYPE_1__ RSA_OAEP_PARAMS ;
+typedef int ASN1_VALUE ;
+typedef int ASN1_ITEM ;
+
+
+ int VAR_0 ;
+ int FUNC_0 (int ) ;
+
+__attribute__((used)) static int FUNC_1(int VAR_1, ASN1_VALUE **VAR_2, const ASN1_ITEM *VAR_3,
+                       void *VAR_4)
+{
+    if (VAR_1 == VAR_0) {
+        RSA_OAEP_PARAMS *VAR_5 = (RSA_OAEP_PARAMS *)*VAR_2;
+        FUNC_0(VAR_5->maskHash);
+    }
+    return 1;
+}

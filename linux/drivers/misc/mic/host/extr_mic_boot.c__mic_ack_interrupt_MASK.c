@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct mic_device {TYPE_1__* ops; } ;
+struct mbus_device {int dummy; } ;
+struct TYPE_2__ {int (* intr_workarounds ) (struct mic_device*) ;} ;
+
+
+ struct mic_device* FUNC_0 (struct mbus_device*) ;
+ int FUNC_1 (struct mic_device*) ;
+
+__attribute__((used)) static void FUNC_2(struct mbus_device *VAR_0, int VAR_1)
+{
+ struct mic_device *VAR_2 = FUNC_0(VAR_0);
+ VAR_2->ops->intr_workarounds(VAR_2);
+}

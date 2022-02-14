@@ -1,0 +1,33 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ifnet {int if_label; } ;
+
+
+ int FUNC_0 (struct ifnet*,int) ;
+ int FUNC_1 (struct ifnet*,int) ;
+ int FUNC_2 (int ,struct ifnet*,int ) ;
+ int VAR_0 ;
+ scalar_t__ VAR_1 ;
+
+void
+FUNC_3(struct ifnet *VAR_2)
+{
+ int VAR_3;
+
+ if (VAR_1 == 0)
+  return;
+
+ FUNC_0(VAR_2, VAR_3);
+ FUNC_2(VAR_0, VAR_2, VAR_2->if_label);
+ FUNC_1(VAR_2, VAR_3);
+}

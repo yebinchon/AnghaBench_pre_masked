@@ -1,0 +1,102 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct ocfs2_super {int sb; } ;
+struct ocfs2_dinode {int i_check; } ;
+struct inode {int dummy; } ;
+struct buffer_head {scalar_t__ b_data; int b_size; } ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 (struct inode*) ;
+ int VAR_3 ;
+ int VAR_4 ;
+ int FUNC_1 (struct buffer_head*) ;
+ int FUNC_2 (struct inode*) ;
+ int FUNC_3 (struct inode*) ;
+ int FUNC_4 (struct inode*) ;
+ int FUNC_5 (struct ocfs2_dinode*) ;
+ struct ocfs2_dinode* FUNC_6 (int ,int ) ;
+ int FUNC_7 (struct ocfs2_dinode*,scalar_t__,int ) ;
+ int FUNC_8 (int) ;
+ int FUNC_9 (struct ocfs2_dinode*) ;
+ int FUNC_10 (int ,scalar_t__,int *) ;
+ struct inode* FUNC_11 (struct ocfs2_super*,int ,int) ;
+ int FUNC_12 (struct inode*,struct buffer_head**,int ) ;
+ int FUNC_13 (struct ocfs2_super*,struct buffer_head*,int ) ;
+ int FUNC_14 (int) ;
+
+int FUNC_15(struct ocfs2_super *VAR_5,
+         int VAR_6,
+         struct ocfs2_dinode **VAR_7)
+{
+ int VAR_8 = 0;
+ struct buffer_head *VAR_9 = ((void*)0);
+ struct inode *VAR_10 = ((void*)0);
+ struct ocfs2_dinode *VAR_11;
+
+ FUNC_14(VAR_6);
+
+ *VAR_7 = ((void*)0);
+
+ VAR_10 = FUNC_11(VAR_5,
+         VAR_3,
+         VAR_6);
+ if (!VAR_10) {
+  VAR_8 = -VAR_0;
+  FUNC_8(VAR_8);
+  goto bail;
+ }
+
+ FUNC_2(VAR_10);
+
+ VAR_8 = FUNC_12(VAR_10, &VAR_9,
+          VAR_4);
+ if (VAR_8 < 0) {
+  FUNC_8(VAR_8);
+  goto bail;
+ }
+
+ *VAR_7 = FUNC_6(VAR_9->b_size, VAR_2);
+ if (!(*VAR_7)) {
+  VAR_8 = -VAR_1;
+  goto bail;
+ }
+ FUNC_7((*VAR_7), VAR_9->b_data, VAR_9->b_size);
+
+ VAR_11 = (struct ocfs2_dinode *) VAR_9->b_data;
+ FUNC_9(VAR_11);
+
+ FUNC_10(VAR_5->sb, VAR_9->b_data, &VAR_11->i_check);
+ VAR_8 = FUNC_13(VAR_5, VAR_9, FUNC_0(VAR_10));
+ if (VAR_8 < 0)
+  FUNC_8(VAR_8);
+
+bail:
+ if (VAR_8 < 0) {
+  FUNC_5(*VAR_7);
+  *VAR_7 = ((void*)0);
+ }
+
+ FUNC_1(VAR_9);
+
+ if (VAR_10) {
+  FUNC_3(VAR_10);
+  FUNC_4(VAR_10);
+ }
+
+ if (VAR_8)
+  FUNC_8(VAR_8);
+ return VAR_8;
+}

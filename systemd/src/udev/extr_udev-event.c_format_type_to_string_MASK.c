@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_3__ {scalar_t__ type; char const* name; } ;
+typedef scalar_t__ FormatSubstitutionType ;
+
+
+ size_t FUNC_0 (TYPE_1__*) ;
+ TYPE_1__* VAR_0 ;
+
+__attribute__((used)) static const char *FUNC_1(FormatSubstitutionType VAR_1) {
+        for (size_t VAR_2 = 0; VAR_2 < FUNC_0(VAR_0); VAR_2++)
+                if (VAR_0[VAR_2].type == VAR_1)
+                        return VAR_0[VAR_2].name;
+        return ((void*)0);
+}

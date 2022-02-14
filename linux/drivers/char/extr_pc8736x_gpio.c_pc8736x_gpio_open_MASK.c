@@ -1,0 +1,37 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct inode {int dummy; } ;
+struct file {int * private_data; } ;
+struct TYPE_2__ {int dev; } ;
+
+
+ int VAR_0 ;
+ unsigned int VAR_1 ;
+ int FUNC_0 (int *,char*,unsigned int) ;
+ unsigned int FUNC_1 (struct inode*) ;
+ int FUNC_2 (struct inode*,struct file*) ;
+ int VAR_2 ;
+ TYPE_1__* VAR_3 ;
+
+__attribute__((used)) static int FUNC_3(struct inode *VAR_4, struct file *VAR_5)
+{
+ unsigned VAR_6 = FUNC_1(VAR_4);
+ VAR_5->private_data = &VAR_2;
+
+ FUNC_0(&VAR_3->dev, "open %d\n", VAR_6);
+
+ if (VAR_6 >= VAR_1)
+  return -VAR_0;
+ return FUNC_2(VAR_4, VAR_5);
+}

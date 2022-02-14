@@ -1,0 +1,54 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct RRange {int dummy; } ;
+typedef int mrb_value ;
+typedef int mrb_state ;
+typedef int mrb_bool ;
+
+
+ int FUNC_0 (struct RRange*) ;
+ int FUNC_1 (struct RRange*) ;
+ scalar_t__ FUNC_2 (struct RRange*) ;
+ int FUNC_3 (int *,int ,int ) ;
+ int FUNC_4 () ;
+ int FUNC_5 (int *,char*,int *) ;
+ int FUNC_6 (int *,int ) ;
+ scalar_t__ FUNC_7 (int *,int ,int ) ;
+ int FUNC_8 (int *,int ,int ) ;
+ struct RRange* FUNC_9 (int *,int ) ;
+ int FUNC_10 () ;
+
+__attribute__((used)) static mrb_value
+FUNC_11(mrb_state *VAR_0, mrb_value VAR_1)
+{
+  struct RRange *VAR_2;
+  struct RRange *VAR_3;
+  mrb_value VAR_4;
+  mrb_bool VAR_5, VAR_6;
+
+  FUNC_5(VAR_0, "o", &VAR_4);
+
+  if (FUNC_7(VAR_0, VAR_1, VAR_4)) return FUNC_10();
+  if (!FUNC_8(VAR_0, VAR_4, FUNC_6(VAR_0, VAR_1))) {
+    return FUNC_4();
+  }
+
+  VAR_2 = FUNC_9(VAR_0, VAR_1);
+  VAR_3 = FUNC_9(VAR_0, VAR_4);
+  VAR_5 = FUNC_3(VAR_0, FUNC_0(VAR_2), FUNC_0(VAR_3));
+  VAR_6 = FUNC_3(VAR_0, FUNC_1(VAR_2), FUNC_1(VAR_3));
+  if (!VAR_5 || !VAR_6 || FUNC_2(VAR_2) != FUNC_2(VAR_3)) {
+    return FUNC_4();
+  }
+  return FUNC_10();
+}

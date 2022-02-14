@@ -1,0 +1,146 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef scalar_t__ PFNGLWRITEMASKEXTPROC ;
+typedef scalar_t__ PFNGLVARIANTUSVEXTPROC ;
+typedef scalar_t__ PFNGLVARIANTUIVEXTPROC ;
+typedef scalar_t__ PFNGLVARIANTUBVEXTPROC ;
+typedef scalar_t__ PFNGLVARIANTSVEXTPROC ;
+typedef scalar_t__ PFNGLVARIANTPOINTEREXTPROC ;
+typedef scalar_t__ PFNGLVARIANTIVEXTPROC ;
+typedef scalar_t__ PFNGLVARIANTFVEXTPROC ;
+typedef scalar_t__ PFNGLVARIANTDVEXTPROC ;
+typedef scalar_t__ PFNGLVARIANTBVEXTPROC ;
+typedef scalar_t__ PFNGLSWIZZLEEXTPROC ;
+typedef scalar_t__ PFNGLSHADEROP3EXTPROC ;
+typedef scalar_t__ PFNGLSHADEROP2EXTPROC ;
+typedef scalar_t__ PFNGLSHADEROP1EXTPROC ;
+typedef scalar_t__ PFNGLSETLOCALCONSTANTEXTPROC ;
+typedef scalar_t__ PFNGLSETINVARIANTEXTPROC ;
+typedef scalar_t__ PFNGLISVARIANTENABLEDEXTPROC ;
+typedef scalar_t__ PFNGLINSERTCOMPONENTEXTPROC ;
+typedef scalar_t__ PFNGLGETVARIANTPOINTERVEXTPROC ;
+typedef scalar_t__ PFNGLGETVARIANTINTEGERVEXTPROC ;
+typedef scalar_t__ PFNGLGETVARIANTFLOATVEXTPROC ;
+typedef scalar_t__ PFNGLGETVARIANTBOOLEANVEXTPROC ;
+typedef scalar_t__ PFNGLGETLOCALCONSTANTINTEGERVEXTPROC ;
+typedef scalar_t__ PFNGLGETLOCALCONSTANTFLOATVEXTPROC ;
+typedef scalar_t__ PFNGLGETLOCALCONSTANTBOOLEANVEXTPROC ;
+typedef scalar_t__ PFNGLGETINVARIANTINTEGERVEXTPROC ;
+typedef scalar_t__ PFNGLGETINVARIANTFLOATVEXTPROC ;
+typedef scalar_t__ PFNGLGETINVARIANTBOOLEANVEXTPROC ;
+typedef scalar_t__ PFNGLGENVERTEXSHADERSEXTPROC ;
+typedef scalar_t__ PFNGLGENSYMBOLSEXTPROC ;
+typedef scalar_t__ PFNGLEXTRACTCOMPONENTEXTPROC ;
+typedef scalar_t__ PFNGLENDVERTEXSHADEREXTPROC ;
+typedef scalar_t__ PFNGLENABLEVARIANTCLIENTSTATEEXTPROC ;
+typedef scalar_t__ PFNGLDISABLEVARIANTCLIENTSTATEEXTPROC ;
+typedef scalar_t__ PFNGLDELETEVERTEXSHADEREXTPROC ;
+typedef scalar_t__ PFNGLBINDVERTEXSHADEREXTPROC ;
+typedef scalar_t__ PFNGLBINDTEXTUREUNITPARAMETEREXTPROC ;
+typedef scalar_t__ PFNGLBINDTEXGENPARAMETEREXTPROC ;
+typedef scalar_t__ PFNGLBINDPARAMETEREXTPROC ;
+typedef scalar_t__ PFNGLBINDMATERIALPARAMETEREXTPROC ;
+typedef scalar_t__ PFNGLBINDLIGHTPARAMETEREXTPROC ;
+typedef scalar_t__ PFNGLBEGINVERTEXSHADEREXTPROC ;
+typedef scalar_t__ (* GLADloadproc ) (char*) ;
+
+
+ int VAR_0 ;
+ scalar_t__ VAR_1 ;
+ scalar_t__ VAR_2 ;
+ scalar_t__ VAR_3 ;
+ scalar_t__ VAR_4 ;
+ scalar_t__ VAR_5 ;
+ scalar_t__ VAR_6 ;
+ scalar_t__ VAR_7 ;
+ scalar_t__ VAR_8 ;
+ scalar_t__ VAR_9 ;
+ scalar_t__ VAR_10 ;
+ scalar_t__ VAR_11 ;
+ scalar_t__ VAR_12 ;
+ scalar_t__ VAR_13 ;
+ scalar_t__ VAR_14 ;
+ scalar_t__ VAR_15 ;
+ scalar_t__ VAR_16 ;
+ scalar_t__ VAR_17 ;
+ scalar_t__ VAR_18 ;
+ scalar_t__ VAR_19 ;
+ scalar_t__ VAR_20 ;
+ scalar_t__ VAR_21 ;
+ scalar_t__ VAR_22 ;
+ scalar_t__ VAR_23 ;
+ scalar_t__ VAR_24 ;
+ scalar_t__ VAR_25 ;
+ scalar_t__ VAR_26 ;
+ scalar_t__ VAR_27 ;
+ scalar_t__ VAR_28 ;
+ scalar_t__ VAR_29 ;
+ scalar_t__ VAR_30 ;
+ scalar_t__ VAR_31 ;
+ scalar_t__ VAR_32 ;
+ scalar_t__ VAR_33 ;
+ scalar_t__ VAR_34 ;
+ scalar_t__ VAR_35 ;
+ scalar_t__ VAR_36 ;
+ scalar_t__ VAR_37 ;
+ scalar_t__ VAR_38 ;
+ scalar_t__ VAR_39 ;
+ scalar_t__ VAR_40 ;
+ scalar_t__ VAR_41 ;
+ scalar_t__ VAR_42 ;
+
+__attribute__((used)) static void FUNC_0(GLADloadproc VAR_43) {
+ if(!VAR_0) return;
+ VAR_1 = (PFNGLBEGINVERTEXSHADEREXTPROC)VAR_43("glBeginVertexShaderEXT");
+ VAR_11 = (PFNGLENDVERTEXSHADEREXTPROC)VAR_43("glEndVertexShaderEXT");
+ VAR_7 = (PFNGLBINDVERTEXSHADEREXTPROC)VAR_43("glBindVertexShaderEXT");
+ VAR_14 = (PFNGLGENVERTEXSHADERSEXTPROC)VAR_43("glGenVertexShadersEXT");
+ VAR_8 = (PFNGLDELETEVERTEXSHADEREXTPROC)VAR_43("glDeleteVertexShaderEXT");
+ VAR_29 = (PFNGLSHADEROP1EXTPROC)VAR_43("glShaderOp1EXT");
+ VAR_30 = (PFNGLSHADEROP2EXTPROC)VAR_43("glShaderOp2EXT");
+ VAR_31 = (PFNGLSHADEROP3EXTPROC)VAR_43("glShaderOp3EXT");
+ VAR_32 = (PFNGLSWIZZLEEXTPROC)VAR_43("glSwizzleEXT");
+ VAR_42 = (PFNGLWRITEMASKEXTPROC)VAR_43("glWriteMaskEXT");
+ VAR_25 = (PFNGLINSERTCOMPONENTEXTPROC)VAR_43("glInsertComponentEXT");
+ VAR_12 = (PFNGLEXTRACTCOMPONENTEXTPROC)VAR_43("glExtractComponentEXT");
+ VAR_13 = (PFNGLGENSYMBOLSEXTPROC)VAR_43("glGenSymbolsEXT");
+ VAR_27 = (PFNGLSETINVARIANTEXTPROC)VAR_43("glSetInvariantEXT");
+ VAR_28 = (PFNGLSETLOCALCONSTANTEXTPROC)VAR_43("glSetLocalConstantEXT");
+ VAR_34 = (PFNGLVARIANTBVEXTPROC)VAR_43("glVariantbvEXT");
+ VAR_38 = (PFNGLVARIANTSVEXTPROC)VAR_43("glVariantsvEXT");
+ VAR_37 = (PFNGLVARIANTIVEXTPROC)VAR_43("glVariantivEXT");
+ VAR_36 = (PFNGLVARIANTFVEXTPROC)VAR_43("glVariantfvEXT");
+ VAR_35 = (PFNGLVARIANTDVEXTPROC)VAR_43("glVariantdvEXT");
+ VAR_39 = (PFNGLVARIANTUBVEXTPROC)VAR_43("glVariantubvEXT");
+ VAR_41 = (PFNGLVARIANTUSVEXTPROC)VAR_43("glVariantusvEXT");
+ VAR_40 = (PFNGLVARIANTUIVEXTPROC)VAR_43("glVariantuivEXT");
+ VAR_33 = (PFNGLVARIANTPOINTEREXTPROC)VAR_43("glVariantPointerEXT");
+ VAR_10 = (PFNGLENABLEVARIANTCLIENTSTATEEXTPROC)VAR_43("glEnableVariantClientStateEXT");
+ VAR_9 = (PFNGLDISABLEVARIANTCLIENTSTATEEXTPROC)VAR_43("glDisableVariantClientStateEXT");
+ VAR_2 = (PFNGLBINDLIGHTPARAMETEREXTPROC)VAR_43("glBindLightParameterEXT");
+ VAR_3 = (PFNGLBINDMATERIALPARAMETEREXTPROC)VAR_43("glBindMaterialParameterEXT");
+ VAR_5 = (PFNGLBINDTEXGENPARAMETEREXTPROC)VAR_43("glBindTexGenParameterEXT");
+ VAR_6 = (PFNGLBINDTEXTUREUNITPARAMETEREXTPROC)VAR_43("glBindTextureUnitParameterEXT");
+ VAR_4 = (PFNGLBINDPARAMETEREXTPROC)VAR_43("glBindParameterEXT");
+ VAR_26 = (PFNGLISVARIANTENABLEDEXTPROC)VAR_43("glIsVariantEnabledEXT");
+ VAR_21 = (PFNGLGETVARIANTBOOLEANVEXTPROC)VAR_43("glGetVariantBooleanvEXT");
+ VAR_23 = (PFNGLGETVARIANTINTEGERVEXTPROC)VAR_43("glGetVariantIntegervEXT");
+ VAR_22 = (PFNGLGETVARIANTFLOATVEXTPROC)VAR_43("glGetVariantFloatvEXT");
+ VAR_24 = (PFNGLGETVARIANTPOINTERVEXTPROC)VAR_43("glGetVariantPointervEXT");
+ VAR_15 = (PFNGLGETINVARIANTBOOLEANVEXTPROC)VAR_43("glGetInvariantBooleanvEXT");
+ VAR_17 = (PFNGLGETINVARIANTINTEGERVEXTPROC)VAR_43("glGetInvariantIntegervEXT");
+ VAR_16 = (PFNGLGETINVARIANTFLOATVEXTPROC)VAR_43("glGetInvariantFloatvEXT");
+ VAR_18 = (PFNGLGETLOCALCONSTANTBOOLEANVEXTPROC)VAR_43("glGetLocalConstantBooleanvEXT");
+ VAR_20 = (PFNGLGETLOCALCONSTANTINTEGERVEXTPROC)VAR_43("glGetLocalConstantIntegervEXT");
+ VAR_19 = (PFNGLGETLOCALCONSTANTFLOATVEXTPROC)VAR_43("glGetLocalConstantFloatvEXT");
+}

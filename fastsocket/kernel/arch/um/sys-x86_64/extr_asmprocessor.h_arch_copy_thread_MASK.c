@@ -1,0 +1,21 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct arch_thread {int fs; } ;
+
+
+
+__attribute__((used)) static inline void FUNC_0(struct arch_thread *VAR_0,
+                                    struct arch_thread *VAR_1)
+{
+ VAR_1->fs = VAR_0->fs;
+}

@@ -1,0 +1,318 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_3__ TYPE_1__ ;
+
+
+struct TYPE_3__ {int* fr_literal; int fr_fix; int fr_var; } ;
+typedef TYPE_1__ fragS ;
+
+
+ scalar_t__ VAR_0 ;
+ scalar_t__ VAR_1 ;
+ int VAR_2 ;
+ int FUNC_0 () ;
+ scalar_t__ VAR_3 ;
+ int VAR_4 ;
+ int VAR_5 ;
+ scalar_t__ VAR_6 ;
+ int FUNC_1 (int*,char const* const,int) ;
+ int FUNC_2 (int*,int,int) ;
+
+void
+FUNC_3 (fragS *VAR_7, int VAR_8)
+{
+
+
+
+  static const char VAR_9[] =
+    {0x90};
+  static const char VAR_10[] =
+    {0x66,0x90};
+  static const char VAR_11[] =
+    {0x8d,0x76,0x00};
+  static const char VAR_12[] =
+    {0x8d,0x74,0x26,0x00};
+  static const char VAR_13[] =
+    {0x90,
+     0x8d,0x74,0x26,0x00};
+  static const char VAR_14[] =
+    {0x8d,0xb6,0x00,0x00,0x00,0x00};
+  static const char VAR_15[] =
+    {0x8d,0xb4,0x26,0x00,0x00,0x00,0x00};
+  static const char VAR_16[] =
+    {0x90,
+     0x8d,0xb4,0x26,0x00,0x00,0x00,0x00};
+  static const char VAR_17[] =
+    {0x89,0xf6,
+     0x8d,0xbc,0x27,0x00,0x00,0x00,0x00};
+  static const char VAR_18[] =
+    {0x8d,0x76,0x00,
+     0x8d,0xbc,0x27,0x00,0x00,0x00,0x00};
+  static const char VAR_19[] =
+    {0x8d,0x74,0x26,0x00,
+     0x8d,0xbc,0x27,0x00,0x00,0x00,0x00};
+  static const char VAR_20[] =
+    {0x8d,0xb6,0x00,0x00,0x00,0x00,
+     0x8d,0xbf,0x00,0x00,0x00,0x00};
+  static const char VAR_21[] =
+    {0x8d,0xb6,0x00,0x00,0x00,0x00,
+     0x8d,0xbc,0x27,0x00,0x00,0x00,0x00};
+  static const char VAR_22[] =
+    {0x8d,0xb4,0x26,0x00,0x00,0x00,0x00,
+     0x8d,0xbc,0x27,0x00,0x00,0x00,0x00};
+  static const char VAR_23[] =
+    {0xeb,0x0d,0x90,0x90,0x90,0x90,0x90,
+     0x90,0x90,0x90,0x90,0x90,0x90,0x90,0x90};
+  static const char VAR_24[] =
+    {0x8d,0x74,0x00};
+  static const char VAR_25[] =
+    {0x8d,0xb4,0x00,0x00};
+  static const char VAR_26[] =
+    {0x90,
+     0x8d,0xb4,0x00,0x00};
+  static const char VAR_27[] =
+    {0x89,0xf6,
+     0x8d,0xbd,0x00,0x00};
+  static const char VAR_28[] =
+    {0x8d,0x74,0x00,
+     0x8d,0xbd,0x00,0x00};
+  static const char VAR_29[] =
+    {0x8d,0xb4,0x00,0x00,
+     0x8d,0xbd,0x00,0x00};
+  static const char *const VAR_30[] = {
+    VAR_9, VAR_10, VAR_11, VAR_12, VAR_13, VAR_14, VAR_15, VAR_16,
+    VAR_17, VAR_18, VAR_19, VAR_20, VAR_21, VAR_22, VAR_23
+  };
+  static const char *const VAR_31[] = {
+    VAR_9, VAR_10, VAR_24, VAR_25, VAR_26, VAR_27, VAR_28, VAR_29,
+    VAR_23, VAR_23, VAR_23, VAR_23, VAR_23, VAR_23, VAR_23
+  };
+
+  static const char VAR_32[] =
+    {0x0f,0x1f,0x00};
+
+  static const char VAR_33[] =
+    {0x0f,0x1f,0x40,0x00};
+
+  static const char VAR_34[] =
+    {0x0f,0x1f,0x44,0x00,0x00};
+
+  static const char VAR_35[] =
+    {0x66,0x0f,0x1f,0x44,0x00,0x00};
+
+  static const char VAR_36[] =
+    {0x0f,0x1f,0x80,0x00,0x00,0x00,0x00};
+
+  static const char VAR_37[] =
+    {0x0f,0x1f,0x84,0x00,0x00,0x00,0x00,0x00};
+
+  static const char VAR_38[] =
+    {0x66,0x0f,0x1f,0x84,0x00,0x00,0x00,0x00,0x00};
+
+  static const char VAR_39[] =
+    {0x66,0x2e,0x0f,0x1f,0x84,0x00,0x00,0x00,0x00,0x00};
+
+
+  static const char VAR_40[] =
+    {0x66,
+     0x66,0x2e,0x0f,0x1f,0x84,0x00,0x00,0x00,0x00,0x00};
+
+
+
+  static const char VAR_41[] =
+    {0x66,
+     0x66,
+     0x66,0x2e,0x0f,0x1f,0x84,0x00,0x00,0x00,0x00,0x00};
+
+
+
+
+  static const char VAR_42[] =
+    {0x66,
+     0x66,
+     0x66,
+     0x66,0x2e,0x0f,0x1f,0x84,0x00,0x00,0x00,0x00,0x00};
+
+
+
+
+
+  static const char VAR_43[] =
+    {0x66,
+     0x66,
+     0x66,
+     0x66,
+     0x66,0x2e,0x0f,0x1f,0x84,0x00,0x00,0x00,0x00,0x00};
+
+
+
+
+
+
+  static const char VAR_44[] =
+    {0x66,
+     0x66,
+     0x66,
+     0x66,
+     0x66,
+     0x66,0x2e,0x0f,0x1f,0x84,0x00,0x00,0x00,0x00,0x00};
+
+
+  static const char VAR_45[] =
+    {0x0f,0x1f,0x44,0x00,0x00,
+     0x66,0x0f,0x1f,0x44,0x00,0x00};
+
+
+  static const char VAR_46[] =
+    {0x66,0x0f,0x1f,0x44,0x00,0x00,
+     0x66,0x0f,0x1f,0x44,0x00,0x00};
+
+
+  static const char VAR_47[] =
+    {0x66,0x0f,0x1f,0x44,0x00,0x00,
+     0x0f,0x1f,0x80,0x00,0x00,0x00,0x00};
+
+
+  static const char VAR_48[] =
+    {0x0f,0x1f,0x80,0x00,0x00,0x00,0x00,
+     0x0f,0x1f,0x80,0x00,0x00,0x00,0x00};
+
+
+  static const char VAR_49[] =
+    {0x0f,0x1f,0x80,0x00,0x00,0x00,0x00,
+     0x0f,0x1f,0x84,0x00,0x00,0x00,0x00,0x00};
+  static const char *const VAR_50[] = {
+    VAR_9, VAR_10, VAR_32, VAR_33, VAR_34, VAR_35, VAR_36, VAR_37,
+    VAR_38, VAR_39, VAR_45, VAR_46, VAR_47,
+    VAR_48, VAR_49
+  };
+  static const char *const VAR_51[] = {
+    VAR_9, VAR_10, VAR_32, VAR_33, VAR_34, VAR_35, VAR_36, VAR_37,
+    VAR_38, VAR_39, VAR_40, VAR_41, VAR_42,
+    VAR_43, VAR_44
+  };
+
+  if (VAR_8 <= 0 || VAR_8 > 15)
+    return;
+  if (VAR_6 == VAR_0)
+    {
+      FUNC_1 (VAR_7->fr_literal + VAR_7->fr_fix,
+       VAR_31[VAR_8 - 1], VAR_8);
+      if (VAR_8 > 8)
+
+ VAR_7->fr_literal[VAR_7->fr_fix + 1] = VAR_8 - 2;
+    }
+  else if (VAR_6 == VAR_1 && VAR_5 == 133)
+    {
+      int VAR_52;
+      int VAR_53 = (VAR_8 + 3) / 4;
+      int VAR_54 = VAR_8 / VAR_53;
+      int VAR_55 = VAR_8 - VAR_53 * VAR_54;
+      int VAR_56 = 0;
+
+
+
+      for (VAR_52 = 0; VAR_52 < VAR_55; VAR_52++)
+ {
+   FUNC_2 (VAR_7->fr_literal + VAR_7->fr_fix + VAR_56, 0x66, VAR_54);
+   VAR_7->fr_literal[VAR_7->fr_fix + VAR_56 + VAR_54] = 0x90;
+   VAR_56 += VAR_54 + 1;
+ }
+      for (; VAR_52 < VAR_53; VAR_52++)
+ {
+   FUNC_2 (VAR_7->fr_literal + VAR_7->fr_fix + VAR_56, 0x66, VAR_54 - 1);
+   VAR_7->fr_literal[VAR_7->fr_fix + VAR_56 + VAR_54 - 1] = 0x90;
+   VAR_56 += VAR_54;
+ }
+    }
+  else
+    {
+      const char *const *VAR_57 = ((void*)0);
+
+      if (VAR_3 == 128)
+ {
+
+   switch (VAR_5)
+     {
+     case 128:
+
+
+       if ((VAR_4 & VAR_2) != 0)
+  VAR_57 = VAR_50;
+       else
+  VAR_57 = VAR_30;
+       break;
+     case 138:
+       VAR_57 = VAR_51;
+       break;
+     case 129:
+     case 130:
+     case 132:
+     case 139:
+     case 134:
+     case 140:
+     case 133:
+     case 136:
+     case 141:
+       VAR_57 = VAR_50;
+       break;
+     case 135:
+     case 131:
+     case 137:
+       VAR_57 = VAR_30;
+       break;
+     }
+ }
+      else
+ {
+   switch (VAR_5)
+     {
+     case 128:
+
+
+       FUNC_0 ();
+       break;
+
+     case 135:
+     case 131:
+     case 129:
+     case 130:
+     case 132:
+     case 139:
+     case 134:
+     case 140:
+     case 133:
+     case 141:
+     case 137:
+
+
+       if ((VAR_4 & VAR_2) != 0)
+  VAR_57 = VAR_50;
+       else
+  VAR_57 = VAR_30;
+       break;
+     case 138:
+       if ((VAR_4 & VAR_2) != 0)
+  VAR_57 = VAR_51;
+       else
+  VAR_57 = VAR_30;
+       break;
+     case 136:
+       VAR_57 = VAR_50;
+       break;
+     }
+ }
+
+      FUNC_1 (VAR_7->fr_literal + VAR_7->fr_fix,
+       VAR_57[VAR_8 - 1], VAR_8);
+    }
+  VAR_7->fr_var = VAR_8;
+}

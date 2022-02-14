@@ -1,0 +1,41 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_5__ TYPE_2__ ;
+typedef struct TYPE_4__ TYPE_1__ ;
+
+
+struct TYPE_4__ {int obj_class; } ;
+struct TYPE_5__ {int error; TYPE_1__ header; } ;
+typedef TYPE_2__* HPDF_NameDict ;
+typedef int HPDF_BOOL ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int VAR_2 ;
+ int VAR_3 ;
+ int FUNC_0 (int ,int ,int ) ;
+ int VAR_4 ;
+
+HPDF_BOOL
+FUNC_1 (HPDF_NameDict VAR_5)
+{
+    if (!VAR_5)
+        return VAR_0;
+
+    if (VAR_5->header.obj_class != (VAR_3 |
+                VAR_2)) {
+        FUNC_0 (VAR_5->error, VAR_1, 0);
+        return VAR_0;
+    }
+
+    return VAR_4;
+}

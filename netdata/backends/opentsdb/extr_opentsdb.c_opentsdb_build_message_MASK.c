@@ -1,0 +1,31 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int BUFFER ;
+
+
+ int FUNC_0 (int *,char*,char const*,int,char*) ;
+
+__attribute__((used)) static inline void FUNC_1(BUFFER *VAR_0, char *VAR_1, const char *VAR_2, int VAR_3) {
+    FUNC_0(
+            VAR_0
+            , "POST /api/put HTTP/1.1\r\n"
+              "Host: %s\r\n"
+              "Content-Type: application/json\r\n"
+              "Content-Length: %d\r\n"
+              "\r\n"
+              "%s"
+            , VAR_2
+            , VAR_3
+            , VAR_1
+    );
+}

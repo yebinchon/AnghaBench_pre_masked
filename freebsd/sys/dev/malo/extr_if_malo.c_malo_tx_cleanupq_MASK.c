@@ -1,0 +1,24 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct malo_txq {int dummy; } ;
+struct malo_softc {int dummy; } ;
+
+
+ int FUNC_0 (struct malo_txq*) ;
+
+__attribute__((used)) static void
+FUNC_1(struct malo_softc *VAR_0, struct malo_txq *VAR_1)
+{
+
+ FUNC_0(VAR_1);
+}

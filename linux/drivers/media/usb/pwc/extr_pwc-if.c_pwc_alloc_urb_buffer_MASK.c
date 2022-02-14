@@ -1,0 +1,39 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+struct device {int dummy; } ;
+typedef int dma_addr_t ;
+
+
+ int VAR_0 ;
+ int VAR_1 ;
+ int FUNC_0 (struct device*,void*,size_t,int ) ;
+ scalar_t__ FUNC_1 (struct device*,int ) ;
+ int FUNC_2 (void*) ;
+ void* FUNC_3 (size_t,int ) ;
+
+__attribute__((used)) static void *FUNC_4(struct device *VAR_2,
+      size_t VAR_3, dma_addr_t *VAR_4)
+{
+ void *VAR_5 = FUNC_3(VAR_3, VAR_1);
+
+ if (!VAR_5)
+  return ((void*)0);
+
+ *VAR_4 = FUNC_0(VAR_2, VAR_5, VAR_3, VAR_0);
+ if (FUNC_1(VAR_2, *VAR_4)) {
+  FUNC_2(VAR_5);
+  return ((void*)0);
+ }
+
+ return VAR_5;
+}

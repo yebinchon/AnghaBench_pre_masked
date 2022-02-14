@@ -1,0 +1,33 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int uint32_t ;
+
+
+ scalar_t__ VAR_0 ;
+
+__attribute__((used)) static void FUNC_0(void *VAR_1, uint32_t VAR_2)
+{
+ unsigned char *VAR_3 = VAR_1;
+
+ if (VAR_0) {
+  VAR_3[0] = (VAR_2 >> 24) & 0xff;
+  VAR_3[1] = (VAR_2 >> 16) & 0xff;
+  VAR_3[2] = (VAR_2 >> 8) & 0xff;
+  VAR_3[3] = VAR_2 & 0xff;
+ } else {
+  VAR_3[3] = (VAR_2 >> 24) & 0xff;
+  VAR_3[2] = (VAR_2 >> 16) & 0xff;
+  VAR_3[1] = (VAR_2 >> 8) & 0xff;
+  VAR_3[0] = VAR_2 & 0xff;
+ }
+}

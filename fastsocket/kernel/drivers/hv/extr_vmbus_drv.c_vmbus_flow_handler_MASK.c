@@ -1,0 +1,26 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+struct irq_desc {TYPE_1__* action; } ;
+struct TYPE_2__ {int dev_id; int (* handler ) (unsigned int,int ) ;} ;
+
+
+ int FUNC_0 (unsigned int,struct irq_desc*) ;
+ int FUNC_1 (unsigned int,int ) ;
+
+__attribute__((used)) static void FUNC_2(unsigned int VAR_0, struct irq_desc *VAR_1)
+{
+ FUNC_0(VAR_0, VAR_1);
+
+ VAR_1->action->handler(VAR_0, VAR_1->action->dev_id);
+}

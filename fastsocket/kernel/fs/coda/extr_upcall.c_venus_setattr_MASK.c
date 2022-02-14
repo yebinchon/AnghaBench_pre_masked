@@ -1,0 +1,47 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+typedef struct TYPE_2__ TYPE_1__ ;
+
+
+typedef union outputArgs {int dummy; } outputArgs ;
+struct coda_vattr {int dummy; } ;
+struct CodaFid {int dummy; } ;
+struct TYPE_2__ {struct coda_vattr attr; struct CodaFid VFid; } ;
+union inputArgs {TYPE_1__ coda_setattr; } ;
+struct super_block {int dummy; } ;
+
+
+ int FUNC_0 (union inputArgs*,int) ;
+ int VAR_0 ;
+ int FUNC_1 (int ) ;
+ int FUNC_2 (int ) ;
+ int FUNC_3 (int ,int,int*,union inputArgs*) ;
+ int FUNC_4 (struct super_block*) ;
+ int VAR_1 ;
+
+int FUNC_5(struct super_block *VAR_2, struct CodaFid *VAR_3,
+    struct coda_vattr *VAR_4)
+{
+        union inputArgs *VAR_5;
+        union outputArgs *VAR_6;
+        int VAR_7, VAR_8, VAR_9;
+
+ VAR_7 = FUNC_1(VAR_1);
+ FUNC_2(VAR_0);
+
+        VAR_5->coda_setattr.VFid = *VAR_3;
+ VAR_5->coda_setattr.attr = *VAR_4;
+
+ VAR_9 = FUNC_3(FUNC_4(VAR_2), VAR_7, &VAR_8, VAR_5);
+
+        FUNC_0(VAR_5, VAR_7);
+        return VAR_9;
+}

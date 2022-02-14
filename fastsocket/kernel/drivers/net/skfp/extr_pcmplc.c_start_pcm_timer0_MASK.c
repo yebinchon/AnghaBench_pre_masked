@@ -1,0 +1,29 @@
+
+typedef unsigned long size_t;
+typedef long intptr_t; typedef unsigned long uintptr_t;
+typedef long scalar_t__;
+
+typedef int bool;
+
+
+
+
+
+
+typedef int u_long ;
+struct s_smc {int dummy; } ;
+struct s_phy {scalar_t__ np; int pcm_timer0; int timer0_exp; } ;
+
+
+ scalar_t__ VAR_0 ;
+ int FUNC_0 (scalar_t__,int) ;
+ int VAR_1 ;
+ int FUNC_1 (struct s_smc*,int *,int ,int ) ;
+
+__attribute__((used)) static void FUNC_2(struct s_smc *VAR_2, u_long VAR_3, int VAR_4,
+        struct s_phy *VAR_5)
+{
+ VAR_5->timer0_exp = VAR_1 ;
+ FUNC_1(VAR_2,&VAR_5->pcm_timer0,VAR_3,
+  FUNC_0(VAR_0+VAR_5->np,VAR_4)) ;
+}
